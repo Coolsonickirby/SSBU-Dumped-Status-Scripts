@@ -14,4 +14,4 @@ This is a repository containing all the fighter and their article status scripts
 Major shoutouts to PEAKTAMA (Gintama, go watch it if you haven't) for getting me through doing all this
 
 ## Extra Note(s)
-- Some status scripts call different functions that weren't dumped. Since god knows I don't wanna go through all this again anytime soon, you can access the shared Ghidra Repository and view all the fighter nros in there with their and their articles statuses analyzed. (Instructions on how to access the shared Ghidra Repo can be found here.](https://coolsonickirby.github.io/Smash-Ultimate-Documentation/Reverse%20Engineering/Ghidra/)
+- Some status scripts call different functions that weren't dumped. Since god knows I don't wanna go through all this again anytime soon, you can access the shared Ghidra Repository and view all the fighter nros in there with their and their articles statuses analyzed. (Instructions on how to access the shared Ghidra Repo can be found here.)[https://coolsonickirby.github.io/Smash-Ultimate-Documentation/Reverse%20Engineering/Ghidra/]
