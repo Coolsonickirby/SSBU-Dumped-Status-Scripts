@@ -1,0 +1,9 @@
+
+void __thiscall
+L2CFighterWiifit::status::SpecialNEnd_end(L2CFighterWiifit *this,L2CValue *return_value)
+
+{
+  lib::L2CValue::L2CValue((L2CValue *)return_value,0);
+  return;
+}
+

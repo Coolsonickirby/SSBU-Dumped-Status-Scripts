@@ -1,0 +1,9 @@
+
+void __thiscall
+L2CWeaponWiifitSunbullet::status::Wait_main(L2CWeaponWiifitSunbullet *this,L2CValue *return_value)
+
+{
+  lib::L2CValue::L2CValue((L2CValue *)return_value,0);
+  return;
+}
+

@@ -1,0 +1,95 @@
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __thiscall
+L2CWeaponWiifitHulahoop::status::Break_main(L2CWeaponWiifitHulahoop *this,L2CValue *return_value)
+
+{
+  byte bVar1;
+  bool bVar2;
+  int iVar3;
+  uint uVar4;
+  Hash40 HVar5;
+  ulong uVar6;
+  L2CValue *this_00;
+  float fVar7;
+  float fVar8;
+  L2CValue aLStack128 [16];
+  L2CValue aLStack112 [16];
+  L2CValue aLStack96 [16];
+  L2CValue aLStack80 [16];
+  
+  lib::L2CValue::L2CValue(aLStack112,_WEAPON_WIIFIT_HULAHOOP_INSTANCE_WORK_ID_FLAG_VIS_OFF_1);
+  iVar3 = lib::L2CValue::as_integer(aLStack112);
+  bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
+  lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
+  lib::L2CValue::operator_(aLStack96);
+  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::_L2CValue(aLStack112);
+  if ((bVar2 & 1U) != 0) {
+    FUN_7100021470(this);
+  }
+  lib::L2CValue::L2CValue(aLStack112,_WEAPON_WIIFIT_HULAHOOP_INSTANCE_WORK_ID_FLAG_VIS_OFF_2);
+  iVar3 = lib::L2CValue::as_integer(aLStack112);
+  bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
+  lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
+  lib::L2CValue::operator_(aLStack96);
+  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::_L2CValue(aLStack112);
+  if ((bVar2 & 1U) != 0) {
+    FUN_7100021760(this);
+  }
+  lib::L2CValue::L2CValue(aLStack112,_WEAPON_WIIFIT_HULAHOOP_INSTANCE_WORK_ID_FLAG_VIS_OFF_3);
+  iVar3 = lib::L2CValue::as_integer(aLStack112);
+  bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
+  lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
+  lib::L2CValue::operator_(aLStack96);
+  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::_L2CValue(aLStack112);
+  if ((bVar2 & 1U) != 0) {
+    FUN_7100021a50(this);
+  }
+  lib::L2CValue::L2CValue(aLStack80,_EFFECT_SUB_ATTRIBUTE_FOLLOW);
+  uVar4 = lib::L2CValue::as_integer(aLStack80);
+  app::lua_bind::EffectModule__remove_all_impl(this->moduleAccessor,uVar4,0);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack80,0x50c7c50da);
+  lib::L2CValue::L2CValue(aLStack96,0.0);
+  lib::L2CValue::L2CValue(aLStack112,1.0);
+  lib::L2CValue::L2CValue(aLStack128,false);
+  HVar5 = lib::L2CValue::as_hash(aLStack80);
+  fVar7 = (float)lib::L2CValue::as_number(aLStack96);
+  fVar8 = (float)lib::L2CValue::as_number(aLStack112);
+  bVar1 = lib::L2CValue::as_bool(aLStack128);
+  app::lua_bind::MotionModule__change_motion_impl
+            (this->moduleAccessor,HVar5,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
+  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::_L2CValue(aLStack80);
+  bVar1 = app::lua_bind::StopModule__is_stop_impl(this->moduleAccessor);
+  lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
+  lib::L2CValue::L2CValue(aLStack80,false);
+  uVar6 = lib::L2CValue::operator__(aLStack96,aLStack80);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack96);
+  if ((uVar6 & 1) != 0) {
+    FUN_7100021d40(aLStack96,this);
+    lib::L2CValue::_L2CValue(aLStack96);
+  }
+  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x14);
+  lib::L2CValue::L2CValue(aLStack80,&LAB_7100021eb0);
+  lib::L2CValue::operator_(this_00,aLStack80);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack80,Break_main_loop);
+  lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
+  lib::L2CValue::_L2CValue(aLStack80);
+  return;
+}
+

@@ -1,0 +1,17 @@
+
+void __thiscall
+L2CFighterWiifit::status::AttackS4_main(L2CFighterWiifit *this,L2CValue *return_value)
+
+{
+  L2CValue aLStack64 [16];
+  L2CValue aLStack48 [16];
+  
+  lib::L2CValue::L2CValue(aLStack48,false);
+  lua2cpp::L2CFighterCommon::sub_AttackS4(this,(L2CValue)0xd0);
+  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::L2CValue(aLStack64,AttackS4_main_loop);
+  lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xc0);
+  lib::L2CValue::_L2CValue(aLStack64);
+  return;
+}
+

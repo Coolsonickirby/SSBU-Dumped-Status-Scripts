@@ -1,0 +1,242 @@
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __thiscall
+L2CWeaponPichuVortex::status::Hit_main(L2CWeaponPichuVortex *this,L2CValue *return_value)
+
+{
+  byte bVar1;
+  Vector3f VVar2;
+  int iVar3;
+  int iVar4;
+  uint uVar5;
+  float *pfVar6;
+  L2CValue *pLVar7;
+  ulong uVar8;
+  void *pvVar9;
+  BattleObjectModuleAccessor *pBVar10;
+  ulong uVar11;
+  L2CValue *this_00;
+  L2CValue *this_01;
+  L2CValue *this_02;
+  L2CValue *this_03;
+  L2CValue *this_04;
+  Hash40 HVar12;
+  Vector3f VVar13;
+  float fVar14;
+  float fVar15;
+  L2CValue aLStack416 [16];
+  L2CValue aLStack400 [16];
+  L2CValue aLStack384 [16];
+  L2CValue aLStack368 [16];
+  L2CValue aLStack352 [16];
+  L2CValue aLStack336 [16];
+  L2CValue aLStack320 [16];
+  L2CValue aLStack304 [16];
+  L2CValue aLStack288 [16];
+  L2CValue aLStack272 [16];
+  L2CValue aLStack256 [16];
+  L2CValue aLStack240 [16];
+  L2CValue aLStack224 [16];
+  L2CValue aLStack208 [16];
+  L2CValue aLStack192 [16];
+  L2CValue aLStack176 [16];
+  L2CValue aLStack160 [16];
+  L2CValue aLStack144 [16];
+  L2CValue aLStack128 [16];
+  
+  lib::L2CValue::L2CValue(aLStack208,false);
+  bVar1 = lib::L2CValue::as_bool(aLStack208);
+  app::lua_bind::AreaModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
+  lib::L2CValue::_L2CValue(aLStack208);
+  iVar3 = app::lua_bind::CameraModule__get_camera_type_for_save_impl(this->moduleAccessor);
+  lib::L2CValue::L2CValue(aLStack144,iVar3);
+  lib::L2CValue::L2CValue(aLStack208,_WEAPON_PIKACHU_VORTEX_INSTANCE_WORK_ID_INT_CAMERA_TYPE);
+  iVar3 = lib::L2CValue::as_integer(aLStack144);
+  iVar4 = lib::L2CValue::as_integer(aLStack208);
+  app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
+  lib::L2CValue::_L2CValue(aLStack208);
+  pfVar6 = (float *)app::lua_bind::PostureModule__pos_impl(this->moduleAccessor);
+  lib::L2CValue::L2CValue(aLStack208,*pfVar6);
+  lib::L2CValue::L2CValue(aLStack192,pfVar6[1]);
+  lib::L2CValue::L2CValue(aLStack176,pfVar6[2]);
+  FUN_710001af90(aLStack160,this,aLStack208);
+  lib::L2CValue::_L2CValue(aLStack176);
+  lib::L2CValue::_L2CValue(aLStack192);
+  lib::L2CValue::_L2CValue(aLStack208);
+  pfVar6 = (float *)app::lua_bind::PostureModule__pos_impl(this->moduleAccessor);
+  lib::L2CValue::L2CValue(aLStack272,*pfVar6);
+  lib::L2CValue::L2CValue(aLStack256,pfVar6[1]);
+  lib::L2CValue::L2CValue(aLStack240,pfVar6[2]);
+  iVar3 = (int)register0x00000008 + -0x110;
+  FUN_710001af90(aLStack224,this);
+  lib::L2CValue::_L2CValue(aLStack240);
+  lib::L2CValue::_L2CValue(aLStack256);
+  lib::L2CValue::_L2CValue(aLStack272);
+  lib::L2CValue::L2CValue(aLStack288,10);
+  pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x162d277af);
+  lib::L2CValue::L2CValue(aLStack128,0x96);
+  lib::L2CValue::operator_(pLVar7,aLStack128);
+  lib::L2CValue::_L2CValue(aLStack128);
+  app::lua_bind::CameraModule__reset_main_camera_fov_impl(this->moduleAccessor);
+  lib::L2CValue::L2CValue(aLStack128,_WEAPON_PIKACHU_VORTEX_INSTANCE_WORK_ID_INT_OWNER_OBJECT_ID);
+  iVar4 = lib::L2CValue::as_integer(aLStack128);
+  iVar4 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar4);
+  lib::L2CValue::L2CValue(aLStack304,iVar4);
+  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::L2CValue(aLStack128,0x50000000);
+  uVar8 = lib::L2CValue::operator__(aLStack304,aLStack128);
+  lib::L2CValue::_L2CValue(aLStack128);
+  if ((uVar8 & 1) == 0) {
+    uVar5 = lib::L2CValue::as_integer(aLStack304);
+    pvVar9 = (void *)app::sv_battle_object::module_accessor(uVar5);
+    if (pvVar9 == (void *)0x0) {
+      lib::L2CValue::L2CValue(aLStack128,(L2CValue *)&LUA_SCRIPT_LINE_STATUS_SYSTEM);
+    }
+    else {
+      lib::L2CValue::L2CValue(aLStack128,pvVar9);
+    }
+    lib::L2CValue::L2CValue(aLStack336,_FIGHTER_PIKACHU_STATUS_FINAL_WORK_FLOAT_HIT_POS_X);
+    iVar3 = lib::L2CValue::as_integer(aLStack336);
+    pBVar10 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack128);
+    fVar14 = (float)app::lua_bind::WorkModule__get_float_impl(pBVar10,iVar3);
+    lib::L2CValue::L2CValue(aLStack320,fVar14);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack224,0x18cdc1683);
+    lib::L2CValue::operator_(pLVar7,aLStack320);
+    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::_L2CValue(aLStack336);
+    lib::L2CValue::L2CValue(aLStack336,_FIGHTER_PIKACHU_STATUS_FINAL_WORK_FLOAT_HIT_POS_Y);
+    iVar3 = lib::L2CValue::as_integer(aLStack336);
+    pBVar10 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack128);
+    fVar14 = (float)app::lua_bind::WorkModule__get_float_impl(pBVar10,iVar3);
+    lib::L2CValue::L2CValue(aLStack320,fVar14);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack224,0x1fbdb2615);
+    lib::L2CValue::operator_(pLVar7,aLStack320);
+    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::_L2CValue(aLStack336);
+    lib::L2CValue::L2CValue(aLStack336,_FIGHTER_PIKACHU_STATUS_FINAL_WORK_FLOAT_HIT_POS_X);
+    iVar3 = lib::L2CValue::as_integer(aLStack336);
+    pBVar10 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack128);
+    fVar14 = (float)app::lua_bind::WorkModule__get_float_impl(pBVar10,iVar3);
+    lib::L2CValue::L2CValue(aLStack320,fVar14);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x18cdc1683);
+    lib::L2CValue::operator_(pLVar7,aLStack320);
+    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::_L2CValue(aLStack336);
+    lib::L2CValue::L2CValue(aLStack336,_FIGHTER_PIKACHU_STATUS_FINAL_WORK_FLOAT_HIT_POS_Y);
+    iVar3 = lib::L2CValue::as_integer(aLStack336);
+    pBVar10 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack128);
+    fVar14 = (float)app::lua_bind::WorkModule__get_float_impl(pBVar10,iVar3);
+    lib::L2CValue::L2CValue(aLStack320,fVar14);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x1fbdb2615);
+    lib::L2CValue::operator_(pLVar7,aLStack320);
+    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::_L2CValue(aLStack336);
+    lib::L2CValue::L2CValue(aLStack336,0xdf05c072b);
+    lib::L2CValue::L2CValue(aLStack352,0x11fd2d1aa4);
+    uVar8 = lib::L2CValue::as_integer(aLStack336);
+    uVar11 = lib::L2CValue::as_integer(aLStack352);
+    pBVar10 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack128);
+    fVar14 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar10,uVar8,uVar11);
+    lib::L2CValue::L2CValue(aLStack320,fVar14);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x162d277af);
+    lib::L2CValue::operator_(pLVar7,aLStack320);
+    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::_L2CValue(aLStack352);
+    lib::L2CValue::_L2CValue(aLStack336);
+    lib::L2CValue::L2CValue(aLStack320,1.0);
+    fVar14 = (float)app::sv_camera_manager::get_fov();
+    lib::L2CValue::L2CValue(aLStack336,fVar14);
+    lib::L2CValue::L2CValue(aLStack368,0xdf05c072b);
+    lib::L2CValue::L2CValue(aLStack384,0xefd979d9b);
+    uVar8 = lib::L2CValue::as_integer(aLStack368);
+    uVar11 = lib::L2CValue::as_integer(aLStack384);
+    pBVar10 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack128);
+    fVar14 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar10,uVar8,uVar11);
+    lib::L2CValue::L2CValue(aLStack352,fVar14);
+    lib::L2CValue::_L2CValue(aLStack384);
+    lib::L2CValue::_L2CValue(aLStack368);
+    lib::L2CValue::L2CValue(aLStack384,0xdf05c072b);
+    lib::L2CValue::L2CValue(aLStack400,0xd79e0e5ae);
+    uVar8 = lib::L2CValue::as_integer(aLStack384);
+    uVar11 = lib::L2CValue::as_integer(aLStack400);
+    pBVar10 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack128);
+    fVar14 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar10,uVar8,uVar11);
+    lib::L2CValue::L2CValue(aLStack368,fVar14);
+    lib::L2CValue::_L2CValue(aLStack400);
+    lib::L2CValue::_L2CValue(aLStack384);
+    lib::L2CValue::L2CValue(aLStack400,0xdf05c072b);
+    lib::L2CValue::L2CValue(aLStack416,0x1191537e52);
+    uVar8 = lib::L2CValue::as_integer(aLStack400);
+    uVar11 = lib::L2CValue::as_integer(aLStack416);
+    pBVar10 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack128);
+    fVar14 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar10,uVar8,uVar11);
+    iVar3 = (int)uVar11;
+    lib::L2CValue::L2CValue(aLStack384,fVar14);
+    lib::L2CValue::_L2CValue(aLStack416);
+    lib::L2CValue::_L2CValue(aLStack400);
+    uVar8 = lib::L2CValue::operator_(aLStack368,aLStack336);
+    if ((uVar8 & 1) == 0) {
+      lib::L2CValue::operator_(aLStack320,aLStack384);
+    }
+    else {
+      uVar8 = lib::L2CValue::operator_(aLStack336,aLStack368);
+      if ((uVar8 & 1) != 0) {
+        lib::L2CValue::operator_(aLStack336,aLStack368);
+      }
+      lib::L2CValue::operator_(aLStack352,aLStack336);
+      lib::L2CValue::operator_(aLStack320,aLStack400);
+      lib::L2CValue::_L2CValue(aLStack400);
+    }
+    pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x162d277af);
+    lib::L2CValue::operator_(pLVar7,aLStack320);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x162d277af);
+    lib::L2CValue::operator_(pLVar7,aLStack400);
+    lib::L2CValue::_L2CValue(aLStack400);
+    lib::L2CValue::_L2CValue(aLStack384);
+    lib::L2CValue::_L2CValue(aLStack368);
+    lib::L2CValue::_L2CValue(aLStack352);
+    lib::L2CValue::_L2CValue(aLStack336);
+    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::_L2CValue(aLStack128);
+  }
+  pLVar7 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x18cdc1683);
+  this_00 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x1fbdb2615);
+  this_01 = (L2CValue *)lib::L2CValue::operator__(aLStack160,0x162d277af);
+  this_02 = (L2CValue *)lib::L2CValue::operator__(aLStack224,0x18cdc1683);
+  this_03 = (L2CValue *)lib::L2CValue::operator__(aLStack224,0x1fbdb2615);
+  VVar13 = (Vector3f)0xaf;
+  this_04 = (L2CValue *)lib::L2CValue::operator__(aLStack224,0x162d277af);
+  lib::L2CValue::as_number(pLVar7);
+  lib::L2CValue::as_number(this_00);
+  lib::L2CValue::as_number(this_01);
+  lib::L2CValue::as_number(this_02);
+  lib::L2CValue::as_number(this_03);
+  lib::L2CValue::as_number(this_04);
+  VVar2 = (Vector3f)lib::L2CValue::as_integer(aLStack288);
+  app::FighterUtil::start_zoom_out(VVar2,VVar13,iVar3);
+  lib::L2CValue::L2CValue(aLStack128,0x6218568e4);
+  lib::L2CValue::L2CValue(aLStack320,0.0);
+  lib::L2CValue::L2CValue(aLStack336,1.0);
+  lib::L2CValue::L2CValue(aLStack352,false);
+  HVar12 = lib::L2CValue::as_hash(aLStack128);
+  fVar14 = (float)lib::L2CValue::as_number(aLStack320);
+  fVar15 = (float)lib::L2CValue::as_number(aLStack336);
+  bVar1 = lib::L2CValue::as_bool(aLStack352);
+  app::lua_bind::MotionModule__change_motion_impl
+            (this->moduleAccessor,HVar12,fVar14,fVar15,(bool)(bVar1 & 1),0.0,false,false);
+  lib::L2CValue::_L2CValue(aLStack352);
+  lib::L2CValue::_L2CValue(aLStack336);
+  lib::L2CValue::_L2CValue(aLStack320);
+  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::L2CValue(aLStack128,Hit_main_loop);
+  lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x80);
+  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::_L2CValue(aLStack304);
+  lib::L2CValue::_L2CValue(aLStack288);
+  lib::L2CValue::_L2CValue(aLStack224);
+  lib::L2CValue::_L2CValue(aLStack160);
+  lib::L2CValue::_L2CValue(aLStack144);
+  return;
+}
+

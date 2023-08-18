@@ -1,0 +1,106 @@
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __thiscall
+L2CWeaponPikachuDengeki::status::Regular_main_loop
+          (L2CWeaponPikachuDengeki *this,L2CValue *return_value)
+
+{
+  byte bVar1;
+  bool bVar2;
+  uint uVar3;
+  int iVar4;
+  ulong uVar5;
+  float fVar6;
+  L2CValue aLStack128 [16];
+  L2CValue aLStack112 [16];
+  L2CValue aLStack96 [16];
+  L2CValue aLStack80 [16];
+  L2CValue aLStack64 [16];
+  
+  lib::L2CValue::L2CValue(aLStack80,0);
+  lib::L2CValue::L2CValue(aLStack96,0);
+  bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
+  lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
+  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
+  lib::L2CValue::_L2CValue(aLStack64);
+  if ((bVar2 & 1U) == 0) {
+    fVar6 = (float)app::lua_bind::MotionModule__frame_impl(this->moduleAccessor);
+    lib::L2CValue::L2CValue(aLStack64,fVar6);
+    lib::L2CValue::operator_(aLStack96,aLStack64);
+    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::L2CValue(aLStack112,_WEAPON_PIKACHU_DENGEKI_INSTANCE_WORK_ID_FLOAT_ATK_CLR_FRAME)
+    ;
+    iVar4 = lib::L2CValue::as_integer(aLStack112);
+    fVar6 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar4);
+    lib::L2CValue::L2CValue(aLStack64,fVar6);
+    lib::L2CValue::operator_(aLStack80,aLStack64);
+    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::_L2CValue(aLStack112);
+    uVar5 = lib::L2CValue::operator__(aLStack80,aLStack96);
+    if ((uVar5 & 1) != 0) {
+      app::lua_bind::AttackModule__clear_all_impl(this->moduleAccessor);
+    }
+    lib::L2CValue::L2CValue(aLStack128,_WEAPON_INSTANCE_WORK_ID_INT_LIFE);
+    iVar4 = lib::L2CValue::as_integer(aLStack128);
+    iVar4 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar4);
+    lib::L2CValue::L2CValue(aLStack112,iVar4);
+    lib::L2CValue::L2CValue(aLStack64,0);
+    uVar5 = lib::L2CValue::operator_(aLStack64,aLStack112);
+    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::_L2CValue(aLStack128);
+    if ((uVar5 & 1) != 0) {
+      lib::L2CValue::L2CValue(aLStack64,_WEAPON_INSTANCE_WORK_ID_INT_LIFE);
+      iVar4 = lib::L2CValue::as_integer(aLStack64);
+      app::lua_bind::WorkModule__dec_int_impl(this->moduleAccessor,iVar4);
+      lib::L2CValue::_L2CValue(aLStack64);
+    }
+    lib::L2CValue::L2CValue(aLStack128,_WEAPON_INSTANCE_WORK_ID_INT_LIFE);
+    iVar4 = lib::L2CValue::as_integer(aLStack128);
+    iVar4 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar4);
+    lib::L2CValue::L2CValue(aLStack112,iVar4);
+    lib::L2CValue::L2CValue(aLStack64,0);
+    uVar5 = lib::L2CValue::operator__(aLStack112,aLStack64);
+    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::_L2CValue(aLStack128);
+    if ((uVar5 & 1) != 0) {
+      lib::L2CValue::L2CValue(aLStack112,_GROUND_TOUCH_FLAG_ALL);
+      uVar3 = lib::L2CValue::as_integer(aLStack112);
+      bVar1 = app::lua_bind::GroundModule__is_touch_impl(this->moduleAccessor,uVar3);
+      lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
+      bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
+      lib::L2CValue::_L2CValue(aLStack64);
+      lib::L2CValue::_L2CValue(aLStack112);
+      if ((bVar2 & 1U) != 0) {
+        app::lua_bind::AttackModule__clear_all_impl(this->moduleAccessor);
+        lib::L2CValue::L2CValue(aLStack64,&DAT_7100029720);
+        lua2cpp::L2CFighterBase::shift(this,(L2CValue)0xc0);
+        lib::L2CValue::L2CValue((L2CValue *)return_value,0);
+        lib::L2CValue::_L2CValue(aLStack64);
+        goto LAB_710002962c;
+      }
+    }
+    lib::L2CValue::L2CValue((L2CValue *)return_value,0);
+  }
+  else {
+    lib::L2CValue::L2CValue(aLStack64,0);
+    uVar3 = lib::L2CValue::as_integer(aLStack64);
+    app::lua_bind::EffectModule__remove_all_impl(this->moduleAccessor,uVar3,0);
+    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::L2CValue(aLStack112,0x199c462b5d);
+    lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
+    lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
+    app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
+    lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
+    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::L2CValue((L2CValue *)return_value,1);
+  }
+LAB_710002962c:
+  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::_L2CValue(aLStack80);
+  return;
+}
+
