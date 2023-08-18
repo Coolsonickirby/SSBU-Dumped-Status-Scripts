@@ -1,0 +1,112 @@
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __thiscall
+L2CWeaponEdgeFlaredummy::status::Try_exec(L2CWeaponEdgeFlaredummy *this,L2CValue *return_value)
+
+{
+  int iVar1;
+  ulong uVar2;
+  ulong uVar3;
+  L2CValue *pLVar4;
+  float fVar5;
+  L2CValue aLStack320 [16];
+  L2CValue aLStack304 [16];
+  L2CValue aLStack288 [16];
+  L2CValue aLStack272 [16];
+  L2CValue aLStack256 [16];
+  L2CValue aLStack240 [16];
+  L2CValue aLStack224 [16];
+  L2CValue aLStack208 [16];
+  undefined auStack192 [32];
+  L2CValue aLStack160 [16];
+  L2CValue aLStack144 [16];
+  L2CValue aLStack128 [16];
+  L2CValue aLStack112 [16];
+  L2CValue aLStack96 [16];
+  L2CValue aLStack80 [16];
+  
+  lib::L2CValue::L2CValue(aLStack80,0x109d30aa1b);
+  lib::L2CValue::L2CValue(aLStack112,0xf9cfe9888);
+  uVar2 = lib::L2CValue::as_integer(aLStack80);
+  uVar3 = lib::L2CValue::as_integer(aLStack112);
+  fVar5 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar2,uVar3);
+  lib::L2CValue::L2CValue(aLStack96,fVar5);
+  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack80,0x109d30aa1b);
+  lib::L2CValue::L2CValue(aLStack128,0xf4b152ac9);
+  uVar2 = lib::L2CValue::as_integer(aLStack80);
+  uVar3 = lib::L2CValue::as_integer(aLStack128);
+  fVar5 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar2,uVar3);
+  lib::L2CValue::L2CValue(aLStack112,fVar5);
+  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack80,0x109d30aa1b);
+  lib::L2CValue::L2CValue(aLStack144,0x134ec05d76);
+  uVar2 = lib::L2CValue::as_integer(aLStack80);
+  uVar3 = lib::L2CValue::as_integer(aLStack144);
+  fVar5 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar2,uVar3);
+  lib::L2CValue::L2CValue(aLStack128,fVar5);
+  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack80,0x109d30aa1b);
+  lib::L2CValue::L2CValue(aLStack160,0x130e8f2500);
+  uVar2 = lib::L2CValue::as_integer(aLStack80);
+  uVar3 = lib::L2CValue::as_integer(aLStack160);
+  fVar5 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar2,uVar3);
+  lib::L2CValue::L2CValue(aLStack144,fVar5);
+  lib::L2CValue::_L2CValue(aLStack160);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack80,_WEAPON_EDGE_FLAREDUMMY_INSTANCE_WORK_ID_FLOAT_RATIO);
+  iVar1 = lib::L2CValue::as_integer(aLStack80);
+  fVar5 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
+  lib::L2CValue::L2CValue(aLStack160,fVar5);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack80,_WEAPON_EDGE_FLAREDUMMY_INSTANCE_WORK_ID_FLOAT_SPEED);
+  iVar1 = lib::L2CValue::as_integer(aLStack80);
+  fVar5 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
+  lib::L2CValue::L2CValue((L2CValue *)(auStack192 + 0x10),fVar5);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack224,aLStack96);
+  lib::L2CValue::L2CValue(aLStack240,aLStack112);
+  lib::L2CValue::L2CValue(aLStack256,aLStack160);
+  lua2cpp::L2CFighterBase::lerp(this,(L2CValue)0x20,(L2CValue)0x10,(L2CValue)0x0);
+  lib::L2CValue::operator_((L2CValue *)(auStack192 + 0x10),aLStack208);
+  lib::L2CValue::L2CValue(aLStack288,aLStack128);
+  lib::L2CValue::L2CValue(aLStack304,aLStack144);
+  lib::L2CValue::L2CValue(aLStack320,aLStack160);
+  pLVar4 = aLStack304;
+  lua2cpp::L2CFighterBase::lerp(this,(L2CValue)0xe0,SUB81(pLVar4,0),(L2CValue)0xc0);
+  lib::L2CAgent::math_max((L2CAgent *)auStack192,aLStack272,pLVar4);
+  lib::L2CValue::operator_((L2CValue *)(auStack192 + 0x10),aLStack80);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack272);
+  lib::L2CValue::_L2CValue(aLStack320);
+  lib::L2CValue::_L2CValue(aLStack304);
+  lib::L2CValue::_L2CValue(aLStack288);
+  lib::L2CValue::_L2CValue((L2CValue *)auStack192);
+  lib::L2CValue::_L2CValue(aLStack208);
+  lib::L2CValue::_L2CValue(aLStack256);
+  lib::L2CValue::_L2CValue(aLStack240);
+  lib::L2CValue::_L2CValue(aLStack224);
+  lib::L2CValue::L2CValue(aLStack80,0.0);
+  lib::L2CValue::operator_((L2CValue *)(auStack192 + 0x10),aLStack80);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::L2CValue(aLStack80,_WEAPON_EDGE_FLAREDUMMY_INSTANCE_WORK_ID_FLOAT_SPEED);
+  fVar5 = (float)lib::L2CValue::as_number((L2CValue *)auStack192);
+  iVar1 = lib::L2CValue::as_integer(aLStack80);
+  app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar5,iVar1);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::_L2CValue((L2CValue *)auStack192);
+  FUN_710002f270(this);
+  lib::L2CValue::L2CValue((L2CValue *)return_value,0);
+  lib::L2CValue::_L2CValue((L2CValue *)(auStack192 + 0x10));
+  lib::L2CValue::_L2CValue(aLStack160);
+  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::_L2CValue(aLStack96);
+  return;
+}
+

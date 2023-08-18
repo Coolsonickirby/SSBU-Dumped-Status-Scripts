@@ -1,0 +1,23 @@
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __thiscall
+L2CFighterDemon::status::AttackRageCatch_pre(L2CFighterDemon *this,L2CValue *return_value)
+
+{
+  L2CValue aLStack96 [16];
+  L2CValue aLStack80 [16];
+  L2CValue aLStack64 [16];
+  
+  lib::L2CValue::L2CValue(aLStack64,_FIGHTER_LOG_MASK_FLAG_ATTACK_KIND_ADDITIONS_ATTACK_15);
+  lib::L2CValue::L2CValue
+            (aLStack80,_FIGHTER_POWER_UP_ATTACK_BIT_SPECIAL_LW | _FIGHTER_POWER_UP_ATTACK_BIT_THROW)
+  ;
+  lib::L2CValue::L2CValue(aLStack96,_FS_SUCCEEDS_KEEP_NO_REACTION);
+  FUN_7100023d50(return_value,this,aLStack64,aLStack80,aLStack96);
+  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::_L2CValue(aLStack64);
+  return;
+}
+
