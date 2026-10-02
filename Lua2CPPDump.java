@@ -417,6 +417,7 @@ public class Lua2CPPDump extends GhidraScript {
 	private File luaDictFile;
 	private int failedWrites = 0;
 	private int failedDecompiles = 0;
+	private HashSet<Address> skippedPointers = new HashSet<Address>();
 	
 	private Address derefAddress(Address addr) throws Exception {
 		byte[] bytes = getBytes(addr, 8);
@@ -635,6 +636,100 @@ public class Lua2CPPDump extends GhidraScript {
             printerr("Failed to write " + outpath + ": " + e);
         }
     }
+
+	private boolean isHelper(Function f) {
+		return f.getName().startsWith("FUN_") && !f.isThunk() && !f.isExternal();
+	}
+
+	private Function makeCallbackFunction(Address where) throws Exception {
+		Function f = null;
+		String reason = null;
+		Function containing = getFunctionContaining(where);
+		if (containing != null) {
+			reason = "inside " + containing.getName(true);
+		} else {
+			disassemble(where);
+			if (getInstructionAt(where) == null)
+				reason = "not valid code";
+			else {
+				f = createFunction(where, null);
+				if (f == null)
+					reason = "could not create a function";
+			}
+		}
+		if (reason != null && skippedPointers.add(where))
+			printerr("Skipped pointer " + where + ": " + reason);
+		return f;
+	}
+
+	private void setUpCallback(Function f, DataType agentType) throws Exception {
+		DataType valueType = getCurrentProgram().getDataTypeManager().getDataType("/lib/L2CValue");
+		Register x0 = currentProgram.getRegister("x0");
+		Register x8 = currentProgram.getRegister("x8");
+		f.setCallingConvention("__thiscall");
+		f.setReturnType(DataType.VOID, SourceType.USER_DEFINED);
+		f.setCustomVariableStorage(true);
+		boolean hasReturnParam = false;
+		for (Parameter p : f.getParameters()) {
+			if (x0.equals(p.getRegister()))
+				p.setDataType(new Pointer64DataType(agentType), SourceType.USER_DEFINED);
+			else if (x8.equals(p.getRegister()))
+				hasReturnParam = true;
+		}
+		if (!hasReturnParam) {
+			ParameterImpl returnParam = new ParameterImpl("return_value", new Pointer64DataType(valueType), x8, currentProgram);
+			f.addParameter(returnParam, SourceType.USER_DEFINED);
+		}
+	}
+
+	// Adds the FUN_ functions recursively
+	private void addHelperFunctions(HashMap<String, Function> functions_to_save, String functionsPath, DataType agentType) throws Exception {
+		ReferenceManager refManager = currentProgram.getReferenceManager();
+		HashSet<Function> roots = new HashSet<Function>(functions_to_save.values());
+		HashSet<Function> seen = new HashSet<Function>(roots);
+		HashSet<Function> callbacks = new HashSet<Function>();
+		ArrayList<Function> round = new ArrayList<Function>(roots);
+		while (!round.isEmpty()) {
+			analyzeChanges(currentProgram);
+			round.sort((a, b) -> a.getEntryPoint().compareTo(b.getEntryPoint()));
+			ArrayList<Function> found = new ArrayList<Function>();
+			for (Function func : round) {
+				if (!roots.contains(func))
+					fixInternalSymbolCalls(func);
+				ArrayList<Reference> refs = new ArrayList<Reference>();
+				AddressIterator sources = refManager.getReferenceSourceIterator(func.getBody(), true);
+				while (sources.hasNext())
+					refs.addAll(Arrays.asList(refManager.getReferencesFrom(sources.next())));
+				for (Reference ref : refs) {
+					Address to = ref.getToAddress();
+					if (!to.isMemoryAddress() || func.getBody().contains(to))
+						continue;
+					Function target = getFunctionAt(to);
+					if (ref.getReferenceType().isFlow()) {
+						if (target != null && isHelper(target) && seen.add(target))
+							found.add(target);
+						continue;
+					}
+					MemoryBlock block = getMemoryBlock(to);
+					if (block == null || !block.isExecute())
+						continue;
+					if (target == null)
+						target = makeCallbackFunction(to);
+					if (target == null || roots.contains(target) || !isHelper(target))
+						continue;
+					if (callbacks.add(target))
+						setUpCallback(target, agentType);
+					if (seen.add(target))
+						found.add(target);
+				}
+			}
+			if (!found.isEmpty())
+				new File(functionsPath).mkdirs();
+			for (Function f : found)
+				functions_to_save.put(functionsPath + f.getName() + ".c", f);
+			round = found;
+		}
+	}
 	
 	private void makeStatuses(String agentName, Address vtableAddress, boolean isAgentFighter, boolean shouldNamespace, Long vtableHash, String folderBase) throws Exception {
 		String output_path = outputRoot.getAbsolutePath() + "\\" + getProgramFile().getName() + "\\";
@@ -686,9 +781,12 @@ public class Lua2CPPDump extends GhidraScript {
         functions_to_save.put(output_path + "SetStatusScripts.c", changeOrMakeFunction("SetStatusScripts", setter, agentClass));
     
 		
+		analyzeChanges(currentProgram);
+
 		// Autocreate status functions
 		Namespace agentStatuses = getOrCreateNamespace(agentClass, "status");
 
+        String functions_path = output_path + "functions" + "\\";
         output_path += "status" + "\\";
         new File(output_path).mkdirs();
 
@@ -783,6 +881,8 @@ public class Lua2CPPDump extends GhidraScript {
 			}
 		}
 		
+		analyzeChanges(currentProgram);
+
 		// Autocreate main status loop functions
 //		Symbol subShiftStatusMain = symTable.getSymbol("sub_shift_status_main", symTable.getNamespace("L2CFighterCommon", symTable.getNamespace("lua2cpp", null)));
 		SymbolIterator children = shouldNamespace ? symTable.getChildren(symTable.getNamespaceSymbol("main", agentStatuses)) : symTable.getChildren(agentStatuses.getSymbol());
@@ -869,6 +969,9 @@ public class Lua2CPPDump extends GhidraScript {
 		
 		Symbol vtable = createLabel(vtableAddress, "vtable", true);
 		vtable.setNamespace(agentClass);
+
+        addHelperFunctions(functions_to_save, functions_path, agentType);
+        analyzeChanges(currentProgram);
 
         DecompInterface decomp = new DecompInterface();
 		DecompileOptions options = new DecompileOptions();
