@@ -36,6 +36,7 @@ import ghidra.program.database.symbol.NamespaceManager;
 import ghidra.app.decompiler.DecompInterface;
 import ghidra.app.decompiler.DecompileOptions;
 import ghidra.app.decompiler.DecompileResults;
+import ghidra.app.decompiler.PrettyPrinter;
 
 
 import java.util.zip.CRC32;
@@ -415,6 +416,7 @@ public class Lua2CPPDump extends GhidraScript {
 	private File outputRoot;
 	private File luaDictFile;
 	private int failedWrites = 0;
+	private int failedDecompiles = 0;
 	
 	private Address derefAddress(Address addr) throws Exception {
 		byte[] bytes = getBytes(addr, 8);
@@ -614,11 +616,18 @@ public class Lua2CPPDump extends GhidraScript {
     
     private String getCodeAtFunc(DecompInterface decomp, Function func){
         DecompileResults res = decomp.decompileFunction(func, 60, monitor);
-        return res.getDecompiledFunction().getC();
+        if (!res.decompileCompleted() || res.getCCodeMarkup() == null) {
+            failedDecompiles++;
+            printerr("Failed to decompile " + func.getName(true) + ": " + res.getErrorMessage());
+            return null;
+        }
+        return new PrettyPrinter(func, res.getCCodeMarkup()).print(false).getC();
     }
 
     private void SaveFunction(DecompInterface decomp, Function func, String outpath) throws Exception {
         String data = getCodeAtFunc(decomp, func);
+        if (data == null)
+            return;
         try (FileWriter writer = new java.io.FileWriter(outpath)) {
             writer.write(data);
         } catch(Exception e) {
@@ -1058,7 +1067,7 @@ public class Lua2CPPDump extends GhidraScript {
             makeStatuses(name, vtable_start, isFighter, false, key, folderBase);
         }
 
-        println("Done. " + failedWrites + " file(s) failed to write.");
+        println("Done. " + failedDecompiles + " function(s) failed to decompile, " + failedWrites + " file(s) failed to write.");
     }
 
 }
