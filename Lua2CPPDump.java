@@ -1,6 +1,6 @@
 // Performs more analysis on lua2cpp modules for Super Smash Bros. Ultimate (Batch) (Dump)
-//@author blujay Coolsonickirby
-//@category 
+//@author blujay, Coolsonickirby, LilyLambda
+//@category _NEW_
 //@keybinding 
 //@menupath 
 //@toolbar 
@@ -60,8 +60,7 @@ class ArticleLabels {
 		return length | value;
 	}
 
-    public static void loadArticleLabels() throws Exception {
-        String filePath = "C:\\Users\\Random\\ghidra_scripts\\article_labels.txt";
+    public static void loadArticleLabels(String filePath) throws Exception {
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
         for (String line = reader.readLine(); line != null; line = reader.readLine()) {
             String[] parts = line.split(",", 2);
@@ -72,7 +71,7 @@ class ArticleLabels {
             ARTICLE_LABELS.put(hash40(split_names[0]), split_names[0]);
             ARTICLE_LABELS.put(hash40(split_names[1]), split_names[1]);
         }
-        
+        reader.close();
 
         ARTICLE_LABELS.put(hash40("mario"), "mario");
         ARTICLE_LABELS.put(hash40("donkey"), "donkey");
@@ -411,7 +410,11 @@ class HashEmulator {
 	}
 }
 
-public class Lua2CPPAnalysis extends GhidraScript {
+public class Lua2CPPDump extends GhidraScript {
+	
+	private File outputRoot;
+	private File luaDictFile;
+	private int failedWrites = 0;
 	
 	private Address derefAddress(Address addr) throws Exception {
 		byte[] bytes = getBytes(addr, 8);
@@ -616,16 +619,16 @@ public class Lua2CPPAnalysis extends GhidraScript {
 
     private void SaveFunction(DecompInterface decomp, Function func, String outpath) throws Exception {
         String data = getCodeAtFunc(decomp, func);
-        try {
-            FileWriter writer = new java.io.FileWriter(outpath);
+        try (FileWriter writer = new java.io.FileWriter(outpath)) {
             writer.write(data);
-            writer.close();
         } catch(Exception e) {
+            failedWrites++;
+            printerr("Failed to write " + outpath + ": " + e);
         }
     }
 	
 	private void makeStatuses(String agentName, Address vtableAddress, boolean isAgentFighter, boolean shouldNamespace, Long vtableHash, String folderBase) throws Exception {
-		String output_path = "C:\\Projects\\Github\\SSBU-Dumped-Status-Scripts\\ghidra_scripts" + "\\" + getProgramFile().getName() + "\\";
+		String output_path = outputRoot.getAbsolutePath() + "\\" + getProgramFile().getName() + "\\";
         
         if(folderBase.contains("_")){
             String[] split = folderBase.split("_");
@@ -884,24 +887,37 @@ public class Lua2CPPAnalysis extends GhidraScript {
 		
 		Address cvtAddress = constValueTable.getAddress();
 		if (getSymbolAt(cvtAddress, "LUA_SCRIPT_LINE_MAX") == null) {
-			// String filePath = askString("LuaDictionary Filepath", "Please enter the LuaDictionary filepath:");
-			String filePath = "C:\\Users\\Random\\ghidra_scripts\\lua_dict.txt";
-			BufferedReader reader = new BufferedReader(new FileReader(filePath));
+			BufferedReader reader = new BufferedReader(new FileReader(luaDictFile));
 			for (String line = reader.readLine(); line != null; line = reader.readLine()) {
 				String[] parts = line.split(":", 2);
 				long offset = Long.decode("0x" + parts[0]);
 				createLabel(cvtAddress.add(offset), parts[1], true, SourceType.USER_DEFINED);
 			}
+			reader.close();
 		}
 
 
 	}
 	
     public void run() throws Exception {
+        File scriptDir = new File(getSourceFile().getAbsolutePath()).getParentFile();
+        File articleLabelsFile = new File(scriptDir, "article_labels.txt");
+        luaDictFile = new File(scriptDir, "lua_dict.txt");
+        for (File required : new File[] { articleLabelsFile, luaDictFile }) {
+            if (!required.isFile()) {
+                String message = "Missing " + required.getName() + ". Please ensure it's in the same folder as Lua2CPPDump.java: " + required.getAbsolutePath();
+                printerr(message);
+                popup(message);
+                return;
+            }
+        }
+
+        outputRoot = askDirectory("Select the output folder", "Select");
+
     	makeThiscalls();       
         checkLuaconsts();
 
-        ArticleLabels.loadArticleLabels();
+        ArticleLabels.loadArticleLabels(articleLabelsFile.getAbsolutePath());
         SymbolTable symTable = getCurrentProgram().getSymbolTable();
 
         Address create_agent_fighter_status_address = null;
@@ -1041,6 +1057,8 @@ public class Lua2CPPAnalysis extends GhidraScript {
             changeOrMakeFunction("FUN_" + function_offset, function_start, null);
             makeStatuses(name, vtable_start, isFighter, false, key, folderBase);
         }
+
+        println("Done. " + failedWrites + " file(s) failed to write.");
     }
 
 }
