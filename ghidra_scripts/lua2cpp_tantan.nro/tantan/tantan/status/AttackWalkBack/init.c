@@ -34,20 +34,20 @@ L2CFighterTantan::status::AttackWalkBack_init(L2CFighterTantan *this,L2CValue *r
   uVar2 = lib::L2CValue::as_integer(aLStack224);
   fVar3 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar1,uVar2);
   lib::L2CValue::L2CValue(aLStack192,fVar3);
-  lib::L2CValue::operator_(aLStack144,aLStack192);
+  lib::L2CValue::operator*(aLStack144,aLStack192);
   lua2cpp::L2CFighterCommon::sub_walk_uniq_process_init_common_param
             (this,(L2CValue)0xc0,(L2CValue)0xb0,(L2CValue)0xa0,(L2CValue)0x90,(L2CValue)0x80);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

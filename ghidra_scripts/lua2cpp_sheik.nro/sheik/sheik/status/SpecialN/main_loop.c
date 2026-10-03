@@ -19,28 +19,28 @@ L2CFighterSheik::status::SpecialN_main_loop(L2CFighterSheik *this,L2CValue *retu
   L2CValue aLStack112 [16];
   L2CValue aLStack96 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue(aLStack96,_SITUATION_KIND_GROUND);
-  uVar5 = lib::L2CValue::operator__(this_00,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar5 = lib::L2CValue::operator==(this_00,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar5 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack96,GROUND_CORRECT_KIND_AIR);
     GVar3 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar3);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_KINETIC_TYPE_AIR_STOP);
     iVar4 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::KineticModule__change_kinetic_impl(this->moduleAccessor,iVar4);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack128,_FT_SHEIK_STATUS_SPECIAL_N_FLAG_MOT_CHANGE);
     iVar4 = lib::L2CValue::as_integer(aLStack128);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar4);
     lib::L2CValue::L2CValue(aLStack112,(bool)(bVar1 & 1));
-    lib::L2CValue::operator_(aLStack112);
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::operator!(aLStack112);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
     if ((bVar2 & 1U) == 0) {
       lib::L2CValue::L2CValue(aLStack96,0x1331f32137);
       fVar7 = (float)app::lua_bind::MotionModule__frame_impl(this->moduleAccessor);
@@ -66,35 +66,35 @@ L2CFighterSheik::status::SpecialN_main_loop(L2CFighterSheik *this,L2CValue *retu
       app::lua_bind::MotionModule__change_motion_impl
                 (this->moduleAccessor,HVar6,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
     }
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,_FT_SHEIK_STATUS_SPECIAL_N_FLAG_MOT_CHANGE);
     iVar4 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar4);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::L2CValue(aLStack96,&DAT_710000df60);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::L2CValue(aLStack96,FUN_710000df60);
     lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
   }
   else {
     lib::L2CValue::L2CValue(aLStack96,_GROUND_CORRECT_KIND_GROUND_CLIFF_STOP_ATTACK);
     GVar3 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar3);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_KINETIC_TYPE_GROUND_STOP);
     iVar4 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::KineticModule__change_kinetic_impl(this->moduleAccessor,iVar4);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack128,_FT_SHEIK_STATUS_SPECIAL_N_FLAG_MOT_CHANGE);
     iVar4 = lib::L2CValue::as_integer(aLStack128);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar4);
     lib::L2CValue::L2CValue(aLStack112,(bool)(bVar1 & 1));
-    lib::L2CValue::operator_(aLStack112);
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::operator!(aLStack112);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
     if ((bVar2 & 1U) == 0) {
       lib::L2CValue::L2CValue(aLStack96,0xf3a6aace3);
       fVar7 = (float)app::lua_bind::MotionModule__frame_impl(this->moduleAccessor);
@@ -120,18 +120,18 @@ L2CFighterSheik::status::SpecialN_main_loop(L2CFighterSheik *this,L2CValue *retu
       app::lua_bind::MotionModule__change_motion_impl
                 (this->moduleAccessor,HVar6,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
     }
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,_FT_SHEIK_STATUS_SPECIAL_N_FLAG_MOT_CHANGE);
     iVar4 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar4);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::L2CValue(aLStack96,&DAT_710000dc60);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::L2CValue(aLStack96,FUN_710000dc60);
     lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
   }
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

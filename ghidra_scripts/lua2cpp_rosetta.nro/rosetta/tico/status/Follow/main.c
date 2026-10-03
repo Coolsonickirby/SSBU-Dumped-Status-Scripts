@@ -37,12 +37,12 @@ L2CWeaponRosettaTico::status::Follow_main(L2CWeaponRosettaTico *this,L2CValue *r
   lib::L2CValue::L2CValue((L2CValue *)&local_60,true);
   bVar1 = lib::L2CValue::as_bool((L2CValue *)&local_60);
   app::lua_bind::GroundModule__set_passable_check_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   lib::L2CValue::L2CValue(aLStack128,_WEAPON_ROSETTA_TICO_INSTANCE_WORK_ID_FLAG_RETURN);
   iVar3 = lib::L2CValue::as_integer(aLStack128);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue((L2CValue *)&local_70,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool((L2CValue *)&local_70);
+  bVar2 = lib::L2CValue::operator.cast.to.bool((L2CValue *)&local_70);
   if ((bVar2 & 1U) == 0) {
     lVar10 = -0x60;
   }
@@ -53,12 +53,12 @@ L2CWeaponRosettaTico::status::Follow_main(L2CWeaponRosettaTico *this,L2CValue *r
     iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack144,iVar3);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,_EFFECT_HANDLE_NULL);
-    uVar5 = lib::L2CValue::operator__(aLStack144,(L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_70);
-    lib::L2CValue::_L2CValue(aLStack128);
+    uVar5 = lib::L2CValue::operator==(aLStack144,(L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_70);
+    lib::L2CValue::~L2CValue(aLStack128);
     if ((uVar5 & 1) == 0) goto LAB_710001ec44;
     lib::L2CValue::L2CValue(aLStack144,0x139d74848e);
     lib::L2CValue::L2CValue(aLStack160,0x35dbfe258);
@@ -91,17 +91,17 @@ L2CWeaponRosettaTico::status::Follow_main(L2CWeaponRosettaTico *this,L2CValue *r
                        fVar9,(bool)(bVar1 & 1),uVar8,0,-1,in_stack_fffffffffffffe84,0,
                        (bool)in_stack_fffffffffffffe8c,false);
     lib::L2CValue::L2CValue(aLStack128,uVar8);
-    lib::L2CValue::_L2CValue(aLStack304);
-    lib::L2CValue::_L2CValue(aLStack288);
-    lib::L2CValue::_L2CValue(aLStack272);
-    lib::L2CValue::_L2CValue(aLStack256);
-    lib::L2CValue::_L2CValue(aLStack240);
-    lib::L2CValue::_L2CValue(aLStack224);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack304);
+    lib::L2CValue::~L2CValue(aLStack288);
+    lib::L2CValue::~L2CValue(aLStack272);
+    lib::L2CValue::~L2CValue(aLStack256);
+    lib::L2CValue::~L2CValue(aLStack240);
+    lib::L2CValue::~L2CValue(aLStack224);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
     lib::L2CValue::L2CValue
               ((L2CValue *)&local_60,_WEAPON_ROSETTA_TICO_INSTANCE_WORK_ID_INT_RETURN_EFFECT_HANDLE)
     ;
@@ -110,12 +110,12 @@ L2CWeaponRosettaTico::status::Follow_main(L2CWeaponRosettaTico *this,L2CValue *r
     app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
     lVar10 = -0x50;
   }
-  lib::L2CValue::_L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar10));
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar10));
+  lib::L2CValue::~L2CValue(aLStack128);
 LAB_710001ec44:
   lib::L2CValue::L2CValue((L2CValue *)&local_60,Follow_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)((char)&stack0xfffffffffffffff0 + -0x50));
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   return;
 }
 

@@ -37,13 +37,13 @@ L2CWeaponPikachuSpecialupdummy::status::Fly_main_loop
   iVar4 = lib::L2CValue::as_integer(aLStack176);
   iVar4 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar4);
   lib::L2CValue::L2CValue(aLStack96,iVar4);
-  lib::L2CValue::_L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack176);
   uVar5 = lib::L2CValue::as_integer(aLStack96);
   bVar2 = app::sv_battle_object::is_null(uVar5);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,(bool)(bVar2 & 1));
   lib::L2CValue::L2CValue(aLStack176,false);
-  uVar6 = lib::L2CValue::operator__((L2CValue *)&local_50,aLStack176);
-  lib::L2CValue::_L2CValue(aLStack176);
+  uVar6 = lib::L2CValue::operator==((L2CValue *)&local_50,aLStack176);
+  lib::L2CValue::~L2CValue(aLStack176);
   if ((uVar6 & 1) == 0) {
     lVar1 = -0x40;
   }
@@ -51,9 +51,9 @@ L2CWeaponPikachuSpecialupdummy::status::Fly_main_loop
     uVar5 = lib::L2CValue::as_integer(aLStack96);
     bVar2 = app::sv_battle_object::is_active(uVar5);
     lib::L2CValue::L2CValue(aLStack176,(bool)(bVar2 & 1));
-    bVar3 = lib::L2CValue::operator_cast_to_bool(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    bVar3 = lib::L2CValue::operator.cast.to.bool(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
     if ((bVar3 & 1U) == 0) goto LAB_710002c074;
     uVar5 = lib::L2CValue::as_integer(aLStack96);
     pvVar7 = (void *)app::sv_battle_object::module_accessor(uVar5);
@@ -81,16 +81,16 @@ L2CWeaponPikachuSpecialupdummy::status::Fly_main_loop
     lib::L2CValue::L2CValue(aLStack160,local_50._4_4_);
     lib::L2CValue::L2CValue(aLStack144,(float)uStack72);
     FUN_710001af90(aLStack128,this,aLStack176);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack256);
-    lib::L2CValue::_L2CValue(aLStack240);
-    lib::L2CValue::_L2CValue(aLStack224);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack256);
+    lib::L2CValue::~L2CValue(aLStack240);
+    lib::L2CValue::~L2CValue(aLStack224);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack192);
     lib::L2CValue::L2CValue(aLStack192,0x31d39a761);
-    this_00 = (L2CValue *)lib::L2CValue::operator__(aLStack128,0x18cdc1683);
+    this_00 = (L2CValue *)lib::L2CValue::operator[](aLStack128,0x18cdc1683);
     lib::L2CValue::L2CValue(aLStack208,0.0);
     lib::L2CValue::L2CValue(aLStack224,0.0);
     HVar8 = lib::L2CValue::as_hash(aLStack192);
@@ -101,16 +101,16 @@ L2CWeaponPikachuSpecialupdummy::status::Fly_main_loop
     uStack72 = (ulong)uVar5;
     app::lua_bind::ModelModule__set_joint_rotate_impl
               (this->moduleAccessor,HVar8,(Vector3f *)&local_50,0,0);
-    lib::L2CValue::_L2CValue(aLStack224);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack224);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack128);
     lVar1 = -0x60;
   }
-  lib::L2CValue::_L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar1));
+  lib::L2CValue::~L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar1));
 LAB_710002c074:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

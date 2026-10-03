@@ -15,11 +15,11 @@ L2CWeaponPikachuVortex::status::Return_main(L2CWeaponPikachuVortex *this,L2CValu
   lib::L2CValue::L2CValue(aLStack48,iVar1);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::CameraModule__set_camera_type_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack48,Return_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

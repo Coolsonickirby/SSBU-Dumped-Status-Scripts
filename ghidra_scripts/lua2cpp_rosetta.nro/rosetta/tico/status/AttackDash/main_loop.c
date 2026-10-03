@@ -19,69 +19,69 @@ L2CWeaponRosettaTico::status::AttackDash_main_loop
   
   lib::L2CValue::L2CValue(aLStack96,true);
   FUN_710003b0e0(aLStack80,this,aLStack96);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((bVar1 & 1U) == 0) {
     bVar2 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar2 & 1));
-    bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar1 & 1U) == 0) {
       bVar2 = app::lua_bind::StatusModule__is_changing_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue(aLStack112,(bool)(bVar2 & 1));
       lib::L2CValue::L2CValue(aLStack80,true);
-      uVar4 = lib::L2CValue::operator__(aLStack112,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar4 = lib::L2CValue::operator==(aLStack112,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar4 & 1) == 0) {
         this_00 = &this->globalTable;
-        pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x17);
+        pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x17);
         lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-        uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-        lib::L2CValue::_L2CValue(aLStack80);
+        uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
         if ((uVar4 & 1) != 0) {
-          pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+          pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
           lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
-          uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-          lib::L2CValue::_L2CValue(aLStack80);
+          uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+          lib::L2CValue::~L2CValue(aLStack80);
           if ((uVar4 & 1) != 0) goto LAB_710003d898;
         }
-        pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x17);
+        pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x17);
         lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-        uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-        lib::L2CValue::_L2CValue(aLStack80);
+        uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
         if ((uVar4 & 1) != 0) goto LAB_710003dae8;
-        pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+        pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
         lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-        uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-        lib::L2CValue::_L2CValue(aLStack80);
-        lib::L2CValue::_L2CValue(aLStack112);
+        uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack112);
         if ((uVar4 & 1) != 0) goto LAB_710003d8a0;
       }
       else {
 LAB_710003d898:
-        lib::L2CValue::_L2CValue(aLStack112);
+        lib::L2CValue::~L2CValue(aLStack112);
 LAB_710003d8a0:
         lib::L2CValue::L2CValue(aLStack112,_WEAPON_ROSETTA_TICO_INSTANCE_WORK_ID_FLAG_FREE);
         iVar3 = lib::L2CValue::as_integer(aLStack112);
         bVar2 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
         lib::L2CValue::L2CValue(aLStack80,(bool)(bVar2 & 1));
-        bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-        lib::L2CValue::_L2CValue(aLStack80);
-        lib::L2CValue::_L2CValue(aLStack112);
+        bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack112);
         if ((bVar1 & 1U) == 0) {
           lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
           lua2cpp::L2CFighterBase::set_situation(this,(L2CValue)0xb0);
-          lib::L2CValue::_L2CValue(aLStack80);
+          lib::L2CValue::~L2CValue(aLStack80);
           lib::L2CValue::L2CValue(aLStack112,_WEAPON_KINETIC_TYPE_ROSETTA_TICO_MOTION_TRANS);
           lib::L2CValue::L2CValue(aLStack128,true);
           FUN_710003bc90(this,aLStack112,aLStack128);
         }
         else {
-          pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+          pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
           lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-          uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-          lib::L2CValue::_L2CValue(aLStack80);
+          uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+          lib::L2CValue::~L2CValue(aLStack80);
           if ((uVar4 & 1) == 0) {
             lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
             lua2cpp::L2CFighterBase::set_situation(this,(L2CValue)0xb0);
@@ -90,15 +90,15 @@ LAB_710003d8a0:
             lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
             lua2cpp::L2CFighterBase::set_situation(this,(L2CValue)0xb0);
           }
-          lib::L2CValue::_L2CValue(aLStack80);
+          lib::L2CValue::~L2CValue(aLStack80);
           lib::L2CValue::L2CValue
                     (aLStack112,_WEAPON_KINETIC_TYPE_ROSETTA_TICO_MOTION_TRANS_FREE_ATTACK);
           lib::L2CValue::L2CValue(aLStack128,true);
           FUN_710003bc90(this,aLStack112,aLStack128);
         }
-        lib::L2CValue::_L2CValue(aLStack128);
+        lib::L2CValue::~L2CValue(aLStack128);
 LAB_710003dae8:
-        lib::L2CValue::_L2CValue(aLStack112);
+        lib::L2CValue::~L2CValue(aLStack112);
       }
       iVar3 = 0;
       goto LAB_710003daf8;

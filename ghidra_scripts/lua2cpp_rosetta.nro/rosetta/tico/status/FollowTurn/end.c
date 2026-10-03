@@ -11,10 +11,10 @@ L2CWeaponRosettaTico::status::FollowTurn_end(L2CWeaponRosettaTico *this,L2CValue
   
   app::lua_bind::PostureModule__reverse_lr_impl(this->moduleAccessor);
   app::lua_bind::PostureModule__update_rot_y_lr_impl(this->moduleAccessor);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_ROSETTA_TICO_STATUS_KIND_FOLLOW);
-  uVar1 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar1 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar1 & 1) == 0) {
     FUN_7100035b00(this);
   }

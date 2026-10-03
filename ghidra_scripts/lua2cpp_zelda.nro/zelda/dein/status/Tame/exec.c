@@ -17,9 +17,9 @@ L2CWeaponZeldaDein::status::Tame_exec(L2CWeaponZeldaDein *this,L2CValue *return_
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack64);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   app::sv_kinetic_energy::set_speed(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

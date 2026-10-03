@@ -15,16 +15,16 @@ L2CWeaponPacmanBigpacman::status::Eat_main_loop
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   bVar1 = (bVar1 & 1U) != 0;
   if (bVar1) {
     lib::L2CValue::L2CValue(aLStack64,_WEAPON_PACMAN_BIGPACMAN_STATUS_KIND_MOVE);
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,(uint)bVar1);
   return;

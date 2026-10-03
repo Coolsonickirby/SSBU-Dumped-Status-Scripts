@@ -17,9 +17,9 @@ L2CFighterTrail::status::SpecialSSearch_fix_pos_slow(L2CFighterTrail *this,L2CVa
   lib::L2CValue::L2CValue(aLStack48,fVar2);
   lib::L2CValue::L2CValue(aLStack80,1.0);
   FUN_7100014fd0(this,aLStack48,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

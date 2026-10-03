@@ -31,16 +31,16 @@ void __thiscall L2CFighterTrail::status::AttackAir_pre(L2CFighterTrail *this,L2C
   iVar5 = app::lua_bind::ControlModule__get_attack_air_kind_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack136,iVar5);
   lib::L2CValue::L2CValue(aLStack120,FIGHTER_COMMAND_ATTACK_AIR_KIND_N);
-  uVar13 = lib::L2CValue::operator__(aLStack136,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack136);
+  uVar13 = lib::L2CValue::operator==(aLStack136,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack136);
   if ((uVar13 & 1) == 0) {
     iVar5 = app::lua_bind::ControlModule__get_attack_air_kind_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack136,iVar5);
     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_COMMAND_ATTACK_AIR_KIND_F);
-    uVar13 = lib::L2CValue::operator__(aLStack136,aLStack120);
-    lib::L2CValue::_L2CValue(aLStack120);
-    lib::L2CValue::_L2CValue(aLStack136);
+    uVar13 = lib::L2CValue::operator==(aLStack136,aLStack120);
+    lib::L2CValue::~L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack136);
     if ((uVar13 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack120,SITUATION_KIND_AIR);
       lib::L2CValue::L2CValue(aLStack136,_FIGHTER_KINETIC_TYPE_MOTION_FALL);
@@ -63,15 +63,15 @@ void __thiscall L2CFighterTrail::status::AttackAir_pre(L2CFighterTrail *this,L2C
       app::lua_bind::StatusModule__init_settings_impl
                 (this->moduleAccessor,SVar6,iVar5,uVar7,GVar8,(bool)(bVar1 & 1),iVar9,iVar10,iVar11,
                  in_stack_fffffffffffffef4);
-      lib::L2CValue::_L2CValue(aLStack248);
-      lib::L2CValue::_L2CValue(aLStack232);
-      lib::L2CValue::_L2CValue(aLStack216);
-      lib::L2CValue::_L2CValue(aLStack200);
-      lib::L2CValue::_L2CValue(aLStack184);
-      lib::L2CValue::_L2CValue(aLStack168);
-      lib::L2CValue::_L2CValue(aLStack152);
-      lib::L2CValue::_L2CValue(aLStack136);
-      lib::L2CValue::_L2CValue(aLStack120);
+      lib::L2CValue::~L2CValue(aLStack248);
+      lib::L2CValue::~L2CValue(aLStack232);
+      lib::L2CValue::~L2CValue(aLStack216);
+      lib::L2CValue::~L2CValue(aLStack200);
+      lib::L2CValue::~L2CValue(aLStack184);
+      lib::L2CValue::~L2CValue(aLStack168);
+      lib::L2CValue::~L2CValue(aLStack152);
+      lib::L2CValue::~L2CValue(aLStack136);
+      lib::L2CValue::~L2CValue(aLStack120);
       lib::L2CValue::L2CValue(aLStack120,false);
       lib::L2CValue::L2CValue(aLStack136,_FIGHTER_TREADED_KIND_NO_REAC);
       lib::L2CValue::L2CValue(aLStack152,false);
@@ -93,15 +93,15 @@ void __thiscall L2CFighterTrail::status::AttackAir_pre(L2CFighterTrail *this,L2C
       app::lua_bind::FighterStatusModuleImpl__set_fighter_status_data_impl
                 (this->moduleAccessor,(bool)(bVar1 & 1),iVar5,(bool)(bVar2 & 1),(bool)(bVar3 & 1),
                  (bool)(bVar4 & 1),uVar13,uVar7,uVar12,in_stack_fffffffffffffef4);
-      lib::L2CValue::_L2CValue(aLStack248);
-      lib::L2CValue::_L2CValue(aLStack232);
-      lib::L2CValue::_L2CValue(aLStack216);
-      lib::L2CValue::_L2CValue(aLStack200);
-      lib::L2CValue::_L2CValue(aLStack184);
-      lib::L2CValue::_L2CValue(aLStack168);
-      lib::L2CValue::_L2CValue(aLStack152);
-      lib::L2CValue::_L2CValue(aLStack136);
-      lib::L2CValue::_L2CValue(aLStack120);
+      lib::L2CValue::~L2CValue(aLStack248);
+      lib::L2CValue::~L2CValue(aLStack232);
+      lib::L2CValue::~L2CValue(aLStack216);
+      lib::L2CValue::~L2CValue(aLStack200);
+      lib::L2CValue::~L2CValue(aLStack184);
+      lib::L2CValue::~L2CValue(aLStack168);
+      lib::L2CValue::~L2CValue(aLStack152);
+      lib::L2CValue::~L2CValue(aLStack136);
+      lib::L2CValue::~L2CValue(aLStack120);
       iVar5 = 0;
       goto LAB_7100030b8c;
     }
@@ -114,7 +114,7 @@ void __thiscall L2CFighterTrail::status::AttackAir_pre(L2CFighterTrail *this,L2C
     iVar5 = lib::L2CValue::as_integer(aLStack120);
     app::lua_bind::StatusModule__set_status_kind_interrupt_impl(this->moduleAccessor,iVar5);
   }
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
   iVar5 = 1;
 LAB_7100030b8c:
   lib::L2CValue::L2CValue((L2CValue *)return_value,iVar5);

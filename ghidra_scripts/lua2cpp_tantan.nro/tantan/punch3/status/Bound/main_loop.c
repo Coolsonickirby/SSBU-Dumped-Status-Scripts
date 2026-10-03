@@ -14,10 +14,10 @@ L2CWeaponTantanPunch3::status::Bound_main_loop(L2CWeaponTantanPunch3 *this,L2CVa
   bVar1 = app::lua_bind::StatusModule__is_changing_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,false);
-  uVar3 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar3 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar3 & 1) == 0) {
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   else {
     lib::L2CValue::L2CValue(aLStack112,0);
@@ -25,11 +25,11 @@ L2CWeaponTantanPunch3::status::Bound_main_loop(L2CWeaponTantanPunch3 *this,L2CVa
     bVar1 = app::lua_bind::AttackModule__is_attack_impl(this->moduleAccessor,iVar2,false);
     lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
     lib::L2CValue::L2CValue(aLStack64,true);
-    uVar3 = lib::L2CValue::operator__(aLStack96,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar3 = lib::L2CValue::operator==(aLStack96,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar3 & 1) != 0) {
       app::lua_bind::AttackModule__clear_all_impl(this->moduleAccessor);
     }

@@ -19,9 +19,9 @@ L2CFighterSamusd::status::SpecialGroundLw_main(L2CFighterSamusd *this,L2CValue *
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   app::sv_module_access::item(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,_MA_MSC_CMD_SLOPE_SLOPE);
   lib::L2CValue::L2CValue(aLStack112,_MA_MSC_CMD_SLOEP_SLOPE_KIND_LR);
   lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
@@ -29,12 +29,12 @@ L2CFighterSamusd::status::SpecialGroundLw_main(L2CFighterSamusd *this,L2CValue *
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
   app::sv_module_access::slope(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,SpecialGroundLw_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

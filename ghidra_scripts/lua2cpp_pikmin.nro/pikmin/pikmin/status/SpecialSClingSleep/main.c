@@ -21,7 +21,7 @@ L2CWeaponPikminPikmin::status::SpecialSClingSleep_main
   lib::L2CValue::L2CValue(aLStack80,false);
   bVar1 = lib::L2CValue::as_bool(aLStack80);
   app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0x553c117c3);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,1.0);
@@ -32,22 +32,22 @@ L2CWeaponPikminPikmin::status::SpecialSClingSleep_main
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar5,fVar6,fVar7,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,_WEAPON_LINK_NO_CONSTRAINT);
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::LinkModule__is_link_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack80,_WEAPON_LINK_NO_CONSTRAINT);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::LinkModule__unlink_impl(this->moduleAccessor,iVar3);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack96,_WEAPON_LINK_NO_CONSTRAINT);
   lib::L2CValue::L2CValue
@@ -59,13 +59,13 @@ L2CWeaponPikminPikmin::status::SpecialSClingSleep_main
   uVar4 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::LinkModule__link_impl(this->moduleAccessor,iVar3,uVar4);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,SpecialSClingSleep_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

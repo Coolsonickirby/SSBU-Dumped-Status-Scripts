@@ -23,29 +23,29 @@ L2CFighterRidley::status::SpecialN_main_loop(L2CFighterRidley *this,L2CValue *re
   lib::L2CValue::L2CValue(aLStack96,true);
   lib::L2CValue::L2CValue(aLStack112,(L2CValue *)&LUA_SCRIPT_LINE_SYSTEM_POST);
   FUN_71000230f0(this,aLStack64,aLStack80,aLStack96,aLStack112);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack128,_FIGHTER_KINETIC_TYPE_GROUND_STOP);
   lib::L2CValue::L2CValue(aLStack144,_FIGHTER_KINETIC_TYPE_AIR_STOP);
   lib::L2CValue::L2CValue(aLStack160,false);
   FUN_71000234e0(this,aLStack128,aLStack144,aLStack160);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack176,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack176);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack176);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack192,CONTROL_PAD_BUTTON_SPECIAL);
     iVar3 = lib::L2CValue::as_integer(aLStack192);
     bVar1 = app::lua_bind::ControlModule__check_button_on_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack176,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack192);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack192);
     if ((bVar2 & 1U) == 0) {
       lib::L2CValue::L2CValue(aLStack176,_FIGHTER_RIDLEY_STATUS_KIND_SPECIAL_N_SHOOT);
       lib::L2CValue::L2CValue(aLStack192,false);
@@ -56,8 +56,8 @@ L2CFighterRidley::status::SpecialN_main_loop(L2CFighterRidley *this,L2CValue *re
       lib::L2CValue::L2CValue(aLStack192,false);
       lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0x50,(L2CValue)0x40);
     }
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack176);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

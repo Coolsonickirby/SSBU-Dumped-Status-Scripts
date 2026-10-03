@@ -40,10 +40,10 @@ L2CWeaponPacmanBigpacman::status::Start_main(L2CWeaponPacmanBigpacman *this,L2CV
   bVar1 = lib::L2CValue::as_bool(aLStack176);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar7,fVar9,fVar10,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_80);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_80);
   lib::L2CValue::L2CValue
             ((L2CValue *)&local_80,_WEAPON_PACMAN_BIGPACMAN_MOTION_PART_SET_KIND_MATERIAL);
   lib::L2CValue::L2CValue(aLStack144,0x59ec55c97);
@@ -68,22 +68,22 @@ L2CWeaponPacmanBigpacman::status::Start_main(L2CWeaponPacmanBigpacman *this,L2CV
   app::lua_bind::MotionModule__add_motion_partial_impl
             (this->moduleAccessor,iVar6,HVar7,fVar9,fVar10,(bool)(bVar1 & 1),(bool)(bVar2 & 1),
              fVar11,(bool)(bVar3 & 1),(bool)(bVar4 & 1),(bool)(bVar5 & 1));
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_80);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_80);
   fVar9 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack144,fVar9);
   lib::L2CValue::L2CValue((L2CValue *)&local_80,-1.0);
-  uVar8 = lib::L2CValue::operator__(aLStack144,(L2CValue *)&local_80);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_80);
-  lib::L2CValue::_L2CValue(aLStack144);
+  uVar8 = lib::L2CValue::operator==(aLStack144,(L2CValue *)&local_80);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_80);
+  lib::L2CValue::~L2CValue(aLStack144);
   if ((uVar8 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack144,0.0);
     lib::L2CValue::L2CValue(aLStack160,0.0);
@@ -94,17 +94,17 @@ L2CWeaponPacmanBigpacman::status::Start_main(L2CWeaponPacmanBigpacman *this,L2CV
     local_80 = uVar8 & 0xffffffff | lVar13 << 0x20;
     uStack120 = (ulong)uVar12;
     app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_80,0);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
   }
   lib::L2CValue::L2CValue((L2CValue *)&local_80,0.0);
   fVar9 = (float)lib::L2CValue::as_number((L2CValue *)&local_80);
   app::lua_bind::ModelModule__set_depth_offset_impl(this->moduleAccessor,fVar9);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_80);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_80);
   lib::L2CValue::L2CValue((L2CValue *)&local_80,Start_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x80);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_80);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_80);
   return;
 }
 

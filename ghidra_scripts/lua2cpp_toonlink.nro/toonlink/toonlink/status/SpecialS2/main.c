@@ -8,7 +8,7 @@ L2CFighterToonlink::status::SpecialS2_main(L2CFighterToonlink *this,L2CValue *re
   FUN_7100013660();
   lib::L2CValue::L2CValue(aLStack48,SpecialS2_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

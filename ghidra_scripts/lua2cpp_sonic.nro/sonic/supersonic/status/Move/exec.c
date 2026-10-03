@@ -48,9 +48,9 @@ L2CWeaponSonicSupersonic::status::Move_exec(L2CWeaponSonicSupersonic *this,L2CVa
   lib::L2CValue::L2CValue(aLStack144,pfVar5[1]);
   lib::L2CValue::L2CValue(aLStack128,pfVar5[2]);
   FUN_7100028a00(aLStack112,this,aLStack160);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack160);
   uVar11 = app::sv_camera_manager::camera_range();
   local_60 = (void **)CONCAT44(in_s1,uVar11);
   plStack88 = (lua_State *)CONCAT44(in_s3,in_s2);
@@ -62,61 +62,61 @@ L2CWeaponSonicSupersonic::status::Move_exec(L2CWeaponSonicSupersonic *this,L2CVa
   fVar12 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar6,uVar7);
   lib::L2CValue::L2CValue(aLStack208,fVar12);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,10.0);
-  lib::L2CValue::operator_(aLStack208,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack224);
-  pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x5b4ca7514);
-  lib::L2CValue::operator_(pLVar8,aLStack192);
-  pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x5b4ca7514);
-  lib::L2CValue::operator_(pLVar8,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x47a67e768);
-  lib::L2CValue::operator_(pLVar8,aLStack192);
-  pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x47a67e768);
-  lib::L2CValue::operator_(pLVar8,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::operator*(aLStack208,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack224);
+  pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x5b4ca7514);
+  lib::L2CValue::operator+(pLVar8,aLStack192);
+  pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x5b4ca7514);
+  lib::L2CValue::operator=(pLVar8,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x47a67e768);
+  lib::L2CValue::operator-(pLVar8,aLStack192);
+  pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x47a67e768);
+  lib::L2CValue::operator=(pLVar8,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,_WEAPON_SONIC_SUPERSONIC_KINETIC_ENERGY_ID_GENERAL);
   lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,(L2CValue *)&local_60);
   fVar12 = (float)app::sv_kinetic_energy::get_speed_x(this->luaStateAgent);
   lib::L2CValue::L2CValue(aLStack208,fVar12);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   lib::L2CValue::L2CValue(aLStack224,false);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,0.0);
-  uVar6 = lib::L2CValue::operator_((L2CValue *)&local_60,aLStack208);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  uVar6 = lib::L2CValue::operator<((L2CValue *)&local_60,aLStack208);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   if ((uVar6 & 1) == 0) {
 LAB_7100027e04:
     lib::L2CValue::L2CValue((L2CValue *)&local_60,0.0);
-    uVar6 = lib::L2CValue::operator_(aLStack208,(L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+    uVar6 = lib::L2CValue::operator<(aLStack208,(L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
     if ((uVar6 & 1) == 0) goto LAB_7100027ebc;
-    pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack112,0x18cdc1683);
-    pLVar9 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x47a67e768);
-    uVar6 = lib::L2CValue::operator_(pLVar8,pLVar9);
+    pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack112,0x18cdc1683);
+    pLVar9 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x47a67e768);
+    uVar6 = lib::L2CValue::operator<(pLVar8,pLVar9);
     if ((uVar6 & 1) == 0) goto LAB_7100027ebc;
-    pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x47a67e768);
-    pLVar9 = (L2CValue *)lib::L2CValue::operator__(aLStack112,0x18cdc1683);
-    lib::L2CValue::operator_(pLVar9,pLVar8);
+    pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x47a67e768);
+    pLVar9 = (L2CValue *)lib::L2CValue::operator[](aLStack112,0x18cdc1683);
+    lib::L2CValue::operator=(pLVar9,pLVar8);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,true);
-    lib::L2CValue::operator_(aLStack224,(L2CValue *)&local_60);
+    lib::L2CValue::operator=(aLStack224,(L2CValue *)&local_60);
   }
   else {
-    pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack112,0x18cdc1683);
-    pLVar9 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x5b4ca7514);
-    uVar6 = lib::L2CValue::operator_(pLVar9,pLVar8);
+    pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack112,0x18cdc1683);
+    pLVar9 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x5b4ca7514);
+    uVar6 = lib::L2CValue::operator<(pLVar9,pLVar8);
     if ((uVar6 & 1) == 0) goto LAB_7100027e04;
-    pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x5b4ca7514);
-    pLVar9 = (L2CValue *)lib::L2CValue::operator__(aLStack112,0x18cdc1683);
-    lib::L2CValue::operator_(pLVar9,pLVar8);
+    pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x5b4ca7514);
+    pLVar9 = (L2CValue *)lib::L2CValue::operator[](aLStack112,0x18cdc1683);
+    lib::L2CValue::operator=(pLVar9,pLVar8);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,true);
-    lib::L2CValue::operator_(aLStack224,(L2CValue *)&local_60);
+    lib::L2CValue::operator=(aLStack224,(L2CValue *)&local_60);
   }
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
 LAB_7100027ebc:
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack224);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack224);
   if ((bVar1 & 1U) != 0) {
     lib::L2CValue::L2CValue
               (aLStack256,_WEAPON_SONIC_SUPERSONIC_STATUS_FINAL_MOVE_WORK_INT_EXIST_COUNTER);
@@ -124,14 +124,14 @@ LAB_7100027ebc:
     iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack240,iVar3);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,0);
-    uVar6 = lib::L2CValue::operator_(aLStack240,(L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue(aLStack240);
-    lib::L2CValue::_L2CValue(aLStack256);
+    uVar6 = lib::L2CValue::operator<(aLStack240,(L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue(aLStack240);
+    lib::L2CValue::~L2CValue(aLStack256);
     if ((uVar6 & 1) == 0) {
-      pLVar8 = (L2CValue *)lib::L2CValue::operator__(aLStack112,0x18cdc1683);
-      pLVar9 = (L2CValue *)lib::L2CValue::operator__(aLStack112,0x1fbdb2615);
-      this_00 = (L2CValue *)lib::L2CValue::operator__(aLStack112,0x162d277af);
+      pLVar8 = (L2CValue *)lib::L2CValue::operator[](aLStack112,0x18cdc1683);
+      pLVar9 = (L2CValue *)lib::L2CValue::operator[](aLStack112,0x1fbdb2615);
+      this_00 = (L2CValue *)lib::L2CValue::operator[](aLStack112,0x162d277af);
       uVar6 = lib::L2CValue::as_number(pLVar8);
       lVar14 = lib::L2CValue::as_number(pLVar9);
       uVar13 = lib::L2CValue::as_number(this_00);
@@ -144,45 +144,45 @@ LAB_7100027ebc:
       uVar7 = lib::L2CValue::as_integer(aLStack256);
       iVar3 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar6,uVar7);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,iVar3);
-      lib::L2CValue::_L2CValue(aLStack256);
-      lib::L2CValue::_L2CValue(aLStack240);
+      lib::L2CValue::~L2CValue(aLStack256);
+      lib::L2CValue::~L2CValue(aLStack240);
       lib::L2CValue::L2CValue
                 (aLStack240,_WEAPON_SONIC_SUPERSONIC_STATUS_FINAL_MOVE_WORK_INT_RESTART_COUNTER);
       iVar3 = lib::L2CValue::as_integer(aLStack240);
       app::lua_bind::WorkModule__inc_int_impl(this->moduleAccessor,iVar3);
-      lib::L2CValue::_L2CValue(aLStack240);
+      lib::L2CValue::~L2CValue(aLStack240);
       app::lua_bind::AttackModule__clear_all_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue
                 (aLStack256,_WEAPON_SONIC_SUPERSONIC_STATUS_FINAL_MOVE_WORK_INT_RESTART_COUNTER);
       iVar3 = lib::L2CValue::as_integer(aLStack256);
       iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
       lib::L2CValue::L2CValue(aLStack240,iVar3);
-      uVar6 = lib::L2CValue::operator__((L2CValue *)&local_60,aLStack240);
-      lib::L2CValue::_L2CValue(aLStack240);
-      lib::L2CValue::_L2CValue(aLStack256);
+      uVar6 = lib::L2CValue::operator<=((L2CValue *)&local_60,aLStack240);
+      lib::L2CValue::~L2CValue(aLStack240);
+      lib::L2CValue::~L2CValue(aLStack256);
       if ((uVar6 & 1) == 0) {
         lib::L2CValue::L2CValue(aLStack240,false);
         bVar2 = lib::L2CValue::as_bool(aLStack240);
         app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar2 & 1));
-        lib::L2CValue::_L2CValue(aLStack240);
+        lib::L2CValue::~L2CValue(aLStack240);
         FUN_710002b000(this);
       }
       else {
         lib::L2CValue::L2CValue(aLStack240,false);
         FUN_7100028ac0(this,aLStack240);
-        lib::L2CValue::_L2CValue(aLStack240);
+        lib::L2CValue::~L2CValue(aLStack240);
         lib::L2CValue::L2CValue(aLStack256,0);
         lib::L2CValue::L2CValue
                   (aLStack272,_WEAPON_SONIC_SUPERSONIC_STATUS_FINAL_MOVE_WORK_INT_RESTART_COUNTER);
         iVar3 = lib::L2CValue::as_integer(aLStack256);
         iVar4 = lib::L2CValue::as_integer(aLStack272);
         app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
-        lib::L2CValue::_L2CValue(aLStack272);
-        lib::L2CValue::_L2CValue(aLStack256);
+        lib::L2CValue::~L2CValue(aLStack272);
+        lib::L2CValue::~L2CValue(aLStack256);
         lib::L2CValue::L2CValue(aLStack256,true);
         bVar2 = lib::L2CValue::as_bool(aLStack256);
         app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar2 & 1));
-        lib::L2CValue::_L2CValue(aLStack256);
+        lib::L2CValue::~L2CValue(aLStack256);
         FUN_710002ad80(this);
       }
     }
@@ -192,7 +192,7 @@ LAB_7100027ebc:
       iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_60);
       app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
     }
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   }
   lib::L2CValue::L2CValue((L2CValue *)&local_60,_WEAPON_SONIC_SUPERSONIC_KINETIC_ENERGY_ID_GENERAL);
   lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
@@ -206,47 +206,47 @@ LAB_7100027ebc:
   lib::L2CValue::L2CValue(aLStack288,fVar12);
   pLVar8 = aLStack288;
   lua2cpp::L2CFighterBase::Vector2__create(this,(L2CValue)0xf0,SUB81(pLVar8,0));
-  lib::L2CValue::_L2CValue(aLStack288);
-  lib::L2CValue::_L2CValue(aLStack304);
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  this_01 = (L2CAgent *)lib::L2CValue::operator__(aLStack256,0x1fbdb2615);
-  pLVar9 = (L2CValue *)lib::L2CValue::operator__(aLStack256,0x18cdc1683);
+  lib::L2CValue::~L2CValue(aLStack288);
+  lib::L2CValue::~L2CValue(aLStack304);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  this_01 = (L2CAgent *)lib::L2CValue::operator[](aLStack256,0x1fbdb2615);
+  pLVar9 = (L2CValue *)lib::L2CValue::operator[](aLStack256,0x18cdc1683);
   lib::L2CAgent::math_atan(this_01,pLVar9,pLVar8);
   lib::L2CAgent::math_deg((L2CAgent *)&local_60,pLVar9);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,-360.0);
-  uVar6 = lib::L2CValue::operator_(aLStack304,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  uVar6 = lib::L2CValue::operator<(aLStack304,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   if ((uVar6 & 1) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_60,360.0);
-    lib::L2CValue::operator_(aLStack304,(L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::operator_(aLStack304,aLStack320);
-    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::operator+(aLStack304,(L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::operator=(aLStack304,aLStack320);
+    lib::L2CValue::~L2CValue(aLStack320);
   }
   lib::L2CValue::L2CValue((L2CValue *)&local_60,360.0);
-  uVar6 = lib::L2CValue::operator_((L2CValue *)&local_60,aLStack304);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  uVar6 = lib::L2CValue::operator<((L2CValue *)&local_60,aLStack304);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   if ((uVar6 & 1) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_60,360.0);
-    lib::L2CValue::operator_(aLStack304,(L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::operator_(aLStack304,aLStack320);
-    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::operator-(aLStack304,(L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::operator=(aLStack304,aLStack320);
+    lib::L2CValue::~L2CValue(aLStack320);
   }
   fVar12 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack320,fVar12);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,-1.0);
-  uVar6 = lib::L2CValue::operator__(aLStack320,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue(aLStack320);
+  uVar6 = lib::L2CValue::operator==(aLStack320,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue(aLStack320);
   if ((uVar6 & 1) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_60,180.0);
-    lib::L2CValue::operator_(aLStack304,(L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::operator_(aLStack304,aLStack320);
-    lib::L2CValue::_L2CValue(aLStack320);
+    lib::L2CValue::operator+(aLStack304,(L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::operator=(aLStack304,aLStack320);
+    lib::L2CValue::~L2CValue(aLStack320);
   }
   lib::L2CValue::L2CValue(aLStack320,0x31ed91fca);
   lib::L2CValue::L2CValue(aLStack336,0.0);
@@ -260,27 +260,27 @@ LAB_7100027ebc:
   plStack88 = (lua_State *)(ulong)uVar13;
   app::lua_bind::ModelModule__set_joint_rotate_impl
             (this->moduleAccessor,HVar10,(Vector3f *)&local_60,0,0);
-  lib::L2CValue::_L2CValue(aLStack352);
-  lib::L2CValue::_L2CValue(aLStack336);
-  lib::L2CValue::_L2CValue(aLStack320);
+  lib::L2CValue::~L2CValue(aLStack352);
+  lib::L2CValue::~L2CValue(aLStack336);
+  lib::L2CValue::~L2CValue(aLStack320);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,0.0);
-  lib::L2CValue::operator_(aLStack304,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::operator+(aLStack304,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   lib::L2CValue::L2CValue
             ((L2CValue *)&local_60,_WEAPON_SONIC_SUPERSONIC_STATUS_FINAL_WORK_FLOAT_DEGREE);
   fVar12 = (float)lib::L2CValue::as_number(aLStack320);
   iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_60);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar12,iVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue(aLStack320);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue(aLStack320);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack304);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack304);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack112);
   return;
 }
 

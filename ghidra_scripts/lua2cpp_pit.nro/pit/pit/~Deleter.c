@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterPit::__L2CFighterPit(L2CFighterPit *this)
+void __thiscall L2CFighterPit::~~L2CFighterPit(L2CFighterPit *this)
 
 {
-  _L2CFighterPit();
-  operator_delete(this);
+  ~L2CFighterPit();
+  operator.delete(this);
   return;
 }
 

@@ -19,29 +19,29 @@ L2CWeaponPikminPikmin::status::AirFollow_init(L2CWeaponPikminPikmin *this,L2CVal
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0x5a);
   lib::L2CValue::L2CValue
             (aLStack96,_WEAPON_PIKMIN_PIKMIN_STATUS_FOLLOW_COMMON_WORK_INT_PERPLEXED_COUNTER);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,10.0);
   lib::L2CValue::L2CValue
             (aLStack96,_WEAPON_PIKMIN_PIKMIN_STATUS_FOLLOW_COMMON_WORK_FLOAT_PERPLEXED_TARGET_DIST);
   fVar3 = (float)lib::L2CValue::as_number(aLStack80);
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar3,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue
             (aLStack80,_WEAPON_PIKMIN_PIKMIN_STATUS_FOLLOW_COMMON_WORK_FLAG_IS_CHECK_AUTONOMY);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

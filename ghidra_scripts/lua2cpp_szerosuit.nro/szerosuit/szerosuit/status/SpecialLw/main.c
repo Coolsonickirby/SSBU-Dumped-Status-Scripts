@@ -24,20 +24,20 @@ L2CFighterSzerosuit::status::SpecialLw_main(L2CFighterSzerosuit *this,L2CValue *
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   iVar2 = lib::L2CValue::as_integer(aLStack112);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_SZEROSUIT_INSTANCE_WORK_ID_FLAG_FLIP_JUMP);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,FIGHTER_STATUS_TRANSITION_TERM_ID_CONT_SPECIAL_LW);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::WorkModule__unable_transition_term_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   FUN_710000d180(aLStack64,this);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

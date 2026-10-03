@@ -9,10 +9,10 @@ L2CFighterTrail::status::AttackAirN_init(L2CFighterTrail *this,L2CValue *return_
   L2CValue aLStack48 [16];
   
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_COMBO_KIND_AIR_N_COMBINATION);
-  lib::L2CValue::L2CValue(aLStack64,&LAB_7100017240);
+  lib::L2CValue::L2CValue(aLStack64,FUN_7100017240);
   FUN_7100016f10(this,aLStack48,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

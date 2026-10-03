@@ -24,7 +24,7 @@ L2CWeaponSonicSupersonic::status::Move_exec_stop
   iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_40);
   fVar3 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,fVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue(aLStack96,0x31ed91fca);
   fVar3 = (float)app::lua_bind::PostureModule__rot_y_lr_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack112,fVar3);
@@ -37,11 +37,11 @@ L2CWeaponSonicSupersonic::status::Move_exec_stop
   uStack56 = (ulong)uVar6;
   app::lua_bind::ModelModule__set_joint_rotate_impl
             (this->moduleAccessor,HVar2,(Vector3f *)&local_40,0,0);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

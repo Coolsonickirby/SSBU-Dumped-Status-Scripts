@@ -25,25 +25,25 @@ L2CWeaponSnakeC4::status::Disappear_main(L2CWeaponSnakeC4 *this,L2CValue *return
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar3,fVar4,fVar5,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_KINETIC_ENERGY_RESERVE_ID_ROT_NORMAL);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_SNAKE_C4_KINETIC_ENERGY_ID_GRAVITY);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_SNAKE_C4_KINETIC_ENERGY_ID_GROUND_MOVEMENT);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,Disappear_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

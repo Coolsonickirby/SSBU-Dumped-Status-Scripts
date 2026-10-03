@@ -15,20 +15,20 @@ L2CFighterTantan::status::AirLassoLanding_main(L2CFighterTantan *this,L2CValue *
   lVar1 = lib::L2CValue::as_integer(aLStack64);
   lVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::VisibilityModule__set_int64_impl(this->moduleAccessor,lVar1,lVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,0x71a99f496);
   lib::L2CValue::L2CValue(aLStack80,0xcec1191d4);
   lVar1 = lib::L2CValue::as_integer(aLStack64);
   lVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::VisibilityModule__set_int64_impl(this->moduleAccessor,lVar1,lVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   FUN_71000278f0(this);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_TANTAN_SPIRALLEFT_STATUS_KIND_EXHAUST);
   lua2cpp::L2CFighterCommon::status_AirLassoLanding(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

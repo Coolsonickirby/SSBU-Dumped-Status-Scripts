@@ -25,19 +25,19 @@ L2CWeaponPickelTable::status::Break_main(L2CWeaponPickelTable *this,L2CValue *re
   lib::L2CValue::L2CValue((L2CValue *)&uStack64,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   iVar2 = lib::L2CValue::as_integer((L2CValue *)&uStack64);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
   lib::L2CValue::L2CValue((L2CValue *)&uStack64,true);
   bVar1 = lib::L2CValue::as_bool((L2CValue *)&uStack64);
   app::lua_bind::HitModule__sleep_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
   lib::L2CValue::L2CValue((L2CValue *)&uStack64,false);
   bVar1 = lib::L2CValue::as_bool((L2CValue *)&uStack64);
   app::lua_bind::JostleModule__set_status_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
   lib::L2CValue::L2CValue((L2CValue *)&uStack64,false);
   bVar1 = lib::L2CValue::as_bool((L2CValue *)&uStack64);
   app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
   lib::L2CValue::L2CValue(aLStack128,0x1b4122501c);
   lib::L2CValue::L2CValue(aLStack144,0x31ed91fca);
   HVar4 = lib::L2CValue::as_hash(aLStack128);
@@ -55,19 +55,19 @@ L2CWeaponPickelTable::status::Break_main(L2CWeaponPickelTable *this,L2CValue *re
                      1.0,(Vector3f *)&uStack96,(Vector3f *)&local_70,false,0,
                      in_stack_ffffffffffffff54,0);
   lib::L2CValue::L2CValue((L2CValue *)&uStack64,uVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue((L2CValue *)&uStack96,0x1f33ddd685);
   HVar4 = lib::L2CValue::as_hash((L2CValue *)&uStack96);
   iVar2 = app::lua_bind::SoundModule__play_se_impl
                     (this->moduleAccessor,HVar4,true,false,false,false,0);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,iVar2);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack96);
   lib::L2CValue::L2CValue((L2CValue *)&uStack96,Break_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack96);
   return;
 }
 

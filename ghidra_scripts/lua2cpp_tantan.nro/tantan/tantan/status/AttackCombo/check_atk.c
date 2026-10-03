@@ -12,8 +12,8 @@ L2CFighterTantan::status::AttackCombo_check_atk(L2CFighterTantan *this,L2CValue 
   lib::L2CValue::L2CValue(aLStack80,in_x2);
   lua2cpp::L2CFighterCommon::FighterStatusUniqProcessAttack_check_attack
             (this,(L2CValue)0xc0,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

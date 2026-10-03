@@ -13,13 +13,13 @@ L2CWeaponRosettaTico::status::FollowHappy_main_loop
   L2CValue aLStack64 [16];
   
   FUN_710002d810(aLStack64,this);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar1 & 1U) == 0) {
     bVar2 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar2 & 1));
-    bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((bVar1 & 1U) == 0) {
       iVar3 = 0;
       goto LAB_7100035854;
@@ -27,8 +27,8 @@ L2CWeaponRosettaTico::status::FollowHappy_main_loop
     lib::L2CValue::L2CValue(aLStack64,_WEAPON_ROSETTA_TICO_STATUS_KIND_FOLLOW);
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   iVar3 = 1;
 LAB_7100035854:

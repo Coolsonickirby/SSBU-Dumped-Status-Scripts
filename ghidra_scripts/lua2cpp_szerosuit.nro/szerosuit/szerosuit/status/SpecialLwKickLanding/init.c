@@ -33,7 +33,7 @@ L2CFighterSzerosuit::status::SpecialLwKickLanding_init
   lib::L2CValue::L2CValue((L2CValue *)&local_40,_FIGHTER_SZEROSUIT_AREA_KIND_TREAD);
   iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_40);
   app::lua_bind::AreaModule__enable_area_impl(this->moduleAccessor,iVar1,true,-1);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_SZEROSUIT_AREA_KIND_TREAD);
   lib::L2CValue::L2CValue(aLStack128,0x1018dfb2f4);
   lib::L2CValue::L2CValue(aLStack144,0x112717ada6);
@@ -70,19 +70,19 @@ L2CFighterSzerosuit::status::SpecialLwKickLanding_init
   uStack72 = 0;
   app::lua_bind::AreaModule__set_area_shape_aabb_impl
             (this->moduleAccessor,iVar1,(Vector2f *)&local_40,(Vector2f *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack288);
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack288);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

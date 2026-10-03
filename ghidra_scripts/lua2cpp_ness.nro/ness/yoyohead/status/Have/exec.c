@@ -7,7 +7,7 @@ L2CWeaponNessYoyohead::status::Have_exec(L2CWeaponNessYoyohead *this,L2CValue *r
   
   lib::L2CValue::L2CValue(aLStack48,false);
   FUN_710002acf0(this,aLStack48);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

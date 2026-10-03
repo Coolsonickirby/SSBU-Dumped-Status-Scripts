@@ -16,20 +16,20 @@ L2CWeaponWarioWariobike::status::SpecialSStart_main_loop
   
   bVar1 = app::lua_bind::StatusModule__is_changing_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-  lib::L2CValue::operator_(aLStack96);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::operator!(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((bVar2 & 1U) != 0) {
-    pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x17);
+    pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x17);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+    uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
     if ((uVar5 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-      uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar5 & 1) == 0) goto LAB_7100026e20;
       lib::L2CValue::L2CValue(aLStack80,_WEAPON_WARIO_WARIOBIKE_STATUS_WORK_FLAG_MOT_CHANGE);
       iVar3 = lib::L2CValue::as_integer(aLStack80);
@@ -37,14 +37,14 @@ L2CWeaponWarioWariobike::status::SpecialSStart_main_loop
     }
     else {
       lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
-      uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar5 & 1) == 0) goto LAB_7100026e20;
       lib::L2CValue::L2CValue(aLStack80,_WEAPON_WARIO_WARIOBIKE_STATUS_WORK_FLAG_MOT_CHANGE);
       iVar3 = lib::L2CValue::as_integer(aLStack80);
       app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
     }
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     FUN_7100026940(this);
   }
 LAB_7100026e20:

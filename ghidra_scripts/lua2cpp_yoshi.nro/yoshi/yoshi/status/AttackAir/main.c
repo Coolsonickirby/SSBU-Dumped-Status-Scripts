@@ -18,11 +18,11 @@ L2CFighterYoshi::status::AttackAir_main(L2CFighterYoshi *this,L2CValue *return_v
   lVar3 = lib::L2CValue::as_integer(aLStack64);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar3,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,AttackAir_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xc0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

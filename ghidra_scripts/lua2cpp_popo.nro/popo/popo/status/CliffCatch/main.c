@@ -7,7 +7,7 @@ void __thiscall L2CFighterPopo::status::CliffCatch_main(L2CFighterPopo *this,L2C
   lua2cpp::L2CFighterCommon::sub_status_CliffCatchCommon(this);
   lib::L2CValue::L2CValue(aLStack48,CliffCatch_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

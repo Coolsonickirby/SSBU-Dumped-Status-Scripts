@@ -18,15 +18,15 @@ L2CWeaponToonlinkAncientbowarrow::status::StickWall_main_loop
   iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,iVar2);
   lib::L2CValue::L2CValue(aLStack64,0);
-  uVar3 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar3 = lib::L2CValue::operator<=(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar3 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack64,false);
     bVar1 = lib::L2CValue::as_bool(aLStack64);
     app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

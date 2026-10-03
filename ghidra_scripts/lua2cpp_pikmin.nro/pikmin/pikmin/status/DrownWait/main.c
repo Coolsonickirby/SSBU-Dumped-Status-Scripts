@@ -24,27 +24,27 @@ L2CWeaponPikminPikmin::status::DrownWait_main(L2CWeaponPikminPikmin *this,L2CVal
   iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack96,iVar2);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_PIKMIN_PIKMIN_VARIATION_BLUE);
-  uVar3 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar3 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar3 & 1) == 0) {
     bVar1 = app::lua_bind::StopModule__is_stop_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
     lib::L2CValue::L2CValue(aLStack80,false);
-    uVar3 = lib::L2CValue::operator__(aLStack96,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    uVar3 = lib::L2CValue::operator==(aLStack96,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((uVar3 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack112,false);
       FUN_710003fd20(aLStack96,this,aLStack112);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack112);
     }
-    pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x15);
-    lib::L2CValue::L2CValue(aLStack80,&DAT_710003fe80);
-    lib::L2CValue::operator_(pLVar5,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x15);
+    lib::L2CValue::L2CValue(aLStack80,FUN_710003fe80);
+    lib::L2CValue::operator=(pLVar5,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue(aLStack80,0xa9650428f);
     lib::L2CValue::L2CValue(aLStack128,0.0);
     lib::L2CValue::L2CValue(aLStack144,1.0);
@@ -55,8 +55,8 @@ L2CWeaponPikminPikmin::status::DrownWait_main(L2CWeaponPikminPikmin *this,L2CVal
     bVar1 = lib::L2CValue::as_bool(aLStack160);
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar4,fVar6,fVar7,(bool)(bVar1 & 1),0.0,false,false);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
     pLVar5 = aLStack128;
   }
   else {
@@ -70,15 +70,15 @@ L2CWeaponPikminPikmin::status::DrownWait_main(L2CWeaponPikminPikmin *this,L2CVal
     bVar1 = lib::L2CValue::as_bool(aLStack128);
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar4,fVar6,fVar7,(bool)(bVar1 & 1),0.0,false,false);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
     pLVar5 = aLStack96;
   }
-  lib::L2CValue::_L2CValue(pLVar5);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(pLVar5);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,DrownWait_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

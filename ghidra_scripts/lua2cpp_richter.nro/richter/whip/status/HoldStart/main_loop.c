@@ -29,20 +29,20 @@ L2CWeaponRichterWhip::status::HoldStart_main_loop(L2CWeaponRichterWhip *this,L2C
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack96,iVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   uVar4 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::sv_battle_object::is_null(uVar4);
   lib::L2CValue::L2CValue(aLStack112,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack80,false);
-  uVar5 = lib::L2CValue::operator__(aLStack112,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar5 = lib::L2CValue::operator==(aLStack112,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar5 & 1) != 0) {
     uVar4 = lib::L2CValue::as_integer(aLStack96);
     bVar1 = app::sv_battle_object::is_active(uVar4);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack112);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((bVar2 & 1U) == 0) goto LAB_710002d70c;
     uVar4 = lib::L2CValue::as_integer(aLStack96);
     pvVar6 = (void *)app::sv_battle_object::module_accessor(uVar4);
@@ -56,14 +56,14 @@ L2CWeaponRichterWhip::status::HoldStart_main_loop(L2CWeaponRichterWhip *this,L2C
     iVar3 = app::lua_bind::StatusModule__status_kind_impl(pBVar7);
     lib::L2CValue::L2CValue(aLStack128,iVar3);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_SIMON_STATUS_KIND_ATTACK_HOLD_START);
-    uVar5 = lib::L2CValue::operator__(aLStack128,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar5 = lib::L2CValue::operator==(aLStack128,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar5 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack80,0xbe8d1ccea);
       HVar8 = app::lua_bind::MotionModule__motion_kind_2nd_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue(aLStack144,HVar8);
-      uVar5 = lib::L2CValue::operator__(aLStack144,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack144);
+      uVar5 = lib::L2CValue::operator==(aLStack144,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack144);
       if ((uVar5 & 1) == 0) {
         pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack112);
         fVar9 = (float)app::lua_bind::MotionModule__frame_2nd_impl(pBVar7);
@@ -80,8 +80,8 @@ L2CWeaponRichterWhip::status::HoldStart_main_loop(L2CWeaponRichterWhip *this,L2C
         fVar11 = (float)lib::L2CValue::as_number(aLStack160);
         app::lua_bind::MotionModule__add_motion_2nd_impl
                   (this->moduleAccessor,HVar8,fVar9,fVar10,(bool)(bVar1 & 1),fVar11);
-        lib::L2CValue::_L2CValue(aLStack192);
-        lib::L2CValue::_L2CValue(aLStack176);
+        lib::L2CValue::~L2CValue(aLStack192);
+        lib::L2CValue::~L2CValue(aLStack176);
       }
       else {
         pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack112);
@@ -95,16 +95,16 @@ L2CWeaponRichterWhip::status::HoldStart_main_loop(L2CWeaponRichterWhip *this,L2C
         fVar9 = (float)lib::L2CValue::as_number(aLStack144);
         app::lua_bind::MotionModule__set_frame_2nd_impl(this->moduleAccessor,fVar9,true);
       }
-      lib::L2CValue::_L2CValue(aLStack160);
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack160);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack128);
   }
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
 LAB_710002d70c:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

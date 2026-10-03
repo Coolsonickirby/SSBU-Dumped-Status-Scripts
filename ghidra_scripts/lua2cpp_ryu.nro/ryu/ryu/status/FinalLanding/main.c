@@ -27,10 +27,10 @@ void __thiscall L2CFighterRyu::status::FinalLanding_main(L2CFighterRyu *this,L2C
   uVar6 = lib::L2CValue::as_integer(aLStack160);
   iVar3 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar5,uVar6);
   lib::L2CValue::L2CValue(aLStack128,iVar3);
-  lib::L2CValue::operator_(aLStack96,aLStack128);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::operator/(aLStack96,aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue(aLStack128,0);
   lib::L2CValue::L2CValue(aLStack144,false);
   HVar4 = lib::L2CValue::as_hash(aLStack80);
@@ -39,14 +39,14 @@ void __thiscall L2CFighterRyu::status::FinalLanding_main(L2CFighterRyu *this,L2C
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,FinalLanding_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0x80);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

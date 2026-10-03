@@ -17,16 +17,16 @@ L2CFighterSimon::status::FallSpecial_main(L2CFighterSimon *this,L2CValue *return
   L2CValue aLStack96 [16];
   L2CValue aLStack80 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,10);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,10);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_STATUS_KIND_SPECIAL_HI);
-  uVar2 = lib::L2CValue::operator__(this_00,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar2 = lib::L2CValue::operator==(this_00,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar2 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_KINETIC_ENERGY_ID_CONTROL);
     iVar1 = lib::L2CValue::as_integer(aLStack96);
     pvVar3 = (void *)app::lua_bind::KineticModule__get_energy_impl(this->moduleAccessor,iVar1);
     lib::L2CValue::L2CValue(aLStack80,pvVar3);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack112,0x1086bc4a93);
     lib::L2CValue::L2CValue(aLStack128,0x10ea0ebc2e);
     uVar2 = lib::L2CValue::as_integer(aLStack112);
@@ -37,10 +37,10 @@ L2CFighterSimon::status::FallSpecial_main(L2CFighterSimon *this,L2CValue *return
     fVar6 = (float)lib::L2CValue::as_number(aLStack96);
     pFVar5 = (FighterKineticEnergyController *)lib::L2CValue::as_pointer(aLStack80);
     app::lua_bind::FighterKineticEnergyController__set_accel_x_mul_impl(pFVar5,fVar6);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lua2cpp::L2CFighterCommon::status_fall_special(this);
   return;

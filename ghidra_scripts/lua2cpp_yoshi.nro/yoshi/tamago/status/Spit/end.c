@@ -23,41 +23,41 @@ L2CWeaponYoshiTamago::status::Spit_end(L2CWeaponYoshiTamago *this,L2CValue *retu
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::LinkModule__is_link_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) == 0) goto LAB_710002dfa4;
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_LINK_NO_CONSTRAINT);
   iVar3 = lib::L2CValue::as_integer(aLStack64);
   uVar4 = app::lua_bind::LinkModule__get_parent_object_id_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,uVar4);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   uVar4 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::sv_battle_object::is_null(uVar4);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,false);
-  uVar6 = lib::L2CValue::operator__(aLStack96,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar6 = lib::L2CValue::operator==(aLStack96,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar6 & 1) == 0) {
     this_00 = aLStack96;
 LAB_710002df98:
-    lib::L2CValue::_L2CValue(this_00);
+    lib::L2CValue::~L2CValue(this_00);
   }
   else {
     uVar4 = lib::L2CValue::as_integer(aLStack80);
     bVar1 = app::sv_battle_object::is_active(uVar4);
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack96);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((bVar2 & 1U) != 0) {
       uVar4 = lib::L2CValue::as_integer(aLStack80);
       uVar4 = app::sv_battle_object::category(uVar4);
       lib::L2CValue::L2CValue(aLStack96,uVar4 & 0xff);
       lib::L2CValue::L2CValue(aLStack64,_BATTLE_OBJECT_CATEGORY_FIGHTER);
-      uVar6 = lib::L2CValue::operator__(aLStack96,aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack96);
+      uVar6 = lib::L2CValue::operator==(aLStack96,aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack96);
       if ((uVar6 & 1) != 0) {
         uVar4 = lib::L2CValue::as_integer(aLStack80);
         pvVar7 = (void *)app::sv_battle_object::module_accessor(uVar4);
@@ -76,14 +76,14 @@ LAB_710002df98:
         GVar5 = lib::L2CValue::as_integer(aLStack96);
         pBVar8 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack64);
         app::lua_bind::GroundModule__set_shape_kind_impl(pBVar8,GVar5);
-        lib::L2CValue::_L2CValue(aLStack96);
-        lib::L2CValue::_L2CValue(aLStack112);
+        lib::L2CValue::~L2CValue(aLStack96);
+        lib::L2CValue::~L2CValue(aLStack112);
         this_00 = aLStack64;
         goto LAB_710002df98;
       }
     }
   }
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
 LAB_710002dfa4:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

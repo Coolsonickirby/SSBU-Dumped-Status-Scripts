@@ -29,10 +29,10 @@ L2CWeaponSheikNeedle::status::Move_main(L2CWeaponSheikNeedle *this,L2CValue *ret
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   iVar3 = lib::L2CValue::as_integer(aLStack144);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue(aLStack112,0xc3d88a1b3);
   lib::L2CValue::L2CValue(aLStack128,0x419cd3efe);
   uVar4 = lib::L2CValue::as_integer(aLStack112);
@@ -43,10 +43,10 @@ L2CWeaponSheikNeedle::status::Move_main(L2CWeaponSheikNeedle *this,L2CValue *ret
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   iVar3 = lib::L2CValue::as_integer(aLStack144);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue(aLStack96,0x4ef3e3778);
   lib::L2CValue::L2CValue(aLStack112,0.0);
   lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -57,29 +57,29 @@ L2CWeaponSheikNeedle::status::Move_main(L2CWeaponSheikNeedle *this,L2CValue *ret
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar6,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   bVar1 = app::lua_bind::StopModule__is_stop_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack112,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack96,false);
-  uVar4 = lib::L2CValue::operator__(aLStack112,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar4 = lib::L2CValue::operator==(aLStack112,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar4 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack128,false);
     FUN_7100024750(aLStack112,this,aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
   }
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x15);
-  lib::L2CValue::L2CValue(aLStack96,&DAT_71000248c0);
-  lib::L2CValue::operator_(this_00,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x15);
+  lib::L2CValue::L2CValue(aLStack96,FUN_71000248c0);
+  lib::L2CValue::operator=(this_00,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,Move_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

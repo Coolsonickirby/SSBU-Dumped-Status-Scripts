@@ -36,10 +36,10 @@ L2CFighterPfushigisou::status::AirLassoReach_end(L2CFighterPfushigisou *this,L2C
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack160,true);
-  uVar4 = lib::L2CValue::operator__((L2CValue *)&local_60,aLStack160);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar4 = lib::L2CValue::operator==((L2CValue *)&local_60,aLStack160);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar4 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack176,0x1086bc4a93);
     lib::L2CValue::L2CValue(aLStack192,0x1378036cb5);
@@ -73,28 +73,28 @@ L2CFighterPfushigisou::status::AirLassoReach_end(L2CFighterPfushigisou *this,L2C
     lib::L2CValue::L2CValue(aLStack160,(float)uVar10);
     lib::L2CValue::L2CValue(aLStack144,(float)((ulong)uVar10 >> 0x20));
     lib::L2CValue::L2CValue(aLStack128,in_register_00005008);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack272);
-    lib::L2CValue::_L2CValue(aLStack288);
-    lib::L2CValue::_L2CValue(aLStack240);
-    lib::L2CValue::_L2CValue(aLStack256);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack224);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack272);
+    lib::L2CValue::~L2CValue(aLStack288);
+    lib::L2CValue::~L2CValue(aLStack240);
+    lib::L2CValue::~L2CValue(aLStack256);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack224);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack176);
   }
   lib::L2CValue::L2CValue((L2CValue *)&local_60,_WEAPON_PFUSHIGISOU_VINE_STATUS_KIND_REACH);
   lib::L2CValue::L2CValue(aLStack112,FIGHTER_STATUS_AIR_LASSO_REACH_WORK_INT_ARTICLE_STATUS);
   iVar2 = lib::L2CValue::as_integer((L2CValue *)&local_60);
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   lua2cpp::L2CFighterCommon::status_end_AirLassoReach(this);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

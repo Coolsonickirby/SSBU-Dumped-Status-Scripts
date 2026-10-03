@@ -17,22 +17,22 @@ L2CFighterPlizardon::status::Demo_main(L2CFighterPlizardon *this,L2CValue *retur
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,true);
-  uVar3 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar3 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar3 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack64,false);
     bVar1 = lib::L2CValue::as_bool(aLStack64);
     app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,true);
     bVar1 = lib::L2CValue::as_bool(aLStack64);
     app::lua_bind::MotionAnimcmdModule__set_sleep_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lua2cpp::L2CFighterCommon::status_Demo(this);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

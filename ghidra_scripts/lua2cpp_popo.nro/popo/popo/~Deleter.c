@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterPopo::__L2CFighterPopo(L2CFighterPopo *this)
+void __thiscall L2CFighterPopo::~~L2CFighterPopo(L2CFighterPopo *this)
 
 {
-  _L2CFighterPopo();
-  operator_delete(this);
+  ~L2CFighterPopo();
+  operator.delete(this);
   return;
 }
 

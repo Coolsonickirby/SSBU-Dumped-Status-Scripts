@@ -1,0 +1,51 @@
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_710000e090(void *param_1)
+
+{
+  int iVar1;
+  ulong uVar2;
+  ulong uVar3;
+  float fVar4;
+  L2CValue aLStack160 [16];
+  L2CValue aLStack144 [16];
+  L2CValue aLStack128 [16];
+  L2CValue aLStack112 [16];
+  L2CValue aLStack96 [16];
+  L2CValue aLStack80 [16];
+  L2CValue aLStack64 [16];
+  
+  lib::L2CValue::L2CValue(aLStack64,_FIGHTER_INSTANCE_WORK_ID_FLAG_FALL_HOP);
+  iVar1 = lib::L2CValue::as_integer(aLStack64);
+  app::lua_bind::WorkModule__on_flag_impl
+            (*(BattleObjectModuleAccessor **)((long)param_1 + 0x40),iVar1);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::L2CValue(aLStack112,0xdf05c072b);
+  lib::L2CValue::L2CValue(aLStack128,0x1690f0ac7c);
+  uVar2 = lib::L2CValue::as_integer(aLStack112);
+  uVar3 = lib::L2CValue::as_integer(aLStack128);
+  fVar4 = (float)app::lua_bind::WorkModule__get_param_float_impl
+                           (*(BattleObjectModuleAccessor **)((long)param_1 + 0x40),uVar2,uVar3);
+  lib::L2CValue::L2CValue(aLStack96,fVar4);
+  lib::L2CValue::L2CValue(aLStack64,0.0);
+  lib::L2CValue::operator+(aLStack96,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::L2CValue(aLStack64,_FIGHTER_INSTANCE_WORK_ID_FLOAT_FALL_HOP_Y);
+  fVar4 = (float)lib::L2CValue::as_number(aLStack80);
+  iVar1 = lib::L2CValue::as_integer(aLStack64);
+  app::lua_bind::WorkModule__set_float_impl
+            (*(BattleObjectModuleAccessor **)((long)param_1 + 0x40),fVar4,iVar1);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::L2CValue(aLStack144,_FIGHTER_STATUS_KIND_FALL);
+  lib::L2CValue::L2CValue(aLStack160,false);
+  lua2cpp::L2CFighterBase::change_status(param_1,(L2CValue)0x70,(L2CValue)0x60);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  return;
+}
+

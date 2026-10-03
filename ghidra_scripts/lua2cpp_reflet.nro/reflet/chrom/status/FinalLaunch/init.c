@@ -18,9 +18,9 @@ L2CWeaponRefletChrom::status::FinalLaunch_init(L2CWeaponRefletChrom *this,L2CVal
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   app::sv_kinetic_energy::set_speed(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_KINETIC_TYPE_NORMAL);
   lib::L2CValue::L2CValue(aLStack80,0.0);
   lib::L2CValue::L2CValue(aLStack96,-1.0);
@@ -29,9 +29,9 @@ L2CWeaponRefletChrom::status::FinalLaunch_init(L2CWeaponRefletChrom *this,L2CVal
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   app::sv_kinetic_energy::set_stable_speed(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_KINETIC_TYPE_NORMAL);
   lib::L2CValue::L2CValue(aLStack80,0.0);
   lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -40,13 +40,13 @@ L2CWeaponRefletChrom::status::FinalLaunch_init(L2CWeaponRefletChrom *this,L2CVal
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   app::sv_kinetic_energy::set_brake(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_KINETIC_TYPE_NORMAL);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::KineticModule__enable_energy_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

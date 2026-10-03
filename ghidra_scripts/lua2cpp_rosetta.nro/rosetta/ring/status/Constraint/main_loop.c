@@ -20,18 +20,18 @@ L2CWeaponRosettaRing::status::Constraint_main_loop
   HVar1 = app::lua_bind::MotionModule__motion_kind_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack96,HVar1);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,0xd40042152);
-  uVar2 = lib::L2CValue::operator__(aLStack96,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar2 = lib::L2CValue::operator==(aLStack96,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar2 & 1) == 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_40,15.0);
-    lib::L2CValue::operator_(aLStack80,(L2CValue *)&local_40);
+    lib::L2CValue::operator=(aLStack80,(L2CValue *)&local_40);
   }
   else {
     lib::L2CValue::L2CValue((L2CValue *)&local_40,10.0);
-    lib::L2CValue::operator_(aLStack80,(L2CValue *)&local_40);
+    lib::L2CValue::operator=(aLStack80,(L2CValue *)&local_40);
   }
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue(aLStack96,0x48fdcf576);
   lib::L2CValue::L2CValue(aLStack112,0.0);
   lib::L2CValue::L2CValue(aLStack128,0.0);
@@ -43,11 +43,11 @@ L2CWeaponRosettaRing::status::Constraint_main_loop
   uStack56 = (ulong)uVar5;
   app::lua_bind::ModelModule__set_joint_rotate_impl
             (this->moduleAccessor,HVar1,(Vector3f *)&local_40,0,0);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

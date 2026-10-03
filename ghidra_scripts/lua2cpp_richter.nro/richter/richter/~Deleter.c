@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterRichter::__L2CFighterRichter(L2CFighterRichter *this)
+void __thiscall L2CFighterRichter::~~L2CFighterRichter(L2CFighterRichter *this)
 
 {
-  _L2CFighterRichter();
-  operator_delete(this);
+  ~L2CFighterRichter();
+  operator.delete(this);
   return;
 }
 

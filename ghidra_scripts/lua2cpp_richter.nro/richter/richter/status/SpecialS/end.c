@@ -17,15 +17,15 @@ L2CFighterRichter::status::SpecialS_end(L2CFighterRichter *this,L2CValue *return
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,false);
-  uVar3 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar3 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar3 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_SIMON_GENERATE_ARTICLE_CROSS);
     iVar2 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar2,0);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

@@ -22,7 +22,7 @@ L2CFighterRyu::status::SpecialHiJump_init(L2CFighterRyu *this,L2CValue *return_v
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,0x1086bc4a93);
   lib::L2CValue::L2CValue(aLStack112,0xd0e019590);
   uVar5 = lib::L2CValue::as_integer(aLStack96);
@@ -33,11 +33,11 @@ L2CFighterRyu::status::SpecialHiJump_init(L2CFighterRyu *this,L2CValue *return_v
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   iVar4 = lib::L2CValue::as_integer(aLStack128);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack96,0x1086bc4a93);
     lib::L2CValue::L2CValue(aLStack112,0x11af990ec3);
@@ -48,12 +48,12 @@ L2CFighterRyu::status::SpecialHiJump_init(L2CFighterRyu *this,L2CValue *return_v
     lib::L2CValue::L2CValue(aLStack80,fVar7);
     fVar7 = (float)lib::L2CValue::as_number(aLStack80);
     app::lua_bind::AttackModule__set_power_mul_status_impl(this->moduleAccessor,fVar7);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

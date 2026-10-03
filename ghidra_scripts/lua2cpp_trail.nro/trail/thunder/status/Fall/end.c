@@ -29,8 +29,8 @@ L2CWeaponTrailThunder::status::Fall_end(L2CWeaponTrailThunder *this,L2CValue *re
   uVar6 = lib::L2CValue::as_integer((L2CValue *)&local_50);
   iVar3 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar5,uVar6);
   lib::L2CValue::L2CValue(aLStack96,iVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
   lib::L2CValue::L2CValue((L2CValue *)&uStack64,0x143b81d89a);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,false);
   lib::L2CValue::L2CValue(aLStack112,false);
@@ -39,14 +39,14 @@ L2CWeaponTrailThunder::status::Fall_end(L2CWeaponTrailThunder *this,L2CValue *re
   bVar2 = lib::L2CValue::as_bool(aLStack112);
   app::lua_bind::EffectModule__kill_kind_impl
             (this->moduleAccessor,HVar7,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
   lib::L2CValue::L2CValue((L2CValue *)&uStack64,0x1891462356);
   HVar7 = lib::L2CValue::as_hash((L2CValue *)&uStack64);
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::EffectModule__detach_kind_impl(this->moduleAccessor,HVar7,iVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
   lib::L2CValue::L2CValue(aLStack112,0x188f630f2d);
   lib::L2CValue::L2CValue(aLStack128,0x31ed91fca);
   HVar7 = lib::L2CValue::as_hash(aLStack112);
@@ -60,11 +60,11 @@ L2CWeaponTrailThunder::status::Fall_end(L2CWeaponTrailThunder *this,L2CValue *re
                      1.0,false,0,0,-1,in_stack_ffffffffffffff54,0,(bool)in_stack_ffffffffffffff5c,
                      false);
   lib::L2CValue::L2CValue((L2CValue *)&uStack64,uVar4);
-  lib::L2CValue::_L2CValue((L2CValue *)&uStack64);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&uStack64);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

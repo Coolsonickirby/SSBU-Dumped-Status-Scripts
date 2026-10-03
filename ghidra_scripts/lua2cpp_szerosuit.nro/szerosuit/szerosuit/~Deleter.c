@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterSzerosuit::__L2CFighterSzerosuit(L2CFighterSzerosuit *this)
+void __thiscall L2CFighterSzerosuit::~~L2CFighterSzerosuit(L2CFighterSzerosuit *this)
 
 {
-  _L2CFighterSzerosuit();
-  operator_delete(this);
+  ~L2CFighterSzerosuit();
+  operator.delete(this);
   return;
 }
 

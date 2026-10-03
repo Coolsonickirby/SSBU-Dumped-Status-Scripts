@@ -20,9 +20,9 @@ L2CWeaponPikminPikmin::status::SpecialSCling_init
   LVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = lib::L2CValue::as_bool(aLStack96);
   app::lua_bind::LinkModule__set_attribute_impl(this->moduleAccessor,iVar2,LVar3,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

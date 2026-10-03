@@ -13,15 +13,15 @@ L2CWeaponRosettaTico::status::SpecialHiStart_main_loop
   
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   bVar2 = (bVar2 & 1U) != 0;
   if (bVar2) {
     lib::L2CValue::L2CValue(aLStack64,_WEAPON_ROSETTA_TICO_STATUS_KIND_SPECIAL_HI_JUMP);
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,(uint)bVar2);
   return;

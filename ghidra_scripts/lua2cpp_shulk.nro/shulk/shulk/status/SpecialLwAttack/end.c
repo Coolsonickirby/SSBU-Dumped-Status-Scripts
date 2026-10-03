@@ -22,26 +22,26 @@ L2CFighterShulk::status::SpecialLwAttack_end(L2CFighterShulk *this,L2CValue *ret
   lib::L2CValue::L2CValue(aLStack48,0xc0f87c4c3);
   HVar5 = lib::L2CValue::as_hash(aLStack48);
   app::lua_bind::EffectModule__remove_common_impl(this->moduleAccessor,HVar5);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_SHULK_INSTANCE_WORK_ID_INT_SPECIAL_LW_TARGET_OBJECT_ID)
   ;
   iVar3 = lib::L2CValue::as_integer(aLStack48);
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,iVar3);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   uVar4 = lib::L2CValue::as_integer(aLStack64);
   bVar1 = app::sv_battle_object::is_null(uVar4);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack48,false);
-  uVar6 = lib::L2CValue::operator__(aLStack80,aLStack48);
-  lib::L2CValue::_L2CValue(aLStack48);
+  uVar6 = lib::L2CValue::operator==(aLStack80,aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   if ((uVar6 & 1) != 0) {
     uVar4 = lib::L2CValue::as_integer(aLStack64);
     bVar1 = app::sv_battle_object::is_active(uVar4);
     lib::L2CValue::L2CValue(aLStack48,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack48);
-    lib::L2CValue::_L2CValue(aLStack48);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack48);
+    lib::L2CValue::~L2CValue(aLStack48);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar2 & 1U) == 0) goto LAB_710000dae8;
     uVar4 = lib::L2CValue::as_integer(aLStack64);
     pvVar7 = (void *)app::sv_battle_object::module_accessor(uVar4);
@@ -55,13 +55,13 @@ L2CFighterShulk::status::SpecialLwAttack_end(L2CFighterShulk *this,L2CValue *ret
     HVar5 = lib::L2CValue::as_hash(aLStack80);
     pBVar8 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack48);
     app::lua_bind::EffectModule__remove_common_impl(pBVar8,HVar5);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     this_00 = aLStack48;
   }
-  lib::L2CValue::_L2CValue(this_00);
+  lib::L2CValue::~L2CValue(this_00);
 LAB_710000dae8:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

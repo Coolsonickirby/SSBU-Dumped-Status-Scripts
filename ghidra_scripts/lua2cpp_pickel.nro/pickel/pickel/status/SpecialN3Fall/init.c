@@ -16,13 +16,13 @@ L2CFighterPickel::status::SpecialN3Fall_init(L2CFighterPickel *this,L2CValue *re
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,iVar1);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_KIND_FALL);
-  uVar2 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar2 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar2 & 1) == 0) {
     lua2cpp::L2CFighterCommon::sub_fall_uniq_process_init(this);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   FUN_710002e160(aLStack80,this);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_KINETIC_ENERGY_ID_CONTROL);
@@ -30,9 +30,9 @@ L2CFighterPickel::status::SpecialN3Fall_init(L2CFighterPickel *this,L2CValue *re
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   app::sv_kinetic_energy::mul_x_speed_max(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

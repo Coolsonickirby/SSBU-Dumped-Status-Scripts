@@ -12,15 +12,15 @@ L2CFighterPackun::status::SpecialLwBite_end(L2CFighterPackun *this,L2CValue *ret
   L2CValue aLStack96 [16];
   L2CValue aLStack80 [16];
   
-  pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_PACKUN_STATUS_KIND_SPECIAL_LW_END);
-  uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
-    pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+    pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_PACKUN_STATUS_KIND_SPECIAL_LW_FALL_END);
-    uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar4 & 1) == 0) {
       FUN_7100021560(this);
       lib::L2CValue::L2CValue(aLStack80,GROUND_CORRECT_SHAPE_RHOMBUS_MODIFY_FLAG_FIX);
@@ -29,8 +29,8 @@ L2CFighterPackun::status::SpecialLwBite_end(L2CFighterPackun *this,L2CValue *ret
       bVar1 = lib::L2CValue::as_bool(aLStack96);
       app::lua_bind::GroundModule__set_shape_flag_impl(this->moduleAccessor,uVar2,(bool)(bVar1 & 1))
       ;
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);

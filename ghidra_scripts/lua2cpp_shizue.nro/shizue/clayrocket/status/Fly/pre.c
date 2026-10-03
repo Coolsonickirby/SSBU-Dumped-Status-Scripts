@@ -50,15 +50,15 @@ L2CWeaponShizueClayrocket::status::Fly_pre(L2CWeaponShizueClayrocket *this,L2CVa
   app::lua_bind::StatusModule__init_settings_impl
             (this->moduleAccessor,SVar2,iVar3,uVar4,GVar5,(bool)(bVar1 & 1),iVar6,iVar7,iVar8,
              in_stack_fffffffffffffef4);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CValue::L2CValue(aLStack136,0x10d78ab4d3);
   lib::L2CValue::L2CValue(aLStack152,0xab986e19b);
   uVar9 = lib::L2CValue::as_integer(aLStack136);
@@ -67,11 +67,11 @@ L2CWeaponShizueClayrocket::status::Fly_pre(L2CWeaponShizueClayrocket *this,L2CVa
   ;
   lib::L2CValue::L2CValue(aLStack120,fVar12);
   this_00 = this + 1;
-  pLVar11 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xab986e19b);
-  lib::L2CValue::operator_(pLVar11,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
+  pLVar11 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xab986e19b);
+  lib::L2CValue::operator=(pLVar11,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue(aLStack136,0x10d78ab4d3);
   lib::L2CValue::L2CValue(aLStack152,0xb52c8003b);
   uVar9 = lib::L2CValue::as_integer(aLStack136);
@@ -79,11 +79,11 @@ L2CWeaponShizueClayrocket::status::Fly_pre(L2CWeaponShizueClayrocket *this,L2CVa
   fVar12 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar9,uVar10)
   ;
   lib::L2CValue::L2CValue(aLStack120,fVar12);
-  pLVar11 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb52c8003b);
-  lib::L2CValue::operator_(pLVar11,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
+  pLVar11 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb52c8003b);
+  lib::L2CValue::operator=(pLVar11,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue(aLStack136,0x10d78ab4d3);
   lib::L2CValue::L2CValue(aLStack152,0x55dfc36e5);
   uVar9 = lib::L2CValue::as_integer(aLStack136);
@@ -91,22 +91,22 @@ L2CWeaponShizueClayrocket::status::Fly_pre(L2CWeaponShizueClayrocket *this,L2CVa
   fVar12 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar9,uVar10)
   ;
   lib::L2CValue::L2CValue(aLStack120,fVar12);
-  pLVar11 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x55dfc36e5);
-  lib::L2CValue::operator_(pLVar11,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
+  pLVar11 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x55dfc36e5);
+  lib::L2CValue::operator=(pLVar11,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue(aLStack136,0x10d78ab4d3);
   lib::L2CValue::L2CValue(aLStack152,0xadb79366e);
   uVar9 = lib::L2CValue::as_integer(aLStack136);
   uVar10 = lib::L2CValue::as_integer(aLStack152);
   iVar3 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar9,uVar10);
   lib::L2CValue::L2CValue(aLStack120,iVar3);
-  pLVar11 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xadb79366e);
-  lib::L2CValue::operator_(pLVar11,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
+  pLVar11 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xadb79366e);
+  lib::L2CValue::operator=(pLVar11,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue(aLStack136,0x10d78ab4d3);
   lib::L2CValue::L2CValue(aLStack152,0x6ff73cab1);
   uVar9 = lib::L2CValue::as_integer(aLStack136);
@@ -114,11 +114,11 @@ L2CWeaponShizueClayrocket::status::Fly_pre(L2CWeaponShizueClayrocket *this,L2CVa
   fVar12 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar9,uVar10)
   ;
   lib::L2CValue::L2CValue(aLStack120,fVar12);
-  pLVar11 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x419cd3efe);
-  lib::L2CValue::operator_(pLVar11,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
+  pLVar11 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x419cd3efe);
+  lib::L2CValue::operator=(pLVar11,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

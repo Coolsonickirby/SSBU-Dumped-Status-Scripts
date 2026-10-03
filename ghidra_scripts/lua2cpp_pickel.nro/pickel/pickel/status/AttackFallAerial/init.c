@@ -16,13 +16,13 @@ L2CFighterPickel::status::AttackFallAerial_init(L2CFighterPickel *this,L2CValue 
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,iVar1);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_KIND_FALL_AERIAL);
-  uVar2 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar2 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar2 & 1) == 0) {
     lua2cpp::L2CFighterCommon::sub_fall_uniq_process_init(this);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

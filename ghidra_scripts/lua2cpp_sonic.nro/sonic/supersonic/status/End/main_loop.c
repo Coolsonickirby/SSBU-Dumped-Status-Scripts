@@ -16,39 +16,39 @@ L2CWeaponSonicSupersonic::status::End_main_loop
   
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack80,_WEAPON_SONIC_SUPERSONIC_STATUS_KIND_REMOVE);
     lib::L2CValue::L2CValue(aLStack96,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0xa0);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
     goto LAB_710002b918;
   }
   this_00 = &this->globalTable;
-  pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x17);
+  pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x17);
   lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-  uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
 LAB_710002b8a0:
-    pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x17);
+    pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x17);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar4 & 1) != 0) goto LAB_710002b918;
-    pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+    pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar4 & 1) == 0) goto LAB_710002b918;
   }
   else {
-    pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+    pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
     lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
-    uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar4 & 1) == 0) goto LAB_710002b8a0;
   }
   FUN_710002b3f0(this);

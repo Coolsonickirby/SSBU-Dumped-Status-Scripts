@@ -12,7 +12,7 @@ L2CWeaponPackunBosspackun::status::Start_init
   lib::L2CValue::L2CValue(aLStack48,_WEAPON_PACKUN_POISONBREATH_KINETIC_ENERGY_ID_ENV_WIND);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::KineticModule__enable_energy_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

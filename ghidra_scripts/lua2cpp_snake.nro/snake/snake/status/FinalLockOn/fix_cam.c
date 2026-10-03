@@ -12,9 +12,9 @@ L2CFighterSnake::status::FinalLockOn_fix_cam(L2CFighterSnake *this,L2CValue *ret
   float fVar3;
   
   this_00 = &this->globalTable;
-  this_01 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,5);
-  this_02 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x1a);
-  this_03 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x1b);
+  this_01 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,5);
+  this_02 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x1a);
+  this_03 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x1b);
   pBVar1 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(this_01);
   fVar2 = (float)lib::L2CValue::as_number(this_02);
   fVar3 = (float)lib::L2CValue::as_number(this_03);

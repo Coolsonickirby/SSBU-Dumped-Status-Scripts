@@ -3,7 +3,7 @@ void __thiscall
 L2CFighterTantan::status::FallAerial_main_loop(L2CFighterTantan *this,L2CValue *return_value)
 
 {
-  lua2cpp::L2CFighterCommon::FIGHTER_KINETIC_ENERGY_ID_DAMAGE();
+  lua2cpp::L2CFighterCommon::status_FallAerial_Main(this,return_value);
   return;
 }
 

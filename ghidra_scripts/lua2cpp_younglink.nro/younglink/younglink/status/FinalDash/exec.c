@@ -21,9 +21,9 @@ L2CFighterYounglink::status::FinalDash_exec(L2CFighterYounglink *this,L2CValue *
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::LinkModule__is_link_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack64,LINK_NO_CAPTURE);
     lib::L2CValue::L2CValue(aLStack96,LINK_ATTRIBUTE_REFERENCE_PARENT_STOP);
@@ -33,21 +33,21 @@ L2CFighterYounglink::status::FinalDash_exec(L2CFighterYounglink *this,L2CValue *
     bVar1 = lib::L2CValue::as_bool(aLStack112);
     app::lua_bind::LinkModule__set_attribute_impl
               (this->moduleAccessor,iVar3,LVar4,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,5);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,5);
   pFVar5 = (FighterModuleAccessor *)lib::L2CValue::as_pointer(this_00);
   bVar1 = app::FighterSpecializer_Link::check_dash_end(pFVar5);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  lib::L2CValue::operator_(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::operator=(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,true);
-  lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

@@ -13,10 +13,10 @@ L2CWeaponRefletGigafire::status::Rise_exec(L2CWeaponRefletGigafire *this,L2CValu
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_REFLET_GIGAFIRE_STATUS_KIND_BURN);
   FUN_710002f160(aLStack64,this,aLStack80);
   lib::L2CValue::L2CValue(aLStack48,0);
-  uVar1 = lib::L2CValue::operator_(aLStack48,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar1 = lib::L2CValue::operator<(aLStack48,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,(uint)((uVar1 & 1) != 0));
   return;
 }

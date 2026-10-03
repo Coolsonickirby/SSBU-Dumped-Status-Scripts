@@ -24,19 +24,19 @@ void __thiscall L2CFighterWolf::status::SpecialS_end(L2CFighterWolf *this,L2CVal
   local_50 = uVar3 & 0xffffffff | lVar4 << 0x20;
   uStack72 = (ulong)uVar2;
   app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_50,0);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,SITUATION_KIND_AIR);
-  uVar3 = lib::L2CValue::operator__(this_00,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  uVar3 = lib::L2CValue::operator==(this_00,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   if ((uVar3 & 1) == 0) {
     lib::L2CValue::L2CValue
               ((L2CValue *)&local_50,_FIGHTER_FOX_INSTANCE_WORK_ID_FLAG_ILLUSION_LANDING);
     iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_50);
     app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
     lib::L2CValue::L2CValue
               ((L2CValue *)&local_50,_FIGHTER_FOX_INSTANCE_WORK_ID_FLAG_REFLECTOR_LANDING);
     iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_50);
@@ -48,7 +48,7 @@ void __thiscall L2CFighterWolf::status::SpecialS_end(L2CFighterWolf *this,L2CVal
     iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_50);
     app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar1);
   }
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

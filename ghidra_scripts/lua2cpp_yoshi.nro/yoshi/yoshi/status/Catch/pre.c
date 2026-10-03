@@ -8,7 +8,7 @@ void __thiscall L2CFighterYoshi::status::Catch_pre(L2CFighterYoshi *this,L2CValu
   
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_STATUS_ATTR_DISABLE_CURRY_FACE);
   lua2cpp::L2CFighterCommon::status_pre_Catch_common(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

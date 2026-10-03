@@ -21,26 +21,26 @@ L2CFighterTantan::status::CatchWait_main_loop(L2CFighterTantan *this,L2CValue *r
   lib::L2CValue::L2CValue(aLStack112,0xa02480224);
   FUN_71000401c0(aLStack128,this);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_WAIST_SIZE_L);
-  uVar3 = lib::L2CValue::operator__(aLStack128,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack128);
+  uVar3 = lib::L2CValue::operator==(aLStack128,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
   if ((uVar3 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack80,0xf51cd3aa8);
-    lib::L2CValue::operator_(aLStack96,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::operator=(aLStack96,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue(aLStack80,0xe64eab395);
-    lib::L2CValue::operator_(aLStack112,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::operator=(aLStack112,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   HVar4 = app::lua_bind::MotionModule__motion_kind_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,HVar4);
-  uVar3 = lib::L2CValue::operator__(aLStack80,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar3 = lib::L2CValue::operator==(aLStack80,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar3 & 1) != 0) {
     bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar2 & 1U) != 0) {
       lib::L2CValue::L2CValue(aLStack80,0.0);
       lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -51,16 +51,16 @@ L2CFighterTantan::status::CatchWait_main_loop(L2CFighterTantan *this,L2CValue *r
       bVar1 = lib::L2CValue::as_bool(aLStack144);
       app::lua_bind::MotionModule__change_motion_impl
                 (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
   }
   lua2cpp::L2CFighterCommon::status_CatchWait_Main(this);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

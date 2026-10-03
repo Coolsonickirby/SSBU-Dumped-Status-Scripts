@@ -3,7 +3,7 @@ void __thiscall
 L2CFighterRyu::status::WalkBrakeBack_main(L2CFighterRyu *this,L2CValue *return_value)
 
 {
-  lua2cpp::L2CFighterCommon::status_WalkBrakeBack();
+  lua2cpp::L2CFighterCommon::status_WalkBrakeBack(this,return_value);
   return;
 }
 

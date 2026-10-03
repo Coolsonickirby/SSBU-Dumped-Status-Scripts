@@ -29,19 +29,19 @@ L2CFighterYoshi::status::SpecialLwLanding_main(L2CFighterYoshi *this,L2CValue *r
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar5,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue(aLStack96,_SITUATION_KIND_GROUND);
-  uVar6 = lib::L2CValue::operator__(this_00,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar6 = lib::L2CValue::operator==(this_00,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar6 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack96,GROUND_CORRECT_KIND_AIR);
     GVar3 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar3);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_KINETIC_TYPE_AIR_STOP);
     iVar4 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::KineticModule__change_kinetic_impl(this->moduleAccessor,iVar4);
@@ -50,12 +50,12 @@ L2CFighterYoshi::status::SpecialLwLanding_main(L2CFighterYoshi *this,L2CValue *r
     lib::L2CValue::L2CValue(aLStack96,GROUND_CORRECT_KIND_GROUND_CLIFF_STOP);
     GVar3 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar3);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_KINETIC_TYPE_GROUND_STOP);
     iVar4 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::KineticModule__change_kinetic_impl(this->moduleAccessor,iVar4);
   }
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,0xe78cb8210);
   lib::L2CValue::L2CValue(aLStack112,false);
   lib::L2CValue::L2CValue(aLStack128,false);
@@ -64,9 +64,9 @@ L2CFighterYoshi::status::SpecialLwLanding_main(L2CFighterYoshi *this,L2CValue *r
   bVar2 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::EffectModule__kill_kind_impl
             (this->moduleAccessor,HVar5,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,0x11ffb0d315);
   lib::L2CValue::L2CValue(aLStack112,false);
   lib::L2CValue::L2CValue(aLStack128,false);
@@ -75,20 +75,20 @@ L2CFighterYoshi::status::SpecialLwLanding_main(L2CFighterYoshi *this,L2CValue *r
   bVar2 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::EffectModule__kill_kind_impl
             (this->moduleAccessor,HVar5,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_YOSHI_GENERATE_ARTICLE_STAR);
   iVar4 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::ArticleModule__generate_article_impl(this->moduleAccessor,iVar4,false,-1);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_YOSHI_GENERATE_ARTICLE_STAR);
   iVar4 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::ArticleModule__generate_article_impl(this->moduleAccessor,iVar4,false,-1);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,SpecialLwLanding_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

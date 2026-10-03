@@ -25,7 +25,7 @@ L2CWeaponPikminDolfin::status::Fall_main_loop(L2CWeaponPikminDolfin *this,L2CVal
   uVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::GroundModule__is_touch_impl(this->moduleAccessor,uVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue
               (aLStack128,_WEAPON_PIKMIN_DOLFIN_STATUS_FINAL_FALL_WORK_INT_FALL_COUNTER);
@@ -33,12 +33,12 @@ L2CWeaponPikminDolfin::status::Fall_main_loop(L2CWeaponPikminDolfin *this,L2CVal
     iVar4 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar4);
     lib::L2CValue::L2CValue(aLStack112,iVar4);
     lib::L2CValue::L2CValue(aLStack64,0);
-    uVar5 = lib::L2CValue::operator_(aLStack112,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    uVar5 = lib::L2CValue::operator<(aLStack112,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((uVar5 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack64,_WEAPON_PIKMIN_DOLFIN_KINETIC_ENERGY_ID_GENERAL);
       fVar7 = (float)app::lua_bind::ControlModule__get_stick_x_impl(this->moduleAccessor);
@@ -50,7 +50,7 @@ L2CWeaponPikminDolfin::status::Fall_main_loop(L2CWeaponPikminDolfin *this,L2CVal
       fVar7 = (float)app::lua_bind::WorkModule__get_param_float_impl
                                (this->moduleAccessor,uVar5,uVar6);
       lib::L2CValue::L2CValue(aLStack112,fVar7);
-      lib::L2CValue::operator_(aLStack96,aLStack112);
+      lib::L2CValue::operator*(aLStack96,aLStack112);
       lib::L2CValue::L2CValue(aLStack176,_KINETIC_ENERGY_RESERVE_ATTRIBUTE_MAIN);
       iVar4 = lib::L2CValue::as_integer(aLStack176);
       fVar7 = (float)app::lua_bind::KineticModule__get_sum_speed_y_impl(this->moduleAccessor,iVar4);
@@ -60,27 +60,27 @@ L2CWeaponPikminDolfin::status::Fall_main_loop(L2CWeaponPikminDolfin *this,L2CVal
       lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
       lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack160);
       app::sv_kinetic_energy::set_speed(this->luaStateAgent);
-      lib::L2CValue::_L2CValue(aLStack160);
-      lib::L2CValue::_L2CValue(aLStack176);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack160);
+      lib::L2CValue::~L2CValue(aLStack176);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack64);
       iVar4 = 0;
       goto LAB_710001f388;
     }
   }
   else {
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
   }
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_PIKMIN_DOLFIN_STATUS_KIND_EXPLOSION);
   lib::L2CValue::L2CValue(aLStack80,false);
   lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   iVar4 = 1;
 LAB_710001f388:
   lib::L2CValue::L2CValue((L2CValue *)return_value,iVar4);

@@ -15,15 +15,15 @@ L2CFighterNess::status::AttackLw4Hold_main(L2CFighterNess *this,L2CValue *return
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::ArticleModule__change_status_impl(this->moduleAccessor,iVar1,iVar2,0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_NESS_GENERATE_ARTICLE_YOYO_HEAD);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_NESS_YOYO_HEAD_STATUS_KIND_SHOT_FALL);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::ArticleModule__change_status_impl(this->moduleAccessor,iVar1,iVar2,0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lua2cpp::L2CFighterCommon::status_AttackLw4Hold(this);
   return;
 }

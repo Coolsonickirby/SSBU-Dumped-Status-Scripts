@@ -29,8 +29,8 @@ L2CWeaponPackunSpikeball::status::Hop_exec(L2CWeaponPackunSpikeball *this,L2CVal
   uVar3 = lib::L2CValue::as_integer(aLStack112);
   fVar6 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar2,uVar3);
   lib::L2CValue::L2CValue(aLStack96,fVar6);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue(aLStack128,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
   pLVar5 = aLStack128;
@@ -38,27 +38,27 @@ L2CWeaponPackunSpikeball::status::Hop_exec(L2CWeaponPackunSpikeball *this,L2CVal
   fVar6 = (float)app::sv_kinetic_energy::get_speed_x(this->luaStateAgent);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,fVar6);
   lib::L2CAgent::math_abs((L2CAgent *)&local_50,pLVar5);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::operator_(aLStack112,aLStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::operator*(aLStack112,aLStack96);
   lib::L2CValue::L2CValue
             ((L2CValue *)&local_50,_WEAPON_PACKUN_SPIKEBALL_STATUS_HOP_WORK_FLOAT_DEGREE);
   iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_50);
   fVar6 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack144,fVar6);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::operator_(aLStack144,aLStack128);
-  lib::L2CValue::operator_(aLStack144,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::operator+(aLStack144,aLStack128);
+  lib::L2CValue::operator=(aLStack144,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,0x168);
-  uVar2 = lib::L2CValue::operator_((L2CValue *)&local_50,aLStack144);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  uVar2 = lib::L2CValue::operator<((L2CValue *)&local_50,aLStack144);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   if ((uVar2 & 1) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_50,0x168);
-    lib::L2CValue::operator_(aLStack144,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-    lib::L2CValue::operator_(aLStack144,aLStack160);
-    lib::L2CValue::_L2CValue(aLStack160);
+    lib::L2CValue::operator-(aLStack144,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::operator=(aLStack144,aLStack160);
+    lib::L2CValue::~L2CValue(aLStack160);
   }
   lib::L2CValue::L2CValue(aLStack160,0x31d39a761);
   lib::L2CValue::L2CValue(aLStack176,0.0);
@@ -71,24 +71,24 @@ L2CWeaponPackunSpikeball::status::Hop_exec(L2CWeaponPackunSpikeball *this,L2CVal
   plStack72 = (lua_State *)(ulong)uVar7;
   app::lua_bind::ModelModule__set_joint_rotate_impl
             (this->moduleAccessor,HVar4,(Vector3f *)&local_50,0,0);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,0.0);
-  lib::L2CValue::operator_(aLStack144,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::operator+(aLStack144,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue
             ((L2CValue *)&local_50,_WEAPON_PACKUN_SPIKEBALL_STATUS_HOP_WORK_FLOAT_DEGREE);
   fVar6 = (float)lib::L2CValue::as_number(aLStack160);
   iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_50);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar6,iVar1);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack160);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

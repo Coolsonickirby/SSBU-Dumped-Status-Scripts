@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterPichu::__L2CFighterPichu(L2CFighterPichu *this)
+void __thiscall L2CFighterPichu::~~L2CFighterPichu(L2CFighterPichu *this)
 
 {
-  _L2CFighterPichu();
-  operator_delete(this);
+  ~L2CFighterPichu();
+  operator.delete(this);
   return;
 }
 

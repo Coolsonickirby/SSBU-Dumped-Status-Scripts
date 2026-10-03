@@ -26,27 +26,27 @@ L2CWeaponPikminPikmin::status::CatchDash_main(L2CWeaponPikminPikmin *this,L2CVal
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
   lua2cpp::L2CFighterBase::set_situation(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,GROUND_CORRECT_KIND_GROUND_CLIFF_STOP);
   GVar2 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar2);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,_LINK_NO_ARTICLE);
   lib::L2CValue::L2CValue(aLStack112,0x1fc50f0808);
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   HVar4 = lib::L2CValue::as_hash(aLStack112);
   app::lua_bind::LinkModule__send_event_parents_impl(this->moduleAccessor,iVar3,HVar4);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,CatchDash_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

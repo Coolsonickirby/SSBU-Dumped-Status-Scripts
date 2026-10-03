@@ -18,13 +18,13 @@ L2CFighterYounglink::status::SpecialN_exit(L2CFighterYounglink *this,L2CValue *r
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack64,iVar1);
-  lib::L2CValue::operator_(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,2);
+  lib::L2CValue::operator=(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,2);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KIND_LINK);
-  uVar3 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar3 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar3 & 1) == 0) {
     iVar1 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar1,0);
@@ -34,14 +34,14 @@ L2CFighterYounglink::status::SpecialN_exit(L2CFighterYounglink *this,L2CValue *r
     iVar1 = lib::L2CValue::as_integer(aLStack80);
     iVar2 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::ArticleModule__change_status_exist_impl(this->moduleAccessor,iVar1,iVar2);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_LINK_GENERATE_ARTICLE_BOWARROW);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar1,0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

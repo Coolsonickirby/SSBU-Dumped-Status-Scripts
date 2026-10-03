@@ -15,12 +15,12 @@ L2CFighterYounglink::status::AirLassoRewind_main(L2CFighterYounglink *this,L2CVa
   lVar1 = lib::L2CValue::as_integer(aLStack64);
   lVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::VisibilityModule__set_status_default_int64_impl(this->moduleAccessor,lVar1,lVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_TOONLINK_HOOKSHOT_STATUS_KIND_HANG_REWIND);
   lua2cpp::L2CFighterCommon::status_AirLassoRewind(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

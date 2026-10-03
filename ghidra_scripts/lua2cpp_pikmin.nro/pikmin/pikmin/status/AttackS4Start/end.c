@@ -22,9 +22,9 @@ L2CWeaponPikminPikmin::status::AttackS4Start_end(L2CWeaponPikminPikmin *this,L2C
   uStack56 = (ulong)uVar1;
   app::lua_bind::ModelModule__set_render_offset_position_impl
             (this->moduleAccessor,(Vector3f *)&local_40);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

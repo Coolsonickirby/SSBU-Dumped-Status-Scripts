@@ -22,22 +22,22 @@ L2CWeaponRosettaTico::status::FreeJump_main_loop(L2CWeaponRosettaTico *this,L2CV
   lib::L2CValue::L2CValue(aLStack112,true);
   lib::L2CValue::L2CValue(aLStack128,true);
   FUN_710002d130(aLStack64,this,aLStack80,aLStack96,aLStack112,aLStack128);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar1 & 1U) == 0) {
-    this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+    this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
     lib::L2CValue::L2CValue(aLStack64,_SITUATION_KIND_GROUND);
-    uVar3 = lib::L2CValue::operator__(this_00,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    uVar3 = lib::L2CValue::operator==(this_00,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((uVar3 & 1) == 0) {
       bVar2 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue(aLStack64,(bool)(bVar2 & 1));
-      bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
+      bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       if ((bVar1 & 1U) == 0) {
         iVar4 = 0;
         goto LAB_7100033170;
@@ -51,8 +51,8 @@ L2CWeaponRosettaTico::status::FreeJump_main_loop(L2CWeaponRosettaTico *this,L2CV
       lib::L2CValue::L2CValue(aLStack144,false);
       lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0x70);
     }
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   iVar4 = 1;
 LAB_7100033170:

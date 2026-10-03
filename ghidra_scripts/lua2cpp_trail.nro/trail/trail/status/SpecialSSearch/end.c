@@ -16,24 +16,24 @@ L2CFighterTrail::status::SpecialSSearch_end(L2CFighterTrail *this,L2CValue *retu
   L2CValue aLStack96 [16];
   L2CValue aLStack80 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_TRAIL_STATUS_KIND_SPECIAL_S_TURN);
-  uVar6 = lib::L2CValue::operator__(this_00,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar6 = lib::L2CValue::operator==(this_00,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar6 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_TRAIL_GENERATE_ARTICLE_LOCKONCURSOR);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar3,0);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_TRAIL_STATUS_SPECIAL_S_INT_SEARCH_GUIDE_EFFECT_HANDLE);
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack96,iVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0);
-  uVar6 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar6 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar6 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,true);
     lib::L2CValue::L2CValue(aLStack112,true);
@@ -42,23 +42,23 @@ L2CFighterTrail::status::SpecialSSearch_end(L2CFighterTrail *this,L2CValue *retu
     bVar2 = lib::L2CValue::as_bool(aLStack112);
     app::lua_bind::EffectModule__kill_impl
               (this->moduleAccessor,uVar4,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue(aLStack80,0);
     lib::L2CValue::L2CValue
               (aLStack112,_FIGHTER_TRAIL_STATUS_SPECIAL_S_INT_SEARCH_GUIDE_EFFECT_HANDLE);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     iVar5 = lib::L2CValue::as_integer(aLStack112);
     app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar5);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack80,FIGHTER_CLIFF_HANG_DATA_DEFAULT);
   uVar4 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::GroundModule__select_cliff_hangdata_impl(this->moduleAccessor,uVar4);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

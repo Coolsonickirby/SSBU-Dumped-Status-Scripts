@@ -12,35 +12,35 @@ L2CFighterShizue::status::SpecialS_end(L2CFighterShizue *this,L2CValue *return_v
   L2CValue aLStack80 [16];
   
   this_00 = &this->globalTable;
-  pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+  pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_STATUS_KIND_AIR_LASSO_REACH);
-  uVar3 = lib::L2CValue::operator__(pLVar2,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar3 = lib::L2CValue::operator==(pLVar2,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar3 & 1) == 0) {
-    pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+    pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_SHIZUE_STATUS_KIND_SPECIAL_S_REEL);
-    uVar3 = lib::L2CValue::operator__(pLVar2,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar3 = lib::L2CValue::operator==(pLVar2,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar3 & 1) == 0) {
-      pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+      pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
       lib::L2CValue::L2CValue(aLStack80,_FIGHTER_SHIZUE_STATUS_KIND_SPECIAL_S_HIT);
-      uVar3 = lib::L2CValue::operator__(pLVar2,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar3 = lib::L2CValue::operator==(pLVar2,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar3 & 1) == 0) {
-        pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+        pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
         lib::L2CValue::L2CValue(aLStack80,_FIGHTER_SHIZUE_STATUS_KIND_SPECIAL_S_CUT);
-        uVar3 = lib::L2CValue::operator__(pLVar2,aLStack80);
-        lib::L2CValue::_L2CValue(aLStack80);
+        uVar3 = lib::L2CValue::operator==(pLVar2,aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
         if ((uVar3 & 1) == 0) {
-          pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+          pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
           lib::L2CValue::L2CValue(aLStack80,_FIGHTER_SHIZUE_STATUS_KIND_SPECIAL_S_END);
-          uVar3 = lib::L2CValue::operator__(pLVar2,aLStack80);
-          lib::L2CValue::_L2CValue(aLStack80);
+          uVar3 = lib::L2CValue::operator==(pLVar2,aLStack80);
+          lib::L2CValue::~L2CValue(aLStack80);
           if ((uVar3 & 1) == 0) {
             lib::L2CValue::L2CValue(aLStack80,_FIGHTER_SHIZUE_GENERATE_ARTICLE_FISHINGROD);
             iVar1 = lib::L2CValue::as_integer(aLStack80);
             app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar1,0);
-            lib::L2CValue::_L2CValue(aLStack80);
+            lib::L2CValue::~L2CValue(aLStack80);
           }
         }
       }
