@@ -616,7 +616,7 @@ public class Lua2CPPDump extends GhidraScript {
     }
     
     private String getCodeAtFunc(DecompInterface decomp, Function func){
-        DecompileResults res = decomp.decompileFunction(func, 60, monitor);
+        DecompileResults res = decomp.decompileFunction(func, 300, monitor);
         if (!res.decompileCompleted() || res.getCCodeMarkup() == null) {
             failedDecompiles++;
             printerr("Failed to decompile " + func.getName(true) + ": " + res.getErrorMessage());
