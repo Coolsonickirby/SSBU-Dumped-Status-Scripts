@@ -9,15 +9,15 @@ void __thiscall L2CFighterBuddy::status::AttackLw4_end(L2CFighterBuddy *this,L2C
   L2CValue aLStack64 [16];
   L2CValue aLStack48 [16];
   
-  pLVar1 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,9);
+  pLVar1 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,9);
   lib::L2CValue::L2CValue(aLStack48,pLVar1);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_BUDDY_GENERATE_ARTICLE_PARTNER);
   lua2cpp::L2CFighterCommon::sub_remove_exist_article_at_status_end
             (this,(L2CValue)0xd0,(L2CValue)0xc0);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
   lua2cpp::L2CFighterCommon::status_end_AttackLw4(this);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

@@ -7,7 +7,7 @@ L2CWeaponNanaRubber::status::Fall_main(L2CWeaponNanaRubber *this,L2CValue *retur
   
   lib::L2CValue::L2CValue(aLStack48,Fall_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

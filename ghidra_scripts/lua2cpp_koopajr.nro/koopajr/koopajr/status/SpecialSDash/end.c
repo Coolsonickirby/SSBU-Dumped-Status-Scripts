@@ -16,10 +16,10 @@ L2CFighterKoopajr::status::SpecialSDash_end(L2CFighterKoopajr *this,L2CValue *re
   ulong uStack56;
   
   FUN_71000120c0();
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,_FIGHTER_KOOPAJR_STATUS_KIND_SPECIAL_S_SPIN_TURN);
-  uVar1 = lib::L2CValue::operator__(this_00,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  uVar1 = lib::L2CValue::operator==(this_00,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   if ((uVar1 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,0.0);
     lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -30,9 +30,9 @@ L2CFighterKoopajr::status::SpecialSDash_end(L2CFighterKoopajr *this,L2CValue *re
     local_40 = uVar1 & 0xffffffff | lVar3 << 0x20;
     uStack56 = (ulong)uVar2;
     app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_40,0);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

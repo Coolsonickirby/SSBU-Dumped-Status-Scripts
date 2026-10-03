@@ -49,15 +49,15 @@ L2CWeaponZeldaTriforce::status::Vanish_pre(L2CWeaponZeldaTriforce *this,L2CValue
   app::lua_bind::StatusModule__init_settings_impl
             (this->moduleAccessor,SVar2,iVar3,uVar4,GVar5,(bool)(bVar1 & 1),iVar6,iVar7,iVar8,
              in_stack_fffffffffffffef4);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CValue::L2CValue(aLStack136,0xe1534ea62);
   lib::L2CValue::L2CValue(aLStack152,0xb38b339df);
   uVar9 = lib::L2CValue::as_integer(aLStack136);
@@ -65,22 +65,22 @@ L2CWeaponZeldaTriforce::status::Vanish_pre(L2CWeaponZeldaTriforce *this,L2CValue
   fVar12 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar9,uVar10)
   ;
   lib::L2CValue::L2CValue(aLStack120,fVar12);
-  pLVar11 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this[1].field_0x60,0xb38b339df);
-  lib::L2CValue::operator_(pLVar11,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
+  pLVar11 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this[1].field_0x60,0xb38b339df);
+  lib::L2CValue::operator=(pLVar11,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue(aLStack136,0xe1534ea62);
   lib::L2CValue::L2CValue(aLStack152,0xf7ef86076);
   uVar9 = lib::L2CValue::as_integer(aLStack136);
   uVar10 = lib::L2CValue::as_integer(aLStack152);
   iVar3 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar9,uVar10);
   lib::L2CValue::L2CValue(aLStack120,iVar3);
-  pLVar11 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this[1].field_0x60,0xf7ef86076);
-  lib::L2CValue::operator_(pLVar11,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
+  pLVar11 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this[1].field_0x60,0xf7ef86076);
+  lib::L2CValue::operator=(pLVar11,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

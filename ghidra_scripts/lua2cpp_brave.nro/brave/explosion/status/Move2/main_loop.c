@@ -11,9 +11,9 @@ L2CWeaponBraveExplosion::status::Move2_main_loop
   
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_BRAVE_EXPLOSION_STATUS_KIND_EXPLODE2);
   FUN_710003dce0(aLStack48,this,aLStack64);
-  lib::L2CValue::operator_cast_to_bool(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::operator.cast.to.bool(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

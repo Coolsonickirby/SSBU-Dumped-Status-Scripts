@@ -27,9 +27,9 @@ L2CFighterDiddy::status::FinalFinishAttack_end(L2CFighterDiddy *this,L2CValue *r
   local_40 = uVar4 & 0xffffffff | lVar5 << 0x20;
   uStack56 = (ulong)uVar3;
   app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_40,0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0x31d39a761);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -42,15 +42,15 @@ L2CFighterDiddy::status::FinalFinishAttack_end(L2CFighterDiddy *this,L2CValue *r
   uStack56 = (ulong)uVar3;
   app::lua_bind::ModelModule__set_joint_rotate_impl
             (this->moduleAccessor,HVar2,(Vector3f *)&local_40,0,0);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   app::lua_bind::CameraModule__zoom_out_impl(this->moduleAccessor,0);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,_FIGHTER_DIDDY_GENERATE_ARTICLE_LOCK_ON_CURSOR);
   iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_40);
   app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar1,0);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

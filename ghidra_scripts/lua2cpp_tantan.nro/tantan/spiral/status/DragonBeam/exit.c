@@ -11,7 +11,7 @@ L2CWeaponTantanSpiral::status::DragonBeam_exit(L2CWeaponTantanSpiral *this,L2CVa
   lib::L2CValue::L2CValue(aLStack48,_PH2NDARY_CRAW_MOVE);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::PhysicsModule__set_2nd_status_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

@@ -23,12 +23,12 @@ L2CWeaponTantanSpiral::status::KirbyBack_main(L2CWeaponTantanSpiral *this,L2CVal
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   fVar5 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,fVar5);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,0x125559861f);
   HVar4 = lib::L2CValue::as_hash(aLStack96);
   uVar3 = app::lua_bind::MotionModule__end_frame_from_hash_impl(this->moduleAccessor,HVar4);
   lib::L2CValue::L2CValue(aLStack112,uVar3);
-  lib::L2CValue::operator_(aLStack112,aLStack80);
+  lib::L2CValue::operator-(aLStack112,aLStack80);
   lib::L2CValue::L2CValue(aLStack144,1.0);
   lib::L2CValue::L2CValue(aLStack160,false);
   HVar4 = lib::L2CValue::as_hash(aLStack96);
@@ -37,15 +37,15 @@ L2CWeaponTantanSpiral::status::KirbyBack_main(L2CWeaponTantanSpiral *this,L2CVal
   bVar1 = lib::L2CValue::as_bool(aLStack160);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue(aLStack144,KirbyBack_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x70);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

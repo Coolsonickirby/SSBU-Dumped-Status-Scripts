@@ -25,10 +25,10 @@ L2CWeaponWiifitSunbullet::status::Hold_main(L2CWeaponWiifitSunbullet *this,L2CVa
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar3,fVar4,fVar5,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue
             (aLStack96,_WEAPON_WIIFIT_SUNBULLET_INSTANCE_WORK_ID_FLOAT_CHARGE_LEVEL_RATIO);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
@@ -36,11 +36,11 @@ L2CWeaponWiifitSunbullet::status::Hold_main(L2CWeaponWiifitSunbullet *this,L2CVa
   lib::L2CValue::L2CValue(aLStack80,fVar4);
   fVar4 = (float)lib::L2CValue::as_number(aLStack80);
   app::lua_bind::AttackModule__set_lerp_ratio_impl(this->moduleAccessor,fVar4,0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack80,Hold_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

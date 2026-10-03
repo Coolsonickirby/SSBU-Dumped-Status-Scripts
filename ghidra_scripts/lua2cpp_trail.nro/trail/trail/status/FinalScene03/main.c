@@ -19,18 +19,18 @@ L2CFighterTrail::status::FinalScene03_main(L2CFighterTrail *this,L2CValue *retur
   lib::L2CValue::L2CValue(aLStack80,false);
   bVar1 = lib::L2CValue::as_bool(aLStack80);
   app::lua_bind::AreaModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,false);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_INSTANCE_WORK_ID_FLAG_NAME_CURSOR);
   bVar1 = lib::L2CValue::as_bool(aLStack80);
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_flag_impl(this->moduleAccessor,(bool)(bVar1 & 1),iVar3);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,FIGHTER_INSTANCE_WORK_ID_FLAG_NO_DEAD);
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0x15f32ac238);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,1.0);
@@ -41,29 +41,29 @@ L2CFighterTrail::status::FinalScene03_main(L2CFighterTrail *this,L2CValue *retur
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_TRAIL_GENERATE_ARTICLE_BOX);
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::ArticleModule__is_exist_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_TRAIL_GENERATE_ARTICLE_BOX);
     lib::L2CValue::L2CValue(aLStack96,0xf70771648);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     HVar4 = lib::L2CValue::as_hash(aLStack96);
     app::lua_bind::ArticleModule__change_motion_impl(this->moduleAccessor,iVar3,HVar4,false,-1.0);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack80,FinalScene03_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

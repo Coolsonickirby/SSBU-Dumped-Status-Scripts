@@ -25,30 +25,30 @@ L2CFighterEflame::status::SpecialNHold_main(L2CFighterEflame *this,L2CValue *ret
   lib::L2CValue::L2CValue(aLStack160,aLStack96);
   lua2cpp::L2CFighterCommon::sub_change_motion_by_situation
             (this,(L2CValue)0x80,(L2CValue)0x70,(L2CValue)0x60);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack192,true);
   lua2cpp::L2CFighterCommon::sub_set_ground_correct_by_situation(this,(L2CValue)0x40);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack192);
   lib::L2CValue::L2CValue
             (aLStack208,_FIGHTER_EFLAME_STATUS_SPECIAL_N_WORK_FLAG_SPEED_CHANGE_HOLD_END_CHANGED);
   iVar1 = lib::L2CValue::as_integer(aLStack208);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack208);
   lib::L2CValue::L2CValue
             (aLStack208,_FIGHTER_EFLAME_STATUS_SPECIAL_N_WORK_FLAG_SPEED_CHANGE_HOLD_END_REQUEST);
   iVar1 = lib::L2CValue::as_integer(aLStack208);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack208);
   lib::L2CValue::L2CValue(aLStack208,SpecialNHold_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0x30);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

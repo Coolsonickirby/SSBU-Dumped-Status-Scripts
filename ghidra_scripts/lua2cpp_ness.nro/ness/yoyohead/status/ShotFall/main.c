@@ -22,9 +22,9 @@ L2CWeaponNessYoyohead::status::ShotFall_main(L2CWeaponNessYoyohead *this,L2CValu
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack96,0xfee188235);
     lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -49,10 +49,10 @@ L2CWeaponNessYoyohead::status::ShotFall_main(L2CWeaponNessYoyohead *this,L2CValu
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar5,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,_WEAPON_NESS_YOYO_LINK_NO_YOYO);
   lib::L2CValue::L2CValue(aLStack112,0x6dec97c81);
   lib::L2CValue::L2CValue(aLStack128,0x6add1dc80);
@@ -64,13 +64,13 @@ L2CWeaponNessYoyohead::status::ShotFall_main(L2CWeaponNessYoyohead *this,L2CValu
   uVar4 = lib::L2CValue::as_integer(aLStack144);
   app::lua_bind::LinkModule__set_model_constraint_pos_ort_impl
             (this->moduleAccessor,iVar3,HVar5,HVar6,uVar4,true);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,ShotFall_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

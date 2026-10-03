@@ -18,8 +18,8 @@ L2CWeaponLucarioLucariom::status::FinalStart_end
   lib::L2CValue::L2CValue(aLStack48,fVar2);
   fVar2 = (float)lib::L2CValue::as_number(aLStack48);
   app::lua_bind::PostureModule__set_lr_impl(this->moduleAccessor,fVar2);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

@@ -18,7 +18,7 @@ L2CFighterBayonetta::status::SpecialAirSU_main(L2CFighterBayonetta *this,L2CValu
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KINETIC_TYPE_BAYONETTA_SPECIAL_AIR_S);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::KineticModule__change_kinetic_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0xf1cdd2452);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,1.0);
@@ -29,23 +29,23 @@ L2CFighterBayonetta::status::SpecialAirSU_main(L2CFighterBayonetta *this,L2CValu
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar3,fVar4,fVar5,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
   lib::L2CValue::L2CValue(aLStack96,true);
   lua2cpp::L2CFighterBase::set_situation_keep(this,(L2CValue)0xb0,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue
             (aLStack112,_FIGHTER_BAYONETTA_STATUS_WORK_ID_SPECIAL_AIR_S_U_FLAG_SITUATION_KEEP);
   iVar2 = lib::L2CValue::as_integer(aLStack112);
   app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue(aLStack112,SpecialAirSU_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0x90);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
   return;
 }
 

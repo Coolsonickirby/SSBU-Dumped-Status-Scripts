@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterReflet::__L2CFighterReflet(L2CFighterReflet *this)
+void __thiscall L2CFighterReflet::~~L2CFighterReflet(L2CFighterReflet *this)
 
 {
-  _L2CFighterReflet();
-  operator_delete(this);
+  ~L2CFighterReflet();
+  operator.delete(this);
   return;
 }
 

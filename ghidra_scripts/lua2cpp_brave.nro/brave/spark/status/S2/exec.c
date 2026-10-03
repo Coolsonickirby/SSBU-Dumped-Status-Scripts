@@ -11,7 +11,7 @@ L2CWeaponBraveSpark::status::S32_exec(L2CWeaponBraveSpark *this,L2CValue *return
   lib::L2CValue::L2CValue(aLStack48,_WEAPON_INSTANCE_WORK_ID_INT_LIFE);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::WorkModule__dec_int_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

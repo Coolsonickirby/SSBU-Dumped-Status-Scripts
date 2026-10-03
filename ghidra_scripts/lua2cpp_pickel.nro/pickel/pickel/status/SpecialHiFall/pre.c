@@ -24,14 +24,14 @@ L2CFighterPickel::status::SpecialHiFall_pre(L2CFighterPickel *this,L2CValue *ret
   lib::L2CValue::L2CValue(aLStack176,0);
   lua2cpp::L2CFighterCommon::status_pre_Fall_main_param
             (this,(L2CValue)0x90,(L2CValue)0x80,(L2CValue)0x70,(L2CValue)0x60,(L2CValue)0x50);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

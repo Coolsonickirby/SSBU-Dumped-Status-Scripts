@@ -16,9 +16,9 @@ L2CWeaponRefletElwind::status::Landing_main_loop(L2CWeaponRefletElwind *this,L2C
   HVar2 = app::lua_bind::MotionModule__motion_kind_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack96,HVar2);
   lib::L2CValue::L2CValue(aLStack80,0x7ef3ace15);
-  uVar3 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar3 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar3 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,0x7ef3ace15);
     lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -30,10 +30,10 @@ L2CWeaponRefletElwind::status::Landing_main_loop(L2CWeaponRefletElwind *this,L2C
     bVar1 = lib::L2CValue::as_bool(aLStack128);
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar2,fVar4,fVar5,(bool)(bVar1 & 1),0.0,false,false);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

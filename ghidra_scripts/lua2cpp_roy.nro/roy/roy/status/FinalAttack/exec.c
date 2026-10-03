@@ -17,15 +17,15 @@ void __thiscall L2CFighterRoy::status::FinalAttack_exec(L2CFighterRoy *this,L2CV
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_ROY_STATUS_FINAL_FLAG_FINISH_ABS_HIT);
     iVar3 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar3);
-    lib::L2CValue::_L2CValue(aLStack64);
-    this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,4);
+    lib::L2CValue::~L2CValue(aLStack64);
+    this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,4);
     pFVar4 = (Fighter *)lib::L2CValue::as_pointer(this_00);
     app::FighterSpecializer_Roy::hit_absolute_final_chrom(pFVar4);
   }

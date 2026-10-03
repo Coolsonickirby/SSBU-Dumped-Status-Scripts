@@ -21,10 +21,10 @@ L2CFighterDemon::status::LandingLight_main(L2CFighterDemon *this,L2CValue *retur
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,true);
-  uVar4 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar4 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar4 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack64,0xdf05c072b);
     lib::L2CValue::L2CValue(aLStack96,0x2bb2c89680);
@@ -32,19 +32,19 @@ L2CFighterDemon::status::LandingLight_main(L2CFighterDemon *this,L2CValue *retur
     uVar5 = lib::L2CValue::as_integer(aLStack96);
     iVar2 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar4,uVar5);
     lib::L2CValue::L2CValue(aLStack80,iVar2);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,0xdf05c072b);
     lib::L2CValue::L2CValue(aLStack112,0x2b8897f0a6);
     uVar4 = lib::L2CValue::as_integer(aLStack64);
     uVar5 = lib::L2CValue::as_integer(aLStack112);
     iVar2 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar4,uVar5);
     lib::L2CValue::L2CValue(aLStack96,iVar2);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,0);
-    uVar4 = lib::L2CValue::operator__(aLStack80,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    uVar4 = lib::L2CValue::operator==(aLStack80,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((uVar4 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack64,_FIGHTER_DEMON_STATUS_LANDING_WORK_INT_RESET_COMMAND_3);
       iVar2 = lib::L2CValue::as_integer(aLStack80);
@@ -57,10 +57,10 @@ L2CFighterDemon::status::LandingLight_main(L2CFighterDemon *this,L2CValue *retur
       app::lua_bind::FighterControlModuleImpl__reset_special_command_individual_impl
                 (this->moduleAccessor,iVar2);
     }
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,0);
-    uVar4 = lib::L2CValue::operator__(aLStack96,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    uVar4 = lib::L2CValue::operator==(aLStack96,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((uVar4 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack64,_FIGHTER_DEMON_STATUS_LANDING_WORK_INT_RESET_COMMAND_9);
       iVar2 = lib::L2CValue::as_integer(aLStack96);
@@ -73,19 +73,19 @@ L2CFighterDemon::status::LandingLight_main(L2CFighterDemon *this,L2CValue *retur
       app::lua_bind::FighterControlModuleImpl__reset_special_command_individual_impl
                 (this->moduleAccessor,iVar2);
     }
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_PAD_CMD_CAT4_COMMAND_1);
     iVar2 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::FighterControlModuleImpl__reset_special_command_individual_impl
               (this->moduleAccessor,iVar2);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_PAD_CMD_CAT4_COMMAND_7);
     iVar2 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::FighterControlModuleImpl__reset_special_command_individual_impl
               (this->moduleAccessor,iVar2);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lua2cpp::L2CFighterCommon::status_LandingLight(this);
   return;

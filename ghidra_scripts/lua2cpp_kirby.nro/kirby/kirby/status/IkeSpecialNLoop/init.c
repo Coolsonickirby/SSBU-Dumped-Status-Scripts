@@ -23,25 +23,25 @@ L2CFighterKirby::status::IkeSpecialNLoop_init(L2CFighterKirby *this,L2CValue *re
   uVar4 = lib::L2CValue::as_integer(aLStack128);
   iVar1 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar3,uVar4);
   lib::L2CValue::L2CValue(aLStack96,iVar1);
-  lib::L2CValue::operator_(aLStack96,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::operator*(aLStack96,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_IKE_STATUS_SPECIAL_N_WORK_INT_CHARGE_COUNT_MAX);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,0x1228758a88);
   HVar5 = lib::L2CValue::as_hash(aLStack96);
   iVar1 = app::lua_bind::SoundModule__play_status_se_impl
                     (this->moduleAccessor,HVar5,false,false,false);
   lib::L2CValue::L2CValue(aLStack112,iVar1);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

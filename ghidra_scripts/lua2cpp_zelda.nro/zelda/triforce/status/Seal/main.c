@@ -31,32 +31,32 @@ L2CWeaponZeldaTriforce::status::Seal_main(L2CWeaponZeldaTriforce *this,L2CValue 
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar5,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,_WEAPON_ZELDA_TRIFORCE_STATUS_WORK_INT_HIT_OBJECT_ID);
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,iVar3);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   uVar4 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::sv_battle_object::is_null(uVar4);
   lib::L2CValue::L2CValue(aLStack112,(bool)(bVar1 & 1));
-  lib::L2CValue::operator_(aLStack112);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
+  lib::L2CValue::operator!(aLStack112);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
   if ((bVar2 & 1U) == 0) {
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     this_00 = aLStack112;
   }
   else {
     uVar4 = lib::L2CValue::as_integer(aLStack80);
     bVar1 = app::sv_battle_object::is_active(uVar4);
     lib::L2CValue::L2CValue(aLStack128,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((bVar2 & 1U) == 0) goto LAB_710001d520;
     uVar4 = lib::L2CValue::as_integer(aLStack80);
     pvVar6 = (void *)app::sv_battle_object::module_accessor(uVar4);
@@ -71,18 +71,18 @@ L2CWeaponZeldaTriforce::status::Seal_main(L2CWeaponZeldaTriforce *this,L2CValue 
     lib::L2CValue::L2CValue(aLStack144,1);
     lib::L2CValue::L2CValue(aLStack160,false);
     FUN_710001fa40(this,aLStack112,aLStack128,aLStack144,aLStack160);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
     this_00 = aLStack96;
   }
-  lib::L2CValue::_L2CValue(this_00);
+  lib::L2CValue::~L2CValue(this_00);
 LAB_710001d520:
   lib::L2CValue::L2CValue(aLStack96,Seal_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

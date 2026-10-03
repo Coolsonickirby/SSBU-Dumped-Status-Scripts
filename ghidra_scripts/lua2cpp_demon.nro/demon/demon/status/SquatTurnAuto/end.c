@@ -11,11 +11,11 @@ L2CFighterDemon::status::SquatTurnAuto_end(L2CFighterDemon *this,L2CValue *retur
   L2CValue aLStack64 [16];
   
   lua2cpp::L2CFighterCommon::status_end_SquatWait(this);
-  lib::L2CValue::_L2CValue(aLStack80);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  lib::L2CValue::~L2CValue(aLStack80);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_KIND_SQUAT_WAIT);
-  uVar1 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar1 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar1 & 1) == 0) {
     app::lua_bind::TurnModule__end_turn_impl(this->moduleAccessor);
   }

@@ -10,11 +10,11 @@ void __thiscall L2CFighterYoshi::status::Throw_main(L2CFighterYoshi *this,L2CVal
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_YOSHI_STATUS_THROW_FLAG_THROWN_VISIBLE);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lua2cpp::L2CFighterCommon::status_Throw_Sub(this);
   lib::L2CValue::L2CValue(aLStack48,Throw_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

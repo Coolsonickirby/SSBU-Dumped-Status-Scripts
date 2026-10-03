@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterShulk::__L2CFighterShulk(L2CFighterShulk *this)
+void __thiscall L2CFighterShulk::~~L2CFighterShulk(L2CFighterShulk *this)
 
 {
-  _L2CFighterShulk();
-  operator_delete(this);
+  ~L2CFighterShulk();
+  operator.delete(this);
   return;
 }
 

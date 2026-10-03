@@ -34,9 +34,9 @@ L2CWeaponSonicSupersonic::status::Idle_main(L2CWeaponSonicSupersonic *this,L2CVa
   fVar5 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue((L2CValue *)&local_70,fVar5);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,-1.0);
-  uVar2 = lib::L2CValue::operator__((L2CValue *)&local_70,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_70);
+  uVar2 = lib::L2CValue::operator==((L2CValue *)&local_70,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_70);
   if ((uVar2 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack144,0x1735827d29);
     lib::L2CValue::L2CValue(aLStack160,0x35dbfe258);
@@ -105,21 +105,21 @@ L2CWeaponSonicSupersonic::status::Idle_main(L2CWeaponSonicSupersonic *this,L2CVa
                        (bool)in_stack_fffffffffffffe8c,false);
     lib::L2CValue::L2CValue(aLStack128,uVar6);
   }
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack304);
-  lib::L2CValue::_L2CValue(aLStack288);
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack304);
+  lib::L2CValue::~L2CValue(aLStack288);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,Idle_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   return;
 }
 

@@ -17,22 +17,22 @@ L2CWeaponBuddyPad::status::Bound_exec(L2CWeaponBuddyPad *this,L2CValue *return_v
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,false);
-  uVar3 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar3 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar3 & 1) != 0) {
     bVar1 = app::lua_bind::StatusModule__is_changing_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
     lib::L2CValue::L2CValue(aLStack64,false);
-    uVar3 = lib::L2CValue::operator__(aLStack80,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar3 = lib::L2CValue::operator==(aLStack80,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar3 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack64,_WEAPON_BUDDY_PAD_STATUS_WORK_FLAG_BOUND_ROT_START);
       iVar2 = lib::L2CValue::as_integer(aLStack64);
       app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar2);
-      lib::L2CValue::_L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
     }
   }
   FUN_7100036d60(this);

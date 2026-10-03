@@ -6,7 +6,7 @@ void __thiscall L2CWeaponSnakeC4::status::Start_main(L2CWeaponSnakeC4 *this,L2CV
   
   lib::L2CValue::L2CValue(aLStack48,Start_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

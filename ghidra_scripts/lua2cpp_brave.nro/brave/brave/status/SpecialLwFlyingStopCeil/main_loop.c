@@ -17,28 +17,28 @@ L2CFighterBrave::status::SpecialLwFlyingStopCeil_main_loop
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,true);
-  uVar4 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
-    this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+    this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
     lib::L2CValue::L2CValue(aLStack64,_SITUATION_KIND_GROUND);
-    uVar4 = lib::L2CValue::operator__(this_00,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    uVar4 = lib::L2CValue::operator==(this_00,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((uVar4 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack80,FIGHTER_STATUS_TRANSITION_TERM_ID_LANDING);
       iVar3 = lib::L2CValue::as_integer(aLStack80);
       bVar1 = app::lua_bind::WorkModule__is_enable_transition_term_impl(this->moduleAccessor,iVar3);
       lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-      bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack80);
+      bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((bVar2 & 1U) != 0) {
         lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_KIND_LANDING);
         lib::L2CValue::L2CValue(aLStack80,false);
         lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-        lib::L2CValue::_L2CValue(aLStack80);
-        lib::L2CValue::_L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack64);
         lib::L2CValue::L2CValue((L2CValue *)return_value,true);
         return;
       }
@@ -48,8 +48,8 @@ L2CFighterBrave::status::SpecialLwFlyingStopCeil_main_loop
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_KIND_FALL);
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

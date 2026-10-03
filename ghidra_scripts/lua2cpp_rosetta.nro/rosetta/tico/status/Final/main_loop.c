@@ -20,8 +20,8 @@ L2CWeaponRosettaTico::status::Final_main_loop(L2CWeaponRosettaTico *this,L2CValu
   pLVar7 = aLStack112;
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     FUN_710002c5a0(this);
     iVar3 = 1;
@@ -31,32 +31,32 @@ L2CWeaponRosettaTico::status::Final_main_loop(L2CWeaponRosettaTico *this,L2CValu
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
   if ((bVar2 & 1U) == 0) {
 LAB_710002c444:
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
 LAB_710002c51c:
-    lib::L2CValue::_L2CValue(pLVar7);
+    lib::L2CValue::~L2CValue(pLVar7);
   }
   else {
     this_00 = &this->globalTable;
-    pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x17);
+    pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x17);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar6 = lib::L2CValue::operator__(pLVar5,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar6 = lib::L2CValue::operator==(pLVar5,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar6 & 1) != 0) {
-      pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+      pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
       lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
-      uVar6 = lib::L2CValue::operator__(pLVar5,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar6 = lib::L2CValue::operator==(pLVar5,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar6 & 1) == 0) goto LAB_710002c40c;
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack112);
 LAB_710002c49c:
-      pLVar7 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+      pLVar7 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
       lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-      uVar6 = lib::L2CValue::operator__(pLVar7,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar6 = lib::L2CValue::operator==(pLVar7,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar6 & 1) == 0) {
         lib::L2CValue::L2CValue(aLStack80,GROUND_CORRECT_KIND_AIR);
         GVar4 = lib::L2CValue::as_integer(aLStack80);
@@ -71,17 +71,17 @@ LAB_710002c49c:
       goto LAB_710002c51c;
     }
 LAB_710002c40c:
-    pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x17);
+    pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x17);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar6 = lib::L2CValue::operator__(pLVar5,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar6 = lib::L2CValue::operator==(pLVar5,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar6 & 1) != 0) goto LAB_710002c444;
-    pLVar7 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar6 = lib::L2CValue::operator__(pLVar7,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar6 = lib::L2CValue::operator==(pLVar7,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar6 & 1) != 0) goto LAB_710002c49c;
   }
   iVar3 = 0;

@@ -7,7 +7,7 @@ L2CFighterMurabito::status::SpecialLwWaterWalkB_pre(L2CFighterMurabito *this,L2C
   
   lib::L2CValue::L2CValue(aLStack48,FIGHTER_KINETIC_TYPE_MOTION);
   FUN_710001cc60(return_value,this,aLStack48);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

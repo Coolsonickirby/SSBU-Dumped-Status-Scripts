@@ -30,9 +30,9 @@ L2CWeaponTantanBeam::status::Shoot_main(L2CWeaponTantanBeam *this,L2CValue *retu
   iVar3 = lib::L2CValue::as_integer(aLStack136);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack232,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack136);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack136);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack232,0x57044fcbe);
     lib::L2CValue::L2CValue(aLStack136,0.0);
@@ -57,29 +57,29 @@ L2CWeaponTantanBeam::status::Shoot_main(L2CWeaponTantanBeam *this,L2CValue *retu
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar5,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack232);
   lib::L2CValue::L2CValue(aLStack136,_WEAPON_LINK_NO_CONSTRAINT);
   iVar3 = lib::L2CValue::as_integer(aLStack136);
   bVar1 = app::lua_bind::LinkModule__is_link_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack232,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack136);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack136);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack152,0.0);
     lib::L2CValue::L2CValue(aLStack168,0.0);
     fVar7 = 0.0;
     lib::L2CValue::L2CValue(aLStack184,0.0);
     lua2cpp::L2CFighterBase::Vector3__create(this,(L2CValue)0x68,(L2CValue)0x58,(L2CValue)0x48);
-    lib::L2CValue::_L2CValue(aLStack184);
-    lib::L2CValue::_L2CValue(aLStack168);
-    lib::L2CValue::_L2CValue(aLStack152);
-    pLVar6 = (L2CValue *)lib::L2CValue::operator__(aLStack136,0x18cdc1683);
-    this_00 = (L2CValue *)lib::L2CValue::operator__(aLStack136,0x1fbdb2615);
-    this_01 = (L2CValue *)lib::L2CValue::operator__(aLStack136,0x162d277af);
+    lib::L2CValue::~L2CValue(aLStack184);
+    lib::L2CValue::~L2CValue(aLStack168);
+    lib::L2CValue::~L2CValue(aLStack152);
+    pLVar6 = (L2CValue *)lib::L2CValue::operator[](aLStack136,0x18cdc1683);
+    this_00 = (L2CValue *)lib::L2CValue::operator[](aLStack136,0x1fbdb2615);
+    this_01 = (L2CValue *)lib::L2CValue::operator[](aLStack136,0x162d277af);
     lib::L2CValue::L2CValue(aLStack248,_WEAPON_LINK_NO_CONSTRAINT);
     lib::L2CValue::L2CValue(aLStack264,0x4d27eea40);
     iVar3 = lib::L2CValue::as_integer(aLStack248);
@@ -89,37 +89,37 @@ L2CWeaponTantanBeam::status::Shoot_main(L2CWeaponTantanBeam *this,L2CValue *retu
     lib::L2CValue::L2CValue(aLStack232,(float)uVar9);
     lib::L2CValue::L2CValue(aLStack216,(float)((ulong)uVar9 >> 0x20));
     lib::L2CValue::L2CValue(aLStack200,fVar7);
-    lib::L2CValue::operator_(pLVar6,aLStack232);
-    lib::L2CValue::operator_(this_00,aLStack216);
-    lib::L2CValue::operator_(this_01,aLStack200);
-    lib::L2CValue::_L2CValue(aLStack200);
-    lib::L2CValue::_L2CValue(aLStack216);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack264);
-    lib::L2CValue::_L2CValue(aLStack248);
-    pLVar6 = (L2CValue *)lib::L2CValue::operator__(aLStack136,0x18cdc1683);
+    lib::L2CValue::operator=(pLVar6,aLStack232);
+    lib::L2CValue::operator=(this_00,aLStack216);
+    lib::L2CValue::operator=(this_01,aLStack200);
+    lib::L2CValue::~L2CValue(aLStack200);
+    lib::L2CValue::~L2CValue(aLStack216);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack264);
+    lib::L2CValue::~L2CValue(aLStack248);
+    pLVar6 = (L2CValue *)lib::L2CValue::operator[](aLStack136,0x18cdc1683);
     lib::L2CValue::L2CValue(aLStack232,0.0);
-    lib::L2CValue::operator_(pLVar6,aLStack232);
-    lib::L2CValue::_L2CValue(aLStack232);
+    lib::L2CValue::operator+(pLVar6,aLStack232);
+    lib::L2CValue::~L2CValue(aLStack232);
     lib::L2CValue::L2CValue
               (aLStack232,_WEAPON_TANTAN_BEAM_INSTANCE_WORK_ID_FLOAT_PARENT_JOINT_POS_X);
     fVar7 = (float)lib::L2CValue::as_number(aLStack248);
     iVar3 = lib::L2CValue::as_integer(aLStack232);
     app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar7,iVar3);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack248);
-    pLVar6 = (L2CValue *)lib::L2CValue::operator__(aLStack136,0x1fbdb2615);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack248);
+    pLVar6 = (L2CValue *)lib::L2CValue::operator[](aLStack136,0x1fbdb2615);
     lib::L2CValue::L2CValue(aLStack232,0.0);
-    lib::L2CValue::operator_(pLVar6,aLStack232);
-    lib::L2CValue::_L2CValue(aLStack232);
+    lib::L2CValue::operator+(pLVar6,aLStack232);
+    lib::L2CValue::~L2CValue(aLStack232);
     lib::L2CValue::L2CValue
               (aLStack232,_WEAPON_TANTAN_BEAM_INSTANCE_WORK_ID_FLOAT_PARENT_JOINT_POS_Y);
     fVar7 = (float)lib::L2CValue::as_number(aLStack248);
     iVar3 = lib::L2CValue::as_integer(aLStack232);
     app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar7,iVar3);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack136);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack136);
   }
   lib::L2CValue::L2CValue(aLStack232,_EFFECT_HANDLE_NULL);
   lib::L2CValue::L2CValue
@@ -127,18 +127,18 @@ L2CWeaponTantanBeam::status::Shoot_main(L2CWeaponTantanBeam *this,L2CValue *retu
   iVar3 = lib::L2CValue::as_integer(aLStack232);
   iVar4 = lib::L2CValue::as_integer(aLStack136);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack232);
   lib::L2CValue::L2CValue(aLStack232,-1);
   lib::L2CValue::L2CValue(aLStack136,_WEAPON_TANTAN_BEAM_STATUS_WORK_ID_INT_HIT_GROUND_LINE_ID);
   iVar3 = lib::L2CValue::as_integer(aLStack232);
   iVar4 = lib::L2CValue::as_integer(aLStack136);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack232);
   lib::L2CValue::L2CValue(aLStack232,Shoot_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x18);
-  lib::L2CValue::_L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack232);
   return;
 }
 

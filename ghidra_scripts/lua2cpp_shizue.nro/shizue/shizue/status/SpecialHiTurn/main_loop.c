@@ -13,27 +13,27 @@ L2CFighterShizue::status::SpecialHiTurn_main_loop(L2CFighterShizue *this,L2CValu
   L2CValue aLStack64 [16];
   
   lua2cpp::L2CFighterCommon::sub_transition_group_check_air_cliff(this);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar1 & 1U) == 0) {
     FUN_71000200c0(aLStack64,this);
-    bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((bVar1 & 1U) == 0) {
       FUN_71000205b0(aLStack64,this);
-      bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
+      bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       if ((bVar1 & 1U) == 0) {
         lib::L2CValue::L2CValue(aLStack80,true);
         FUN_7100020ad0(aLStack64,this,aLStack80);
-        bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack80);
+        bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack80);
         if ((bVar1 & 1U) == 0) {
           bVar2 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
           lib::L2CValue::L2CValue(aLStack64,(bool)(bVar2 & 1));
-          bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-          lib::L2CValue::_L2CValue(aLStack64);
+          bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+          lib::L2CValue::~L2CValue(aLStack64);
           if ((bVar1 & 1U) == 0) {
             iVar3 = 0;
             goto LAB_7100021888;
@@ -41,8 +41,8 @@ L2CFighterShizue::status::SpecialHiTurn_main_loop(L2CFighterShizue *this,L2CValu
           lib::L2CValue::L2CValue(aLStack64,_FIGHTER_MURABITO_STATUS_KIND_SPECIAL_HI_WAIT);
           lib::L2CValue::L2CValue(aLStack96,false);
           lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xa0);
-          lib::L2CValue::_L2CValue(aLStack96);
-          lib::L2CValue::_L2CValue(aLStack64);
+          lib::L2CValue::~L2CValue(aLStack96);
+          lib::L2CValue::~L2CValue(aLStack64);
         }
       }
     }

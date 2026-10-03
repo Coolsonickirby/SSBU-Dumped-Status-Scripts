@@ -37,14 +37,14 @@ L2CWeaponPfushigisouSeed::status::Clash_main(L2CWeaponPfushigisouSeed *this,L2CV
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar3,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_c0);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_c0);
   lib::L2CValue::L2CValue((L2CValue *)&local_c0,false);
   bVar1 = lib::L2CValue::as_bool((L2CValue *)&local_c0);
   app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue((L2CValue *)&local_c0);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_c0);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,0x66933a7e6);
   HVar3 = lib::L2CValue::as_hash((L2CValue *)&local_60);
   fVar7 = (float)app::sv_math::randf(HVar3,1.0);
@@ -55,12 +55,12 @@ L2CWeaponPfushigisouSeed::status::Clash_main(L2CWeaponPfushigisouSeed *this,L2CV
   uVar5 = lib::L2CValue::as_integer(aLStack144);
   fVar7 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar4,uVar5);
   lib::L2CValue::L2CValue(aLStack112,fVar7);
-  uVar4 = lib::L2CValue::operator__(aLStack112,(L2CValue *)&local_c0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_c0);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  uVar4 = lib::L2CValue::operator<=(aLStack112,(L2CValue *)&local_c0);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_c0);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   if ((uVar4 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack112);
     lib::L2CValue::L2CValue(aLStack128);
@@ -69,31 +69,31 @@ L2CWeaponPfushigisouSeed::status::Clash_main(L2CWeaponPfushigisouSeed *this,L2CV
     lib::L2CValue::L2CValue((L2CValue *)&local_c0,*pfVar6);
     lib::L2CValue::L2CValue(aLStack176,pfVar6[1]);
     lib::L2CValue::L2CValue(aLStack160,pfVar6[2]);
-    lib::L2CValue::operator_(aLStack112,(L2CValue *)&local_c0);
-    lib::L2CValue::operator_(aLStack128,aLStack176);
-    lib::L2CValue::operator_(aLStack144,aLStack160);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_c0);
+    lib::L2CValue::operator=(aLStack112,(L2CValue *)&local_c0);
+    lib::L2CValue::operator=(aLStack128,aLStack176);
+    lib::L2CValue::operator=(aLStack144,aLStack160);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_c0);
     lib::L2CValue::L2CValue(aLStack208);
     lib::L2CValue::L2CValue(aLStack224,_WEAPON_PFUSHIGISOU_SEED_INSTANCE_WORK_ID_FLAG_KIRBY);
     iVar2 = lib::L2CValue::as_integer(aLStack224);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,(bool)(bVar1 & 1));
     lib::L2CValue::L2CValue((L2CValue *)&local_c0,false);
-    uVar4 = lib::L2CValue::operator__((L2CValue *)&local_60,(L2CValue *)&local_c0);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_c0);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue(aLStack224);
+    uVar4 = lib::L2CValue::operator==((L2CValue *)&local_60,(L2CValue *)&local_c0);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_c0);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue(aLStack224);
     if ((uVar4 & 1) == 0) {
       lib::L2CValue::L2CValue((L2CValue *)&local_c0,0x18a14c4598);
-      lib::L2CValue::operator_(aLStack208,(L2CValue *)&local_c0);
+      lib::L2CValue::operator=(aLStack208,(L2CValue *)&local_c0);
     }
     else {
       lib::L2CValue::L2CValue((L2CValue *)&local_c0,0x1612046940);
-      lib::L2CValue::operator_(aLStack208,(L2CValue *)&local_c0);
+      lib::L2CValue::operator=(aLStack208,(L2CValue *)&local_c0);
     }
-    lib::L2CValue::_L2CValue((L2CValue *)&local_c0);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_c0);
     HVar3 = lib::L2CValue::as_hash(aLStack208);
     uVar4 = lib::L2CValue::as_number(aLStack112);
     lVar10 = lib::L2CValue::as_number(aLStack128);
@@ -106,15 +106,15 @@ L2CWeaponPfushigisouSeed::status::Clash_main(L2CWeaponPfushigisouSeed *this,L2CV
                       (this->moduleAccessor,HVar3,(Vector3f *)&local_c0,(Vector3f *)&local_60,1.0,0,
                        -1,false,0);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,uVar9);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
   }
   lib::L2CValue::L2CValue((L2CValue *)&local_c0,Clash_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_c0);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_c0);
   return;
 }
 

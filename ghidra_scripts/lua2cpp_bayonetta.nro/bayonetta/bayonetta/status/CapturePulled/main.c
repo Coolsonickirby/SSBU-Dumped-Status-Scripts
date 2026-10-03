@@ -7,7 +7,7 @@ L2CFighterBayonetta::status::CapturePulled_main(L2CFighterBayonetta *this,L2CVal
   
   FUN_710000d730();
   lua2cpp::L2CFighterCommon::status_CapturePulled(this);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

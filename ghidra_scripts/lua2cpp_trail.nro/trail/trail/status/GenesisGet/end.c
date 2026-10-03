@@ -11,9 +11,9 @@ L2CFighterTrail::status::GenesisGet_end(L2CFighterTrail *this,L2CValue *return_v
   lib::L2CValue::L2CValue(aLStack48,_VISIBILITY_MODE_NO_GUARANTEE);
   VVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::VisibilityModule__set_visibility_mode_impl(this->moduleAccessor,VVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lua2cpp::L2CFighterCommon::status_end_GenesisGet_New(this);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

@@ -20,11 +20,11 @@ L2CFighterSheik::status::SpecialLwAttack_main(L2CFighterSheik *this,L2CValue *re
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_SHEIK_STATUS_SPECIAL_LW_FLAG_TOUCH_WALL);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,10);
+  lib::L2CValue::~L2CValue(aLStack80);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,10);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_SHEIK_STATUS_KIND_SPECIAL_LW_RETURN);
-  uVar3 = lib::L2CValue::operator__(this_00,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar3 = lib::L2CValue::operator==(this_00,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar3 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,0x11b7bf50dd);
     lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -49,13 +49,13 @@ L2CFighterSheik::status::SpecialLwAttack_main(L2CFighterSheik *this,L2CValue *re
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,SpecialLwAttack_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

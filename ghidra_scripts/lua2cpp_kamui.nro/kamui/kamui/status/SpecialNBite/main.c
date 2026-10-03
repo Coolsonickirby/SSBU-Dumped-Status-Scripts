@@ -7,7 +7,7 @@ L2CFighterKamui::status::SpecialNBite_main(L2CFighterKamui *this,L2CValue *retur
   
   lib::L2CValue::L2CValue(aLStack48,SpecialNBite_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

@@ -10,7 +10,7 @@ L2CFighterKirby::status::BuddySpecialNShootJumpSquat_exec
   
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_BUDDY_STATUS_SPECIAL_N_FLAG_JUMP_BUTTON);
   lua2cpp::L2CFighterCommon::sub_jump_squat_uniq_check_sub(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   FUN_7100141ce0(this);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

@@ -14,9 +14,9 @@ L2CFighterJack::status::SpecialNLanding_pre(L2CFighterJack *this,L2CValue *retur
   lib::L2CValue::L2CValue(aLStack96,FIGHTER_STATUS_WORK_KEEP_FLAG_NONE_FLOAT);
   lua2cpp::L2CFighterCommon::status_pre_landing_fall_special_common
             (this,(L2CValue)0xc0,(L2CValue)0xb0,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

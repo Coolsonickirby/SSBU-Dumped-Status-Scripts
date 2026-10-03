@@ -37,19 +37,19 @@ L2CWeaponRosettaTico::status::SpecialS_pre(L2CWeaponRosettaTico *this,L2CValue *
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack120,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack200,false);
-  uVar9 = lib::L2CValue::operator__(aLStack120,aLStack200);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack152);
+  uVar9 = lib::L2CValue::operator==(aLStack120,aLStack200);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack152);
   if ((uVar9 & 1) != 0) {
     pfVar10 = (float *)app::lua_bind::PostureModule__pos_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack200,*pfVar10);
     lib::L2CValue::L2CValue(aLStack184,pfVar10[1]);
     lib::L2CValue::L2CValue(aLStack168,pfVar10[2]);
     FUN_710002fd80(aLStack152,this,aLStack200);
-    lib::L2CValue::_L2CValue(aLStack168);
-    lib::L2CValue::_L2CValue(aLStack184);
-    lib::L2CValue::_L2CValue(aLStack200);
+    lib::L2CValue::~L2CValue(aLStack168);
+    lib::L2CValue::~L2CValue(aLStack184);
+    lib::L2CValue::~L2CValue(aLStack200);
     lib::L2CValue::L2CValue
               (aLStack216,_WEAPON_ROSETTA_TICO_INSTANCE_WORK_ID_FLOAT_SPECIAL_S_PARENT_LENGTH);
     iVar2 = lib::L2CValue::as_integer(aLStack216);
@@ -64,28 +64,28 @@ L2CWeaponRosettaTico::status::SpecialS_pre(L2CWeaponRosettaTico *this,L2CValue *
     lib::L2CValue::L2CValue(aLStack248,fVar12);
     fVar12 = (float)app::lua_bind::PostureModule__scale_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack296,fVar12);
-    lib::L2CValue::operator_(aLStack248,aLStack296);
-    uVar9 = lib::L2CValue::operator__(aLStack120,aLStack232);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack296);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack280);
-    lib::L2CValue::_L2CValue(aLStack264);
-    lib::L2CValue::_L2CValue(aLStack120);
-    lib::L2CValue::_L2CValue(aLStack216);
+    lib::L2CValue::operator*(aLStack248,aLStack296);
+    uVar9 = lib::L2CValue::operator<=(aLStack120,aLStack232);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack296);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack280);
+    lib::L2CValue::~L2CValue(aLStack264);
+    lib::L2CValue::~L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack216);
     if ((uVar9 & 1) != 0) {
       lib::L2CValue::L2CValue
                 (aLStack120,_WEAPON_ROSETTA_TICO_INSTANCE_WORK_ID_FLOAT_SPECIAL_S_PARENT_X);
       iVar2 = lib::L2CValue::as_integer(aLStack120);
       fVar12 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar2);
       lib::L2CValue::L2CValue(aLStack216,fVar12);
-      lib::L2CValue::_L2CValue(aLStack120);
+      lib::L2CValue::~L2CValue(aLStack120);
       lib::L2CValue::L2CValue(aLStack120,_WEAPON_KINETIC_TYPE_ROSETTA_TICO_FOLLOW);
-      lib::L2CValue::operator_(aLStack136,aLStack120);
-      lib::L2CValue::_L2CValue(aLStack120);
-      lib::L2CValue::_L2CValue(aLStack216);
+      lib::L2CValue::operator=(aLStack136,aLStack120);
+      lib::L2CValue::~L2CValue(aLStack120);
+      lib::L2CValue::~L2CValue(aLStack216);
     }
-    lib::L2CValue::_L2CValue(aLStack152);
+    lib::L2CValue::~L2CValue(aLStack152);
   }
   lib::L2CValue::L2CValue(aLStack120,SITUATION_KIND_NONE);
   lib::L2CValue::L2CValue(aLStack152,GROUND_CORRECT_KIND_KEEP);
@@ -107,16 +107,16 @@ L2CWeaponRosettaTico::status::SpecialS_pre(L2CWeaponRosettaTico *this,L2CValue *
   app::lua_bind::StatusModule__init_settings_impl
             (this->moduleAccessor,SVar3,iVar2,uVar4,GVar5,(bool)(bVar1 & 1),iVar6,iVar7,iVar8,
              in_stack_fffffffffffffec4);
-  lib::L2CValue::_L2CValue(aLStack296);
-  lib::L2CValue::_L2CValue(aLStack280);
-  lib::L2CValue::_L2CValue(aLStack264);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack296);
+  lib::L2CValue::~L2CValue(aLStack280);
+  lib::L2CValue::~L2CValue(aLStack264);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack136);
   return;
 }
 

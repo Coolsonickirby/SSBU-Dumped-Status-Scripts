@@ -1,7 +1,9 @@
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-void __thiscall L2CFighterMiiswordsman::status::SpecialN3Loop_pre(long this)
+void __thiscall
+L2CFighterMiiswordsman::status::SpecialN3Loop_pre
+          (L2CFighterMiiswordsman *this,L2CValue *return_value)
 
 {
   byte bVar1;
@@ -17,7 +19,6 @@ void __thiscall L2CFighterMiiswordsman::status::SpecialN3Loop_pre(long this)
   int iVar11;
   uint uVar12;
   ulong uVar13;
-  L2CValue *return_value;
   uint in_stack_fffffffffffffef4;
   L2CValue aLStack248 [16];
   L2CValue aLStack232 [16];
@@ -48,17 +49,17 @@ void __thiscall L2CFighterMiiswordsman::status::SpecialN3Loop_pre(long this)
   iVar11 = lib::L2CValue::as_integer(aLStack232);
   lib::L2CValue::as_integer(aLStack248);
   app::lua_bind::StatusModule__init_settings_impl
-            (*(BattleObjectModuleAccessor **)(this + 0x40),SVar5,iVar6,uVar7,GVar8,(bool)(bVar1 & 1)
-             ,iVar9,iVar10,iVar11,in_stack_fffffffffffffef4);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
+            (this->moduleAccessor,SVar5,iVar6,uVar7,GVar8,(bool)(bVar1 & 1),iVar9,iVar10,iVar11,
+             in_stack_fffffffffffffef4);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CValue::L2CValue(aLStack120,false);
   lib::L2CValue::L2CValue(aLStack136,_FIGHTER_TREADED_KIND_NO_REAC);
   lib::L2CValue::L2CValue(aLStack152,false);
@@ -81,18 +82,18 @@ void __thiscall L2CFighterMiiswordsman::status::SpecialN3Loop_pre(long this)
   uVar12 = lib::L2CValue::as_integer(aLStack232);
   lib::L2CValue::as_integer(aLStack248);
   app::lua_bind::FighterStatusModuleImpl__set_fighter_status_data_impl
-            (*(BattleObjectModuleAccessor **)(this + 0x40),(bool)(bVar1 & 1),iVar6,(bool)(bVar2 & 1)
-             ,(bool)(bVar3 & 1),(bool)(bVar4 & 1),uVar13,uVar7,uVar12,in_stack_fffffffffffffef4);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::L2CValue(return_value,0);
+            (this->moduleAccessor,(bool)(bVar1 & 1),iVar6,(bool)(bVar2 & 1),(bool)(bVar3 & 1),
+             (bool)(bVar4 & 1),uVar13,uVar7,uVar12,in_stack_fffffffffffffef4);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }
 

@@ -15,9 +15,9 @@ L2CFighterKirby::status::SpecialNEatWaitFall_main(L2CFighterKirby *this,L2CValue
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   FUN_7100232fc0(return_value,this);
   return;
 }

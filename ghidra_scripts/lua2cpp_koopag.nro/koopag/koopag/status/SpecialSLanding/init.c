@@ -22,9 +22,9 @@ L2CFighterKoopag::status::SpecialSLanding_init(L2CFighterKoopag *this,L2CValue *
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::LinkModule__is_linked_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack80,0x329eb012b6);
     lib::L2CValue::L2CValue(aLStack96,0xbefb89abe);
@@ -35,15 +35,15 @@ L2CFighterKoopag::status::SpecialSLanding_init(L2CFighterKoopag *this,L2CValue *
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
     app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
     lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KOOPA_STATUS_SPECIAL_S_FLAG_HIT);
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,FIGHTER_KINETIC_ENERGY_ID_MOTION);
   lib::L2CValue::L2CValue(aLStack96,_ENERGY_MOTION_RESET_TYPE_AIR_TRANS_Y);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -60,17 +60,17 @@ L2CFighterKoopag::status::SpecialSLanding_init(L2CFighterKoopag *this,L2CValue *
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack160);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack176);
   app::sv_kinetic_energy::reset_energy(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,FIGHTER_KINETIC_ENERGY_ID_MOTION);
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::KineticModule__enable_energy_impl(this->moduleAccessor,iVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

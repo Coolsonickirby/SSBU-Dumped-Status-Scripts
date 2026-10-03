@@ -24,17 +24,17 @@ L2CWeaponCaptainFalconpunch::status::SpecialN_main
   lib::L2CValue::L2CValue(aLStack176,0x13571496a7);
   FUN_7100016700(this,aLStack64,aLStack80,aLStack96,aLStack112,aLStack128,aLStack144,aLStack160,
                  aLStack176);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack192,SpecialN_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x40);
-  lib::L2CValue::_L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack192);
   return;
 }
 

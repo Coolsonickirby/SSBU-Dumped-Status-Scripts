@@ -27,7 +27,7 @@ L2CFighterLucario::status::FinalHold_main_loop(L2CFighterLucario *this,L2CValue 
   else {
     lib::L2CValue::L2CValue(aLStack80,pvVar4);
   }
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   pAVar5 = (Article *)lib::L2CValue::as_pointer(aLStack80);
   uVar3 = app::lua_bind::Article__get_battle_object_id_impl(pAVar5);
   lib::L2CValue::L2CValue(aLStack96,uVar3);
@@ -43,9 +43,9 @@ L2CFighterLucario::status::FinalHold_main_loop(L2CFighterLucario *this,L2CValue 
   bVar1 = app::lua_bind::MotionModule__is_end_impl(pBVar6);
   lib::L2CValue::L2CValue(aLStack128,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,true);
-  uVar7 = lib::L2CValue::operator__(aLStack128,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack128);
+  uVar7 = lib::L2CValue::operator==(aLStack128,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack128);
   if ((uVar7 & 1) == 0) {
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   }
@@ -53,13 +53,13 @@ L2CFighterLucario::status::FinalHold_main_loop(L2CFighterLucario *this,L2CValue 
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_LUCARIO_STATUS_KIND_FINAL_ATTACK);
     lib::L2CValue::L2CValue(aLStack128,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0x80);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   }
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

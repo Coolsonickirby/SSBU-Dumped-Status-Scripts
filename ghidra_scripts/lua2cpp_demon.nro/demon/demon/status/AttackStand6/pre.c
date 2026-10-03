@@ -17,11 +17,11 @@ L2CFighterDemon::status::AttackStand6_pre(L2CFighterDemon *this,L2CValue *return
   lib::L2CValue::L2CValue(aLStack112,GROUND_CORRECT_KIND_GROUND_CLIFF_STOP);
   lib::L2CValue::L2CValue(aLStack128,_FIGHTER_KINETIC_TYPE_MOTION_AIR);
   FUN_710002c0f0(return_value,this,aLStack64,aLStack80,aLStack96,aLStack112,aLStack128);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

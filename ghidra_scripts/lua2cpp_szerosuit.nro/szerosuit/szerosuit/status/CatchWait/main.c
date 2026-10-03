@@ -7,7 +7,7 @@ L2CFighterSzerosuit::status::CatchWait_main(L2CFighterSzerosuit *this,L2CValue *
   
   lib::L2CValue::L2CValue(aLStack48,0xa02480224);
   lua2cpp::L2CFighterCommon::status_CatchWait_common(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

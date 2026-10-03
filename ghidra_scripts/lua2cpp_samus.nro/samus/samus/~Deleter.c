@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterSamus::__L2CFighterSamus(L2CFighterSamus *this)
+void __thiscall L2CFighterSamus::~~L2CFighterSamus(L2CFighterSamus *this)
 
 {
-  _L2CFighterSamus();
-  operator_delete(this);
+  ~L2CFighterSamus();
+  operator.delete(this);
   return;
 }
 

@@ -34,9 +34,9 @@ L2CWeaponPalutenaAutoaimbullet::status::Shot_main_loop
   uVar3 = lib::L2CValue::as_integer((L2CValue *)&local_70);
   bVar1 = app::lua_bind::GroundModule__is_touch_impl(this->moduleAccessor,uVar3);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_70);
+  bVar2 = lib::L2CValue::operator.cast.to.bool((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_70);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack128,0);
     lib::L2CValue::L2CValue(aLStack144,0);
@@ -46,24 +46,24 @@ L2CWeaponPalutenaAutoaimbullet::status::Shot_main_loop
     iVar4 = lib::L2CValue::as_integer(aLStack176);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar4);
     lib::L2CValue::L2CValue((L2CValue *)&local_70,(bool)(bVar1 & 1));
-    lib::L2CValue::operator_((L2CValue *)&local_70);
-    bVar2 = lib::L2CValue::operator_cast_to_bool((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_70);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::operator!((L2CValue *)&local_70);
+    bVar2 = lib::L2CValue::operator.cast.to.bool((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_70);
+    lib::L2CValue::~L2CValue(aLStack176);
     if ((bVar2 & 1U) != 0) {
       fVar6 = (float)app::lua_bind::PostureModule__pos_x_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,fVar6);
-      lib::L2CValue::operator_(aLStack160,(L2CValue *)&local_60);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+      lib::L2CValue::operator=(aLStack160,(L2CValue *)&local_60);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
       fVar6 = (float)app::lua_bind::PostureModule__pos_y_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,fVar6);
-      lib::L2CValue::operator_(aLStack144,(L2CValue *)&local_60);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+      lib::L2CValue::operator=(aLStack144,(L2CValue *)&local_60);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
       fVar6 = (float)app::lua_bind::PostureModule__pos_z_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,fVar6);
-      lib::L2CValue::operator_(aLStack128,(L2CValue *)&local_60);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+      lib::L2CValue::operator=(aLStack128,(L2CValue *)&local_60);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
       lib::L2CValue::L2CValue(aLStack192,0x1565f49347);
       lib::L2CValue::L2CValue(aLStack208,0.0);
       lib::L2CValue::L2CValue(aLStack224,0.0);
@@ -89,31 +89,31 @@ L2CWeaponPalutenaAutoaimbullet::status::Shot_main_loop
                         (this->moduleAccessor,HVar5,(Vector3f *)&local_60,(Vector3f *)&local_70,
                          fVar6,uVar3,iVar4,false,0);
       lib::L2CValue::L2CValue(aLStack176,uVar3);
-      lib::L2CValue::_L2CValue(aLStack176);
-      lib::L2CValue::_L2CValue(aLStack288);
-      lib::L2CValue::_L2CValue(aLStack272);
-      lib::L2CValue::_L2CValue(aLStack256);
-      lib::L2CValue::_L2CValue(aLStack240);
-      lib::L2CValue::_L2CValue(aLStack224);
-      lib::L2CValue::_L2CValue(aLStack208);
-      lib::L2CValue::_L2CValue(aLStack192);
+      lib::L2CValue::~L2CValue(aLStack176);
+      lib::L2CValue::~L2CValue(aLStack288);
+      lib::L2CValue::~L2CValue(aLStack272);
+      lib::L2CValue::~L2CValue(aLStack256);
+      lib::L2CValue::~L2CValue(aLStack240);
+      lib::L2CValue::~L2CValue(aLStack224);
+      lib::L2CValue::~L2CValue(aLStack208);
+      lib::L2CValue::~L2CValue(aLStack192);
       lib::L2CValue::L2CValue
                 ((L2CValue *)&local_60,
                  _WEAPON_PALUTENA_AUTOAIMBULLET_INSTANCE_WORK_ID_FLAG_HAS_EFFECT_BOUND);
       iVar4 = lib::L2CValue::as_integer((L2CValue *)&local_60);
       app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar4);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
     }
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
     lib::L2CValue::L2CValue((L2CValue *)&local_70,0x199c462b5d);
     lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,(L2CValue *)&local_70);
     app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
     lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_70);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_70);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

@@ -26,18 +26,18 @@ L2CFighterZelda::status::Final_main_loop(L2CFighterZelda *this,L2CValue *return_
   
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue((L2CValue *)&stack0xffffffffffffffc0,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool((L2CValue *)&stack0xffffffffffffffc0);
-  lib::L2CValue::_L2CValue((L2CValue *)&stack0xffffffffffffffc0);
+  bVar2 = lib::L2CValue::operator.cast.to.bool((L2CValue *)&stack0xffffffffffffffc0);
+  lib::L2CValue::~L2CValue((L2CValue *)&stack0xffffffffffffffc0);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_ZELDA_GENERATE_ARTICLE_TRIFORCE);
     iVar3 = lib::L2CValue::as_integer(aLStack96);
     bVar1 = app::lua_bind::ArticleModule__is_exist_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    lib::L2CValue::operator_(aLStack80);
-    bVar2 = lib::L2CValue::operator_cast_to_bool((L2CValue *)&stack0xffffffffffffffc0);
-    lib::L2CValue::_L2CValue((L2CValue *)&stack0xffffffffffffffc0);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::operator!(aLStack80);
+    bVar2 = lib::L2CValue::operator.cast.to.bool((L2CValue *)&stack0xffffffffffffffc0);
+    lib::L2CValue::~L2CValue((L2CValue *)&stack0xffffffffffffffc0);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((bVar2 & 1U) == 0) goto LAB_710000c814;
     fVar7 = (float)app::lua_bind::PostureModule__pos_x_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack96,fVar7);
@@ -46,25 +46,25 @@ L2CFighterZelda::status::Final_main_loop(L2CFighterZelda *this,L2CValue *return_
     fVar7 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack112,fVar7);
     pLVar6 = aLStack112;
-    lib::L2CValue::operator_(aLStack96,pLVar6);
+    lib::L2CValue::operator-(aLStack96,pLVar6);
     lib::L2CAgent::math_abs((L2CAgent *)&stack0xffffffffffffffc0,pLVar6);
-    lib::L2CValue::_L2CValue((L2CValue *)&stack0xffffffffffffffc0);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue((L2CValue *)&stack0xffffffffffffffc0);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue((L2CValue *)&stack0xffffffffffffffc0,1e-05);
-    uVar5 = lib::L2CValue::operator_((L2CValue *)&stack0xffffffffffffffc0,aLStack80);
-    lib::L2CValue::_L2CValue((L2CValue *)&stack0xffffffffffffffc0);
+    uVar5 = lib::L2CValue::operator<((L2CValue *)&stack0xffffffffffffffc0,aLStack80);
+    lib::L2CValue::~L2CValue((L2CValue *)&stack0xffffffffffffffc0);
     if ((uVar5 & 1) != 0) {
       fVar7 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue(aLStack112,fVar7);
-      lib::L2CValue::operator_(aLStack112);
-      this_00 = (L2CAgent *)lib::L2CValue::operator__((L2CValue *)&this[1].field_0x30,0xa9e892552);
+      lib::L2CValue::operator-(aLStack112);
+      this_00 = (L2CAgent *)lib::L2CValue::operator[]((L2CValue *)&this[1].field_0x30,0xa9e892552);
       lib::L2CAgent::math_min(this_00,aLStack80,in_x2);
-      lib::L2CValue::operator_((L2CValue *)&stack0xffffffffffffffc0,aLStack128);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue((L2CValue *)&stack0xffffffffffffffc0);
-      lib::L2CValue::_L2CValue(aLStack112);
+      lib::L2CValue::operator*((L2CValue *)&stack0xffffffffffffffc0,aLStack128);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue((L2CValue *)&stack0xffffffffffffffc0);
+      lib::L2CValue::~L2CValue(aLStack112);
       lib::L2CValue::L2CValue(aLStack112,0.0);
       lib::L2CValue::L2CValue(aLStack128,0.0);
       uVar8 = lib::L2CValue::as_number(aLStack96);
@@ -74,9 +74,9 @@ L2CFighterZelda::status::Final_main_loop(L2CFighterZelda *this,L2CValue *return_
       plStack56 = (lua_State *)(ulong)uVar10;
       app::lua_bind::PostureModule__add_pos_impl
                 (this->moduleAccessor,(Vector3f *)&stack0xffffffffffffffc0);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
     }
     pLVar6 = aLStack80;
   }
@@ -85,17 +85,17 @@ L2CFighterZelda::status::Final_main_loop(L2CFighterZelda *this,L2CValue *return_
               ((L2CValue *)&stack0xffffffffffffffc0,_FIGHTER_ZELDA_STATUS_KIND_FINAL_LOOP);
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue((L2CValue *)&stack0xffffffffffffffc0);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue((L2CValue *)&stack0xffffffffffffffc0);
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_ZELDA_GENERATE_ARTICLE_TRIFORCE);
     lib::L2CValue::L2CValue(aLStack112,_WEAPON_ZELDA_TRIFORCE_STATUS_KIND_INHALE);
     iVar3 = lib::L2CValue::as_integer(aLStack96);
     iVar4 = lib::L2CValue::as_integer(aLStack112);
     app::lua_bind::ArticleModule__change_status_exist_impl(this->moduleAccessor,iVar3,iVar4);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack112);
     pLVar6 = aLStack96;
   }
-  lib::L2CValue::_L2CValue(pLVar6);
+  lib::L2CValue::~L2CValue(pLVar6);
 LAB_710000c814:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

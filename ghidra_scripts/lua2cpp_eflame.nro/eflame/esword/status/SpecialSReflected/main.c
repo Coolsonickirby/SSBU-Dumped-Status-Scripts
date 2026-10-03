@@ -29,8 +29,8 @@ L2CWeaponEflameEsword::status::SpecialSReflected_main
   fVar7 = (float)lib::L2CValue::as_number((L2CValue *)&local_50);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar7,iVar2);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   fVar7 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack96,fVar7);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,0xcedec4cee);
@@ -39,11 +39,11 @@ L2CWeaponEflameEsword::status::SpecialSReflected_main
   uVar4 = lib::L2CValue::as_integer(aLStack128);
   fVar7 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar3,uVar4);
   lib::L2CValue::L2CValue(aLStack112,fVar7);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::operator_(aLStack112,aLStack96);
-  lib::L2CValue::operator_(aLStack112,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::operator*(aLStack112,aLStack96);
+  lib::L2CValue::operator=(aLStack112,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   lib::L2CValue::L2CValue(aLStack128,0.0);
   lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
@@ -51,11 +51,11 @@ L2CWeaponEflameEsword::status::SpecialSReflected_main
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack128);
   app::sv_kinetic_energy::set_speed(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,1.0);
-  uVar3 = lib::L2CValue::operator__(aLStack96,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  uVar3 = lib::L2CValue::operator==(aLStack96,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   if ((uVar3 & 1) == 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_50,0xb338788ac);
     lib::L2CValue::L2CValue(aLStack128,0.0);
@@ -80,11 +80,11 @@ L2CWeaponEflameEsword::status::SpecialSReflected_main
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar5,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,5);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,5);
   lib::L2CValue::L2CValue(aLStack128,0.0);
   lib::L2CValue::L2CValue(aLStack144,0.0);
   pBVar6 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(this_00);
@@ -94,13 +94,13 @@ L2CWeaponEflameEsword::status::SpecialSReflected_main
   uStack72 = 0;
   app::WeaponSpecializer_EFlameEsword::energy_motion_set_speed_mul_2nd(pBVar6,(Vector2f *)&local_50)
   ;
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,SpecialSReflected_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

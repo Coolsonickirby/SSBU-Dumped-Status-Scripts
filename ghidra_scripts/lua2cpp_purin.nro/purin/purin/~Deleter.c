@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterPurin::__L2CFighterPurin(L2CFighterPurin *this)
+void __thiscall L2CFighterPurin::~~L2CFighterPurin(L2CFighterPurin *this)
 
 {
-  _L2CFighterPurin();
-  operator_delete(this);
+  ~L2CFighterPurin();
+  operator.delete(this);
   return;
 }
 

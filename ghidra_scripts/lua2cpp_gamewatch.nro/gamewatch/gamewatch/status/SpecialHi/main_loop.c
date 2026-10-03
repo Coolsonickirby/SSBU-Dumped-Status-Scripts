@@ -20,26 +20,26 @@ L2CFighterGamewatch::status::SpecialHi_main_loop(L2CFighterGamewatch *this,L2CVa
   L2CValue aLStack64 [16];
   
   lua2cpp::L2CFighterCommon::sub_transition_group_check_air_cliff(this);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar1 & 1U) == 0) {
     bVar2 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar2 & 1));
-    bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((bVar1 & 1U) == 0) {
-      this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+      this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
       lib::L2CValue::L2CValue(aLStack64,_SITUATION_KIND_GROUND);
-      uVar5 = lib::L2CValue::operator__(this_00,aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
+      uVar5 = lib::L2CValue::operator==(this_00,aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       if ((uVar5 & 1) != 0) {
         lib::L2CValue::L2CValue(aLStack80,_FIGHTER_GAMEWATCH_STATUS_SPECIAL_HI_FLAG_LANDING_ENABLE);
         iVar3 = lib::L2CValue::as_integer(aLStack80);
         bVar2 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
         lib::L2CValue::L2CValue(aLStack64,(bool)(bVar2 & 1));
-        bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack80);
+        bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack80);
         if ((bVar1 & 1U) != 0) {
           lib::L2CValue::L2CValue(aLStack80,0);
           lib::L2CValue::L2CValue(aLStack112,0x1086bc4a93);
@@ -50,27 +50,27 @@ L2CFighterGamewatch::status::SpecialHi_main_loop(L2CFighterGamewatch *this,L2CVa
                                    (this->moduleAccessor,uVar5,uVar6);
           lib::L2CValue::L2CValue(aLStack96,fVar7);
           lib::L2CValue::L2CValue(aLStack64,0.0);
-          uVar5 = lib::L2CValue::operator_(aLStack64,aLStack96);
-          lib::L2CValue::_L2CValue(aLStack64);
-          lib::L2CValue::_L2CValue(aLStack96);
-          lib::L2CValue::_L2CValue(aLStack128);
-          lib::L2CValue::_L2CValue(aLStack112);
+          uVar5 = lib::L2CValue::operator<(aLStack64,aLStack96);
+          lib::L2CValue::~L2CValue(aLStack64);
+          lib::L2CValue::~L2CValue(aLStack96);
+          lib::L2CValue::~L2CValue(aLStack128);
+          lib::L2CValue::~L2CValue(aLStack112);
           if ((uVar5 & 1) == 0) {
             lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_KIND_LANDING);
-            lib::L2CValue::operator_(aLStack80,aLStack64);
+            lib::L2CValue::operator=(aLStack80,aLStack64);
           }
           else {
             lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_KIND_LANDING_FALL_SPECIAL);
-            lib::L2CValue::operator_(aLStack80,aLStack64);
+            lib::L2CValue::operator=(aLStack80,aLStack64);
           }
-          lib::L2CValue::_L2CValue(aLStack64);
+          lib::L2CValue::~L2CValue(aLStack64);
           lib::L2CValue::L2CValue(aLStack64,aLStack80);
           lib::L2CValue::L2CValue(aLStack96,false);
           lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xa0);
-          lib::L2CValue::_L2CValue(aLStack96);
-          lib::L2CValue::_L2CValue(aLStack64);
+          lib::L2CValue::~L2CValue(aLStack96);
+          lib::L2CValue::~L2CValue(aLStack64);
           lib::L2CValue::L2CValue((L2CValue *)return_value,1);
-          lib::L2CValue::_L2CValue(aLStack80);
+          lib::L2CValue::~L2CValue(aLStack80);
           return;
         }
       }
@@ -84,13 +84,13 @@ L2CFighterGamewatch::status::SpecialHi_main_loop(L2CFighterGamewatch *this,L2CVa
     iVar3 = lib::L2CValue::as_integer(aLStack64);
     iVar4 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_GAMEWATCH_STATUS_KIND_SPECIAL_HI_FALL);
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   iVar3 = 1;
 LAB_710002cd8c:

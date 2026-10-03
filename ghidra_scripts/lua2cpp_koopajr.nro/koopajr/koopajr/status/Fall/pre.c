@@ -14,9 +14,9 @@ void __thiscall L2CFighterKoopajr::status::Fall_pre(L2CFighterKoopajr *this,L2CV
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) == 0) {
     lua2cpp::L2CFighterCommon::status_pre_Fall(this);
   }
@@ -24,7 +24,7 @@ void __thiscall L2CFighterKoopajr::status::Fall_pre(L2CFighterKoopajr *this,L2CV
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KOOPAJR_STATUS_KIND_SPECIAL_HI_FALL);
     iVar3 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::StatusModule__set_status_kind_interrupt_impl(this->moduleAccessor,iVar3);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue((L2CValue *)return_value,1);
   }
   return;

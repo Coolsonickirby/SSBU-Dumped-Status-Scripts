@@ -14,24 +14,24 @@ L2CFighterKirby::status::BuddySpecialNShootLanding_init
   L2CValue aLStack64 [16];
   
   lib::L2CValue::L2CValue(aLStack80,0x1a5c0b8105);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,10);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,10);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KIRBY_STATUS_KIND_BUDDY_SPECIAL_N_SHOOT_AIR);
-  uVar1 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar1 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar1 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack64,0x1a793b0b2f);
-    lib::L2CValue::operator_(aLStack80,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::operator=(aLStack80,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue(aLStack64,aLStack80);
   lib::L2CValue::L2CValue(aLStack96,0x7fb997a80);
   lib::L2CValue::L2CValue(aLStack112,0x7fb997a80);
   FUN_7100141e80(this,aLStack64,aLStack96,aLStack112);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

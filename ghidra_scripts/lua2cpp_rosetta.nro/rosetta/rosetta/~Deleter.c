@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterRosetta::__L2CFighterRosetta(L2CFighterRosetta *this)
+void __thiscall L2CFighterRosetta::~~L2CFighterRosetta(L2CFighterRosetta *this)
 
 {
-  _L2CFighterRosetta();
-  operator_delete(this);
+  ~L2CFighterRosetta();
+  operator.delete(this);
   return;
 }
 

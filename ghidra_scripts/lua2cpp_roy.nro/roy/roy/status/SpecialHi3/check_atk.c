@@ -22,13 +22,13 @@ L2CFighterRoy::status::SpecialHi3_check_atk(L2CFighterRoy *this,L2CValue *return
   lib::L2CValue::L2CValue(aLStack112,_FIGHTER_ROY_SPECIAL_HI_TARGET_NUM_MAX);
   lua2cpp::L2CFighterCommon::sub_set_meteor_hit_id_to_work
             (this,(L2CValue)0xc0,(L2CValue)0xb0,(L2CValue)0xa0,(L2CValue)0x90);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   return;
 }
 

@@ -34,11 +34,11 @@ L2CFighterNess::status::SpecialHiEnd_exec_stop(L2CFighterNess *this,L2CValue *re
   uStack56 = (ulong)uVar6;
   app::lua_bind::ModelModule__set_joint_rotate_impl
             (this->moduleAccessor,HVar2,(Vector3f *)&local_40,0,0);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

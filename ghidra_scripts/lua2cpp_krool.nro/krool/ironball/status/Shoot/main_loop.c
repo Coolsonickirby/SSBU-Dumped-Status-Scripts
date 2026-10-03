@@ -19,34 +19,34 @@ L2CWeaponKroolIronball::status::Shoot_main_loop(L2CWeaponKroolIronball *this,L2C
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,iVar3);
   lib::L2CValue::L2CValue(aLStack64,0);
-  uVar5 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar5 = lib::L2CValue::operator<=(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar5 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,_GROUND_TOUCH_FLAG_UP);
     uVar4 = lib::L2CValue::as_integer(aLStack80);
     bVar1 = app::lua_bind::GroundModule__is_touch_impl(this->moduleAccessor,uVar4);
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar2 & 1U) == 0) {
       lib::L2CValue::L2CValue(aLStack80,_GROUND_TOUCH_FLAG_ALL);
       uVar4 = lib::L2CValue::as_integer(aLStack80);
       bVar1 = app::lua_bind::GroundModule__is_wall_touch_line_impl(this->moduleAccessor,uVar4);
       lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-      bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack80);
+      bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((bVar2 & 1U) == 0) {
         lib::L2CValue::L2CValue(aLStack80,_GROUND_TOUCH_FLAG_ALL);
         uVar4 = lib::L2CValue::as_integer(aLStack80);
         bVar1 = app::lua_bind::GroundModule__is_floor_touch_line_impl(this->moduleAccessor,uVar4);
         lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-        bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack80);
+        bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack80);
         if ((bVar2 & 1U) == 0) {
           iVar3 = 0;
           goto LAB_7100031720;
@@ -54,7 +54,7 @@ L2CWeaponKroolIronball::status::Shoot_main_loop(L2CWeaponKroolIronball *this,L2C
         lib::L2CValue::L2CValue(aLStack64,_WEAPON_KROOL_IRONBALL_INSTANCE_WORK_ID_FLAG_HOP);
         iVar3 = lib::L2CValue::as_integer(aLStack64);
         app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
-        lib::L2CValue::_L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack64);
         lib::L2CValue::L2CValue(aLStack64,_WEAPON_KROOL_IRONBALL_STATUS_KIND_HOP);
         lib::L2CValue::L2CValue(aLStack80,false);
         lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
@@ -63,7 +63,7 @@ L2CWeaponKroolIronball::status::Shoot_main_loop(L2CWeaponKroolIronball *this,L2C
         lib::L2CValue::L2CValue(aLStack64,_WEAPON_KROOL_IRONBALL_INSTANCE_WORK_ID_FLAG_HOP);
         iVar3 = lib::L2CValue::as_integer(aLStack64);
         app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
-        lib::L2CValue::_L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack64);
         lib::L2CValue::L2CValue(aLStack64,_WEAPON_KROOL_IRONBALL_STATUS_KIND_HOP);
         lib::L2CValue::L2CValue(aLStack80,false);
         lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
@@ -73,11 +73,11 @@ L2CWeaponKroolIronball::status::Shoot_main_loop(L2CWeaponKroolIronball *this,L2C
       lib::L2CValue::L2CValue(aLStack64,_WEAPON_KROOL_IRONBALL_INSTANCE_WORK_ID_FLAG_HOP);
       iVar3 = lib::L2CValue::as_integer(aLStack64);
       app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
-      lib::L2CValue::_L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       lib::L2CValue::L2CValue(aLStack64,_WEAPON_KROOL_IRONBALL_INSTANCE_WORK_ID_FLAG_HIT_CEIL);
       iVar3 = lib::L2CValue::as_integer(aLStack64);
       app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
-      lib::L2CValue::_L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       lib::L2CValue::L2CValue(aLStack64,_WEAPON_KROOL_IRONBALL_STATUS_KIND_HOP);
       lib::L2CValue::L2CValue(aLStack80,false);
       lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
@@ -88,8 +88,8 @@ L2CWeaponKroolIronball::status::Shoot_main_loop(L2CWeaponKroolIronball *this,L2C
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
   }
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   iVar3 = 1;
 LAB_7100031720:
   lib::L2CValue::L2CValue((L2CValue *)return_value,iVar3);

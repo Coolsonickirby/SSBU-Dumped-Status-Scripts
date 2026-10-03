@@ -30,23 +30,23 @@ L2CFighterPickel::status::JumpAerial_pre(L2CFighterPickel *this,L2CValue *return
   lib::L2CValue::L2CValue(aLStack160,0);
   FUN_7100088d70(aLStack176,this);
   lib::L2CValue::L2CValue(aLStack256,true);
-  uVar1 = lib::L2CValue::operator__(aLStack176,aLStack256);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack176);
+  uVar1 = lib::L2CValue::operator==(aLStack176,aLStack256);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack176);
   if ((uVar1 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack176,aLStack160);
     FUN_7100093d50(aLStack256,aLStack176);
-    lib::L2CValue::operator_(aLStack96,aLStack256);
-    lib::L2CValue::operator_(aLStack112,aLStack240);
-    lib::L2CValue::operator_(aLStack128,aLStack224);
-    lib::L2CValue::operator_(aLStack144,aLStack208);
-    lib::L2CValue::operator_(aLStack160,aLStack192);
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack224);
-    lib::L2CValue::_L2CValue(aLStack240);
-    lib::L2CValue::_L2CValue(aLStack256);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::operator=(aLStack96,aLStack256);
+    lib::L2CValue::operator=(aLStack112,aLStack240);
+    lib::L2CValue::operator=(aLStack128,aLStack224);
+    lib::L2CValue::operator=(aLStack144,aLStack208);
+    lib::L2CValue::operator=(aLStack160,aLStack192);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack224);
+    lib::L2CValue::~L2CValue(aLStack240);
+    lib::L2CValue::~L2CValue(aLStack256);
+    lib::L2CValue::~L2CValue(aLStack176);
   }
   lib::L2CValue::L2CValue(aLStack256,aLStack96);
   lib::L2CValue::L2CValue(aLStack272,aLStack112);
@@ -57,17 +57,17 @@ L2CFighterPickel::status::JumpAerial_pre(L2CFighterPickel *this,L2CValue *return
   lua2cpp::L2CFighterCommon::status_pre_JumpAerial_param
             (this,(L2CValue)0x0,(L2CValue)0xf0,(L2CValue)0xe0,(L2CValue)0xd0,(L2CValue)0xc0,
              (L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack336);
-  lib::L2CValue::_L2CValue(aLStack320);
-  lib::L2CValue::_L2CValue(aLStack304);
-  lib::L2CValue::_L2CValue(aLStack288);
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack336);
+  lib::L2CValue::~L2CValue(aLStack320);
+  lib::L2CValue::~L2CValue(aLStack304);
+  lib::L2CValue::~L2CValue(aLStack288);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

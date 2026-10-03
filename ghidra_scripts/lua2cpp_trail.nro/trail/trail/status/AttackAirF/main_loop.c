@@ -23,13 +23,13 @@ L2CFighterTrail::status::AttackAirF_main_loop(L2CFighterTrail *this,L2CValue *re
   L2CValue aLStack64 [16];
   
   lua2cpp::L2CFighterCommon::status_AttackAir_Main_common(this);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar2 & 1U) != 0) goto LAB_71000135c0;
   bVar3 = app::lua_bind::StatusModule__is_changing_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar3 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar2 & 1U) == 0) {
     iVar4 = app::lua_bind::ComboModule__count_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack80,iVar4);
@@ -39,11 +39,11 @@ L2CFighterTrail::status::AttackAirF_main_loop(L2CFighterTrail *this,L2CValue *re
     uVar6 = lib::L2CValue::as_integer(aLStack128);
     iVar4 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar5,uVar6);
     lib::L2CValue::L2CValue(aLStack96,iVar4);
-    uVar5 = lib::L2CValue::operator_(aLStack80,aLStack96);
+    uVar5 = lib::L2CValue::operator<(aLStack80,aLStack96);
     if ((uVar5 & 1) == 0) {
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack112);
       lVar1 = -0x40;
     }
     else {
@@ -52,8 +52,8 @@ L2CFighterTrail::status::AttackAirF_main_loop(L2CFighterTrail *this,L2CValue *re
       bVar3 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar4);
       lib::L2CValue::L2CValue(aLStack144,(bool)(bVar3 & 1));
       lib::L2CValue::L2CValue(aLStack64,true);
-      uVar5 = lib::L2CValue::operator__(aLStack144,aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
+      uVar5 = lib::L2CValue::operator==(aLStack144,aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       if ((uVar5 & 1) == 0) {
         uVar5 = 0;
       }
@@ -63,31 +63,31 @@ L2CFighterTrail::status::AttackAirF_main_loop(L2CFighterTrail *this,L2CValue *re
         bVar3 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar4);
         lib::L2CValue::L2CValue(aLStack176,(bool)(bVar3 & 1));
         lib::L2CValue::L2CValue(aLStack64,true);
-        uVar5 = lib::L2CValue::operator__(aLStack176,aLStack64);
+        uVar5 = lib::L2CValue::operator==(aLStack176,aLStack64);
         uVar5 = uVar5 & 0xffffffff;
-        lib::L2CValue::_L2CValue(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack176);
-        lib::L2CValue::_L2CValue(aLStack192);
+        lib::L2CValue::~L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack176);
+        lib::L2CValue::~L2CValue(aLStack192);
       }
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack160);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack160);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar5 & 1) == 0) goto LAB_7100013584;
       lib::L2CValue::L2CValue(aLStack64,true);
       FUN_71000131a0(this,aLStack64);
       lVar1 = -0x30;
     }
-    lib::L2CValue::_L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar1));
+    lib::L2CValue::~L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar1));
   }
 LAB_7100013584:
   lua2cpp::L2CFighterCommon::sub_air_check_superleaf_fall_slowly(this);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,8);
-  lib::L2CValue::operator_(this_00);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,8);
+  lib::L2CValue::operator!(this_00);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lua2cpp::L2CFighterCommon::sub_attack_air_inherit_jump_aerial_motion_uniq_process_exec_fix_pos
               (this);

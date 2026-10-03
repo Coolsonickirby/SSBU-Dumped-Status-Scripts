@@ -25,17 +25,17 @@ L2CWeaponGanonGanond::status::Start_init(L2CWeaponGanonGanond *this,L2CValue *re
   uVar2 = lib::L2CValue::as_integer(aLStack112);
   fVar3 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar1,uVar2);
   lib::L2CValue::L2CValue(aLStack96,fVar3);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,0xc71626c4f);
   lib::L2CValue::L2CValue(aLStack128,0x8afaa2d47);
   uVar1 = lib::L2CValue::as_integer((L2CValue *)&local_40);
   uVar2 = lib::L2CValue::as_integer(aLStack128);
   fVar3 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar1,uVar2);
   lib::L2CValue::L2CValue(aLStack112,fVar3);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-  lib::L2CValue::operator_(aLStack80,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::operator*(aLStack80,aLStack96);
   lib::L2CValue::L2CValue(aLStack144,0.0);
   uVar4 = lib::L2CValue::as_number(aLStack128);
   uVar5 = lib::L2CValue::as_number(aLStack112);
@@ -44,12 +44,12 @@ L2CWeaponGanonGanond::status::Start_init(L2CWeaponGanonGanond *this,L2CValue *re
   uStack56 = (ulong)uVar6;
   app::lua_bind::CameraModule__add_camera_range_offset_impl
             (this->moduleAccessor,(Vector3f *)&local_40,0);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

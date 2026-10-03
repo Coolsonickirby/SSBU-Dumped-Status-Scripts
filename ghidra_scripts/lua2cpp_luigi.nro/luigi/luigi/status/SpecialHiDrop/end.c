@@ -9,14 +9,15 @@ L2CFighterLuigi::status::SpecialHiDrop_end(L2CFighterLuigi *this,L2CValue *retur
   ulong uVar1;
   L2CValue aLStack64 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_LUIGI_STATUS_KIND_SPECIAL_HI_FALL);
-  uVar1 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar1 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar1 & 1) == 0) {
-    lib::L2CValue::L2CValue(aLStack64,&LAB_7100006d90);
+    lib::L2CValue::L2CValue
+              (aLStack64,lua2cpp::L2CFighterCommon::super_jump_punch_reset_common_condition);
     lua2cpp::L2CFighterCommon::super_jump_punch_end(this,(L2CValue)0xc0);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

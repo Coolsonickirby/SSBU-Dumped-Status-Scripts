@@ -21,24 +21,24 @@ void __thiscall L2CFighterJack::status::Dispatch_end(L2CFighterJack *this,L2CVal
   lib::L2CValue::L2CValue(aLStack64,iVar2);
   iVar2 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::HitModule__set_xlu_frame_global_impl(this->moduleAccessor,iVar2,0);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack64,0x47f6fc330);
   lib::L2CValue::L2CValue(aLStack80,false);
   HVar5 = lib::L2CValue::as_hash(aLStack64);
   bVar1 = lib::L2CValue::as_bool(aLStack80);
   app::lua_bind::VisibilityModule__set_material_anim_priority_impl
             (this->moduleAccessor,HVar5,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,0x47f6fc330);
   lib::L2CValue::L2CValue(aLStack80,0x209b629c8);
   lVar6 = lib::L2CValue::as_integer(aLStack64);
   lVar7 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::VisibilityModule__set_status_default_int64_impl(this->moduleAccessor,lVar6,lVar7);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

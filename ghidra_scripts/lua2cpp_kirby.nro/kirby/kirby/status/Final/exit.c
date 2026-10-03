@@ -15,19 +15,19 @@ void __thiscall L2CFighterKirby::status::Final_exit(L2CFighterKirby *this,L2CVal
   L2CValue aLStack80 [16];
   L2CValue aLStack64 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KIRBY_STATUS_KIND_FINAL_ATTACK);
-  uVar5 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar5 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar5 & 1) == 0) {
     lib::L2CValue::L2CValue
               (aLStack80,_FIGHTER_KIRBY_INSTANCE_WORK_ID_FLAG_FINAL_IS_ROCKET_BELT_ATTACHED);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar2 & 1U) != 0) {
       lib::L2CValue::L2CValue(aLStack80,_ITEM_KIND_ROCKETBELT);
       lib::L2CValue::L2CValue(aLStack96,0);
@@ -38,10 +38,10 @@ void __thiscall L2CFighterKirby::status::Final_exit(L2CFighterKirby *this,L2CVal
       bVar1 = app::lua_bind::ItemModule__attach_item_impl
                         (this->moduleAccessor,IVar4,iVar3,(bool)(bVar1 & 1));
       lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-      lib::L2CValue::_L2CValue(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);

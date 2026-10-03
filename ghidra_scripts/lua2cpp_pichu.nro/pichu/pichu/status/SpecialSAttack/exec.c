@@ -33,9 +33,9 @@ L2CFighterPichu::status::SpecialSAttack_exec(L2CFighterPichu *this,L2CValue *ret
   iVar3 = lib::L2CValue::as_integer(aLStack192);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack176,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack192);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack192);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack192,0xfea97fe73);
     lib::L2CValue::L2CValue(aLStack208,0x1544219a2d);
@@ -44,10 +44,10 @@ L2CFighterPichu::status::SpecialSAttack_exec(L2CFighterPichu *this,L2CValue *ret
     fVar6 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar4,uVar5)
     ;
     lib::L2CValue::L2CValue(aLStack176,fVar6);
-    lib::L2CValue::operator_(aLStack96,aLStack176);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack192);
+    lib::L2CValue::operator=(aLStack96,aLStack176);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack192);
     lib::L2CValue::L2CValue(aLStack192,0xfea97fe73);
     lib::L2CValue::L2CValue(aLStack208,0x159658c9fe);
     uVar4 = lib::L2CValue::as_integer(aLStack192);
@@ -55,33 +55,33 @@ L2CFighterPichu::status::SpecialSAttack_exec(L2CFighterPichu *this,L2CValue *ret
     fVar6 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar4,uVar5)
     ;
     lib::L2CValue::L2CValue(aLStack176,fVar6);
-    lib::L2CValue::operator_(aLStack64,aLStack176);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack192);
+    lib::L2CValue::operator=(aLStack64,aLStack176);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack192);
     lib::L2CValue::L2CValue(aLStack176,FIGHTER_KINETIC_ENERGY_ID_GRAVITY);
-    lib::L2CValue::operator_(aLStack96);
+    lib::L2CValue::operator-(aLStack96);
     lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack176);
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack192);
     app::sv_kinetic_energy::set_accel(this->luaStateAgent);
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack176);
     lib::L2CValue::L2CValue(aLStack176,FIGHTER_KINETIC_ENERGY_ID_GRAVITY);
     lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack176);
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack64);
     app::sv_kinetic_energy::set_limit_speed(this->luaStateAgent);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack176);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

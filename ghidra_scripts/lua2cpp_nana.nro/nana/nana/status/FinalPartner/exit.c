@@ -23,9 +23,9 @@ L2CFighterNana::status::FinalPartner_exit(L2CFighterNana *this,L2CValue *return_
   bVar1 = app::lua_bind::LinkModule__is_model_constraint_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue((L2CValue *)&local_40,true);
-  uVar4 = lib::L2CValue::operator__(aLStack80,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(aLStack80,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) != 0) {
     FUN_7100006b20(this);
     FUN_7100007040(this);
@@ -41,20 +41,20 @@ L2CFighterNana::status::FinalPartner_exit(L2CFighterNana *this,L2CValue *return_
     uStack56 = (ulong)uVar8;
     app::lua_bind::ModelModule__set_joint_translate_impl
               (this->moduleAccessor,HVar5,(Vector3f *)&local_40,false,false);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_POPO_LINK_NO_PARTNER);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::LinkModule__is_link_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue((L2CValue *)&local_40,true);
-  uVar4 = lib::L2CValue::operator__(aLStack80,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar4 = lib::L2CValue::operator==(aLStack80,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar4 & 1) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_40,_FIGHTER_POPO_LINK_NO_PARTNER);
     lib::L2CValue::L2CValue(aLStack80,_LINK_ATTRIBUTE_REFERENCE_PARENT_SLOW);
@@ -64,9 +64,9 @@ L2CFighterNana::status::FinalPartner_exit(L2CFighterNana *this,L2CValue *return_
     bVar1 = lib::L2CValue::as_bool(aLStack96);
     app::lua_bind::LinkModule__set_attribute_impl
               (this->moduleAccessor,iVar2,LVar3,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

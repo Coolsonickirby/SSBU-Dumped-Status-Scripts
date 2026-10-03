@@ -21,12 +21,12 @@ L2CFighterPeach::status::FallSpecial_main_loop(L2CFighterPeach *this,L2CValue *r
   L2CValue aLStack80 [16];
   
   lua2cpp::L2CFighterCommon::sub_transition_group_check_air_cliff(this);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar1 & 1U) == 0) {
     lua2cpp::L2CFighterCommon::sub_fall(this);
-    bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar1 & 1U) == 0) {
       lib::L2CValue::L2CValue
                 (aLStack112,_FIGHTER_PEACH_STATUS_SPECIAL_HI_WORK_INT_PARASOL_LIMIT_TIME_COUNTER);
@@ -34,11 +34,11 @@ L2CFighterPeach::status::FallSpecial_main_loop(L2CFighterPeach *this,L2CValue *r
       iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
       lib::L2CValue::L2CValue(aLStack96,iVar3);
       lib::L2CValue::L2CValue(aLStack80,0);
-      uVar4 = lib::L2CValue::operator_(aLStack80,aLStack96);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar4 = lib::L2CValue::operator<(aLStack80,aLStack96);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar4 & 1) == 0) {
-        lib::L2CValue::_L2CValue(aLStack96);
-        lib::L2CValue::_L2CValue(aLStack112);
+        lib::L2CValue::~L2CValue(aLStack96);
+        lib::L2CValue::~L2CValue(aLStack112);
 LAB_710000e0a8:
         lib::L2CValue::L2CValue(aLStack112,_FIGHTER_STATUS_TRANSITION_TERM_ID_LANDING_FALL_SPECIAL);
         iVar3 = lib::L2CValue::as_integer(aLStack112);
@@ -46,15 +46,15 @@ LAB_710000e0a8:
                           (this->moduleAccessor,iVar3);
         lib::L2CValue::L2CValue(aLStack96,(bool)(bVar2 & 1));
         lib::L2CValue::L2CValue(aLStack80,false);
-        uVar4 = lib::L2CValue::operator__(aLStack96,aLStack80);
-        lib::L2CValue::_L2CValue(aLStack80);
+        uVar4 = lib::L2CValue::operator==(aLStack96,aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
         if ((uVar4 & 1) == 0) {
-          pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+          pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
           lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-          uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-          lib::L2CValue::_L2CValue(aLStack80);
-          lib::L2CValue::_L2CValue(aLStack96);
-          lib::L2CValue::_L2CValue(aLStack112);
+          uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+          lib::L2CValue::~L2CValue(aLStack80);
+          lib::L2CValue::~L2CValue(aLStack96);
+          lib::L2CValue::~L2CValue(aLStack112);
           if ((uVar4 & 1) != 0) {
             lib::L2CValue::L2CValue(aLStack80,_FIGHTER_STATUS_KIND_LANDING_FALL_SPECIAL);
             lib::L2CValue::L2CValue(aLStack96,false);
@@ -63,13 +63,13 @@ LAB_710000e0a8:
           }
         }
         else {
-          lib::L2CValue::_L2CValue(aLStack96);
-          lib::L2CValue::_L2CValue(aLStack112);
+          lib::L2CValue::~L2CValue(aLStack96);
+          lib::L2CValue::~L2CValue(aLStack112);
         }
         iVar3 = 0;
         goto LAB_710000e198;
       }
-      pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x1b);
+      pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x1b);
       lib::L2CValue::L2CValue(aLStack128,0x6e5ec7051);
       lib::L2CValue::L2CValue(aLStack144,0xcce8375ba);
       uVar4 = lib::L2CValue::as_integer(aLStack128);
@@ -77,7 +77,7 @@ LAB_710000e0a8:
       fVar7 = (float)app::lua_bind::WorkModule__get_param_float_impl
                                (this->moduleAccessor,uVar4,uVar6);
       lib::L2CValue::L2CValue(aLStack80,fVar7);
-      uVar4 = lib::L2CValue::operator__(aLStack80,pLVar5);
+      uVar4 = lib::L2CValue::operator<=(aLStack80,pLVar5);
       if ((uVar4 & 1) == 0) {
         bVar2 = 0;
       }
@@ -86,22 +86,22 @@ LAB_710000e0a8:
         iVar3 = lib::L2CValue::as_integer(aLStack176);
         bVar2 = app::lua_bind::ArticleModule__is_exist_impl(this->moduleAccessor,iVar3);
         lib::L2CValue::L2CValue(aLStack160,(bool)(bVar2 & 1));
-        bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack160);
-        lib::L2CValue::_L2CValue(aLStack160);
-        lib::L2CValue::_L2CValue(aLStack176);
+        bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack160);
+        lib::L2CValue::~L2CValue(aLStack160);
+        lib::L2CValue::~L2CValue(aLStack176);
       }
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack112);
       if ((bVar2 & 1) == 0) goto LAB_710000e0a8;
       lib::L2CValue::L2CValue(aLStack80,_FIGHTER_PEACH_STATUS_KIND_SPECIAL_HI_FALL);
       lib::L2CValue::L2CValue(aLStack96,true);
       lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0xa0);
 LAB_710000e180:
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
   }
   iVar3 = 1;

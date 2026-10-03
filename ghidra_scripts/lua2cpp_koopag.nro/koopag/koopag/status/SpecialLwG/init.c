@@ -15,15 +15,15 @@ L2CFighterKoopag::status::SpecialLwG_init(L2CFighterKoopag *this,L2CValue *retur
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     FUN_710000b250(this);
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KOOPA_INSTANCE_WORK_ID_FLAG_ST_INIT);
     iVar3 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar3);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

@@ -13,15 +13,15 @@ L2CWeaponBuddyBullet::status::Fly_end(L2CWeaponBuddyBullet *this,L2CValue *retur
   HVar2 = lib::L2CValue::as_hash(aLStack64);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::EffectModule__detach_kind_impl(this->moduleAccessor,HVar2,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,0xfef95f2ad);
   lib::L2CValue::L2CValue(aLStack80,5);
   HVar2 = lib::L2CValue::as_hash(aLStack64);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::EffectModule__detach_kind_impl(this->moduleAccessor,HVar2,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

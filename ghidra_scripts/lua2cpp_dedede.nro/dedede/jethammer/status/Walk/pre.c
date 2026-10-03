@@ -1,7 +1,8 @@
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-void __thiscall L2CWeaponDededeJethammer::status::Walk_pre(long this)
+void __thiscall
+L2CWeaponDededeJethammer::status::Walk_pre(L2CWeaponDededeJethammer *this,L2CValue *return_value)
 
 {
   byte bVar1;
@@ -12,7 +13,6 @@ void __thiscall L2CWeaponDededeJethammer::status::Walk_pre(long this)
   int iVar6;
   int iVar7;
   int iVar8;
-  L2CValue *return_value;
   int in_stack_fffffffffffffef4;
   L2CValue aLStack248 [16];
   L2CValue aLStack232 [16];
@@ -43,18 +43,18 @@ void __thiscall L2CWeaponDededeJethammer::status::Walk_pre(long this)
   iVar8 = lib::L2CValue::as_integer(aLStack232);
   lib::L2CValue::as_integer(aLStack248);
   app::lua_bind::StatusModule__init_settings_impl
-            (*(BattleObjectModuleAccessor **)(this + 0x40),SVar2,iVar3,uVar4,GVar5,(bool)(bVar1 & 1)
-             ,iVar6,iVar7,iVar8,in_stack_fffffffffffffef4);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::L2CValue(return_value,0);
+            (this->moduleAccessor,SVar2,iVar3,uVar4,GVar5,(bool)(bVar1 & 1),iVar6,iVar7,iVar8,
+             in_stack_fffffffffffffef4);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }
 

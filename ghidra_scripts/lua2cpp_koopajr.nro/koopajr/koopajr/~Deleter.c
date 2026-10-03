@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterKoopajr::__L2CFighterKoopajr(L2CFighterKoopajr *this)
+void __thiscall L2CFighterKoopajr::~~L2CFighterKoopajr(L2CFighterKoopajr *this)
 
 {
-  _L2CFighterKoopajr();
-  operator_delete(this);
+  ~L2CFighterKoopajr();
+  operator.delete(this);
   return;
 }
 

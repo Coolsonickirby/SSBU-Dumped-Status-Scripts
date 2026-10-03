@@ -18,9 +18,9 @@ L2CFighterBuddy::status::SpecialNShootAirTurn_main_loop
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_BUDDY_STATUS_KIND_SPECIAL_N_SHOOT_AIR);
     lib::L2CValue::L2CValue(aLStack80,true);
@@ -28,29 +28,29 @@ L2CFighterBuddy::status::SpecialNShootAirTurn_main_loop
     goto LAB_71000289c0;
   }
   lua2cpp::L2CFighterCommon::sub_transition_group_check_air_cliff(this);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar2 & 1U) != 0) {
     iVar3 = 1;
     goto LAB_7100028a08;
   }
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue(aLStack64,_SITUATION_KIND_GROUND);
-  uVar4 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar4 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar4 & 1) == 0) {
     FUN_7100028bd0(aLStack64,this);
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((bVar2 & 1U) == 0) {
       FUN_71000285f0(aLStack64,this);
-      bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
+      bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       if ((bVar2 & 1U) == 0) {
         bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
         lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-        bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack64);
+        bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack64);
         if ((bVar2 & 1U) == 0) goto LAB_71000289d0;
         lib::L2CValue::L2CValue(aLStack64,_FIGHTER_BUDDY_STATUS_KIND_SPECIAL_N_SHOOT_FALL);
         lib::L2CValue::L2CValue(aLStack80,false);
@@ -69,8 +69,8 @@ L2CFighterBuddy::status::SpecialNShootAirTurn_main_loop
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
 LAB_71000289c0:
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
 LAB_71000289d0:
   iVar3 = 0;

@@ -20,17 +20,17 @@ L2CFighterInkling::status::SpecialLwEmpty_end(L2CFighterInkling *this,L2CValue *
   L2CValue aLStack96 [16];
   L2CValue aLStack80 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,2);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,2);
   uVar2 = lib::L2CValue::as_integer(this_00);
   iVar3 = app::FighterSpecializer_Inkling::get_ink_work_id(uVar2);
   lib::L2CValue::L2CValue(aLStack80,iVar3);
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   fVar6 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack96,fVar6);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0.0);
-  uVar4 = lib::L2CValue::operator_(aLStack80,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator<(aLStack80,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_INKLING_MOTION_PART_SET_KIND_TANK);
     lib::L2CValue::L2CValue(aLStack112,0xa48dd021e);
@@ -45,19 +45,19 @@ L2CFighterInkling::status::SpecialLwEmpty_end(L2CFighterInkling *this,L2CValue *
     app::lua_bind::MotionModule__add_motion_partial_impl
               (this->moduleAccessor,iVar3,HVar5,fVar6,fVar7,(bool)(bVar1 & 1),false,0.0,true,true,
                false);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
   }
   else {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_INKLING_MOTION_PART_SET_KIND_TANK);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::MotionModule__remove_motion_partial_impl(this->moduleAccessor,iVar3,false);
   }
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

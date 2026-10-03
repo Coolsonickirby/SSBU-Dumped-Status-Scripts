@@ -8,7 +8,7 @@ L2CFighterBayonetta::status::GimmickBarrel_main(L2CFighterBayonetta *this,L2CVal
   FUN_710000d7f0();
   FUN_710000d920(this);
   lua2cpp::L2CFighterCommon::status_GimmickBarrel(this);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

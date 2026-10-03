@@ -11,11 +11,11 @@ L2CFighterInkling::status::AttackLw4Start_main(L2CFighterInkling *this,L2CValue 
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_INKLING_STATUS_ATTACK_FLAG_SUB_INK);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lua2cpp::L2CFighterCommon::status_AttackLw4Start_common(this);
   lib::L2CValue::L2CValue(aLStack48,AttackLw4Start_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

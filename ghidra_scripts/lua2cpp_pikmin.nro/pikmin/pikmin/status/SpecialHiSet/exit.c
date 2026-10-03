@@ -22,13 +22,13 @@ L2CWeaponPikminPikmin::status::SpecialHiSet_exit(L2CWeaponPikminPikmin *this,L2C
   local_40 = uVar3 & 0xffffffff | lVar4 << 0x20;
   uStack56 = (ulong)uVar1;
   app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_40,0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,0.0);
   fVar2 = (float)lib::L2CValue::as_number((L2CValue *)&local_40);
   app::lua_bind::GroundModule__set_offset_y_impl(this->moduleAccessor,fVar2);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

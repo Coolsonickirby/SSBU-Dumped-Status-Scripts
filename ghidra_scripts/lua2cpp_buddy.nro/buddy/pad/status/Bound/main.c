@@ -21,21 +21,21 @@ L2CWeaponBuddyPad::status::Bound_main(L2CWeaponBuddyPad *this,L2CValue *return_v
   lib::L2CValue::L2CValue(aLStack80,_HIT_STATUS_OFF);
   HVar3 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::HitModule__set_whole_impl(this->moduleAccessor,HVar3,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,0x1499d36759);
   HVar5 = lib::L2CValue::as_hash(aLStack96);
   iVar4 = app::lua_bind::SoundModule__play_se_impl
                     (this->moduleAccessor,HVar5,true,false,false,false,0);
   lib::L2CValue::L2CValue(aLStack80,iVar4);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack112,_WEAPON_INSTANCE_WORK_ID_FLAG_SWALLOWED);
   iVar4 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar4);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack96,0x4fb50df0c);
     lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -47,14 +47,14 @@ L2CWeaponBuddyPad::status::Bound_main(L2CWeaponBuddyPad *this,L2CValue *return_v
     bVar1 = lib::L2CValue::as_bool(aLStack144);
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar5,fVar6,fVar7,(bool)(bVar1 & 1),0.0,false,false);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
   }
   lib::L2CValue::L2CValue(aLStack96,Bound_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

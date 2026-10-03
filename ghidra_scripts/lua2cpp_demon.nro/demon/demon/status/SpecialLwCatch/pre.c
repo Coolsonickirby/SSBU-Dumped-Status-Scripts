@@ -13,9 +13,9 @@ L2CFighterDemon::status::SpecialLwCatch_pre(L2CFighterDemon *this,L2CValue *retu
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_POWER_UP_ATTACK_BIT_SPECIAL_LW);
   lib::L2CValue::L2CValue(aLStack96,0);
   FUN_7100023d50(return_value,this,aLStack64,aLStack80,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

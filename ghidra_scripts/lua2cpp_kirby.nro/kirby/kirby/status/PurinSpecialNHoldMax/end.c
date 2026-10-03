@@ -9,15 +9,15 @@ L2CFighterKirby::status::PurinSpecialNHoldMax_end(L2CFighterKirby *this,L2CValue
   ulong uVar2;
   L2CValue aLStack80 [16];
   
-  pLVar1 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  pLVar1 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KIRBY_STATUS_KIND_PURIN_SPECIAL_N_ROLL);
-  uVar2 = lib::L2CValue::operator__(pLVar1,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar2 = lib::L2CValue::operator==(pLVar1,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar2 & 1) == 0) {
-    pLVar1 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+    pLVar1 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KIRBY_STATUS_KIND_PURIN_SPECIAL_N_ROLL_AIR);
-    uVar2 = lib::L2CValue::operator__(pLVar1,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar2 = lib::L2CValue::operator==(pLVar1,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar2 & 1) == 0) goto LAB_71000956c4;
   }
   FUN_71001c02f0(this);

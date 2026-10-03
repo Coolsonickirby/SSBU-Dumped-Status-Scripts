@@ -15,25 +15,25 @@ L2CFighterMiiswordsman::status::SpecialHi1End_main
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_MIISWORDSMAN_INSTANCE_WORK_ID_FLAG_MOT_FRAME_INHERIT);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0xf2250bb9a);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_MIISWORDSMAN_INSTANCE_WORK_ID_INT_GROUND_MOT);
   lVar2 = lib::L2CValue::as_integer(aLStack80);
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar2,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0xf2250bb9a);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_MIISWORDSMAN_INSTANCE_WORK_ID_INT_AIR_MOT);
   lVar2 = lib::L2CValue::as_integer(aLStack80);
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar2,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   FUN_71000208c0(this);
   lib::L2CValue::L2CValue(aLStack80,SpecialHi1End_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

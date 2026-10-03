@@ -17,10 +17,10 @@ L2CFighterBrave::status::SpecialLwCancel_main(L2CFighterBrave *this,L2CValue *re
   L2CValue aLStack96 [16];
   L2CValue aLStack80 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-  uVar3 = lib::L2CValue::operator__(this_00,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar3 = lib::L2CValue::operator==(this_00,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar3 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,0x15d0344c8b);
     lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -45,17 +45,17 @@ L2CFighterBrave::status::SpecialLwCancel_main(L2CFighterBrave *this,L2CValue *re
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,8);
   sVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::ControlModule__set_add_jump_mini_button_life_impl(this->moduleAccessor,sVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,SpecialLwCancel_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

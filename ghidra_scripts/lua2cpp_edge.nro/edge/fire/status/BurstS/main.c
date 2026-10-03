@@ -17,7 +17,7 @@ L2CWeaponEdgeFire::status::BurstS_main(L2CWeaponEdgeFire *this,L2CValue *return_
   lib::L2CValue::L2CValue(aLStack80,false);
   bVar1 = lib::L2CValue::as_bool(aLStack80);
   app::lua_bind::GroundModule__set_collidable_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0x787e5038c);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,1.0);
@@ -28,10 +28,10 @@ L2CWeaponEdgeFire::status::BurstS_main(L2CWeaponEdgeFire *this,L2CValue *return_
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar2,fVar3,fVar4,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -40,9 +40,9 @@ L2CWeaponEdgeFire::status::BurstS_main(L2CWeaponEdgeFire *this,L2CValue *return_
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
   app::sv_kinetic_energy::set_speed(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -51,9 +51,9 @@ L2CWeaponEdgeFire::status::BurstS_main(L2CWeaponEdgeFire *this,L2CValue *return_
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
   app::sv_kinetic_energy::set_accel(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -62,12 +62,12 @@ L2CWeaponEdgeFire::status::BurstS_main(L2CWeaponEdgeFire *this,L2CValue *return_
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
   app::sv_kinetic_energy::set_limit_speed(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,BurstS_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

@@ -19,16 +19,16 @@ L2CWeaponRosettaTico::status::Down_main_loop(L2CWeaponRosettaTico *this,L2CValue
   uVar3 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::GroundModule__is_touch_impl(this->moduleAccessor,uVar3);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-  lib::L2CValue::operator_(aLStack96);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::operator!(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((bVar2 & 1U) == 0) {
     bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((bVar2 & 1U) == 0) {
       lib::L2CValue::L2CValue((L2CValue *)return_value,0);
     }
@@ -42,26 +42,26 @@ L2CWeaponRosettaTico::status::Down_main_loop(L2CWeaponRosettaTico *this,L2CValue
     iVar4 = lib::L2CValue::as_integer(aLStack96);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar4);
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack96);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((bVar2 & 1U) == 0) {
       lib::L2CValue::L2CValue(aLStack64,_WEAPON_ROSETTA_TICO_STATUS_KIND_FOLLOW);
-      lib::L2CValue::operator_(aLStack80,aLStack64);
+      lib::L2CValue::operator=(aLStack80,aLStack64);
     }
     else {
       lib::L2CValue::L2CValue(aLStack64,_WEAPON_ROSETTA_TICO_STATUS_KIND_FREE_FALL);
-      lib::L2CValue::operator_(aLStack80,aLStack64);
+      lib::L2CValue::operator=(aLStack80,aLStack64);
     }
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,aLStack80);
     lib::L2CValue::L2CValue(aLStack96,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xa0);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue((L2CValue *)return_value,1);
   }
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

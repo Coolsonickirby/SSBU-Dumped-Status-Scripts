@@ -18,34 +18,34 @@ L2CWeaponSnakeCypher::status::Detach_main_loop(L2CWeaponSnakeCypher *this,L2CVal
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,iVar1);
   lib::L2CValue::L2CValue(aLStack64,0);
-  uVar2 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar2 = lib::L2CValue::operator<=(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar2 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack128,_WEAPON_SNAKE_CYPHER_INSTANCE_WORK_ID_INT_HP);
     iVar1 = lib::L2CValue::as_integer(aLStack128);
     iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
     lib::L2CValue::L2CValue(aLStack112,iVar1);
     lib::L2CValue::L2CValue(aLStack64,0);
-    uVar2 = lib::L2CValue::operator__(aLStack112,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    uVar2 = lib::L2CValue::operator<=(aLStack112,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((uVar2 & 1) == 0) {
       iVar1 = 0;
       goto LAB_7100027f78;
     }
   }
   else {
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
   }
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_SNAKE_CYPHER_STATUS_KIND_EXPLOSION);
   lib::L2CValue::L2CValue(aLStack80,false);
   lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   iVar1 = 1;
 LAB_7100027f78:
   lib::L2CValue::L2CValue((L2CValue *)return_value,iVar1);

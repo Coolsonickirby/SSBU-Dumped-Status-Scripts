@@ -38,7 +38,7 @@ L2CFighterKirby::status::RosettaSpecialN_pre(L2CFighterKirby *this,L2CValue *ret
   lib::L2CValue::L2CValue(aLStack136,_FIGHTER_KIRBY_GENERATE_ARTICLE_ROSETTATICOMISSILE);
   iVar5 = lib::L2CValue::as_integer(aLStack136);
   app::lua_bind::ArticleModule__generate_article_impl(this->moduleAccessor,iVar5,false,-1);
-  lib::L2CValue::_L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack136);
   lua2cpp::L2CFighterCommon::sub_status_pre_SpecialNCommon(this);
   lib::L2CValue::L2CValue(aLStack136,0xf899192aa);
   lib::L2CValue::L2CValue(aLStack168,0x106f411784);
@@ -47,29 +47,29 @@ L2CFighterKirby::status::RosettaSpecialN_pre(L2CFighterKirby *this,L2CValue *ret
   fVar16 = (float)app::lua_bind::WorkModule__get_param_float_impl
                             (this->moduleAccessor,uVar13,uVar14);
   lib::L2CValue::L2CValue(aLStack152,fVar16);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue(aLStack200,0x16aa233382);
   HVar15 = lib::L2CValue::as_hash(aLStack200);
   uVar6 = app::lua_bind::FighterMotionModuleImpl__end_frame_from_hash_kirby_copy_impl
                     (this->moduleAccessor,HVar15);
   lib::L2CValue::L2CValue(aLStack184,uVar6);
   lib::L2CValue::L2CValue(aLStack136,1.0);
-  lib::L2CValue::operator_(aLStack184,aLStack136);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::operator_(aLStack168,aLStack152);
+  lib::L2CValue::operator+(aLStack184,aLStack136);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::operator/(aLStack168,aLStack152);
   lib::L2CValue::L2CValue(aLStack136,0.0);
-  lib::L2CValue::operator_(aLStack184,aLStack136);
-  lib::L2CValue::_L2CValue(aLStack136);
+  lib::L2CValue::operator+(aLStack184,aLStack136);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue
             (aLStack136,_FIGHTER_ROSETTA_INSTANCE_WORK_ID_FLOAT_SPECIAL_N_CHARGE_MOTION_RATE);
   fVar16 = (float)lib::L2CValue::as_number(aLStack200);
   iVar5 = lib::L2CValue::as_integer(aLStack136);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar16,iVar5);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack200);
   lib::L2CValue::L2CValue(aLStack216,0x27b8f55c7f);
   lib::L2CValue::L2CValue(aLStack232,0x2401a4e59e);
   lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
@@ -78,11 +78,11 @@ L2CFighterKirby::status::RosettaSpecialN_pre(L2CFighterKirby *this,L2CValue *ret
   app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
   lib::L2CValue::L2CValue(aLStack136,false);
-  uVar13 = lib::L2CValue::operator__(aLStack200,aLStack136);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
+  uVar13 = lib::L2CValue::operator==(aLStack200,aLStack136);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
   if ((uVar13 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack136,SITUATION_KIND_NONE);
     lib::L2CValue::L2CValue(aLStack200,_FIGHTER_KINETIC_TYPE_UNIQ);
@@ -105,15 +105,15 @@ L2CFighterKirby::status::RosettaSpecialN_pre(L2CFighterKirby *this,L2CValue *ret
     app::lua_bind::StatusModule__init_settings_impl
               (this->moduleAccessor,SVar7,iVar5,uVar6,GVar8,(bool)(bVar1 & 1),iVar9,iVar10,iVar11,
                in_stack_fffffffffffffeb4);
-    lib::L2CValue::_L2CValue(aLStack312);
-    lib::L2CValue::_L2CValue(aLStack296);
-    lib::L2CValue::_L2CValue(aLStack280);
-    lib::L2CValue::_L2CValue(aLStack264);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack216);
-    lib::L2CValue::_L2CValue(aLStack200);
-    lib::L2CValue::_L2CValue(aLStack136);
+    lib::L2CValue::~L2CValue(aLStack312);
+    lib::L2CValue::~L2CValue(aLStack296);
+    lib::L2CValue::~L2CValue(aLStack280);
+    lib::L2CValue::~L2CValue(aLStack264);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack216);
+    lib::L2CValue::~L2CValue(aLStack200);
+    lib::L2CValue::~L2CValue(aLStack136);
     lib::L2CValue::L2CValue(aLStack136,false);
     lib::L2CValue::L2CValue(aLStack200,_FIGHTER_TREADED_KIND_NO_REAC);
     lib::L2CValue::L2CValue(aLStack216,false);
@@ -139,27 +139,27 @@ L2CFighterKirby::status::RosettaSpecialN_pre(L2CFighterKirby *this,L2CValue *ret
     app::lua_bind::FighterStatusModuleImpl__set_fighter_status_data_impl
               (this->moduleAccessor,(bool)(bVar1 & 1),iVar5,(bool)(bVar2 & 1),(bool)(bVar3 & 1),
                (bool)(bVar4 & 1),uVar13,uVar6,uVar12,in_stack_fffffffffffffeb4);
-    lib::L2CValue::_L2CValue(aLStack312);
-    lib::L2CValue::_L2CValue(aLStack296);
-    lib::L2CValue::_L2CValue(aLStack280);
-    lib::L2CValue::_L2CValue(aLStack264);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack216);
-    lib::L2CValue::_L2CValue(aLStack200);
-    lib::L2CValue::_L2CValue(aLStack136);
+    lib::L2CValue::~L2CValue(aLStack312);
+    lib::L2CValue::~L2CValue(aLStack296);
+    lib::L2CValue::~L2CValue(aLStack280);
+    lib::L2CValue::~L2CValue(aLStack264);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack216);
+    lib::L2CValue::~L2CValue(aLStack200);
+    lib::L2CValue::~L2CValue(aLStack136);
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   }
   else {
     lib::L2CValue::L2CValue(aLStack136,_FIGHTER_KIRBY_STATUS_KIND_ROSETTA_SPECIAL_N_RETURN);
     iVar5 = lib::L2CValue::as_integer(aLStack136);
     app::lua_bind::StatusModule__set_status_kind_interrupt_impl(this->moduleAccessor,iVar5);
-    lib::L2CValue::_L2CValue(aLStack136);
+    lib::L2CValue::~L2CValue(aLStack136);
     lib::L2CValue::L2CValue((L2CValue *)return_value,1);
   }
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
   return;
 }
 

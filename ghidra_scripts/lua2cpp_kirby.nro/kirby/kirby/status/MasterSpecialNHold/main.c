@@ -8,8 +8,8 @@ L2CFighterKirby::status::MasterSpecialNHold_main(L2CFighterKirby *this,L2CValue 
   
   lib::L2CValue::L2CValue(aLStack64,true);
   FUN_7100139780(aLStack48,this,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

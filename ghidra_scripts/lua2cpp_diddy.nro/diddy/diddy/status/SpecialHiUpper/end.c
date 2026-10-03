@@ -14,11 +14,11 @@ L2CFighterDiddy::status::SpecialHiUpper_end(L2CFighterDiddy *this,L2CValue *retu
   DVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::DamageModule__set_no_reaction_mode_status_impl
             (this->moduleAccessor,DVar1,-1.0,-1.0,-1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,FIGHTER_CLIFF_HANG_DATA_DEFAULT);
   uVar2 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::GroundModule__select_cliff_hangdata_impl(this->moduleAccessor,uVar2);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

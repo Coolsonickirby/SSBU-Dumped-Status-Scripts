@@ -11,7 +11,7 @@ L2CFighterLittlemac::status::SpecialHi_pre(L2CFighterLittlemac *this,L2CValue *r
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_LITTLEMAC_STATUS_KIND_SPECIAL_HI_START);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::StatusModule__set_status_kind_interrupt_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,1);
   return;
 }

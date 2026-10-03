@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterNess::__L2CFighterNess(L2CFighterNess *this)
+void __thiscall L2CFighterNess::~~L2CFighterNess(L2CFighterNess *this)
 
 {
-  _L2CFighterNess();
-  operator_delete(this);
+  ~L2CFighterNess();
+  operator.delete(this);
   return;
 }
 

@@ -11,7 +11,7 @@ L2CFighterPickel::status::AttackAirLwLoop_exec(L2CFighterPickel *this,L2CValue *
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_PICKEL_STATUS_ATTACK_WORK_INT_ATTACK_AIR_LW_COUNT);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::WorkModule__inc_int_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

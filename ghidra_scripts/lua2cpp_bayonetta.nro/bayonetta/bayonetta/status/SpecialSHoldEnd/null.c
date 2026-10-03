@@ -33,10 +33,10 @@ L2CFighterBayonetta::status::SpecialSHoldEnd_null(L2CFighterBayonetta *this,L2CV
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack80,true);
-  uVar3 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar3 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar3 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack96,0x976c3b29b);
     lib::L2CValue::L2CValue(aLStack144,0xfea97fe73);
@@ -47,8 +47,8 @@ L2CFighterBayonetta::status::SpecialSHoldEnd_null(L2CFighterBayonetta *this,L2CV
     ;
     lib::L2CValue::L2CValue(aLStack128,fVar6);
     lib::L2CValue::L2CValue(aLStack80,2.0);
-    lib::L2CValue::operator_(aLStack128,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::operator-(aLStack128,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue(aLStack80,1.0);
     lib::L2CValue::L2CValue(aLStack176,false);
     HVar5 = lib::L2CValue::as_hash(aLStack96);
@@ -57,27 +57,27 @@ L2CFighterBayonetta::status::SpecialSHoldEnd_null(L2CFighterBayonetta *this,L2CV
     bVar1 = lib::L2CValue::as_bool(aLStack176);
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar5,fVar6,fVar7,(bool)(bVar1 & 1),0.0,false,false);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack80,1.0);
     fVar6 = (float)lib::L2CValue::as_number(aLStack80);
     app::lua_bind::MotionModule__set_whole_rate_impl(this->moduleAccessor,fVar6);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue
               (aLStack80,
                _FIGHTER_BAYONETTA_STATUS_WORK_ID_SPECIAL_S_FLAG_END_SPECIAL_S_CHANGE_MOTION);
     iVar2 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack192);
   return;
 }
 

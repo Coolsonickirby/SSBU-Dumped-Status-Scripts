@@ -22,14 +22,14 @@ L2CFighterGekkouga::status::SpecialHiEnd_main(L2CFighterGekkouga *this,L2CValue 
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack128,iVar3);
   lib::L2CValue::L2CValue(aLStack80,1);
-  lib::L2CValue::operator_(aLStack128,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::operator_(aLStack112);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::operator&(aLStack128,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::operator!(aLStack112);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
   if ((bVar1 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack80,0x12eeb17698);
     lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -54,13 +54,13 @@ L2CFighterGekkouga::status::SpecialHiEnd_main(L2CFighterGekkouga *this,L2CValue 
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar2 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,SpecialHiEnd_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

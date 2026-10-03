@@ -14,11 +14,11 @@ L2CFighterPurin::status::FinalEnd_exec_stop(L2CFighterPurin *this,L2CValue *retu
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   fVar2 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack48,fVar2);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   fVar2 = (float)lib::L2CValue::as_number(aLStack48);
   app::lua_bind::AttackModule__set_attack_scale_impl(this->moduleAccessor,fVar2,false);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

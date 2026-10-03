@@ -9,15 +9,15 @@ L2CFighterElight::status::SpecialHiJump_end(L2CFighterElight *this,L2CValue *ret
   ulong uVar2;
   L2CValue aLStack80 [16];
   
-  pLVar1 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  pLVar1 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_ELIGHT_STATUS_KIND_SPECIAL_HI_ATTACK1);
-  uVar2 = lib::L2CValue::operator__(pLVar1,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar2 = lib::L2CValue::operator==(pLVar1,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar2 & 1) == 0) {
-    pLVar1 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+    pLVar1 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_ELIGHT_STATUS_KIND_SPECIAL_HI_ATTACK2);
-    uVar2 = lib::L2CValue::operator__(pLVar1,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar2 = lib::L2CValue::operator==(pLVar1,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar2 & 1) == 0) {
       FUN_7100011df0(this);
     }

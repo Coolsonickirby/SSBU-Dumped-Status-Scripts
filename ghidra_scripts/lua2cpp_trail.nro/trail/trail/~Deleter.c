@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterTrail::__L2CFighterTrail(L2CFighterTrail *this)
+void __thiscall L2CFighterTrail::~~L2CFighterTrail(L2CFighterTrail *this)
 
 {
-  _L2CFighterTrail();
-  operator_delete(this);
+  ~L2CFighterTrail();
+  operator.delete(this);
   return;
 }
 

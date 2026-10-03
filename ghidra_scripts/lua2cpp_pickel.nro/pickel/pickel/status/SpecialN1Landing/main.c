@@ -11,7 +11,7 @@ L2CFighterPickel::status::SpecialN1Landing_main(L2CFighterPickel *this,L2CValue 
   FUN_7100060c70(this);
   lib::L2CValue::L2CValue(aLStack48,SpecialN1Landing_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

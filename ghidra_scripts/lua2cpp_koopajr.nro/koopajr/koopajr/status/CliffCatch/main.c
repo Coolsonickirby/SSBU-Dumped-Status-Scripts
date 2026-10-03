@@ -24,9 +24,9 @@ L2CFighterKoopajr::status::CliffCatch_main(L2CFighterKoopajr *this,L2CValue *ret
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack80,0.0);
     lib::L2CValue::L2CValue(aLStack96,1.0);
@@ -37,27 +37,27 @@ L2CFighterKoopajr::status::CliffCatch_main(L2CFighterKoopajr *this,L2CValue *ret
     bVar1 = lib::L2CValue::as_bool(aLStack112);
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar4,fVar6,fVar7,(bool)(bVar1 & 1),0.0,false,false);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
-    uVar5 = lib::L2CValue::operator__
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
+    uVar5 = lib::L2CValue::operator==
                       (aLStack144,(L2CValue *)&FIGHTER_INSTANCE_WORK_ID_FLOAT_DAMAGE_REACTION_FRAME)
     ;
     if ((uVar5 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack80,false);
-      uVar5 = lib::L2CValue::operator__(aLStack144,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar5 = lib::L2CValue::operator==(aLStack144,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar5 & 1) == 0) goto LAB_710000df30;
     }
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KOOPAJR_INSTANCE_WORK_ID_FLAG_SPECIAL_HI_CLIFF_CATCH)
     ;
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar3);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
 LAB_710000df30:
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lua2cpp::L2CFighterCommon::status_CliffCatch(this);
   return;
 }

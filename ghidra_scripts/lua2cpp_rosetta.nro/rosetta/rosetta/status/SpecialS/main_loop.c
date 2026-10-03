@@ -23,15 +23,15 @@ L2CFighterRosetta::status::SpecialS_main_loop(L2CFighterRosetta *this,L2CValue *
   lib::L2CValue::L2CValue(aLStack128,_FIGHTER_KINETIC_TYPE_AIR_STOP);
   lib::L2CValue::L2CValue(aLStack144,_GROUND_CORRECT_KIND_GROUND_CLIFF_STOP_ATTACK);
   FUN_7100008680(this,aLStack64,aLStack80,aLStack96,aLStack112,aLStack128,aLStack144);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   FUN_7100009480(aLStack160,this);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack160);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack160);
   lib::L2CValue::L2CValue((L2CValue *)return_value,(uint)((bVar2 & 1U) != 0));
   return;
 }

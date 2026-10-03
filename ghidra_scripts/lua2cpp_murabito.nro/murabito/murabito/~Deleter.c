@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterMurabito::__L2CFighterMurabito(L2CFighterMurabito *this)
+void __thiscall L2CFighterMurabito::~~L2CFighterMurabito(L2CFighterMurabito *this)
 
 {
-  _L2CFighterMurabito();
-  operator_delete(this);
+  ~L2CFighterMurabito();
+  operator.delete(this);
   return;
 }
 

@@ -22,8 +22,8 @@ L2CWeaponLucarioAuraball::status::Charge_main_loop
   HVar3 = app::lua_bind::MotionModule__motion_kind_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack96,HVar3);
   lib::L2CValue::L2CValue(aLStack80,0x6556ba434);
-  uVar4 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
     this_00 = aLStack96;
   }
@@ -37,12 +37,12 @@ L2CWeaponLucarioAuraball::status::Charge_main_loop
     iVar2 = lib::L2CValue::as_integer(aLStack144);
     iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
     lib::L2CValue::L2CValue(aLStack128,iVar2);
-    uVar4 = lib::L2CValue::operator__(aLStack128,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    uVar4 = lib::L2CValue::operator<=(aLStack128,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((uVar4 & 1) == 0) goto LAB_71000048ec;
     lib::L2CValue::L2CValue(aLStack80,0xaec2db62e);
     lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -54,12 +54,12 @@ L2CWeaponLucarioAuraball::status::Charge_main_loop
     bVar1 = lib::L2CValue::as_bool(aLStack128);
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar3,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
     this_00 = aLStack80;
   }
-  lib::L2CValue::_L2CValue(this_00);
+  lib::L2CValue::~L2CValue(this_00);
 LAB_71000048ec:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

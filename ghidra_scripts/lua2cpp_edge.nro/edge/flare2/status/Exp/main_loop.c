@@ -47,22 +47,22 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
   iVar3 = lib::L2CValue::as_integer(aLStack208);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack352,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack352);
-  lib::L2CValue::_L2CValue(aLStack352);
-  lib::L2CValue::_L2CValue(aLStack208);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack352);
+  lib::L2CValue::~L2CValue(aLStack352);
+  lib::L2CValue::~L2CValue(aLStack208);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack352,_WEAPON_LINK_NO_CONSTRAINT);
     iVar3 = lib::L2CValue::as_integer(aLStack352);
     uVar4 = app::lua_bind::LinkModule__get_parent_id_impl(this->moduleAccessor,iVar3,true);
     lib::L2CValue::L2CValue(aLStack128,uVar4);
-    lib::L2CValue::_L2CValue(aLStack352);
+    lib::L2CValue::~L2CValue(aLStack352);
     uVar4 = lib::L2CValue::as_integer(aLStack128);
     bVar1 = app::sv_battle_object::is_active(uVar4);
     lib::L2CValue::L2CValue(aLStack208,(bool)(bVar1 & 1));
     lib::L2CValue::L2CValue(aLStack352,false);
-    uVar5 = lib::L2CValue::operator__(aLStack208,aLStack352);
-    lib::L2CValue::_L2CValue(aLStack352);
-    lib::L2CValue::_L2CValue(aLStack208);
+    uVar5 = lib::L2CValue::operator==(aLStack208,aLStack352);
+    lib::L2CValue::~L2CValue(aLStack352);
+    lib::L2CValue::~L2CValue(aLStack208);
     if ((uVar5 & 1) == 0) {
       uVar4 = lib::L2CValue::as_integer(aLStack128);
       pvVar6 = (void *)app::sv_battle_object::module_accessor(uVar4);
@@ -77,7 +77,7 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
       pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack144);
       bVar1 = app::lua_bind::WorkModule__is_flag_impl(pBVar7,iVar3);
       lib::L2CValue::L2CValue(aLStack160,(bool)(bVar1 & 1));
-      lib::L2CValue::_L2CValue(aLStack352);
+      lib::L2CValue::~L2CValue(aLStack352);
       pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack144);
       uVar14 = app::lua_bind::PostureModule__pos_2d_impl(pBVar7);
       lib::L2CValue::L2CValue(aLStack208,(float)uVar14);
@@ -85,10 +85,10 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
       lib::L2CValue::L2CValue(aLStack352,aLStack208);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,aLStack192);
       lua2cpp::L2CFighterBase::Vector2__create(this,(L2CValue)0xa0,(L2CValue)0xa0);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-      lib::L2CValue::_L2CValue(aLStack352);
-      lib::L2CValue::_L2CValue(aLStack192);
-      lib::L2CValue::_L2CValue(aLStack208);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+      lib::L2CValue::~L2CValue(aLStack352);
+      lib::L2CValue::~L2CValue(aLStack192);
+      lib::L2CValue::~L2CValue(aLStack208);
       lib::L2CValue::L2CValue(aLStack352,0x109d30aa1b);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,0xc6c8a6c8d);
       uVar5 = lib::L2CValue::as_integer(aLStack352);
@@ -96,8 +96,8 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
       pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack144);
       fVar13 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar7,uVar5,uVar8);
       lib::L2CValue::L2CValue(aLStack224,fVar13);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-      lib::L2CValue::_L2CValue(aLStack352);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+      lib::L2CValue::~L2CValue(aLStack352);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,_WEAPON_EDGE_FLAREDUMMY_LINK_NO_TARGET);
       lib::L2CValue::L2CValue((L2CValue *)&local_70,true);
       iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_60);
@@ -105,17 +105,17 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
       pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack144);
       uVar4 = app::lua_bind::LinkModule__get_parent_id_impl(pBVar7,iVar3,(bool)(bVar1 & 1));
       lib::L2CValue::L2CValue(aLStack352,uVar4);
-      lib::L2CValue::operator_(aLStack128,aLStack352);
-      lib::L2CValue::_L2CValue(aLStack352);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_70);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+      lib::L2CValue::operator=(aLStack128,aLStack352);
+      lib::L2CValue::~L2CValue(aLStack352);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_70);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
       uVar4 = lib::L2CValue::as_integer(aLStack128);
       bVar1 = app::sv_battle_object::is_active(uVar4);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,(bool)(bVar1 & 1));
       lib::L2CValue::L2CValue(aLStack352,false);
-      uVar5 = lib::L2CValue::operator__((L2CValue *)&local_60,aLStack352);
-      lib::L2CValue::_L2CValue(aLStack352);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+      uVar5 = lib::L2CValue::operator==((L2CValue *)&local_60,aLStack352);
+      lib::L2CValue::~L2CValue(aLStack352);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
       if ((uVar5 & 1) == 0) {
         uVar4 = lib::L2CValue::as_integer(aLStack128);
         pvVar6 = (void *)app::sv_battle_object::module_accessor(uVar4);
@@ -125,11 +125,11 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
         else {
           lib::L2CValue::L2CValue(aLStack352,pvVar6);
         }
-        lib::L2CValue::operator_(aLStack144,aLStack352);
-        lib::L2CValue::_L2CValue(aLStack352);
+        lib::L2CValue::operator=(aLStack144,aLStack352);
+        lib::L2CValue::~L2CValue(aLStack352);
         lib::L2CValue::L2CValue(aLStack352,false);
-        uVar5 = lib::L2CValue::operator__(aLStack160,aLStack352);
-        lib::L2CValue::_L2CValue(aLStack352);
+        uVar5 = lib::L2CValue::operator==(aLStack160,aLStack352);
+        lib::L2CValue::~L2CValue(aLStack352);
         if ((uVar5 & 1) != 0) {
           lib::L2CValue::L2CValue(aLStack352,0xf5c75804b);
           lib::L2CValue::L2CValue((L2CValue *)&local_60,0);
@@ -138,8 +138,8 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
           pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack144);
           lVar9 = app::lua_bind::WorkModule__get_param_int64_impl(pBVar7,uVar5,uVar8);
           lib::L2CValue::L2CValue(aLStack240,lVar9);
-          lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-          lib::L2CValue::_L2CValue(aLStack352);
+          lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+          lib::L2CValue::~L2CValue(aLStack352);
           lib::L2CValue::L2CValue(aLStack352,0x137b567280);
           lib::L2CValue::L2CValue((L2CValue *)&local_60,0);
           uVar5 = lib::L2CValue::as_integer(aLStack352);
@@ -147,8 +147,8 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
           pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack144);
           fVar13 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar7,uVar5,uVar8);
           lib::L2CValue::L2CValue(aLStack256,fVar13);
-          lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-          lib::L2CValue::_L2CValue(aLStack352);
+          lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+          lib::L2CValue::~L2CValue(aLStack352);
           lib::L2CValue::L2CValue(aLStack352,0x130c514216);
           lib::L2CValue::L2CValue((L2CValue *)&local_60,0);
           uVar5 = lib::L2CValue::as_integer(aLStack352);
@@ -156,8 +156,8 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
           pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack144);
           fVar13 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar7,uVar5,uVar8);
           lib::L2CValue::L2CValue(aLStack272,fVar13);
-          lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-          lib::L2CValue::_L2CValue(aLStack352);
+          lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+          lib::L2CValue::~L2CValue(aLStack352);
           lib::L2CValue::L2CValue(aLStack352,0x13955813ac);
           lib::L2CValue::L2CValue((L2CValue *)&local_60,0);
           uVar5 = lib::L2CValue::as_integer(aLStack352);
@@ -165,13 +165,13 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
           pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack144);
           fVar13 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar7,uVar5,uVar8);
           lib::L2CValue::L2CValue(aLStack288,fVar13);
-          lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-          lib::L2CValue::_L2CValue(aLStack352);
+          lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+          lib::L2CValue::~L2CValue(aLStack352);
           lib::L2CValue::L2CValue(aLStack304,0.0);
-          pLVar10 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x18cdc1683);
-          pLVar11 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x1fbdb2615);
-          this_00 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x18cdc1683);
-          this_01 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x1fbdb2615);
+          pLVar10 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x18cdc1683);
+          pLVar11 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x1fbdb2615);
+          this_00 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x18cdc1683);
+          this_01 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x1fbdb2615);
           lib::L2CValue::L2CValue(aLStack368,true);
           HVar12 = lib::L2CValue::as_hash(aLStack240);
           uVar5 = lib::L2CValue::as_number(aLStack256);
@@ -191,18 +191,18 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
           lib::L2CValue::L2CValue(aLStack352,(float)local_70);
           lib::L2CValue::L2CValue(aLStack336,local_70._4_4_);
           lib::L2CValue::L2CValue(aLStack320,(float)uStack104);
-          lib::L2CValue::operator_(pLVar10,aLStack352);
-          lib::L2CValue::operator_(pLVar11,aLStack336);
-          lib::L2CValue::operator_(aLStack304,aLStack320);
-          lib::L2CValue::_L2CValue(aLStack320);
-          lib::L2CValue::_L2CValue(aLStack336);
-          lib::L2CValue::_L2CValue(aLStack352);
-          lib::L2CValue::_L2CValue(aLStack368);
-          lib::L2CValue::_L2CValue(aLStack304);
-          lib::L2CValue::_L2CValue(aLStack288);
-          lib::L2CValue::_L2CValue(aLStack272);
-          lib::L2CValue::_L2CValue(aLStack256);
-          lib::L2CValue::_L2CValue(aLStack240);
+          lib::L2CValue::operator=(pLVar10,aLStack352);
+          lib::L2CValue::operator=(pLVar11,aLStack336);
+          lib::L2CValue::operator=(aLStack304,aLStack320);
+          lib::L2CValue::~L2CValue(aLStack320);
+          lib::L2CValue::~L2CValue(aLStack336);
+          lib::L2CValue::~L2CValue(aLStack352);
+          lib::L2CValue::~L2CValue(aLStack368);
+          lib::L2CValue::~L2CValue(aLStack304);
+          lib::L2CValue::~L2CValue(aLStack288);
+          lib::L2CValue::~L2CValue(aLStack272);
+          lib::L2CValue::~L2CValue(aLStack256);
+          lib::L2CValue::~L2CValue(aLStack240);
         }
         uVar14 = app::lua_bind::PostureModule__pos_2d_impl(this->moduleAccessor);
         lib::L2CValue::L2CValue(aLStack352,(float)uVar14);
@@ -210,53 +210,53 @@ L2CWeaponEdgeFlare2::status::Exp_main_loop(L2CWeaponEdgeFlare2 *this,L2CValue *r
         lib::L2CValue::L2CValue((L2CValue *)&local_60,aLStack352);
         lib::L2CValue::L2CValue((L2CValue *)&local_70,aLStack336);
         lua2cpp::L2CFighterBase::Vector2__create(this,(L2CValue)0xa0,(L2CValue)0x90);
-        lib::L2CValue::_L2CValue((L2CValue *)&local_70);
-        lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-        lib::L2CValue::operator_(aLStack176,aLStack256);
-        lib::L2CValue::_L2CValue(aLStack256);
-        lib::L2CValue::_L2CValue(aLStack336);
-        lib::L2CValue::_L2CValue(aLStack352);
+        lib::L2CValue::~L2CValue((L2CValue *)&local_70);
+        lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+        lib::L2CValue::operator-(aLStack176,aLStack256);
+        lib::L2CValue::~L2CValue(aLStack256);
+        lib::L2CValue::~L2CValue(aLStack336);
+        lib::L2CValue::~L2CValue(aLStack352);
         lib::L2CValue::L2CValue((L2CValue *)&local_70,aLStack240);
         lua2cpp::L2CFighterBase::Vector2__normalize(this,(L2CValue)0x90);
-        lib::L2CValue::operator_(aLStack240,(L2CValue *)&local_60);
-        lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-        lib::L2CValue::_L2CValue((L2CValue *)&local_70);
-        lib::L2CValue::operator_(aLStack224);
-        lib::L2CValue::operator_(aLStack240,aLStack272);
-        lib::L2CValue::operator_(aLStack176,aLStack256);
-        lib::L2CValue::operator_(aLStack176,(L2CValue *)&local_60);
-        lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-        lib::L2CValue::_L2CValue(aLStack256);
-        lib::L2CValue::_L2CValue(aLStack272);
-        pLVar10 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x18cdc1683);
-        pLVar11 = (L2CValue *)lib::L2CValue::operator__(aLStack176,0x1fbdb2615);
+        lib::L2CValue::operator=(aLStack240,(L2CValue *)&local_60);
+        lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+        lib::L2CValue::~L2CValue((L2CValue *)&local_70);
+        lib::L2CValue::operator-(aLStack224);
+        lib::L2CValue::operator*(aLStack240,aLStack272);
+        lib::L2CValue::operator+(aLStack176,aLStack256);
+        lib::L2CValue::operator=(aLStack176,(L2CValue *)&local_60);
+        lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+        lib::L2CValue::~L2CValue(aLStack256);
+        lib::L2CValue::~L2CValue(aLStack272);
+        pLVar10 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x18cdc1683);
+        pLVar11 = (L2CValue *)lib::L2CValue::operator[](aLStack176,0x1fbdb2615);
         uVar5 = lib::L2CValue::as_number(pLVar10);
         uVar4 = lib::L2CValue::as_number(pLVar11);
         local_60 = uVar5 & 0xffffffff | (ulong)uVar4 << 0x20;
         uStack88 = 0;
         app::lua_bind::PostureModule__set_pos_2d_impl(this->moduleAccessor,(Vector2f *)&local_60);
         lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-        lib::L2CValue::_L2CValue(aLStack240);
+        lib::L2CValue::~L2CValue(aLStack240);
       }
       else {
         lib::L2CValue::L2CValue((L2CValue *)return_value,false);
       }
-      lib::L2CValue::_L2CValue(aLStack224);
-      lib::L2CValue::_L2CValue(aLStack176);
-      lib::L2CValue::_L2CValue(aLStack160);
-      lib::L2CValue::_L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack224);
+      lib::L2CValue::~L2CValue(aLStack176);
+      lib::L2CValue::~L2CValue(aLStack160);
+      lib::L2CValue::~L2CValue(aLStack144);
     }
     else {
       lib::L2CValue::L2CValue((L2CValue *)return_value,false);
     }
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack128);
   }
   else {
     lib::L2CValue::L2CValue(aLStack352,_WEAPON_EDGE_FLARE2_STATUS_KIND_REF);
     lib::L2CValue::L2CValue(aLStack208,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xa0,(L2CValue)0x30);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack352);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack352);
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   }
   return;

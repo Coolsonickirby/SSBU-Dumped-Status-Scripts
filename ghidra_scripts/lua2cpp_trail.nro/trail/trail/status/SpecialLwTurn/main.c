@@ -27,47 +27,47 @@ L2CFighterTrail::status::SpecialLwTurn_main(L2CFighterTrail *this,L2CValue *retu
   lib::L2CValue::L2CValue(aLStack144,false);
   lua2cpp::L2CFighterCommon::sub_change_motion_by_situation
             (this,(L2CValue)0x90,(L2CValue)0x80,(L2CValue)0x70);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_TRAIL_STATUS_SPECIAL_LW_FLAG_HIT_STOP);
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KINETIC_ENERGY_ID_CONTROL);
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   app::lua_bind::PostureModule__reverse_lr_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack176,_FIGHTER_TRAIL_STATUS_SPECIAL_LW_FLAG_DIRECT);
   iVar3 = lib::L2CValue::as_integer(aLStack176);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack160,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack80,true);
-  uVar5 = lib::L2CValue::operator__(aLStack160,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack176);
+  uVar5 = lib::L2CValue::operator==(aLStack160,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack176);
   if ((uVar5 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_TRAIL_STATUS_SPECIAL_LW_INT_TARGET_ID);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack160,iVar3);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     uVar4 = lib::L2CValue::as_integer(aLStack160);
     bVar1 = app::sv_battle_object::is_active(uVar4);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar2 & 1U) != 0) {
       uVar4 = lib::L2CValue::as_integer(aLStack160);
       uVar4 = app::sv_battle_object::category(uVar4);
       lib::L2CValue::L2CValue(aLStack176,uVar4 & 0xff);
       lib::L2CValue::L2CValue(aLStack80,_BATTLE_OBJECT_CATEGORY_FIGHTER);
-      uVar5 = lib::L2CValue::operator__(aLStack176,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack176);
+      uVar5 = lib::L2CValue::operator==(aLStack176,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack176);
       if ((uVar5 & 1) != 0) {
         uVar4 = lib::L2CValue::as_integer(aLStack160);
         pvVar6 = (void *)app::sv_battle_object::module_accessor(uVar4);
@@ -84,22 +84,22 @@ L2CFighterTrail::status::SpecialLwTurn_main(L2CFighterTrail *this,L2CValue *retu
         bVar1 = lib::L2CValue::as_bool(aLStack192);
         pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack80);
         app::lua_bind::StopModule__set_hit_stop_frame_impl(pBVar7,iVar3,(bool)(bVar1 & 1));
-        lib::L2CValue::_L2CValue(aLStack192);
-        lib::L2CValue::_L2CValue(aLStack176);
-        lib::L2CValue::_L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack192);
+        lib::L2CValue::~L2CValue(aLStack176);
+        lib::L2CValue::~L2CValue(aLStack80);
       }
     }
-    lib::L2CValue::_L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack160);
   }
   lib::L2CValue::L2CValue(aLStack176,_FIGHTER_TRAIL_STATUS_SPECIAL_LW_FLAG_DIRECT);
   iVar3 = lib::L2CValue::as_integer(aLStack176);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack160,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack80,true);
-  uVar5 = lib::L2CValue::operator__(aLStack160,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack176);
+  uVar5 = lib::L2CValue::operator==(aLStack160,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack176);
   if ((uVar5 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack160,0x1ed8ef3c34);
     HVar8 = lib::L2CValue::as_hash(aLStack160);
@@ -114,11 +114,11 @@ L2CFighterTrail::status::SpecialLwTurn_main(L2CFighterTrail *this,L2CValue *retu
                       (this->moduleAccessor,HVar8,true,false,false,false,0);
     lib::L2CValue::L2CValue(aLStack80,iVar3);
   }
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack160);
   lib::L2CValue::L2CValue(aLStack160,SpecialLwTurn_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0x60);
-  lib::L2CValue::_L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack160);
   return;
 }
 

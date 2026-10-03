@@ -9,7 +9,7 @@ L2CFighterYoshi::status::CatchDashPull_pre(L2CFighterYoshi *this,L2CValue *retur
   
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_STATUS_ATTR_DISABLE_CURRY_FACE);
   lua2cpp::L2CFighterCommon::status_pre_CatchPull_common(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

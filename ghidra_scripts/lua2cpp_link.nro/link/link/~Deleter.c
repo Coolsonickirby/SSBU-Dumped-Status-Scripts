@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterLink::__L2CFighterLink(L2CFighterLink *this)
+void __thiscall L2CFighterLink::~~L2CFighterLink(L2CFighterLink *this)
 
 {
-  _L2CFighterLink();
-  operator_delete(this);
+  ~L2CFighterLink();
+  operator.delete(this);
   return;
 }
 

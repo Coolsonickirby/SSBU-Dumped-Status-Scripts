@@ -21,9 +21,9 @@ L2CWeaponNessPkthunder::status::Vanish_exit(L2CWeaponNessPkthunder *this,L2CValu
   local_40 = uVar2 & 0xffffffff | lVar3 << 0x20;
   uStack56 = (ulong)uVar1;
   app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_40,0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

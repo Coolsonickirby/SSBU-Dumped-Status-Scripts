@@ -26,25 +26,25 @@ L2CFighterGekkouga::status::SpecialHiLoop_exec_stop(L2CFighterGekkouga *this,L2C
   iVar1 = lib::L2CValue::as_integer(aLStack128);
   fVar3 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,fVar3);
-  lib::L2CValue::operator_(aLStack80,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::operator=(aLStack80,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,_FIGHTER_GEKKOUGA_STATUS_WORK_ID_FLOAT_QUICK_ATTACK_PREV_ROT_Y)
   ;
   iVar1 = lib::L2CValue::as_integer(aLStack128);
   fVar3 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,fVar3);
-  lib::L2CValue::operator_(aLStack112,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::operator=(aLStack112,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,_FIGHTER_GEKKOUGA_STATUS_WORK_ID_FLOAT_QUICK_ATTACK_PREV_ROT_Z)
   ;
   iVar1 = lib::L2CValue::as_integer(aLStack128);
   fVar3 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,fVar3);
-  lib::L2CValue::operator_(aLStack96,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::operator=(aLStack96,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,0x31d39a761);
   HVar2 = lib::L2CValue::as_hash(aLStack128);
   uVar4 = lib::L2CValue::as_number(aLStack80);
@@ -54,11 +54,11 @@ L2CFighterGekkouga::status::SpecialHiLoop_exec_stop(L2CFighterGekkouga *this,L2C
   uStack56 = (ulong)uVar6;
   app::lua_bind::ModelModule__set_joint_rotate_impl
             (this->moduleAccessor,HVar2,(Vector3f *)&local_40,0,0);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

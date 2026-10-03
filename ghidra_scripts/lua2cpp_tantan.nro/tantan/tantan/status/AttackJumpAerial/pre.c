@@ -45,44 +45,44 @@ L2CFighterTantan::status::AttackJumpAerial_pre(L2CFighterTantan *this,L2CValue *
   lib::L2CValue::L2CValue(aLStack152,FIGHTER_STATUS_WORK_KEEP_FLAG_NONE_FLOAT);
   lib::L2CValue::L2CValue(aLStack168,0);
   lib::L2CValue::L2CValue(aLStack184,_FIGHTER_KINETIC_TYPE_JUMP_AERIAL);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,10);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,10);
   iVar5 = lib::L2CValue::as_integer(this_00);
   bVar1 = app::FighterSpecializer_Tantan::is_status_kind_attack(iVar5);
   lib::L2CValue::L2CValue(aLStack200,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack296,true);
-  uVar13 = lib::L2CValue::operator__(aLStack200,aLStack296);
-  lib::L2CValue::_L2CValue(aLStack296);
-  lib::L2CValue::_L2CValue(aLStack200);
+  uVar13 = lib::L2CValue::operator==(aLStack200,aLStack296);
+  lib::L2CValue::~L2CValue(aLStack296);
+  lib::L2CValue::~L2CValue(aLStack200);
   if ((uVar13 & 1) != 0) {
     lib::L2CValue::L2CValue
               (aLStack296,
                _FS_SUCCEEDS_KEEP_HIT | FS_SUCCEEDS_KEEP_VISIBILITY | _FS_SUCCEEDS_KEEP_ATTACK);
-    lib::L2CValue::operator_(aLStack168,aLStack296);
-    lib::L2CValue::_L2CValue(aLStack296);
+    lib::L2CValue::operator=(aLStack168,aLStack296);
+    lib::L2CValue::~L2CValue(aLStack296);
   }
   lib::L2CValue::L2CValue(aLStack216,_FIGHTER_TANTAN_INSTANCE_WORK_ID_INT_STATUS_KIND_ATTACK_PREV);
   iVar5 = lib::L2CValue::as_integer(aLStack216);
   iVar5 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar5);
   lib::L2CValue::L2CValue(aLStack200,iVar5);
   lib::L2CValue::L2CValue(aLStack296,FIGHTER_STATUS_KIND_JUMP_AERIAL);
-  uVar13 = lib::L2CValue::operator__(aLStack200,aLStack296);
-  lib::L2CValue::_L2CValue(aLStack296);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack216);
+  uVar13 = lib::L2CValue::operator==(aLStack200,aLStack296);
+  lib::L2CValue::~L2CValue(aLStack296);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack216);
   if ((uVar13 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack200,aLStack168);
     FUN_7100070c20(aLStack296,aLStack200);
-    lib::L2CValue::operator_(aLStack120,aLStack296);
-    lib::L2CValue::operator_(aLStack136,aLStack280);
-    lib::L2CValue::operator_(aLStack152,aLStack264);
-    lib::L2CValue::operator_(aLStack184,aLStack248);
-    lib::L2CValue::operator_(aLStack168,aLStack232);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack264);
-    lib::L2CValue::_L2CValue(aLStack280);
-    lib::L2CValue::_L2CValue(aLStack296);
-    lib::L2CValue::_L2CValue(aLStack200);
+    lib::L2CValue::operator=(aLStack120,aLStack296);
+    lib::L2CValue::operator=(aLStack136,aLStack280);
+    lib::L2CValue::operator=(aLStack152,aLStack264);
+    lib::L2CValue::operator=(aLStack184,aLStack248);
+    lib::L2CValue::operator=(aLStack168,aLStack232);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack264);
+    lib::L2CValue::~L2CValue(aLStack280);
+    lib::L2CValue::~L2CValue(aLStack296);
+    lib::L2CValue::~L2CValue(aLStack200);
   }
   lib::L2CValue::L2CValue(aLStack296,SITUATION_KIND_AIR);
   lib::L2CValue::L2CValue(aLStack216,GROUND_CORRECT_KIND_AIR);
@@ -100,10 +100,10 @@ L2CFighterTantan::status::AttackJumpAerial_pre(L2CFighterTantan *this,L2CValue *
   app::lua_bind::StatusModule__init_settings_impl
             (this->moduleAccessor,SVar6,iVar5,uVar7,GVar8,(bool)(bVar1 & 1),iVar9,iVar10,iVar11,
              in_stack_fffffffffffffe54);
-  lib::L2CValue::_L2CValue(aLStack328);
-  lib::L2CValue::_L2CValue(aLStack312);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack296);
+  lib::L2CValue::~L2CValue(aLStack328);
+  lib::L2CValue::~L2CValue(aLStack312);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack296);
   lib::L2CValue::L2CValue(aLStack296,false);
   lib::L2CValue::L2CValue(aLStack216,_FIGHTER_TREADED_KIND_NO_REAC);
   lib::L2CValue::L2CValue(aLStack312,false);
@@ -125,21 +125,21 @@ L2CFighterTantan::status::AttackJumpAerial_pre(L2CFighterTantan *this,L2CValue *
   app::lua_bind::FighterStatusModuleImpl__set_fighter_status_data_impl
             (this->moduleAccessor,(bool)(bVar1 & 1),iVar5,(bool)(bVar2 & 1),(bool)(bVar3 & 1),
              (bool)(bVar4 & 1),uVar13,uVar7,uVar12,in_stack_fffffffffffffe54);
-  lib::L2CValue::_L2CValue(aLStack408);
-  lib::L2CValue::_L2CValue(aLStack392);
-  lib::L2CValue::_L2CValue(aLStack376);
-  lib::L2CValue::_L2CValue(aLStack360);
-  lib::L2CValue::_L2CValue(aLStack344);
-  lib::L2CValue::_L2CValue(aLStack328);
-  lib::L2CValue::_L2CValue(aLStack312);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack296);
+  lib::L2CValue::~L2CValue(aLStack408);
+  lib::L2CValue::~L2CValue(aLStack392);
+  lib::L2CValue::~L2CValue(aLStack376);
+  lib::L2CValue::~L2CValue(aLStack360);
+  lib::L2CValue::~L2CValue(aLStack344);
+  lib::L2CValue::~L2CValue(aLStack328);
+  lib::L2CValue::~L2CValue(aLStack312);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack296);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
   return;
 }
 

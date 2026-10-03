@@ -40,9 +40,9 @@ L2CWeaponRefletThunder::status::TronVanish_main(L2CWeaponRefletThunder *this,L2C
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,(L2CValue *)&local_60);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack128);
   app::sv_kinetic_energy::set_speed(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,0.0);
   lib::L2CValue::L2CValue(aLStack128,0.0);
@@ -51,9 +51,9 @@ L2CWeaponRefletThunder::status::TronVanish_main(L2CWeaponRefletThunder *this,L2C
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,(L2CValue *)&local_60);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack128);
   app::sv_kinetic_energy::set_accel(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue(aLStack144,0x11a03d6be6);
   lib::L2CValue::L2CValue(aLStack160,0x31ed91fca);
   lib::L2CValue::L2CValue(aLStack176,0.0);
@@ -83,22 +83,22 @@ L2CWeaponRefletThunder::status::TronVanish_main(L2CWeaponRefletThunder *this,L2C
                      fVar5,(bool)(bVar1 & 1),0,0,-1,in_stack_fffffffffffffe94,0,
                      (bool)in_stack_fffffffffffffe9c,false);
   lib::L2CValue::L2CValue(aLStack128,uVar4);
-  lib::L2CValue::operator_(aLStack112,aLStack128);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack288);
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::operator=(aLStack112,aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack288);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,TronVanish_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack112);
   return;
 }
 

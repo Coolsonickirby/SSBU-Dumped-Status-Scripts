@@ -8,7 +8,7 @@ L2CWeaponMurabitoClayrocket::status::Fall_end
   
   lib::L2CValue::L2CValue(aLStack48,0x1e);
   FUN_710002db60(this,aLStack48);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

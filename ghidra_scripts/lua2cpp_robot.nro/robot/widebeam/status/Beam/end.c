@@ -9,7 +9,7 @@ L2CWeaponRobotWidebeam::status::Beam_end(L2CWeaponRobotWidebeam *this,L2CValue *
   lib::L2CValue::L2CValue(aLStack48,0xf);
   uVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::EffectModule__detach_all_impl(this->moduleAccessor,uVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

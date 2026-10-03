@@ -23,24 +23,24 @@ L2CFighterFalco::status::SpecialHiBound_exec_stop(L2CFighterFalco *this,L2CValue
   ulong uStack56;
   
   lib::L2CValue::L2CValue(aLStack80,0);
-  pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,9);
+  pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,9);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,_FIGHTER_FALCO_STATUS_KIND_SPECIAL_HI_RUSH);
-  uVar3 = lib::L2CValue::operator__(pLVar2,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  uVar3 = lib::L2CValue::operator==(pLVar2,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   if ((uVar3 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_FALCO_FIRE_STATUS_WORK_ID_FLOAT_DIR);
     iVar1 = lib::L2CValue::as_integer(aLStack96);
     fVar5 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
     lib::L2CValue::L2CValue((L2CValue *)&local_40,fVar5);
-    lib::L2CValue::operator_(aLStack80,(L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::operator=(aLStack80,(L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack96);
     pLVar2 = (L2CValue *)0x31d39a761;
     lib::L2CValue::L2CValue(aLStack96,0x31d39a761);
     lib::L2CAgent::math_deg((L2CAgent *)aLStack80,pLVar2);
     lib::L2CValue::L2CValue((L2CValue *)&local_40,360.0);
-    lib::L2CValue::operator_((L2CValue *)&local_40,aLStack128);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::operator-((L2CValue *)&local_40,aLStack128);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
     lib::L2CValue::L2CValue(aLStack144,0.0);
     lib::L2CValue::L2CValue(aLStack160,0.0);
     HVar4 = lib::L2CValue::as_hash(aLStack96);
@@ -51,14 +51,14 @@ L2CFighterFalco::status::SpecialHiBound_exec_stop(L2CFighterFalco *this,L2CValue
     uStack56 = (ulong)uVar8;
     app::lua_bind::ModelModule__set_joint_rotate_impl
               (this->moduleAccessor,HVar4,(Vector3f *)&local_40,0,0);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack96);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

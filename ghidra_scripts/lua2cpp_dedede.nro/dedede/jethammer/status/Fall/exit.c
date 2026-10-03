@@ -16,50 +16,50 @@ L2CWeaponDededeJethammer::status::Attack_exit(L2CWeaponDededeJethammer *this,L2C
   L2CValue aLStack80 [16];
   
   this_00 = &this->globalTable;
-  pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+  pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_START);
-  uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar5 & 1) == 0) {
-    pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+    pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
     lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_WAIT);
-    uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar5 & 1) == 0) {
-      pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+      pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
       lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_WALK);
-      uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar5 & 1) == 0) {
-        pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+        pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
         lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_TURN);
-        uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-        lib::L2CValue::_L2CValue(aLStack80);
+        uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
         if ((uVar5 & 1) == 0) {
-          pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+          pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
           lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_JUMPSQUAT);
-          uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-          lib::L2CValue::_L2CValue(aLStack80);
+          uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+          lib::L2CValue::~L2CValue(aLStack80);
           if ((uVar5 & 1) == 0) {
-            pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+            pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
             lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_JUMP);
-            uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-            lib::L2CValue::_L2CValue(aLStack80);
+            uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+            lib::L2CValue::~L2CValue(aLStack80);
             if ((uVar5 & 1) == 0) {
-              pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+              pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
               lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_PASS);
-              uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-              lib::L2CValue::_L2CValue(aLStack80);
+              uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+              lib::L2CValue::~L2CValue(aLStack80);
               if ((uVar5 & 1) == 0) {
-                pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+                pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
                 lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_FALL);
-                uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-                lib::L2CValue::_L2CValue(aLStack80);
+                uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+                lib::L2CValue::~L2CValue(aLStack80);
                 if ((uVar5 & 1) == 0) {
-                  pLVar4 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+                  pLVar4 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
                   lib::L2CValue::L2CValue(aLStack80,_WEAPON_DEDEDE_JETHAMMER_STATUS_KIND_LANDING);
-                  uVar5 = lib::L2CValue::operator__(pLVar4,aLStack80);
-                  lib::L2CValue::_L2CValue(aLStack80);
+                  uVar5 = lib::L2CValue::operator==(pLVar4,aLStack80);
+                  lib::L2CValue::~L2CValue(aLStack80);
                   if ((uVar5 & 1) == 0) {
                     lib::L2CValue::L2CValue(aLStack80,_EFFECT_SUB_ATTRIBUTE_SYNC_STOP);
                     lib::L2CValue::L2CValue(aLStack96,true);
@@ -69,9 +69,9 @@ L2CWeaponDededeJethammer::status::Attack_exit(L2CWeaponDededeJethammer *this,L2C
                     bVar2 = lib::L2CValue::as_bool(aLStack112);
                     app::lua_bind::EffectModule__kill_all_impl
                               (this->moduleAccessor,uVar3,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-                    lib::L2CValue::_L2CValue(aLStack112);
-                    lib::L2CValue::_L2CValue(aLStack96);
-                    lib::L2CValue::_L2CValue(aLStack80);
+                    lib::L2CValue::~L2CValue(aLStack112);
+                    lib::L2CValue::~L2CValue(aLStack96);
+                    lib::L2CValue::~L2CValue(aLStack80);
                   }
                 }
               }

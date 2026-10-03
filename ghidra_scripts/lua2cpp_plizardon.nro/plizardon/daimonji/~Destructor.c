@@ -1,15 +1,15 @@
 
 void __thiscall
-L2CWeaponPlizardonDaimonji::_L2CWeaponPlizardonDaimonji(L2CWeaponPlizardonDaimonji *this)
+L2CWeaponPlizardonDaimonji::~L2CWeaponPlizardonDaimonji(L2CWeaponPlizardonDaimonji *this)
 
 {
   *(code **)this = lua2cpp::L2CWeaponCommon::LUA_SCRIPT_STATUS_FUNC_EXEC_STOP;
-  lib::L2CValue::_L2CValue((L2CValue *)(this + 0x108));
-  lib::L2CValue::_L2CValue((L2CValue *)(this + 0xf8));
-  lib::L2CValue::_L2CValue((L2CValue *)(this + 0xe8));
-  lib::L2CValue::_L2CValue((L2CValue *)(this + 0xd8));
-  lib::L2CValue::_L2CValue((L2CValue *)(this + 200));
-  lua2cpp::L2CAgentBase::_L2CAgentBase((L2CAgentBase *)this);
+  lib::L2CValue::~L2CValue((L2CValue *)(this + 0x108));
+  lib::L2CValue::~L2CValue((L2CValue *)(this + 0xf8));
+  lib::L2CValue::~L2CValue((L2CValue *)(this + 0xe8));
+  lib::L2CValue::~L2CValue((L2CValue *)(this + 0xd8));
+  lib::L2CValue::~L2CValue((L2CValue *)(this + 200));
+  lua2cpp::L2CAgentBase::~L2CAgentBase((L2CAgentBase *)this);
   return;
 }
 

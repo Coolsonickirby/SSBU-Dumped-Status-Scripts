@@ -27,7 +27,7 @@ L2CFighterPackun::status::SpecialLwCharge_exec_stop(L2CFighterPackun *this,L2CVa
   iVar4 = lib::L2CValue::as_integer((L2CValue *)&local_40);
   fVar7 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar4);
   lib::L2CValue::L2CValue(aLStack80,fVar7);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   FUN_7100007c20(this);
   lib::L2CValue::L2CValue(aLStack96,0x31d39a761);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -40,37 +40,37 @@ L2CFighterPackun::status::SpecialLwCharge_exec_stop(L2CFighterPackun *this,L2CVa
   uStack56 = (ulong)uVar10;
   app::lua_bind::ModelModule__set_joint_rotate_impl
             (this->moduleAccessor,HVar5,(Vector3f *)&local_40,0,0);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,false);
   HVar5 = app::lua_bind::MotionModule__motion_kind_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack112,HVar5);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,0x11a514d9d2);
-  uVar6 = lib::L2CValue::operator__(aLStack112,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  uVar6 = lib::L2CValue::operator==(aLStack112,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   if ((uVar6 & 1) == 0) {
     HVar5 = app::lua_bind::MotionModule__motion_kind_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack128,HVar5);
     lib::L2CValue::L2CValue((L2CValue *)&local_40,0x11928d91f6);
-    uVar6 = lib::L2CValue::operator__(aLStack128,(L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar6 = lib::L2CValue::operator==(aLStack128,(L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar6 & 1) == 0) goto LAB_7100006ad4;
   }
   else {
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack112);
   }
   lib::L2CValue::L2CValue((L2CValue *)&local_40,true);
-  lib::L2CValue::operator_(aLStack96,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::operator=(aLStack96,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
 LAB_7100006ad4:
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack96);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack96);
   if ((bVar1 & 1U) == 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_40,99.0);
-    uVar6 = lib::L2CValue::operator_(aLStack80,(L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+    uVar6 = lib::L2CValue::operator<(aLStack80,(L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
     if ((uVar6 & 1) == 0) {
       lib::L2CValue::L2CValue((L2CValue *)&local_40,GROUND_CORRECT_SHAPE_RHOMBUS_MODIFY_FLAG_FREE_Y)
       ;
@@ -97,11 +97,11 @@ LAB_7100006ad4:
     bVar2 = lib::L2CValue::as_bool(aLStack112);
     app::lua_bind::GroundModule__set_shape_flag_impl(this->moduleAccessor,uVar3,(bool)(bVar2 & 1));
   }
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

@@ -7,7 +7,7 @@ L2CWeaponLinkAncientbow::status::Have_main(L2CWeaponLinkAncientbow *this,L2CValu
   
   lib::L2CValue::L2CValue(aLStack48,Have_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

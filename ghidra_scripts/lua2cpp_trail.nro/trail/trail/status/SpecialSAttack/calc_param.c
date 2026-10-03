@@ -16,10 +16,10 @@ L2CFighterTrail::status::SpecialSAttack_calc_param(L2CFighterTrail *this,L2CValu
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,iVar1);
   lib::L2CValue::L2CValue(aLStack64,0);
-  uVar2 = lib::L2CValue::operator_(aLStack64,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar2 = lib::L2CValue::operator<(aLStack64,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar2 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KINETIC_ENERGY_ID_STOP);
     lib::L2CValue::L2CValue(aLStack80,-1.0);
@@ -29,9 +29,9 @@ L2CFighterTrail::status::SpecialSAttack_calc_param(L2CFighterTrail *this,L2CValu
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
     app::sv_kinetic_energy::set_limit_speed(this->luaStateAgent);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

@@ -27,13 +27,13 @@ L2CFighterPlizardon::status::SpecialSEnd_end(L2CFighterPlizardon *this,L2CValue 
   local_50 = uVar2 & 0xffffffff | lVar3 << 0x20;
   uStack72 = (ulong)uVar1;
   app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_50,0);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_SITUATION_KIND_GROUND);
-  uVar2 = lib::L2CValue::operator__(this_00,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  uVar2 = lib::L2CValue::operator==(this_00,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   if ((uVar2 & 1) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_50,FIGHTER_KINETIC_ENERGY_ID_GRAVITY);
     lib::L2CValue::L2CValue(aLStack96,_ENERGY_GRAVITY_RESET_TYPE_GRAVITY);
@@ -51,13 +51,13 @@ L2CFighterPlizardon::status::SpecialSEnd_end(L2CFighterPlizardon *this,L2CValue 
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack160);
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack176);
     app::sv_kinetic_energy::reset_energy(this->luaStateAgent);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

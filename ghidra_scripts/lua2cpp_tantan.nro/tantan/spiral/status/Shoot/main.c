@@ -45,18 +45,18 @@ L2CWeaponTantanSpiral::status::Shoot_main(L2CWeaponTantanSpiral *this,L2CValue *
   app::lua_bind::MotionModule__add_motion_partial_impl
             (this->moduleAccessor,iVar5,HVar6,fVar7,fVar8,(bool)(bVar1 & 1),(bool)(bVar2 & 1),fVar9,
              (bool)(bVar3 & 1),(bool)(bVar4 & 1),false);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue(aLStack112,Shoot_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x90);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
   return;
 }
 

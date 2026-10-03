@@ -16,12 +16,12 @@ L2CFighterReflet::status::FinalMove_end(L2CFighterReflet *this,L2CValue *return_
   FUN_710001c650(this);
   fVar1 = (float)app::lua_bind::PostureModule__pos_x_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue((L2CValue *)&local_30,fVar1);
-  lib::L2CValue::operator_(aLStack80,(L2CValue *)&local_30);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_30);
+  lib::L2CValue::operator=(aLStack80,(L2CValue *)&local_30);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_30);
   fVar1 = (float)app::lua_bind::PostureModule__pos_y_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue((L2CValue *)&local_30,fVar1);
-  lib::L2CValue::operator_(aLStack64,(L2CValue *)&local_30);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_30);
+  lib::L2CValue::operator=(aLStack64,(L2CValue *)&local_30);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_30);
   uVar2 = lib::L2CValue::as_number(aLStack80);
   uVar3 = lib::L2CValue::as_number(aLStack64);
   local_30 = CONCAT44(uVar3,uVar2);
@@ -29,8 +29,8 @@ L2CFighterReflet::status::FinalMove_end(L2CFighterReflet *this,L2CValue *return_
   app::lua_bind::GroundModule__set_shape_safe_pos_impl(this->moduleAccessor,(Vector2f *)&local_30);
   FUN_710001c940(this);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

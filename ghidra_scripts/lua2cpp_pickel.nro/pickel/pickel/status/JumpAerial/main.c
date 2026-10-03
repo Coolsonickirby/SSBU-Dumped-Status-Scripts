@@ -20,30 +20,30 @@ L2CFighterPickel::status::JumpAerial_main(L2CFighterPickel *this,L2CValue *retur
   
   FUN_7100088d70(aLStack112,this);
   lib::L2CValue::L2CValue(aLStack96,false);
-  uVar3 = lib::L2CValue::operator__(aLStack112,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar3 = lib::L2CValue::operator==(aLStack112,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar3 & 1) == 0) {
     FUN_7100088b80(aLStack112,this);
     lib::L2CValue::L2CValue(aLStack96,true);
-    uVar3 = lib::L2CValue::operator__(aLStack112,aLStack96);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar3 = lib::L2CValue::operator==(aLStack112,aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar3 & 1) == 0) {
       HVar4 = app::lua_bind::MotionModule__motion_kind_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue(aLStack112,HVar4);
       lib::L2CValue::L2CValue(aLStack96,0x191f5b3aad);
-      uVar3 = lib::L2CValue::operator__(aLStack112,aLStack96);
-      lib::L2CValue::_L2CValue(aLStack96);
+      uVar3 = lib::L2CValue::operator==(aLStack112,aLStack96);
+      lib::L2CValue::~L2CValue(aLStack96);
       if ((uVar3 & 1) == 0) {
         lib::L2CValue::L2CValue(aLStack96,0xd0b71815b);
-        lib::L2CValue::operator_(aLStack112,aLStack96);
+        lib::L2CValue::operator=(aLStack112,aLStack96);
       }
       else {
         lib::L2CValue::L2CValue(aLStack96,0xd0c1c4542);
-        lib::L2CValue::operator_(aLStack112,aLStack96);
+        lib::L2CValue::operator=(aLStack112,aLStack96);
       }
-      lib::L2CValue::_L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack96);
       lib::L2CValue::L2CValue(aLStack96,-1.0);
       lib::L2CValue::L2CValue(aLStack128,1.0);
       lib::L2CValue::L2CValue(aLStack144,0.0);
@@ -57,31 +57,31 @@ L2CFighterPickel::status::JumpAerial_main(L2CFighterPickel *this,L2CValue *retur
       bVar2 = lib::L2CValue::as_bool(aLStack176);
       app::lua_bind::MotionModule__change_motion_inherit_frame_impl
                 (this->moduleAccessor,HVar4,fVar5,fVar6,fVar7,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-      lib::L2CValue::_L2CValue(aLStack176);
-      lib::L2CValue::_L2CValue(aLStack160);
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack176);
+      lib::L2CValue::~L2CValue(aLStack160);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack96);
       bVar1 = app::lua_bind::StopModule__is_stop_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue(aLStack128,(bool)(bVar1 & 1));
       lib::L2CValue::L2CValue(aLStack96,false);
-      uVar3 = lib::L2CValue::operator__(aLStack128,aLStack96);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack128);
+      uVar3 = lib::L2CValue::operator==(aLStack128,aLStack96);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack128);
       if ((uVar3 & 1) != 0) {
         lib::L2CValue::L2CValue(aLStack144,false);
         lua2cpp::L2CFighterCommon::sub_jump_aerial_uniq(this,(L2CValue)0x70);
-        lib::L2CValue::_L2CValue(aLStack128);
-        lib::L2CValue::_L2CValue(aLStack144);
+        lib::L2CValue::~L2CValue(aLStack128);
+        lib::L2CValue::~L2CValue(aLStack144);
       }
-      this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x15);
-      lib::L2CValue::L2CValue(aLStack96,&DAT_7100088e90);
-      lib::L2CValue::operator_(this_00,aLStack96);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack112);
+      this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x15);
+      lib::L2CValue::L2CValue(aLStack96,FUN_7100088e90);
+      lib::L2CValue::operator=(this_00,aLStack96);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack112);
       lib::L2CValue::L2CValue(aLStack96,JumpAerial_main_loop);
       lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-      lib::L2CValue::_L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack96);
     }
     else {
       lib::L2CValue::L2CValue((L2CValue *)return_value,0);

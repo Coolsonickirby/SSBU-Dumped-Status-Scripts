@@ -10,8 +10,8 @@ L2CWeaponShizueTommy::status::End_main_loop(L2CWeaponShizueTommy *this,L2CValue 
   
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   bVar2 = (bVar2 & 1U) != 0;
   if (bVar2) {
     lib::L2CValue::L2CValue(aLStack80,0x199c462b5d);
@@ -19,8 +19,8 @@ L2CWeaponShizueTommy::status::End_main_loop(L2CWeaponShizueTommy *this,L2CValue 
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
     app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
     lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,(uint)bVar2);
   return;

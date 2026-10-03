@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterPitb::__L2CFighterPitb(L2CFighterPitb *this)
+void __thiscall L2CFighterPitb::~~L2CFighterPitb(L2CFighterPitb *this)
 
 {
-  _L2CFighterPitb();
-  operator_delete(this);
+  ~L2CFighterPitb();
+  operator.delete(this);
   return;
 }
 

@@ -25,27 +25,27 @@ L2CFighterKirby::status::MetaknightSpecialN_main(L2CFighterKirby *this,L2CValue 
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue(aLStack96,_SITUATION_KIND_GROUND);
-  uVar4 = lib::L2CValue::operator__(this_00,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar4 = lib::L2CValue::operator==(this_00,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar4 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack96,0x1331f32137);
     lib::L2CValue::L2CValue(aLStack112,_FIGHTER_METAKNIGHT_STATUS_WORK_INT_MOT_KIND);
     lVar5 = lib::L2CValue::as_integer(aLStack96);
     iVar2 = lib::L2CValue::as_integer(aLStack112);
     app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar5,iVar2);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,0x1331f32137);
     lib::L2CValue::L2CValue(aLStack112,_FIGHTER_METAKNIGHT_STATUS_WORK_INT_MOT_AIR_KIND);
     lVar5 = lib::L2CValue::as_integer(aLStack96);
     iVar2 = lib::L2CValue::as_integer(aLStack112);
     app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar5,iVar2);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,0x1331f32137);
     lib::L2CValue::L2CValue(aLStack112,0.0);
     lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -63,15 +63,15 @@ L2CFighterKirby::status::MetaknightSpecialN_main(L2CFighterKirby *this,L2CValue 
     lVar5 = lib::L2CValue::as_integer(aLStack96);
     iVar2 = lib::L2CValue::as_integer(aLStack112);
     app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar5,iVar2);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,0xf3a6aace3);
     lib::L2CValue::L2CValue(aLStack112,_FIGHTER_METAKNIGHT_STATUS_WORK_INT_MOT_AIR_KIND);
     lVar5 = lib::L2CValue::as_integer(aLStack96);
     iVar2 = lib::L2CValue::as_integer(aLStack112);
     app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar5,iVar2);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,0xf3a6aace3);
     lib::L2CValue::L2CValue(aLStack112,0.0);
     lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -83,25 +83,25 @@ L2CFighterKirby::status::MetaknightSpecialN_main(L2CFighterKirby *this,L2CValue 
     app::lua_bind::FighterMotionModuleImpl__change_motion_kirby_copy_impl
               (this->moduleAccessor,HVar6,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,SITUATION_KIND_AIR);
   lua2cpp::L2CFighterBase::set_situation(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack112,0);
   lib::L2CValue::L2CValue
             (aLStack128,_FIGHTER_METAKNIGHT_STATUS_SPECIAL_N_SPIN_WORK_INT_BUTTON_ATTACK_COUNTER);
   iVar2 = lib::L2CValue::as_integer(aLStack112);
   iVar3 = lib::L2CValue::as_integer(aLStack128);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
   FUN_71001ee150(this);
   lib::L2CValue::L2CValue(aLStack112,MetaknightSpecialN_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0x90);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
   return;
 }
 

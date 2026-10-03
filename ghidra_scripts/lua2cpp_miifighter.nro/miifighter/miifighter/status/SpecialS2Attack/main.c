@@ -22,14 +22,14 @@ L2CFighterMiifighter::status::SpecialS2Attack_main
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_MIIFIGHTER_STATUS_WORK_ID_FLAG_NENSYO_KICK_HIT);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,GROUND_CORRECT_KIND_AIR);
   GVar3 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
   lua2cpp::L2CFighterBase::set_situation(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,0xa7d7e3773);
   lib::L2CValue::L2CValue(aLStack112,0);
   lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -40,17 +40,17 @@ L2CFighterMiifighter::status::SpecialS2Attack_main
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar5,fVar6,fVar7,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_MIIFIGHTER_CLIFF_HANG_DATA_SPECIAL_S2);
   uVar4 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::GroundModule__select_cliff_hangdata_impl(this->moduleAccessor,uVar4);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,SpecialS2Attack_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

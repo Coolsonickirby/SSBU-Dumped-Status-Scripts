@@ -1,0 +1,29 @@
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __thiscall FUN_710000e9d0(L2CFighterMiigunner *this,L2CValue *return_value)
+
+{
+  int iVar1;
+  int iVar2;
+  L2CValue aLStack80 [16];
+  L2CValue aLStack64 [16];
+  
+  lib::L2CValue::L2CValue(aLStack64,-1);
+  lib::L2CValue::L2CValue(aLStack80,_FIGHTER_MIIGUNNER_STATUS_ABSORBER_WORK_INT_SE_HANDLE);
+  iVar1 = lib::L2CValue::as_integer(aLStack64);
+  iVar2 = lib::L2CValue::as_integer(aLStack80);
+  app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::L2CValue(aLStack64,-1);
+  lib::L2CValue::L2CValue(aLStack80,_FIGHTER_MIIGUNNER_STATUS_ABSORBER_WORK_INT_EFFECT_HANDLE);
+  iVar1 = lib::L2CValue::as_integer(aLStack64);
+  iVar2 = lib::L2CValue::as_integer(aLStack80);
+  app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::L2CValue((L2CValue *)return_value,0);
+  return;
+}
+

@@ -31,25 +31,25 @@ L2CWeaponPackunSpikeball::status::Start_main(L2CWeaponPackunSpikeball *this,L2CV
   uVar4 = lib::L2CValue::as_integer(aLStack144);
   app::lua_bind::LinkModule__set_model_constraint_pos_ort_impl
             (this->moduleAccessor,iVar3,HVar6,HVar7,uVar4,true);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack112,_WEAPON_PACKUN_SPIKEBALL_STATUS_START_WORK_FLAG_IS_GROUND);
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack112,_WEAPON_PACKUN_SPIKEBALL_INSTANCE_WORK_ID_FLAG_KIRBY);
     iVar3 = lib::L2CValue::as_integer(aLStack112);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((bVar2 & 1U) == 0) {
       lib::L2CValue::L2CValue(aLStack96,0x9b00ba75d);
       lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -80,9 +80,9 @@ L2CWeaponPackunSpikeball::status::Start_main(L2CWeaponPackunSpikeball *this,L2CV
     iVar3 = lib::L2CValue::as_integer(aLStack112);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((bVar2 & 1U) == 0) {
       lib::L2CValue::L2CValue(aLStack96,0x59f79558f);
       lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -108,24 +108,24 @@ L2CWeaponPackunSpikeball::status::Start_main(L2CWeaponPackunSpikeball *this,L2CV
                 (this->moduleAccessor,HVar6,fVar9,fVar10,(bool)(bVar1 & 1),0.0,false,false);
     }
   }
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,4);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,4);
   pWVar8 = (Weapon *)lib::L2CValue::as_pointer(this_00);
   app::WeaponSpecializer_PackunSpikeball::update_rhombus_offset(pWVar8);
   lib::L2CValue::L2CValue(aLStack96,_GROUND_CORRECT_KIND_NONE);
   GVar5 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar5);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,GROUND_CORRECT_KIND_AIR);
   GVar5 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar5);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,Start_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

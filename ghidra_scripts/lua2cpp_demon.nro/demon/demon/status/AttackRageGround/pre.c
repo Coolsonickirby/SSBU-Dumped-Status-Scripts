@@ -13,8 +13,8 @@ L2CFighterDemon::status::AttackRageGround_pre(L2CFighterDemon *this,L2CValue *re
             (aLStack80,_FIGHTER_POWER_UP_ATTACK_BIT_SPECIAL_LW | _FIGHTER_POWER_UP_ATTACK_BIT_THROW)
   ;
   FUN_7100020270(return_value,this,aLStack64,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

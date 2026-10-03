@@ -9,7 +9,7 @@ L2CFighterPacman::status::LandingLight_main(L2CFighterPacman *this,L2CValue *ret
   FUN_710001b990(this);
   lib::L2CValue::L2CValue(aLStack48,LandingLight_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

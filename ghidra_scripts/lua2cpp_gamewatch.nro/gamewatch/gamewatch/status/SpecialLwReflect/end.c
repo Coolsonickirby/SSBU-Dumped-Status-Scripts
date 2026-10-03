@@ -11,7 +11,7 @@ L2CFighterGamewatch::status::SpecialLwReflect_end(L2CFighterGamewatch *this,L2CV
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_GAMEWATCH_STATUS_SPECIAL_LW_FLAG_ABSORB_ENABLE);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   FUN_7100029ec0(this);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

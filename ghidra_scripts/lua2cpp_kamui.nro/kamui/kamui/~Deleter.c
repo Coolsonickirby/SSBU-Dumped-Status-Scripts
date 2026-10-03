@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterKamui::__L2CFighterKamui(L2CFighterKamui *this)
+void __thiscall L2CFighterKamui::~~L2CFighterKamui(L2CFighterKamui *this)
 
 {
-  _L2CFighterKamui();
-  operator_delete(this);
+  ~L2CFighterKamui();
+  operator.delete(this);
   return;
 }
 

@@ -7,7 +7,7 @@ L2CFighterSnake::status::AttackHi4Hold_end(L2CFighterSnake *this,L2CValue *retur
   
   FUN_710001e8e0();
   lua2cpp::L2CFighterCommon::status_end_AttackHi4Hold(this);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

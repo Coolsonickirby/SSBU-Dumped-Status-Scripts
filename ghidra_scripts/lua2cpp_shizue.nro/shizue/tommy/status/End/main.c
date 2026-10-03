@@ -22,43 +22,43 @@ L2CWeaponShizueTommy::status::End_main(L2CWeaponShizueTommy *this,L2CValue *retu
   iVar2 = app::lua_bind::LinkModule__get_parent_situation_kind_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack112,iVar2);
   lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-  uVar3 = lib::L2CValue::operator__(aLStack112,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack128);
+  uVar3 = lib::L2CValue::operator==(aLStack112,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack128);
   if ((uVar3 & 1) == 0) {
     fVar5 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack112,fVar5);
     lib::L2CValue::L2CValue(aLStack80,-1.0);
-    uVar3 = lib::L2CValue::operator__(aLStack112,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar3 = lib::L2CValue::operator==(aLStack112,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar3 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack80,0x9a2470b83);
-      lib::L2CValue::operator_(aLStack96,aLStack80);
+      lib::L2CValue::operator=(aLStack96,aLStack80);
     }
     else {
       lib::L2CValue::L2CValue(aLStack80,0x9584836e0);
-      lib::L2CValue::operator_(aLStack96,aLStack80);
+      lib::L2CValue::operator=(aLStack96,aLStack80);
     }
   }
   else {
     fVar5 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack112,fVar5);
     lib::L2CValue::L2CValue(aLStack80,-1.0);
-    uVar3 = lib::L2CValue::operator__(aLStack112,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar3 = lib::L2CValue::operator==(aLStack112,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar3 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack80,0x580ffbd67);
-      lib::L2CValue::operator_(aLStack96,aLStack80);
+      lib::L2CValue::operator=(aLStack96,aLStack80);
     }
     else {
       lib::L2CValue::L2CValue(aLStack80,0x57af08004);
-      lib::L2CValue::operator_(aLStack96,aLStack80);
+      lib::L2CValue::operator=(aLStack96,aLStack80);
     }
   }
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0.0);
   lib::L2CValue::L2CValue(aLStack112,1.0);
   lib::L2CValue::L2CValue(aLStack128,false);
@@ -68,13 +68,13 @@ L2CWeaponShizueTommy::status::End_main(L2CWeaponShizueTommy *this,L2CValue *retu
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,End_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

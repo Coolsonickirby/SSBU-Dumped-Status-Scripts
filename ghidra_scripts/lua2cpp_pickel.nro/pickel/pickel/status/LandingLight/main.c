@@ -19,15 +19,15 @@ L2CFighterPickel::status::LandingLight_main(L2CFighterPickel *this,L2CValue *ret
   
   FUN_710006f430(aLStack112,this);
   lib::L2CValue::L2CValue(aLStack96,false);
-  uVar3 = lib::L2CValue::operator__(aLStack112,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar3 = lib::L2CValue::operator==(aLStack112,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar3 & 1) == 0) {
     FUN_7100088b80(aLStack112,this);
     lib::L2CValue::L2CValue(aLStack96,true);
-    uVar3 = lib::L2CValue::operator__(aLStack112,aLStack96);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar3 = lib::L2CValue::operator==(aLStack112,aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar3 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack96,0xdd934faa1);
       lib::L2CValue::L2CValue(aLStack112,-1.0);
@@ -43,15 +43,15 @@ L2CFighterPickel::status::LandingLight_main(L2CFighterPickel *this,L2CValue *ret
       bVar2 = lib::L2CValue::as_bool(aLStack176);
       app::lua_bind::MotionModule__change_motion_inherit_frame_impl
                 (this->moduleAccessor,HVar4,fVar5,fVar6,fVar7,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-      lib::L2CValue::_L2CValue(aLStack176);
-      lib::L2CValue::_L2CValue(aLStack160);
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack176);
+      lib::L2CValue::~L2CValue(aLStack160);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
       lib::L2CValue::L2CValue(aLStack96,LandingLight_main_loop);
       lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-      lib::L2CValue::_L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack96);
     }
     else {
       lib::L2CValue::L2CValue((L2CValue *)return_value,0);

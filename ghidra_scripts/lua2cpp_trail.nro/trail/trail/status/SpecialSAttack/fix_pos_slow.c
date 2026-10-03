@@ -17,10 +17,10 @@ L2CFighterTrail::status::SpecialSAttack_fix_pos_slow(L2CFighterTrail *this,L2CVa
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,iVar1);
   lib::L2CValue::L2CValue(aLStack64,0);
-  uVar2 = lib::L2CValue::operator_(aLStack64,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar2 = lib::L2CValue::operator<(aLStack64,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar2 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_TRAIL_STATUS_SPECIAL_S_FLOAT_TARGET_ANGLE);
     iVar1 = lib::L2CValue::as_integer(aLStack80);
@@ -28,9 +28,9 @@ L2CFighterTrail::status::SpecialSAttack_fix_pos_slow(L2CFighterTrail *this,L2CVa
     lib::L2CValue::L2CValue(aLStack64,fVar3);
     lib::L2CValue::L2CValue(aLStack96,1.0);
     FUN_7100014fd0(this,aLStack64,aLStack96);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

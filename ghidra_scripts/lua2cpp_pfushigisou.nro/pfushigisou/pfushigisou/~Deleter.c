@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterPfushigisou::__L2CFighterPfushigisou(L2CFighterPfushigisou *this)
+void __thiscall L2CFighterPfushigisou::~~L2CFighterPfushigisou(L2CFighterPfushigisou *this)
 
 {
-  _L2CFighterPfushigisou();
-  operator_delete(this);
+  ~L2CFighterPfushigisou();
+  operator.delete(this);
   return;
 }
 

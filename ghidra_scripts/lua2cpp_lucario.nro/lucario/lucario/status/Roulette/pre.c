@@ -8,8 +8,8 @@ L2CFighterLucario::status::Roulette_pre(L2CFighterLucario *this,L2CValue *return
   L2CValue aLStack48 [16];
   
   lua2cpp::L2CFighterCommon::status_pre_Roulette(this);
-  lib::L2CValue::_L2CValue(aLStack48);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,5);
+  lib::L2CValue::~L2CValue(aLStack48);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,5);
   pBVar1 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(this_00);
   app::FighterSpecializer_Lucario::effect_suspend(pBVar1);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);

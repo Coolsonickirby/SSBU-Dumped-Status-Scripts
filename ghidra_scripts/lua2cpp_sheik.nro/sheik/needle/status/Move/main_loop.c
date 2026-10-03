@@ -30,9 +30,9 @@ L2CWeaponSheikNeedle::status::Move_main_loop(L2CWeaponSheikNeedle *this,L2CValue
   bVar1 = app::lua_bind::StopModule__is_hit_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue((L2CValue *)&local_40,false);
-  uVar5 = lib::L2CValue::operator__(aLStack80,(L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar5 = lib::L2CValue::operator==(aLStack80,(L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar5 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack80,0);
     lib::L2CValue::L2CValue(aLStack96,0);
@@ -42,27 +42,27 @@ L2CWeaponSheikNeedle::status::Move_main_loop(L2CWeaponSheikNeedle *this,L2CValue
     iVar3 = lib::L2CValue::as_integer(aLStack144);
     fVar8 = (float)app::lua_bind::KineticModule__get_sum_speed_x_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue((L2CValue *)&local_40,fVar8);
-    lib::L2CValue::operator_(aLStack128,(L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue(aLStack144);
+    lib::L2CValue::operator=(aLStack128,(L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack144);
     lib::L2CValue::L2CValue(aLStack144,_KINETIC_ENERGY_RESERVE_ATTRIBUTE_MAIN);
     iVar3 = lib::L2CValue::as_integer(aLStack144);
     fVar8 = (float)app::lua_bind::KineticModule__get_sum_speed_y_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue((L2CValue *)&local_40,fVar8);
-    lib::L2CValue::operator_(aLStack96,(L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue(aLStack144);
+    lib::L2CValue::operator=(aLStack96,(L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack144);
     fVar8 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack176,fVar8);
-    lib::L2CValue::operator_(aLStack176);
-    lib::L2CValue::operator_(aLStack128,aLStack160);
+    lib::L2CValue::operator-(aLStack176);
+    lib::L2CValue::operator*(aLStack128,aLStack160);
     lib::L2CAgent::math_atan((L2CAgent *)aLStack96,aLStack144,in_x2);
     puVar7 = &local_40;
-    lib::L2CValue::operator_(aLStack112,(L2CValue *)puVar7);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::operator=(aLStack112,(L2CValue *)puVar7);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack176);
     lib::L2CAgent::math_deg((L2CAgent *)aLStack112,(L2CValue *)puVar7);
     lib::L2CValue::L2CValue(aLStack160,0.0);
     lib::L2CValue::L2CValue(aLStack176,0.0);
@@ -72,16 +72,16 @@ L2CWeaponSheikNeedle::status::Move_main_loop(L2CWeaponSheikNeedle *this,L2CValue
     local_40 = CONCAT44(uVar10,uVar9);
     pBStack56 = (BattleObject *)(ulong)uVar11;
     app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_40,0);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
     lib::L2CValue::L2CValue(aLStack144,_GROUND_TOUCH_FLAG_ALL);
     uVar11 = lib::L2CValue::as_integer(aLStack144);
     bVar1 = app::lua_bind::GroundModule__is_touch_impl(this->moduleAccessor,uVar11);
     lib::L2CValue::L2CValue((L2CValue *)&local_40,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool((L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue(aLStack144);
+    bVar2 = lib::L2CValue::operator.cast.to.bool((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack144);
     if ((bVar2 & 1U) != 0) {
       lib::L2CValue::L2CValue(aLStack144,0x66933a7e6);
       lib::L2CValue::L2CValue(aLStack160,5);
@@ -89,13 +89,13 @@ L2CWeaponSheikNeedle::status::Move_main_loop(L2CWeaponSheikNeedle *this,L2CValue
       iVar3 = lib::L2CValue::as_integer(aLStack160);
       uVar11 = app::sv_math::rand(HVar6,iVar3);
       lib::L2CValue::L2CValue((L2CValue *)&local_40,uVar11);
-      lib::L2CValue::operator_(aLStack80,(L2CValue *)&local_40);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-      lib::L2CValue::_L2CValue(aLStack160);
-      lib::L2CValue::_L2CValue(aLStack144);
+      lib::L2CValue::operator=(aLStack80,(L2CValue *)&local_40);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+      lib::L2CValue::~L2CValue(aLStack160);
+      lib::L2CValue::~L2CValue(aLStack144);
       lib::L2CValue::L2CValue((L2CValue *)&local_40,3);
-      uVar5 = lib::L2CValue::operator_(aLStack80,(L2CValue *)&local_40);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+      uVar5 = lib::L2CValue::operator<(aLStack80,(L2CValue *)&local_40);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_40);
       if ((uVar5 & 1) == 0) {
         lib::L2CValue::L2CValue((L2CValue *)&local_40,_WEAPON_SHEIK_NEEDLE_STATUS_KIND_JUMP);
         lib::L2CValue::L2CValue
@@ -112,13 +112,13 @@ L2CWeaponSheikNeedle::status::Move_main_loop(L2CWeaponSheikNeedle *this,L2CValue
         iVar4 = lib::L2CValue::as_integer(aLStack144);
         app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
       }
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_40);
     }
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

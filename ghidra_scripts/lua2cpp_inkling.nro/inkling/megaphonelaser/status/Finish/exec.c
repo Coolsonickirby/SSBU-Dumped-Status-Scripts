@@ -24,8 +24,8 @@ L2CWeaponInklingMegaphonelaser::status::Finish_exec
   iVar1 = lib::L2CValue::as_integer((L2CValue *)&local_30);
   fVar2 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack64,fVar2);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_30);
-  lib::L2CValue::operator_(aLStack64);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_30);
+  lib::L2CValue::operator-(aLStack64);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,0.0);
   uVar3 = lib::L2CValue::as_number(aLStack80);
@@ -34,11 +34,11 @@ L2CWeaponInklingMegaphonelaser::status::Finish_exec
   local_30 = CONCAT44(uVar4,uVar3);
   uStack40 = (ulong)uVar5;
   app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_30,0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

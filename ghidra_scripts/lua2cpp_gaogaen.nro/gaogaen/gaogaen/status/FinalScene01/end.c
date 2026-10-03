@@ -13,11 +13,11 @@ L2CFighterGaogaen::status::FinalScene01_end(L2CFighterGaogaen *this,L2CValue *re
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_GAOGAEN_GENERATE_ARTICLE_ROPE2);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar1,0);
-  lib::L2CValue::_L2CValue(aLStack64);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  lib::L2CValue::~L2CValue(aLStack64);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_GAOGAEN_STATUS_KIND_FINAL_SCENE02);
-  uVar2 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar2 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar2 & 1) == 0) {
     FUN_71000124c0(this);
   }

@@ -23,7 +23,7 @@ L2CWeaponPikminPikmin::status::AttackAir_main(L2CWeaponPikminPikmin *this,L2CVal
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_KINETIC_TYPE_GENERIC_RESET);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::KineticModule__change_kinetic_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_LINK_NO_CONSTRAINT);
   lib::L2CValue::L2CValue(aLStack96,LINK_ATTRIBUTE_REFERENCE_PARENT_STOP);
   lib::L2CValue::L2CValue(aLStack112,false);
@@ -31,9 +31,9 @@ L2CWeaponPikminPikmin::status::AttackAir_main(L2CWeaponPikminPikmin *this,L2CVal
   LVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = lib::L2CValue::as_bool(aLStack112);
   app::lua_bind::LinkModule__set_attribute_impl(this->moduleAccessor,iVar2,LVar3,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_LINK_NO_CONSTRAINT);
   lib::L2CValue::L2CValue(aLStack96,_LINK_ATTRIBUTE_REFERENCE_PARENT_ATTACK_STOP);
   lib::L2CValue::L2CValue(aLStack112,false);
@@ -41,17 +41,17 @@ L2CWeaponPikminPikmin::status::AttackAir_main(L2CWeaponPikminPikmin *this,L2CVal
   LVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = lib::L2CValue::as_bool(aLStack112);
   app::lua_bind::LinkModule__set_attribute_impl(this->moduleAccessor,iVar2,LVar3,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_INSTANCE_WORK_ID_INT_LINK_OWNER);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack96,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0x50000000);
-  uVar5 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar5 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar5 & 1) == 0) {
     uVar4 = lib::L2CValue::as_integer(aLStack96);
     pvVar6 = (void *)app::sv_battle_object::module_accessor(uVar4);
@@ -66,7 +66,7 @@ L2CWeaponPikminPikmin::status::AttackAir_main(L2CWeaponPikminPikmin *this,L2CVal
     lib::L2CValue::L2CValue(aLStack112,fVar9);
     fVar9 = (float)lib::L2CValue::as_number(aLStack112);
     app::lua_bind::AttackModule__set_shield_stiff_mul_impl(this->moduleAccessor,fVar9);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack112);
     lib::L2CValue::L2CValue(aLStack128,0x10bc5e586a);
     lib::L2CValue::L2CValue(aLStack144,0);
     uVar5 = lib::L2CValue::as_integer(aLStack128);
@@ -74,17 +74,17 @@ L2CWeaponPikminPikmin::status::AttackAir_main(L2CWeaponPikminPikmin *this,L2CVal
     pBVar7 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack80);
     fVar9 = (float)app::lua_bind::WorkModule__get_param_float_impl(pBVar7,uVar5,uVar8);
     lib::L2CValue::L2CValue(aLStack112,fVar9);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
     fVar9 = (float)lib::L2CValue::as_number(aLStack112);
     app::lua_bind::AttackModule__set_power_up_impl(this->moduleAccessor,fVar9);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack80,AttackAir_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

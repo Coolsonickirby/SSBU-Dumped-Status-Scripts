@@ -37,8 +37,8 @@ L2CWeaponGekkougaShuriken::status::MaxVanish_main
   iVar2 = lib::L2CValue::as_integer((L2CValue *)&local_60);
   iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_70);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_70);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_70);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,0xa840e62cb);
   lib::L2CValue::L2CValue((L2CValue *)&local_70,0.0);
   lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -49,10 +49,10 @@ L2CWeaponGekkougaShuriken::status::MaxVanish_main
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_70);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_70);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   fVar5 = (float)app::lua_bind::PostureModule__pos_x_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack128,fVar5);
   fVar5 = (float)app::lua_bind::PostureModule__pos_y_impl(this->moduleAccessor);
@@ -84,20 +84,20 @@ L2CWeaponGekkougaShuriken::status::MaxVanish_main
                     (this->moduleAccessor,HVar4,(Vector3f *)&local_60,(Vector3f *)&local_70,fVar5,
                      uVar7,iVar2,false,0);
   lib::L2CValue::L2CValue(aLStack176,uVar7);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack288);
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack288);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack192);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,MaxVanish_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   return;
 }
 

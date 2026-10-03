@@ -16,18 +16,18 @@ L2CWeaponRosettaTico::status::SpecialHiJump_main_loop
   
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack96,_WEAPON_ROSETTA_TICO_INSTANCE_WORK_ID_FLAG_FREE);
     iVar3 = lib::L2CValue::as_integer(aLStack96);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
     lib::L2CValue::L2CValue(aLStack64,false);
-    uVar4 = lib::L2CValue::operator__(aLStack80,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    uVar4 = lib::L2CValue::operator==(aLStack80,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((uVar4 & 1) != 0) {
       lib::L2CValue::L2CValue
                 (aLStack96,_WEAPON_ROSETTA_TICO_STATUS_SPECIAL_HI_WORK_INT_INTERRUPT_STATUS_KIND);
@@ -35,35 +35,35 @@ L2CWeaponRosettaTico::status::SpecialHiJump_main_loop
       iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
       lib::L2CValue::L2CValue(aLStack80,iVar3);
       lib::L2CValue::L2CValue(aLStack64,_FIGHTER_ROSETTA_STATUS_KIND_SPECIAL_HI_JUMP);
-      uVar4 = lib::L2CValue::operator__(aLStack80,aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack96);
+      uVar4 = lib::L2CValue::operator==(aLStack80,aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack96);
       if ((uVar4 & 1) != 0) {
         lib::L2CValue::L2CValue
                   (aLStack80,_WEAPON_ROSETTA_TICO_STATUS_SPECIAL_HI_WORK_INT_INTERRUPT_FRAME);
         iVar3 = lib::L2CValue::as_integer(aLStack80);
         iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
         lib::L2CValue::L2CValue(aLStack64,iVar3);
-        lib::L2CValue::_L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
         lib::L2CValue::L2CValue(aLStack96,_WEAPON_ROSETTA_TICO_STATUS_SPECIAL_HI_WORK_INT_FRAME);
         iVar3 = lib::L2CValue::as_integer(aLStack96);
         iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
         lib::L2CValue::L2CValue(aLStack80,iVar3);
-        uVar4 = lib::L2CValue::operator__(aLStack64,aLStack80);
-        lib::L2CValue::_L2CValue(aLStack80);
-        lib::L2CValue::_L2CValue(aLStack96);
+        uVar4 = lib::L2CValue::operator<=(aLStack64,aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack96);
         if ((uVar4 & 1) != 0) {
           lib::L2CValue::L2CValue(aLStack80,_WEAPON_ROSETTA_TICO_STATUS_KIND_FOLLOW);
           lib::L2CValue::L2CValue(aLStack96,false);
           lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0xa0);
-          lib::L2CValue::_L2CValue(aLStack96);
-          lib::L2CValue::_L2CValue(aLStack80);
+          lib::L2CValue::~L2CValue(aLStack96);
+          lib::L2CValue::~L2CValue(aLStack80);
           lib::L2CValue::L2CValue((L2CValue *)return_value,1);
-          lib::L2CValue::_L2CValue(aLStack64);
+          lib::L2CValue::~L2CValue(aLStack64);
           return;
         }
-        lib::L2CValue::_L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack64);
       }
     }
     iVar3 = 0;
@@ -72,8 +72,8 @@ L2CWeaponRosettaTico::status::SpecialHiJump_main_loop
     lib::L2CValue::L2CValue(aLStack64,_WEAPON_ROSETTA_TICO_STATUS_KIND_SPECIAL_HI_END);
     lib::L2CValue::L2CValue(aLStack80,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
     iVar3 = 1;
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,iVar3);

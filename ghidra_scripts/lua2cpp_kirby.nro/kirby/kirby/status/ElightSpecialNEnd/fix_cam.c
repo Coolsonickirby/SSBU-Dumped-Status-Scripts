@@ -29,17 +29,17 @@ L2CFighterKirby::status::ElightSpecialNEnd_fix_cam(L2CFighterKirby *this,L2CValu
   iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_40);
   fVar7 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,fVar7);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,_FIGHTER_ELIGHT_STATUS_SPECIAL_N_INT_EFFECT_ID);
   iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_40);
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack96,iVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   uVar4 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::EffectModule__is_exist_effect_impl(this->moduleAccessor,uVar4);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool((L2CValue *)&local_40);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  bVar2 = lib::L2CValue::operator.cast.to.bool((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_40,0xf899192aa);
     lib::L2CValue::L2CValue(aLStack128,0xc28b70a0b);
@@ -48,17 +48,17 @@ L2CFighterKirby::status::ElightSpecialNEnd_fix_cam(L2CFighterKirby *this,L2CValu
     fVar7 = (float)app::lua_bind::WorkModule__get_param_float_impl(this->moduleAccessor,uVar5,uVar6)
     ;
     lib::L2CValue::L2CValue(aLStack112,fVar7);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
     lib::L2CValue::L2CValue((L2CValue *)&local_40,1.0);
-    lib::L2CValue::operator_(aLStack112,(L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-    lib::L2CValue::operator_(aLStack80,aLStack160);
+    lib::L2CValue::operator-(aLStack112,(L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::operator*(aLStack80,aLStack160);
     lib::L2CValue::L2CValue((L2CValue *)&local_40,1.0);
-    lib::L2CValue::operator_(aLStack144,(L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_40);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack160);
+    lib::L2CValue::operator+(aLStack144,(L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_40);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack160);
     lib::L2CValue::L2CValue(aLStack144,1.0);
     uVar4 = lib::L2CValue::as_integer(aLStack96);
     uVar8 = lib::L2CValue::as_number(aLStack144);
@@ -67,13 +67,13 @@ L2CFighterKirby::status::ElightSpecialNEnd_fix_cam(L2CFighterKirby *this,L2CValu
     local_40 = CONCAT44(uVar9,uVar8);
     uStack56 = (ulong)uVar10;
     app::lua_bind::EffectModule__set_scale_impl(this->moduleAccessor,uVar4,(Vector3f *)&local_40);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

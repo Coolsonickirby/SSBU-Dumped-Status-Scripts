@@ -10,8 +10,8 @@ L2CFighterDemon::status::ThrowCommand_end(L2CFighterDemon *this,L2CValue *return
   app::lua_bind::CameraModule__zoom_out_impl(this->moduleAccessor,0);
   bVar1 = app::lua_bind::FighterCutInManager__is_play_impl(FIGHTER_STATUS_BOSS_DEAD_FLAG_FINISH);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar2 & 1U) != 0) {
     app::lua_bind::FighterCutInManager__request_end_impl(FIGHTER_STATUS_BOSS_DEAD_FLAG_FINISH);
   }

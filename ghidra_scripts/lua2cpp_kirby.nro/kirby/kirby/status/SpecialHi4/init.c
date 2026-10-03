@@ -12,19 +12,19 @@ L2CFighterKirby::status::SpecialHi4_init(L2CFighterKirby *this,L2CValue *return_
   lib::L2CValue::L2CValue(aLStack64,FIGHTER_KINETIC_ENERGY_ID_MOTION);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,FIGHTER_KINETIC_ENERGY_ID_GRAVITY);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KINETIC_ENERGY_ID_CONTROL);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KINETIC_ENERGY_ID_STOP);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

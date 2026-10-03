@@ -30,10 +30,10 @@ L2CWeaponTantanSpiral::status::Shoot_end(L2CWeaponTantanSpiral *this,L2CValue *r
   HVar6 = app::lua_bind::MotionModule__motion_kind_partial_impl(this->moduleAccessor,iVar5);
   lib::L2CValue::L2CValue(aLStack128,HVar6);
   lib::L2CValue::L2CValue(aLStack112,0x5c86412ff);
-  uVar7 = lib::L2CValue::operator__(aLStack128,aLStack112);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack144);
+  uVar7 = lib::L2CValue::operator==(aLStack128,aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
   if ((uVar7 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack112,_WEAPON_TANTAN_SPIRALLEFT_MOTION_PART_SET_KIND_FLARE);
     lib::L2CValue::L2CValue(aLStack128,0xeb8da7432);
@@ -56,15 +56,15 @@ L2CWeaponTantanSpiral::status::Shoot_end(L2CWeaponTantanSpiral *this,L2CValue *r
     app::lua_bind::MotionModule__add_motion_partial_impl
               (this->moduleAccessor,iVar5,HVar6,fVar8,fVar9,(bool)(bVar1 & 1),(bool)(bVar2 & 1),
                fVar10,(bool)(bVar3 & 1),(bool)(bVar4 & 1),false);
-    lib::L2CValue::_L2CValue(aLStack240);
-    lib::L2CValue::_L2CValue(aLStack224);
-    lib::L2CValue::_L2CValue(aLStack208);
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack240);
+    lib::L2CValue::~L2CValue(aLStack224);
+    lib::L2CValue::~L2CValue(aLStack208);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

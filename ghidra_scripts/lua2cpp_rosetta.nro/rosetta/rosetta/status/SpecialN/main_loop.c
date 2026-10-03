@@ -24,22 +24,22 @@ L2CFighterRosetta::status::SpecialN_main_loop(L2CFighterRosetta *this,L2CValue *
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::ControlModule__check_button_off_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack112);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_ROSETTA_STATUS_SPECIAL_N_FLAG_CHARGE_SKIP);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack112,_FIGHTER_ROSETTA_STATUS_SPECIAL_N_FLAG_CHARGE);
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack112);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue(aLStack80,aLStack96);
     lib::L2CValue::L2CValue(aLStack112,0x915c5de42);
@@ -50,36 +50,36 @@ L2CFighterRosetta::status::SpecialN_main_loop(L2CFighterRosetta *this,L2CValue *
     lib::L2CValue::L2CValue(aLStack192,1.0);
     FUN_710000ad00(this,aLStack80,aLStack112,aLStack128,aLStack144,aLStack160,aLStack176,aLStack192)
     ;
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   }
   else {
     fVar4 = (float)app::lua_bind::MotionModule__frame_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack128,fVar4);
     lib::L2CValue::L2CValue(aLStack80,0.0);
-    lib::L2CValue::operator_(aLStack128,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::operator+(aLStack128,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_ROSETTA_STATUS_SPECIAL_N_FLOAT_MOTION_FRAME);
     fVar4 = (float)lib::L2CValue::as_number(aLStack112);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar4,iVar3);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_ROSETTA_STATUS_KIND_SPECIAL_N_CHARGE);
     lib::L2CValue::L2CValue(aLStack112,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0x90);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue((L2CValue *)return_value,1);
   }
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

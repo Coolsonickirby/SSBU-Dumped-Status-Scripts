@@ -25,23 +25,23 @@ L2CFighterEdge::status::SpecialSCharge_main(L2CFighterEdge *this,L2CValue *retur
   lib::L2CValue::L2CValue(aLStack160,aLStack96);
   lua2cpp::L2CFighterCommon::sub_change_motion_by_situation
             (this,(L2CValue)0x80,(L2CValue)0x70,(L2CValue)0x60);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack176,0);
   lib::L2CValue::L2CValue(aLStack192,_FIGHTER_EDGE_STATUS_SPECIAL_S_INT_HOLD_FRAME);
   iVar1 = lib::L2CValue::as_integer(aLStack176);
   iVar2 = lib::L2CValue::as_integer(aLStack192);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
   lib::L2CValue::L2CValue(aLStack176,SpecialSCharge_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0x50);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

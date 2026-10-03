@@ -20,7 +20,7 @@ L2CFighterDemon::status::AttackSquat2_main(L2CFighterDemon *this,L2CValue *retur
   L2CValue aLStack80 [16];
   
   lib::L2CValue::L2CValue(aLStack80,false);
-  lib::L2CValue::L2CValue(aLStack96,&DAT_710002c450);
+  lib::L2CValue::L2CValue(aLStack96,FUN_710002c450);
   lib::L2CValue::L2CValue
             (aLStack112,
              _FIGHTER_LOG_MASK_FLAG_ATTACK_KIND_ATTACK_LW3_W |
@@ -28,9 +28,9 @@ L2CFighterDemon::status::AttackSquat2_main(L2CFighterDemon *this,L2CValue *retur
   ;
   lua2cpp::L2CFighterCommon::status_AttackLw3_common_param
             (this,(L2CValue)0xb0,(L2CValue)0xa0,(L2CValue)0x90);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack128,0xe6d888805);
   lib::L2CValue::L2CValue(aLStack144,0.0);
   lib::L2CValue::L2CValue(aLStack160,1.0);
@@ -41,10 +41,10 @@ L2CFighterDemon::status::AttackSquat2_main(L2CFighterDemon *this,L2CValue *retur
   bVar1 = lib::L2CValue::as_bool(aLStack176);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack144,0x2b94de0d96);
   lib::L2CValue::L2CValue(aLStack160,_FIGHTER_LOG_ACTION_CATEGORY_ATTACK);
   lib::L2CValue::L2CValue(aLStack176,_FIGHTER_LOG_ATTACK_KIND_ATTACK_LW3_W);
@@ -54,25 +54,25 @@ L2CFighterDemon::status::AttackSquat2_main(L2CFighterDemon *this,L2CValue *retur
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack176);
   app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue(aLStack144,false);
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__set_trans_move_speed_no_scale_impl
             (this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue(aLStack144,0);
   lib::L2CValue::L2CValue(aLStack160,FIGHTER_STATUS_ATTACK_WORK_INT_100_HIT_NEAR_COUNT_CLIFF_STOP);
   iVar2 = lib::L2CValue::as_integer(aLStack144);
   iVar3 = lib::L2CValue::as_integer(aLStack160);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue(aLStack144,AttackSquat2_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0x70);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack144);
   return;
 }
 

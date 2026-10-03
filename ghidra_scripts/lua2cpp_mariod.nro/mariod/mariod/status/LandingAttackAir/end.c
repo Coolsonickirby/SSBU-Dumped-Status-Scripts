@@ -14,12 +14,12 @@ L2CFighterMariod::status::LandingAttackAir_end(L2CFighterMariod *this,L2CValue *
   lVar2 = app::lua_bind::WorkModule__get_int64_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack64,lVar2);
   lib::L2CValue::L2CValue(aLStack48,0xdde67d935);
-  lib::L2CValue::operator__(aLStack64,aLStack48);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::operator==(aLStack64,aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   lua2cpp::L2CFighterCommon::status_end_LandingAttackAir(this);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }
