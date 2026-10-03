@@ -13,13 +13,13 @@ L2CFighterDemon::status::CatchCommand_end(L2CFighterDemon *this,L2CValue *return
   
   bVar1 = app::lua_bind::CatchModule__is_catch_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((bVar2 & 1U) != 0) {
-    this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+    this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_DEMON_STATUS_KIND_THROW_COMMAND);
-    uVar3 = lib::L2CValue::operator__(this_00,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    uVar3 = lib::L2CValue::operator==(this_00,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((uVar3 & 1) == 0) {
       app::lua_bind::CatchModule__catch_cut_impl(this->moduleAccessor,false,false);
     }

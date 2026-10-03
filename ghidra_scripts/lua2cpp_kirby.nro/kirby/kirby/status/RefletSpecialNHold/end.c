@@ -18,12 +18,12 @@ L2CFighterKirby::status::RefletSpecialNHold_end(L2CFighterKirby *this,L2CValue *
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,iVar1);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_REFLET_MAGIC_KIND_TRON);
-  uVar2 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar2 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar2 & 1) != 0) {
-    this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,5);
+    this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,5);
     pBVar3 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(this_00);
     app::FighterUtil::flash_eye_info(pBVar3);
   }

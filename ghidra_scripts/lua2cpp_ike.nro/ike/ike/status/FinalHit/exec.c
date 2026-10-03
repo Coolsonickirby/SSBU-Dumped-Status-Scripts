@@ -15,17 +15,17 @@ void __thiscall L2CFighterIke::status::FinalHit_exec(L2CFighterIke *this,L2CValu
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack80,1.0);
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_IKE_STATUS_FINAL_WORK_FLOAT_MOVE_FRAME);
     fVar4 = (float)lib::L2CValue::as_number(aLStack80);
     iVar3 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::WorkModule__sub_float_impl(this->moduleAccessor,fVar4,iVar3);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

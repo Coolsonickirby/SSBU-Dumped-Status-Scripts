@@ -11,10 +11,10 @@ L2CWeaponDuckhuntGunman::status::Shoot_end(L2CWeaponDuckhuntGunman *this,L2CValu
   L2CValue aLStack64 [16];
   
   iVar1 = _WEAPON_DUCKHUNT_GUNMAN_STATUS_KIND_DEAD;
-  pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,iVar1);
-  uVar3 = lib::L2CValue::operator__(aLStack64,pLVar2);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar3 = lib::L2CValue::operator==(aLStack64,pLVar2);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar3 & 1) == 0) {
     FUN_710002fb30(this);
   }

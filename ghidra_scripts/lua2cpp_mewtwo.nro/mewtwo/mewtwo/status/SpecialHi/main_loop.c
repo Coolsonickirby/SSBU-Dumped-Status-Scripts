@@ -18,22 +18,22 @@ L2CFighterMewtwo::status::SpecialHi_main_loop(L2CFighterMewtwo *this,L2CValue *r
   
   lua2cpp::L2CFighterCommon::sub_transition_group_check_air_cliff(this);
   lib::L2CValue::L2CValue(aLStack64,true);
-  uVar5 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar5 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar5 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_MEWTWO_STATUS_SPECIAL_HI_FLAG_MOVE_WAIT);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar2 & 1U) == 0) {
       bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
       lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-      bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
+      bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       if ((bVar2 & 1U) != 0) {
         lib::L2CValue::L2CValue(aLStack80,0x1086bc4a93);
         lib::L2CValue::L2CValue(aLStack96,0xff400ab28);
@@ -46,22 +46,22 @@ L2CFighterMewtwo::status::SpecialHi_main_loop(L2CFighterMewtwo *this,L2CValue *r
         iVar3 = lib::L2CValue::as_integer(aLStack64);
         iVar4 = lib::L2CValue::as_integer(aLStack112);
         app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
-        lib::L2CValue::_L2CValue(aLStack112);
-        lib::L2CValue::_L2CValue(aLStack64);
-        lib::L2CValue::_L2CValue(aLStack96);
-        lib::L2CValue::_L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack112);
+        lib::L2CValue::~L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack96);
+        lib::L2CValue::~L2CValue(aLStack80);
         lib::L2CValue::L2CValue(aLStack64,_FIGHTER_MEWTWO_STATUS_SPECIAL_HI_FLAG_MOVE_WAIT);
         iVar3 = lib::L2CValue::as_integer(aLStack64);
         app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar3);
-        lib::L2CValue::_L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack64);
         iVar3 = app::lua_bind::GroundModule__cliff_check_impl(this->moduleAccessor);
         lib::L2CValue::L2CValue(aLStack64,iVar3);
         lib::L2CValue::L2CValue(aLStack80,_FIGHTER_MEWTWO_STATUS_SPECIAL_HI_WORK_INT_CLIFF_CHECK);
         iVar3 = lib::L2CValue::as_integer(aLStack64);
         iVar4 = lib::L2CValue::as_integer(aLStack80);
         app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
-        lib::L2CValue::_L2CValue(aLStack80);
-        lib::L2CValue::_L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack64);
         FUN_7100009a70(this);
       }
     }
@@ -71,16 +71,16 @@ L2CFighterMewtwo::status::SpecialHi_main_loop(L2CFighterMewtwo *this,L2CValue *r
       iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
       lib::L2CValue::L2CValue(aLStack80,iVar3);
       lib::L2CValue::L2CValue(aLStack64,0);
-      uVar5 = lib::L2CValue::operator__(aLStack80,aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack96);
+      uVar5 = lib::L2CValue::operator<=(aLStack80,aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack96);
       if ((uVar5 & 1) != 0) {
         lib::L2CValue::L2CValue(aLStack64,_FIGHTER_MEWTWO_STATUS_KIND_SPECIAL_HI_2);
         lib::L2CValue::L2CValue(aLStack80,false);
         lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xc0,(L2CValue)0xb0);
-        lib::L2CValue::_L2CValue(aLStack80);
-        lib::L2CValue::_L2CValue(aLStack64);
+        lib::L2CValue::~L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack64);
       }
     }
     iVar3 = 0;

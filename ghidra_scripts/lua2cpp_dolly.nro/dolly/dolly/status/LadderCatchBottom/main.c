@@ -8,7 +8,7 @@ L2CFighterDolly::status::LadderCatchBottom_main(L2CFighterDolly *this,L2CValue *
   lua2cpp::L2CFighterCommon::sub_LadderCatchBottom_common(this);
   lib::L2CValue::L2CValue(aLStack48,LadderCatchBottom_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

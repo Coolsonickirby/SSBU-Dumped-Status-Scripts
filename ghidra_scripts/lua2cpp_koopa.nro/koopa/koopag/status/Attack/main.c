@@ -34,10 +34,10 @@ L2CWeaponKoopaKoopag::status::Attack_main(L2CWeaponKoopaKoopag *this,L2CValue *r
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue(aLStack128,0x132c14e53d);
   lib::L2CValue::L2CValue(aLStack144,0.0);
   lib::L2CValue::L2CValue(aLStack160,0.0);
@@ -53,47 +53,47 @@ L2CWeaponKoopaKoopag::status::Attack_main(L2CWeaponKoopaKoopag *this,L2CValue *r
   uVar7 = app::lua_bind::EffectModule__req_2d_impl
                     (this->moduleAccessor,HVar4,(Vector3f *)&local_50,(Vector3f *)&local_60,1.0,0);
   lib::L2CValue::L2CValue(aLStack112,uVar7);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,100.0);
   lib::L2CValue::L2CValue(aLStack128,_WEAPON_KOOPA_KOOPAG_INSTANCE_WORK_ID_INT_ATTACK_FRAME);
   iVar2 = lib::L2CValue::as_integer(aLStack128);
   iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,iVar2);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::operator_((L2CValue *)&local_50,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::operator/((L2CValue *)&local_50,(L2CValue *)&local_60);
   fVar5 = (float)lib::L2CValue::as_number(aLStack128);
   app::lua_bind::EffectModule__set_rate_last_impl(this->moduleAccessor,fVar5);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,_WEAPON_KOOPA_KOOPAG_INSTANCE_WORK_ID_INT_SIGHT_EFFECT_ID);
   iVar2 = lib::L2CValue::as_integer(aLStack112);
   iVar3 = lib::L2CValue::as_integer(aLStack128);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
   FUN_710001d240(this);
   lib::L2CValue::L2CValue(aLStack144,0x1018ead674);
   HVar4 = lib::L2CValue::as_hash(aLStack144);
   iVar2 = app::lua_bind::SoundModule__play_se_impl
                     (this->moduleAccessor,HVar4,true,false,false,false,0);
   lib::L2CValue::L2CValue(aLStack128,iVar2);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue(aLStack144,_WEAPON_KOOPA_KOOPAG_INSTANCE_WORK_ID_FLAG_ATTACK_HIT);
   iVar2 = lib::L2CValue::as_integer(aLStack144);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue(aLStack144,_WEAPON_KOOPA_KOOPAG_INSTANCE_WORK_ID_FLAG_REQUEST_RUMBLE);
   iVar2 = lib::L2CValue::as_integer(aLStack144);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack144);
   lib::L2CValue::L2CValue(aLStack144,Attack_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x70);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack112);
   return;
 }
 

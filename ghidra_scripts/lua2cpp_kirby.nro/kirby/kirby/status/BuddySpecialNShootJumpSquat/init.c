@@ -18,24 +18,24 @@ L2CFighterKirby::status::BuddySpecialNShootJumpSquat_init
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   HVar2 = app::lua_bind::MotionModule__motion_kind_partial_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,HVar2);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,0x7fb997a80);
-  uVar3 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar3 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar3 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack64,0x1a5c0b8105);
-    lib::L2CValue::operator_(aLStack80,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::operator=(aLStack80,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue(aLStack64,aLStack80);
   lib::L2CValue::L2CValue(aLStack96,0x7fb997a80);
   lib::L2CValue::L2CValue(aLStack112,0x7fb997a80);
   FUN_7100141e80(this,aLStack64,aLStack96,aLStack112);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

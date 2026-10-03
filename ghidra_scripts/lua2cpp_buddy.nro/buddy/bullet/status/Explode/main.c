@@ -21,30 +21,30 @@ L2CWeaponBuddyBullet::status::Explode_main(L2CWeaponBuddyBullet *this,L2CValue *
   iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack96,iVar2);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_BUDDY_BULLET_TYPE_MISSILE);
-  uVar3 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar3 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar3 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack112,_WEAPON_BUDDY_BULLET_INSTANCE_WORK_ID_INT_LEVEL);
     iVar2 = lib::L2CValue::as_integer(aLStack112);
     iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
     lib::L2CValue::L2CValue(aLStack96,iVar2);
     lib::L2CValue::L2CValue(aLStack80,_WEAPON_BUDDY_BULLET_LEVEL_WEAK_1);
-    uVar3 = lib::L2CValue::operator__(aLStack96,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar3 = lib::L2CValue::operator==(aLStack96,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar3 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack112,_WEAPON_BUDDY_BULLET_INSTANCE_WORK_ID_INT_LEVEL);
       iVar2 = lib::L2CValue::as_integer(aLStack112);
       iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
       lib::L2CValue::L2CValue(aLStack96,iVar2);
       lib::L2CValue::L2CValue(aLStack80,_WEAPON_BUDDY_BULLET_LEVEL_WEAK_2);
-      uVar3 = lib::L2CValue::operator__(aLStack96,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack112);
+      uVar3 = lib::L2CValue::operator==(aLStack96,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack112);
       if ((uVar3 & 1) == 0) {
         lib::L2CValue::L2CValue(aLStack80,0xe721a939b);
         lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -95,17 +95,17 @@ L2CWeaponBuddyBullet::status::Explode_main(L2CWeaponBuddyBullet *this,L2CValue *
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::KineticModule__unable_energy_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,Explode_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

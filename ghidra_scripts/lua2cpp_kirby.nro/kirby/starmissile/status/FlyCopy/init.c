@@ -19,16 +19,16 @@ L2CWeaponKirbyStarmissile::status::FlyCopy_init
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_KIRBY_STARMISSILE_STATUS_WORK_FLAG_SHOT_CANCELED);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,9);
+  lib::L2CValue::~L2CValue(aLStack80);
+  pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,9);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_KIRBY_STARMISSILE_STATUS_KIND_FLY);
-  uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
-    pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,9);
+    pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,9);
     lib::L2CValue::L2CValue(aLStack80,_WEAPON_KIRBY_STARMISSILE_STATUS_KIND_FLY_COPY);
-    uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar4 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack96,0x110eb1ecf4);
       lib::L2CValue::L2CValue(aLStack112,0x9f518063c);
@@ -40,10 +40,10 @@ L2CWeaponKirbyStarmissile::status::FlyCopy_init
       iVar1 = lib::L2CValue::as_integer(aLStack80);
       iVar2 = lib::L2CValue::as_integer(aLStack128);
       app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
     }
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);

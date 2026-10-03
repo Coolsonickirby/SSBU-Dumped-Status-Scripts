@@ -61,51 +61,51 @@ L2CFighterMaster::status::SpecialHi_end(L2CFighterMaster *this,L2CValue *return_
   lib::L2CValue::L2CValue(aLStack144,(float)uVar10);
   lib::L2CValue::L2CValue(aLStack128,(float)((ulong)uVar10 >> 0x20));
   lib::L2CValue::L2CValue(aLStack112,in_register_00005008);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue(aLStack288);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue(aLStack288);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
   this_00 = &this->globalTable;
-  pLVar7 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+  pLVar7 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,_FIGHTER_MASTER_STATUS_KIND_SPECIAL_HI_HIT);
-  uVar3 = lib::L2CValue::operator__(pLVar7,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  uVar3 = lib::L2CValue::operator==(pLVar7,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   if ((uVar3 & 1) == 0) {
-    pLVar7 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,_FIGHTER_MASTER_STATUS_KIND_SPECIAL_HI_FAIL);
-    uVar3 = lib::L2CValue::operator__(pLVar7,(L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+    uVar3 = lib::L2CValue::operator==(pLVar7,(L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
     if ((uVar3 & 1) == 0) {
-      pLVar7 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+      pLVar7 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
       lib::L2CValue::L2CValue((L2CValue *)&local_60,_FIGHTER_STATUS_KIND_AIR_LASSO_REACH);
-      uVar3 = lib::L2CValue::operator__(pLVar7,(L2CValue *)&local_60);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+      uVar3 = lib::L2CValue::operator==(pLVar7,(L2CValue *)&local_60);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_60);
       if ((uVar3 & 1) == 0) {
         lib::L2CValue::L2CValue((L2CValue *)&local_60,_FIGHTER_MASTER_GENERATE_ARTICLE_SWORD);
         iVar2 = lib::L2CValue::as_integer((L2CValue *)&local_60);
         app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar2,0);
-        lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+        lib::L2CValue::~L2CValue((L2CValue *)&local_60);
       }
     }
   }
-  pLVar7 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+  pLVar7 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
   lib::L2CValue::L2CValue((L2CValue *)&local_60,_FIGHTER_STATUS_KIND_AIR_LASSO_REACH);
-  uVar3 = lib::L2CValue::operator__(pLVar7,(L2CValue *)&local_60);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+  uVar3 = lib::L2CValue::operator==(pLVar7,(L2CValue *)&local_60);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   if ((uVar3 & 1) == 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_60,false);
     bVar1 = lib::L2CValue::as_bool((L2CValue *)&local_60);
     app::lua_bind::GroundModule__set_rhombus_modify_air_lasso_impl
               (this->moduleAccessor,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

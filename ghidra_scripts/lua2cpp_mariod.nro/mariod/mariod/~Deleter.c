@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterMariod::__L2CFighterMariod(L2CFighterMariod *this)
+void __thiscall L2CFighterMariod::~~L2CFighterMariod(L2CFighterMariod *this)
 
 {
-  _L2CFighterMariod();
-  operator_delete(this);
+  ~L2CFighterMariod();
+  operator.delete(this);
   return;
 }
 

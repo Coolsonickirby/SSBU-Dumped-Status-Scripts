@@ -17,13 +17,13 @@ L2CFighterKirby::status::LadderCatchBottom_main(L2CFighterKirby *this,L2CValue *
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) == 0) {
 LAB_7100027ae0:
     lua2cpp::L2CFighterCommon::status_LadderCatchBottom(this);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   }
   else {
@@ -31,26 +31,26 @@ LAB_7100027ae0:
     iVar3 = lib::L2CValue::as_integer(aLStack64);
     iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,iVar3);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KIND_RYU);
-    uVar4 = lib::L2CValue::operator__(aLStack80,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    uVar4 = lib::L2CValue::operator==(aLStack80,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     if ((uVar4 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack64,FIGHTER_KIND_KEN);
-      uVar4 = lib::L2CValue::operator__(aLStack80,aLStack64);
-      lib::L2CValue::_L2CValue(aLStack64);
+      uVar4 = lib::L2CValue::operator==(aLStack80,aLStack64);
+      lib::L2CValue::~L2CValue(aLStack64);
       if ((uVar4 & 1) == 0) {
-        lib::L2CValue::_L2CValue(aLStack80);
+        lib::L2CValue::~L2CValue(aLStack80);
         goto LAB_7100027ae0;
       }
     }
     lua2cpp::L2CFighterCommon::sub_LadderCatchBottom_common(this);
     lib::L2CValue::L2CValue(aLStack64,LadderCatchBottom_main_loop);
     lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xc0);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   return;
 }

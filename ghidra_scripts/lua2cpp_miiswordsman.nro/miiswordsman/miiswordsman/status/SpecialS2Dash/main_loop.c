@@ -18,15 +18,15 @@ L2CFighterMiiswordsman::status::SpecialS2Dash_main_loop
   
   lib::L2CValue::L2CValue(aLStack96,0);
   lua2cpp::L2CFighterCommon::sub_transition_group_check_air_cliff(this);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar1 & 1U) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
     goto LAB_7100037654;
   }
   lua2cpp::L2CFighterCommon::sub_ground_check_stop_wall(this);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar1 & 1U) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
     goto LAB_7100037654;
@@ -35,66 +35,66 @@ L2CFighterMiiswordsman::status::SpecialS2Dash_main_loop
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,iVar3);
-  lib::L2CValue::operator_(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::operator=(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue(aLStack80,0);
-  uVar4 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator<=(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_MIISWORDSMAN_STATUS_KIND_SPECIAL_S2_END);
     lib::L2CValue::L2CValue(aLStack112,true);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0x90);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
     goto LAB_7100037654;
   }
   bVar2 = app::lua_bind::StatusModule__is_changing_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack112,(bool)(bVar2 & 1));
   lib::L2CValue::L2CValue(aLStack80,false);
-  uVar4 = lib::L2CValue::operator__(aLStack112,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(aLStack112,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
     this_00 = &this->globalTable;
-    pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x17);
+    pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x17);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar4 & 1) != 0) {
-      pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+      pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
       lib::L2CValue::L2CValue(aLStack80,SITUATION_KIND_AIR);
-      uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       if ((uVar4 & 1) != 0) goto LAB_7100037528;
     }
-    pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x17);
+    pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x17);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar4 & 1) == 0) {
-      pLVar5 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0x16);
+      pLVar5 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0x16);
       lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-      uVar4 = lib::L2CValue::operator__(pLVar5,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack112);
+      uVar4 = lib::L2CValue::operator==(pLVar5,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack112);
       if ((uVar4 & 1) != 0) goto LAB_7100037530;
     }
     else {
-      lib::L2CValue::_L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack112);
     }
   }
   else {
 LAB_7100037528:
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack112);
 LAB_7100037530:
     FUN_7100036e70(this);
   }
   FUN_7100023600(aLStack80,this);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
 LAB_7100037654:
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

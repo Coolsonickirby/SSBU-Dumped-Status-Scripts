@@ -29,9 +29,9 @@ L2CWeaponKoopajrShadowmario::status::Final_main
   local_50 = uVar6 & 0xffffffff | lVar7 << 0x20;
   uStack72 = (ulong)uVar3;
   app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_50,0);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -40,9 +40,9 @@ L2CWeaponKoopajrShadowmario::status::Final_main
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
   app::sv_kinetic_energy::set_speed(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_WEAPON_KINETIC_ENERGY_RESERVE_ID_NORMAL);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -51,9 +51,9 @@ L2CWeaponKoopajrShadowmario::status::Final_main
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack96);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
   app::sv_kinetic_energy::set_accel(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,0x5ecd55cc6);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,1.0);
@@ -64,29 +64,29 @@ L2CWeaponKoopajrShadowmario::status::Final_main
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar2,fVar4,fVar5,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   bVar1 = app::lua_bind::StopModule__is_stop_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue((L2CValue *)&local_50,false);
-  uVar6 = lib::L2CValue::operator__(aLStack96,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar6 = lib::L2CValue::operator==(aLStack96,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar6 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack112,false);
     FUN_710001c830(aLStack96,this,aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
   }
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x15);
-  lib::L2CValue::L2CValue((L2CValue *)&local_50,&DAT_710001ca60);
-  lib::L2CValue::operator_(this_00,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x15);
+  lib::L2CValue::L2CValue((L2CValue *)&local_50,FUN_710001ca60);
+  lib::L2CValue::operator=(this_00,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,Final_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   return;
 }
 

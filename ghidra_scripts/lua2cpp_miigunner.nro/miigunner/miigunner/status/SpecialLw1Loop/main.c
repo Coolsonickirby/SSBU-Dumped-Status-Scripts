@@ -8,7 +8,7 @@ L2CFighterMiigunner::status::SpecialLw1Loop_main(L2CFighterMiigunner *this,L2CVa
   FUN_710002ba60();
   lib::L2CValue::L2CValue(aLStack48,SpecialLw1Loop_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

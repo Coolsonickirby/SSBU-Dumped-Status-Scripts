@@ -13,11 +13,11 @@ L2CFighterKirby::status::SpecialN_main_loop(L2CFighterKirby *this,L2CValue *retu
   
   FUN_710022dbd0();
   FUN_7100234630(aLStack64,this);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   bVar2 = (bVar2 & 1U) == 0;
   if (bVar2) {
     FUN_7100234ab0(this);
@@ -26,8 +26,8 @@ L2CFighterKirby::status::SpecialN_main_loop(L2CFighterKirby *this,L2CValue *retu
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KIRBY_STATUS_KIND_SPECIAL_N_LOOP);
     lib::L2CValue::L2CValue(aLStack96,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0xa0);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,(uint)!bVar2);
   return;

@@ -18,10 +18,10 @@ L2CFighterBrave::status::SpecialLwFlyingStopCeil_end(L2CFighterBrave *this,L2CVa
   L2CValue aLStack96 [16];
   L2CValue aLStack80 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_STATUS_KIND_FALL);
-  uVar2 = lib::L2CValue::operator__(this_00,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar2 = lib::L2CValue::operator==(this_00,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar2 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack80,0x4fb50df0c);
     lib::L2CValue::L2CValue(aLStack96,0.0);
@@ -35,11 +35,11 @@ L2CFighterBrave::status::SpecialLwFlyingStopCeil_end(L2CFighterBrave *this,L2CVa
     fVar6 = (float)lib::L2CValue::as_number(aLStack144);
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar3,fVar4,fVar5,(bool)(bVar1 & 1),fVar6,false,false);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

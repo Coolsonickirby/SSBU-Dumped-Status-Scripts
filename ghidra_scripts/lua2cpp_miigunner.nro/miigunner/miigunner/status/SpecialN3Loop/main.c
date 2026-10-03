@@ -1,5 +1,6 @@
 
-void __thiscall L2CFighterMiigunner::status::SpecialN3Loop_main(L2CFighterCommon *this)
+void __thiscall
+L2CFighterMiigunner::status::SpecialN3Loop_main(L2CFighterMiigunner *this,L2CValue *return_value)
 
 {
   byte bVar1;
@@ -12,22 +13,22 @@ void __thiscall L2CFighterMiigunner::status::SpecialN3Loop_main(L2CFighterCommon
   bVar1 = app::lua_bind::StopModule__is_stop_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,false);
-  uVar2 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar2 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar2 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack96,false);
     FUN_71000310f0(aLStack80,this,aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
   }
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x15);
-  lib::L2CValue::L2CValue(aLStack64,&DAT_71000313f0);
-  lib::L2CValue::operator_(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x15);
+  lib::L2CValue::L2CValue(aLStack64,FUN_71000313f0);
+  lib::L2CValue::operator=(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,SpecialN3Loop_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xc0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

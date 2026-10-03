@@ -12,15 +12,15 @@ L2CFighterGekkouga::status::SpecialS_end(L2CFighterGekkouga *this,L2CValue *retu
   lib::L2CValue::L2CValue(aLStack48,true);
   bVar1 = lib::L2CValue::as_bool(aLStack48);
   app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue(aLStack48,_HIT_STATUS_NORMAL);
   HVar2 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::HitModule__set_whole_impl(this->moduleAccessor,HVar2,0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue(aLStack48,true);
   bVar1 = lib::L2CValue::as_bool(aLStack48);
   app::lua_bind::AreaModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

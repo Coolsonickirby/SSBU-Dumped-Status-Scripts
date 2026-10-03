@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterCloud::__L2CFighterCloud(L2CFighterCloud *this)
+void __thiscall L2CFighterCloud::~~L2CFighterCloud(L2CFighterCloud *this)
 
 {
-  _L2CFighterCloud();
-  operator_delete(this);
+  ~L2CFighterCloud();
+  operator.delete(this);
   return;
 }
 

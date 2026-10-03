@@ -45,19 +45,19 @@ L2CWeaponDollyBurst::status::Regular_pre(L2CWeaponDollyBurst *this,L2CValue *ret
   app::lua_bind::StatusModule__init_settings_impl
             (this->moduleAccessor,SVar2,iVar3,uVar4,GVar5,(bool)(bVar1 & 1),iVar6,iVar7,iVar8,
              in_stack_fffffffffffffef4);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CValue::L2CValue(aLStack120,false);
   bVar1 = lib::L2CValue::as_bool(aLStack120);
   app::lua_bind::GroundModule__set_test_coll_stop_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

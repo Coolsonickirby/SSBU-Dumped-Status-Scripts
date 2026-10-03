@@ -16,14 +16,14 @@ L2CFighterKirby::status::PickelSpecialN3WalkBack_main(L2CFighterKirby *this,L2CV
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack64);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   app::sv_kinetic_energy::set_speed_mul_2nd(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
   FUN_710012b840(this);
   FUN_7100120960(this);
   lib::L2CValue::L2CValue(aLStack48,PickelSpecialN3WalkBack_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

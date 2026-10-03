@@ -17,9 +17,9 @@ L2CFighterDiddy::status::SpecialHiFallRoll_exec_stop(L2CFighterDiddy *this,L2CVa
   fVar2 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack64,fVar2);
   FUN_71000086c0(this,aLStack48,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

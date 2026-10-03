@@ -21,15 +21,15 @@ L2CFighterChrom::status::SpecialHi_on_change_lr(L2CFighterChrom *this,L2CValue *
   fVar2 = (float)lib::L2CValue::as_number(aLStack64);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar2,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_ROY_STATUS_SPECIAL_HI_FLAG_SPECIAL_HI_SET_LR);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,true);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

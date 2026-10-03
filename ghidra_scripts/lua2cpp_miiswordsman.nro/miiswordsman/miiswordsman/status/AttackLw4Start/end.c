@@ -14,11 +14,11 @@ L2CFighterMiiswordsman::status::AttackLw4Start_end
   L2CValue aLStack64 [16];
   
   lua2cpp::L2CFighterCommon::status_end_AttackLw4Start(this);
-  lib::L2CValue::_L2CValue(aLStack80);
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  lib::L2CValue::~L2CValue(aLStack80);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,FIGHTER_STATUS_KIND_ATTACK_LW4);
-  uVar1 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar1 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar1 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack96,_MA_MSC_CMD_EFFECT_AFTER_IMAGE_OFF);
     lib::L2CValue::L2CValue(aLStack112,0);
@@ -27,9 +27,9 @@ L2CFighterMiiswordsman::status::AttackLw4Start_end
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
     app::sv_module_access::effect(this->luaStateAgent);
     lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

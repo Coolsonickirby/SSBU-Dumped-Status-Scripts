@@ -1,7 +1,8 @@
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-void __thiscall L2CWeaponEdgeFlare2::status::Pre_exec(long this)
+void __thiscall
+L2CWeaponEdgeFlare2::status::Pre_exec(L2CWeaponEdgeFlare2 *this,L2CValue *return_value)
 
 {
   byte bVar1;
@@ -10,7 +11,6 @@ void __thiscall L2CWeaponEdgeFlare2::status::Pre_exec(long this)
   ulong uVar4;
   void *pvVar5;
   BattleObjectModuleAccessor *pBVar6;
-  L2CValue *return_value;
   float fVar7;
   L2CValue aLStack128 [16];
   L2CValue aLStack112 [16];
@@ -20,27 +20,25 @@ void __thiscall L2CWeaponEdgeFlare2::status::Pre_exec(long this)
   
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_EDGE_FLARE2_INSTANCE_WORK_ID_INT_FRAME);
   iVar2 = lib::L2CValue::as_integer(aLStack64);
-  app::lua_bind::WorkModule__dec_int_impl(*(BattleObjectModuleAccessor **)(this + 0x40),iVar2);
-  lib::L2CValue::_L2CValue(aLStack64);
+  app::lua_bind::WorkModule__dec_int_impl(this->moduleAccessor,iVar2);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_EDGE_FLARE2_INSTANCE_WORK_ID_FLOAT_RADIUS);
   iVar2 = lib::L2CValue::as_integer(aLStack64);
-  fVar7 = (float)app::lua_bind::WorkModule__get_float_impl
-                           (*(BattleObjectModuleAccessor **)(this + 0x40),iVar2);
+  fVar7 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,fVar7);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_WEAPON_EDGE_FLARE2_INSTANCE_WORK_ID_INT_OBJECT_ID);
   iVar2 = lib::L2CValue::as_integer(aLStack64);
-  iVar2 = app::lua_bind::WorkModule__get_int_impl
-                    (*(BattleObjectModuleAccessor **)(this + 0x40),iVar2);
+  iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack96,iVar2);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   uVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::sv_battle_object::is_active(uVar3);
   lib::L2CValue::L2CValue(aLStack112,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,true);
-  uVar4 = lib::L2CValue::operator__(aLStack112,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar4 = lib::L2CValue::operator==(aLStack112,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar4 & 1) != 0) {
     uVar3 = lib::L2CValue::as_integer(aLStack96);
     pvVar5 = (void *)app::sv_battle_object::module_accessor(uVar3);
@@ -53,19 +51,19 @@ void __thiscall L2CWeaponEdgeFlare2::status::Pre_exec(long this)
     pBVar6 = (BattleObjectModuleAccessor *)lib::L2CValue::as_pointer(aLStack64);
     fVar7 = (float)app::lua_bind::PostureModule__scale_impl(pBVar6);
     lib::L2CValue::L2CValue(aLStack128,fVar7);
-    lib::L2CValue::operator_(aLStack80,aLStack128);
-    lib::L2CValue::operator_(aLStack80,aLStack112);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::operator*(aLStack80,aLStack128);
+    lib::L2CValue::operator=(aLStack80,aLStack112);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue(aLStack112,aLStack80);
   FUN_71000290f0(aLStack64,this,aLStack112);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::L2CValue(return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::L2CValue((L2CValue *)return_value,0);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

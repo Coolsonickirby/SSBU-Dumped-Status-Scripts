@@ -18,12 +18,12 @@ void __thiscall L2CFighterFalco::status::FinalEnd_exit(L2CFighterFalco *this,L2C
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack64,false);
-  uVar3 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar3 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar3 & 1) != 0) {
-    this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,4);
+    this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,4);
     pFVar4 = (Fighter *)lib::L2CValue::as_pointer(this_00);
     app::FighterSpecializer_Falco::final_end_exit(pFVar4);
   }

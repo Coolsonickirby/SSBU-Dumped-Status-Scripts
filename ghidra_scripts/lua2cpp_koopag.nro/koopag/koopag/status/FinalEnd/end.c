@@ -14,12 +14,12 @@ L2CFighterKoopag::status::FinalEnd_end(L2CFighterKoopag *this,L2CValue *return_v
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack64);
   app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KOOPA_GENERATE_ARTICLE_KOOPAG);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar1,0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

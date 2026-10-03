@@ -54,15 +54,15 @@ L2CFighterKirby::status::RefletSpecialN_pre(L2CFighterKirby *this,L2CValue *retu
   app::lua_bind::StatusModule__init_settings_impl
             (this->moduleAccessor,SVar6,iVar7,uVar8,GVar9,(bool)(bVar2 & 1),iVar10,iVar11,iVar12,
              in_stack_fffffffffffffef4);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CValue::L2CValue(aLStack120,false);
   lib::L2CValue::L2CValue(aLStack136,_FIGHTER_TREADED_KIND_NO_REAC);
   lib::L2CValue::L2CValue(aLStack152,false);
@@ -87,15 +87,15 @@ L2CFighterKirby::status::RefletSpecialN_pre(L2CFighterKirby *this,L2CValue *retu
   app::lua_bind::FighterStatusModuleImpl__set_fighter_status_data_impl
             (this->moduleAccessor,(bool)(bVar2 & 1),iVar7,(bool)(bVar3 & 1),(bool)(bVar4 & 1),
              (bool)(bVar5 & 1),uVar14,uVar8,uVar13,in_stack_fffffffffffffef4);
-  lib::L2CValue::_L2CValue(aLStack248);
-  lib::L2CValue::_L2CValue(aLStack232);
-  lib::L2CValue::_L2CValue(aLStack216);
-  lib::L2CValue::_L2CValue(aLStack200);
-  lib::L2CValue::_L2CValue(aLStack184);
-  lib::L2CValue::_L2CValue(aLStack168);
-  lib::L2CValue::_L2CValue(aLStack152);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack248);
+  lib::L2CValue::~L2CValue(aLStack232);
+  lib::L2CValue::~L2CValue(aLStack216);
+  lib::L2CValue::~L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack184);
+  lib::L2CValue::~L2CValue(aLStack168);
+  lib::L2CValue::~L2CValue(aLStack152);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
   pvVar15 = (void *)app::sv_system::battle_object(this->luaStateAgent);
   if (pvVar15 == (void *)0x0) {
@@ -108,23 +108,23 @@ L2CFighterKirby::status::RefletSpecialN_pre(L2CFighterKirby *this,L2CValue *retu
   pFVar16 = (Fighter *)lib::L2CValue::as_pointer(aLStack120);
   iVar7 = lib::L2CValue::as_integer(aLStack136);
   app::FighterSpecializer_Reflet::change_hud_kind(pFVar16,iVar7);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack120);
   lib::L2CValue::L2CValue(aLStack152,_FIGHTER_REFLET_INSTANCE_WORK_ID_INT_SPECIAL_N_THUNDER_KIND);
   iVar7 = lib::L2CValue::as_integer(aLStack152);
   iVar7 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar7);
   lib::L2CValue::L2CValue(aLStack136,iVar7);
   lib::L2CValue::L2CValue(aLStack120,_FIGHTER_REFLET_MAGIC_KIND_TRON);
-  uVar14 = lib::L2CValue::operator__(aLStack136,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack136);
-  lib::L2CValue::_L2CValue(aLStack152);
+  uVar14 = lib::L2CValue::operator==(aLStack136,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack136);
+  lib::L2CValue::~L2CValue(aLStack152);
   bVar1 = (uVar14 & 1) != 0;
   if (bVar1) {
     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIRBY_STATUS_KIND_REFLET_SPECIAL_N_TRON_START);
     iVar7 = lib::L2CValue::as_integer(aLStack120);
     app::lua_bind::StatusModule__set_status_kind_interrupt_impl(this->moduleAccessor,iVar7);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack120);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,(uint)bVar1);
   return;

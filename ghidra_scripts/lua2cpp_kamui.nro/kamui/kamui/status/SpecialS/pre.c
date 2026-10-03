@@ -30,16 +30,16 @@ void __thiscall L2CFighterKamui::status::SpecialS_pre(L2CFighterKamui *this,L2CV
   L2CValue aLStack136 [16];
   L2CValue aLStack120 [24];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue(aLStack120,SITUATION_KIND_AIR);
-  uVar14 = lib::L2CValue::operator__(this_00,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
+  uVar14 = lib::L2CValue::operator==(this_00,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
   bVar1 = (uVar14 & 1) == 0;
   if (bVar1) {
     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KAMUI_INSTANCE_WORK_ID_FLAG_SPECIAL_S_ATTACK_START);
     iVar6 = lib::L2CValue::as_integer(aLStack120);
     app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar6);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack120);
     lib::L2CValue::L2CValue(aLStack120,SITUATION_KIND_NONE);
     lib::L2CValue::L2CValue(aLStack136,_FIGHTER_KINETIC_TYPE_GROUND_STOP);
     lib::L2CValue::L2CValue(aLStack152,GROUND_CORRECT_KIND_AIR);
@@ -61,15 +61,15 @@ void __thiscall L2CFighterKamui::status::SpecialS_pre(L2CFighterKamui *this,L2CV
     app::lua_bind::StatusModule__init_settings_impl
               (this->moduleAccessor,SVar7,iVar6,uVar8,GVar9,(bool)(bVar2 & 1),iVar10,iVar11,iVar12,
                in_stack_fffffffffffffef4);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack216);
-    lib::L2CValue::_L2CValue(aLStack200);
-    lib::L2CValue::_L2CValue(aLStack184);
-    lib::L2CValue::_L2CValue(aLStack168);
-    lib::L2CValue::_L2CValue(aLStack152);
-    lib::L2CValue::_L2CValue(aLStack136);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack216);
+    lib::L2CValue::~L2CValue(aLStack200);
+    lib::L2CValue::~L2CValue(aLStack184);
+    lib::L2CValue::~L2CValue(aLStack168);
+    lib::L2CValue::~L2CValue(aLStack152);
+    lib::L2CValue::~L2CValue(aLStack136);
+    lib::L2CValue::~L2CValue(aLStack120);
     lib::L2CValue::L2CValue(aLStack120,false);
     lib::L2CValue::L2CValue(aLStack136,_FIGHTER_TREADED_KIND_NO_REAC);
     lib::L2CValue::L2CValue(aLStack152,false);
@@ -91,29 +91,29 @@ void __thiscall L2CFighterKamui::status::SpecialS_pre(L2CFighterKamui *this,L2CV
     app::lua_bind::FighterStatusModuleImpl__set_fighter_status_data_impl
               (this->moduleAccessor,(bool)(bVar2 & 1),iVar6,(bool)(bVar3 & 1),(bool)(bVar4 & 1),
                (bool)(bVar5 & 1),uVar14,uVar8,uVar13,in_stack_fffffffffffffef4);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack216);
-    lib::L2CValue::_L2CValue(aLStack200);
-    lib::L2CValue::_L2CValue(aLStack184);
-    lib::L2CValue::_L2CValue(aLStack168);
-    lib::L2CValue::_L2CValue(aLStack152);
-    lib::L2CValue::_L2CValue(aLStack136);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack216);
+    lib::L2CValue::~L2CValue(aLStack200);
+    lib::L2CValue::~L2CValue(aLStack184);
+    lib::L2CValue::~L2CValue(aLStack168);
+    lib::L2CValue::~L2CValue(aLStack152);
+    lib::L2CValue::~L2CValue(aLStack136);
+    lib::L2CValue::~L2CValue(aLStack120);
   }
   else {
     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KAMUI_INSTANCE_WORK_ID_FLAG_SPECIAL_S_DISABLE);
     iVar6 = lib::L2CValue::as_integer(aLStack120);
     app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar6);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack120);
     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KAMUI_INSTANCE_WORK_ID_FLAG_SPECIAL_S_ATTACK_START);
     iVar6 = lib::L2CValue::as_integer(aLStack120);
     app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar6);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack120);
     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KAMUI_STATUS_KIND_SPECIAL_S_ATTACK);
     iVar6 = lib::L2CValue::as_integer(aLStack120);
     app::lua_bind::StatusModule__set_status_kind_interrupt_impl(this->moduleAccessor,iVar6);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack120);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,(uint)!bVar1);
   return;

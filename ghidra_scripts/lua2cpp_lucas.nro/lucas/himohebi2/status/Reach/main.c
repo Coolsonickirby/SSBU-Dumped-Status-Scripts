@@ -15,7 +15,7 @@ L2CWeaponLucasHimohebi2::status::Reach_main(L2CWeaponLucasHimohebi2 *this,L2CVal
   lib::L2CValue::L2CValue(aLStack80,true);
   bVar1 = lib::L2CValue::as_bool(aLStack80);
   app::lua_bind::VisibilityModule__set_whole_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0x47dee83e5);
   lib::L2CValue::L2CValue(aLStack96,0.0);
   lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -26,13 +26,13 @@ L2CWeaponLucasHimohebi2::status::Reach_main(L2CWeaponLucasHimohebi2 *this,L2CVal
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar2,fVar3,fVar4,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,Reach_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

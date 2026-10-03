@@ -16,7 +16,7 @@ void __thiscall L2CFighterMaster::status::Throw_end(L2CFighterMaster *this,L2CVa
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_MASTER_GENERATE_ARTICLE_SWORD);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::ArticleModule__remove_exist_impl(this->moduleAccessor,iVar1,0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack80,0x6e5ec7051);
   lib::L2CValue::L2CValue(aLStack96,0x15faeb4868);
   uVar3 = lib::L2CValue::as_integer(aLStack80);
@@ -27,13 +27,13 @@ void __thiscall L2CFighterMaster::status::Throw_end(L2CFighterMaster *this,L2CVa
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   iVar2 = lib::L2CValue::as_integer(aLStack112);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lua2cpp::L2CFighterCommon::status_end_Throw(this);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

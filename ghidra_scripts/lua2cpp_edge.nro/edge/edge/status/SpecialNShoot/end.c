@@ -21,10 +21,10 @@ L2CFighterEdge::status::SpecialNShoot_end(L2CFighterEdge *this,L2CValue *return_
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
   if ((bVar2 & 1U) == 0) {
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
   }
   else {
     lib::L2CValue::L2CValue(aLStack128,_FIGHTER_EDGE_GENERATE_ARTICLE_FIRE);
@@ -32,12 +32,12 @@ L2CFighterEdge::status::SpecialNShoot_end(L2CFighterEdge *this,L2CValue *return_
     iVar3 = app::lua_bind::ArticleModule__get_active_num_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack112,iVar3);
     lib::L2CValue::L2CValue(aLStack64,0);
-    uVar4 = lib::L2CValue::operator__(aLStack112,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    uVar4 = lib::L2CValue::operator==(aLStack112,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((uVar4 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack64,0x128938c1af);
       lib::L2CValue::L2CValue(aLStack96,0xf899192aa);
@@ -49,10 +49,10 @@ L2CFighterEdge::status::SpecialNShoot_end(L2CFighterEdge *this,L2CValue *return_
       HVar6 = lib::L2CValue::as_hash(aLStack64);
       iVar3 = lib::L2CValue::as_integer(aLStack80);
       app::lua_bind::EffectModule__remove_screen_impl(this->moduleAccessor,HVar6,iVar3);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack64);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack64);
       app::lua_bind::MotionAnimcmdModule__enable_skip_delay_update_impl(this->moduleAccessor);
     }
   }

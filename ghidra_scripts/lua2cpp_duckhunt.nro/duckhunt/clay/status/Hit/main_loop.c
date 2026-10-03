@@ -13,28 +13,28 @@ L2CWeaponDuckhuntClay::status::Hit_main_loop(L2CWeaponDuckhuntClay *this,L2CValu
   
   bVar1 = app::lua_bind::StatusModule__is_changing_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  lib::L2CValue::operator_(aLStack80);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::operator!(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack64,true);
     bVar1 = lib::L2CValue::as_bool(aLStack64);
     app::lua_bind::HitModule__sleep_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_DUCKHUNT_CLAY_INSTANCE_WORK_ID_FLAG_IS_OPPONENT_BREAK);
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack64,true);
     bVar1 = lib::L2CValue::as_bool(aLStack64);
     app::lua_bind::AttackModule__set_no_team_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

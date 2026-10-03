@@ -15,11 +15,11 @@ L2CFighterKirby::status::PickelSpecialN3JumpAerial_init
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack64);
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack48);
   app::sv_kinetic_energy::mul_x_speed_max(this->luaStateAgent);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lua2cpp::L2CFighterCommon::sub_fly_uniq_process_init(this);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

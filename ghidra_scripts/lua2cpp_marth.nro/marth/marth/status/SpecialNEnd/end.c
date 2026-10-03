@@ -12,7 +12,7 @@ L2CFighterMarth::status::SpecialNEnd_end(L2CFighterMarth *this,L2CValue *return_
   DVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::DamageModule__set_no_reaction_mode_status_impl
             (this->moduleAccessor,DVar1,-1.0,-1.0,-1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

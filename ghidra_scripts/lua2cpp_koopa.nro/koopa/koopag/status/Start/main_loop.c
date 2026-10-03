@@ -31,8 +31,8 @@ L2CWeaponKoopaKoopag::status::Start_main_loop(L2CWeaponKoopaKoopag *this,L2CValu
   
   bVar3 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,(bool)(bVar3 & 1));
-  bVar4 = lib::L2CValue::operator_cast_to_bool((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  bVar4 = lib::L2CValue::operator.cast.to.bool((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   if ((bVar4 & 1U) == 0) {
     lib::L2CValue::L2CValue
               (aLStack112,_WEAPON_KOOPA_KOOPAG_INSTANCE_WORK_ID_FLAG_CAMERA_ZOOM_OUT_START);
@@ -40,10 +40,10 @@ L2CWeaponKoopaKoopag::status::Start_main_loop(L2CWeaponKoopaKoopag *this,L2CValu
     bVar3 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar5);
     lib::L2CValue::L2CValue(aLStack96,(bool)(bVar3 & 1));
     lib::L2CValue::L2CValue((L2CValue *)&local_50,true);
-    uVar6 = lib::L2CValue::operator__(aLStack96,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar6 = lib::L2CValue::operator==(aLStack96,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar6 & 1) == 0) goto LAB_710001ecd4;
     uVar10 = app::lua_bind::CameraModule__get_main_camera_range_impl(this->moduleAccessor);
     local_50 = CONCAT44(in_s1,uVar10);
@@ -58,7 +58,7 @@ L2CWeaponKoopaKoopag::status::Start_main_loop(L2CWeaponKoopaKoopag *this,L2CValu
     lib::L2CValue::L2CValue(aLStack176,0.0);
     lib::L2CValue::L2CValue(aLStack192,0.0);
     iVar5 = lib::L2CValue::as_integer(aLStack112);
-    this_00 = (L2CValue *)lib::L2CValue::operator__(aLStack96,0x11f63699bf);
+    this_00 = (L2CValue *)lib::L2CValue::operator[](aLStack96,0x11f63699bf);
     pcVar8 = (code *)lib::L2CValue::as_pointer(this_00);
     pRVar9 = (Rect *)(*pcVar8)();
     app::lua_bind::lib__Rect__load_from_l2c_table_impl(pRVar9,aLStack96);
@@ -69,24 +69,24 @@ L2CWeaponKoopaKoopag::status::Start_main_loop(L2CWeaponKoopaKoopag *this,L2CValu
     uStack72 = (ulong)uVar12;
     app::lua_bind::CameraModule__start_final_zoom_out_impl
               (this->moduleAccessor,iVar5,pRVar9,(Vector3f *)&local_50);
-    operator_delete(pRVar9);
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
+    operator.delete(pRVar9);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
     lib::L2CValue::L2CValue
               ((L2CValue *)&local_50,_WEAPON_KOOPA_KOOPAG_INSTANCE_WORK_ID_FLAG_CAMERA_ZOOM_OUT);
     iVar5 = lib::L2CValue::as_integer((L2CValue *)&local_50);
     app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar5);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
     lib::L2CValue::L2CValue
               ((L2CValue *)&local_50,
                _WEAPON_KOOPA_KOOPAG_INSTANCE_WORK_ID_FLAG_CAMERA_ZOOM_OUT_START);
     iVar5 = lib::L2CValue::as_integer((L2CValue *)&local_50);
     app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar5);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
     lVar2 = -0x50;
   }
   else {
@@ -95,10 +95,10 @@ L2CWeaponKoopaKoopag::status::Start_main_loop(L2CWeaponKoopaKoopag *this,L2CValu
     cVar1 = (char)&stack0xfffffffffffffff0;
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)(cVar1 + -0x40),(L2CValue)(cVar1 + -0x50))
     ;
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lVar2 = -0x40;
   }
-  lib::L2CValue::_L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar2));
+  lib::L2CValue::~L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar2));
 LAB_710001ecd4:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

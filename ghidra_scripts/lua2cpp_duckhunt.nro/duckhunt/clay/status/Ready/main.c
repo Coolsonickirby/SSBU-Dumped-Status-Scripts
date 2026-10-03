@@ -1,7 +1,8 @@
 
 /* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
 
-void __thiscall L2CWeaponDuckhuntClay::status::Ready_main(void *this)
+void __thiscall
+L2CWeaponDuckhuntClay::status::Ready_main(L2CWeaponDuckhuntClay *this,L2CValue *return_value)
 
 {
   byte bVar1;
@@ -23,25 +24,22 @@ void __thiscall L2CWeaponDuckhuntClay::status::Ready_main(void *this)
   fVar5 = (float)lib::L2CValue::as_number(aLStack112);
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
-            (*(BattleObjectModuleAccessor **)((long)this + 0x40),HVar3,fVar4,fVar5,(bool)(bVar1 & 1)
-             ,0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+            (this->moduleAccessor,HVar3,fVar4,fVar5,(bool)(bVar1 & 1),0.0,false,false);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,_WEAPON_DUCKHUNT_CLAY_INSTANCE_WORK_ID_FLAG_FLY);
   iVar2 = lib::L2CValue::as_integer(aLStack80);
-  app::lua_bind::WorkModule__off_flag_impl
-            (*(BattleObjectModuleAccessor **)((long)this + 0x40),iVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
+  app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,false);
   bVar1 = lib::L2CValue::as_bool(aLStack80);
-  app::lua_bind::HitModule__sleep_impl
-            (*(BattleObjectModuleAccessor **)((long)this + 0x40),(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
+  app::lua_bind::HitModule__sleep_impl(this->moduleAccessor,(bool)(bVar1 & 1));
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,Ready_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

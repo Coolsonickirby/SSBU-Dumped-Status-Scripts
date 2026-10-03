@@ -16,9 +16,9 @@ L2CWeaponLuigiPlunger::status::Shoot_main(L2CWeaponLuigiPlunger *this,L2CValue *
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack64,_WEAPON_ANIMCMD_GAME);
     lib::L2CValue::L2CValue(aLStack80,0xd89aaa9ef);
@@ -26,19 +26,19 @@ L2CWeaponLuigiPlunger::status::Shoot_main(L2CWeaponLuigiPlunger *this,L2CValue *
     HVar4 = lib::L2CValue::as_hash(aLStack80);
     app::lua_bind::MotionAnimcmdModule__call_script_single_impl(this->moduleAccessor,iVar3,HVar4,-1)
     ;
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue(aLStack80,0x164f842287);
   HVar4 = lib::L2CValue::as_hash(aLStack80);
   iVar3 = app::lua_bind::SoundModule__play_se_impl
                     (this->moduleAccessor,HVar4,true,false,false,false,0);
   lib::L2CValue::L2CValue(aLStack64,iVar3);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,Shoot_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

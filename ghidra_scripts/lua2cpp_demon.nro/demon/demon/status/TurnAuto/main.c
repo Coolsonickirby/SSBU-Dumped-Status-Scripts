@@ -17,23 +17,23 @@ void __thiscall L2CFighterDemon::status::TurnAuto_main(L2CFighterDemon *this,L2C
   
   lua2cpp::L2CFighterCommon::sub_wait_common(this);
   app::lua_bind::PostureModule__reverse_lr_impl(this->moduleAccessor);
-  pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,2);
+  pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,2);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_KIND_DOLLY);
-  uVar3 = lib::L2CValue::operator__(pLVar2,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar3 = lib::L2CValue::operator==(pLVar2,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar3 & 1) == 0) {
-    pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,2);
+    pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,2);
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_KIND_DEMON);
-    uVar3 = lib::L2CValue::operator__(pLVar2,aLStack96);
-    lib::L2CValue::_L2CValue(aLStack96);
+    uVar3 = lib::L2CValue::operator==(pLVar2,aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((uVar3 & 1) == 0) goto LAB_710003a6dc;
   }
   bVar1 = app::lua_bind::ControlModule__is_remake_command_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack112,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack96,true);
-  uVar3 = lib::L2CValue::operator__(aLStack112,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar3 = lib::L2CValue::operator==(aLStack112,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar3 & 1) != 0) {
     lua2cpp::L2CFighterCommon::sub_fighter_remake_control_command(this);
   }
@@ -48,13 +48,13 @@ LAB_710003a6dc:
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,TurnAuto_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

@@ -25,20 +25,20 @@ L2CFighterBayonetta::status::AttackDash_main(L2CFighterBayonetta *this,L2CValue 
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   iVar2 = lib::L2CValue::as_integer(aLStack128);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack80,1.0);
   lib::L2CValue::L2CValue
             (aLStack96,_FIGHTER_BAYONETTA_STATUS_ATTACK_DASH_WORK_FLOAT_SPEED_COEFFICIENT);
   fVar5 = (float)lib::L2CValue::as_number(aLStack80);
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar5,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lua2cpp::L2CFighterCommon::status_AttackDash(this);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

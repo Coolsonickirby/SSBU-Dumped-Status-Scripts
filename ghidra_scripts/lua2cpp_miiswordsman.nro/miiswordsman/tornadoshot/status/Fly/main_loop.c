@@ -34,17 +34,17 @@ L2CWeaponMiiswordsmanTornadoshot::status::Fly_main_loop
   iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_50);
   iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack112,iVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_SITUATION_KIND_GROUND);
-  uVar5 = lib::L2CValue::operator__(aLStack112,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  uVar5 = lib::L2CValue::operator==(aLStack112,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   if ((uVar5 & 1) == 0) {
     iVar3 = app::lua_bind::StatusModule__situation_kind_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,iVar3);
     lib::L2CValue::L2CValue((L2CValue *)&local_50,_SITUATION_KIND_GROUND);
-    uVar5 = lib::L2CValue::operator__((L2CValue *)&local_60,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+    uVar5 = lib::L2CValue::operator==((L2CValue *)&local_60,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
     if ((uVar5 & 1) == 0) goto LAB_71000439d8;
     lib::L2CValue::L2CValue(aLStack128,0x1a712fd786);
     lib::L2CValue::L2CValue(aLStack144,0x31ed91fca);
@@ -65,12 +65,12 @@ L2CWeaponMiiswordsmanTornadoshot::status::Fly_main_loop
                        1.0,false,0,0,-1,in_stack_fffffffffffffef4,0,(bool)in_stack_fffffffffffffefc,
                        false);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,uVar8);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue(aLStack192);
-    lib::L2CValue::_L2CValue(aLStack176);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue(aLStack192);
+    lib::L2CValue::~L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
     iVar3 = app::lua_bind::StatusModule__situation_kind_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue((L2CValue *)&local_50,iVar3);
     lib::L2CValue::L2CValue
@@ -83,15 +83,15 @@ L2CWeaponMiiswordsmanTornadoshot::status::Fly_main_loop
   else {
 LAB_71000439d8:
     lib::L2CValue::L2CValue((L2CValue *)&local_50,_SITUATION_KIND_GROUND);
-    uVar5 = lib::L2CValue::operator__(aLStack112,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    uVar5 = lib::L2CValue::operator==(aLStack112,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
     if ((uVar5 & 1) == 0) goto LAB_7100043b18;
     iVar3 = app::lua_bind::StatusModule__situation_kind_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,iVar3);
     lib::L2CValue::L2CValue((L2CValue *)&local_50,_SITUATION_KIND_GROUND);
-    uVar5 = lib::L2CValue::operator__((L2CValue *)&local_60,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
+    uVar5 = lib::L2CValue::operator==((L2CValue *)&local_60,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
     if ((uVar5 & 1) != 0) goto LAB_7100043b18;
     lib::L2CValue::L2CValue((L2CValue *)&local_50,0x1a712fd786);
     lib::L2CValue::L2CValue((L2CValue *)&local_60,false);
@@ -101,9 +101,9 @@ LAB_71000439d8:
     bVar2 = lib::L2CValue::as_bool(aLStack128);
     app::lua_bind::EffectModule__kill_kind_impl
               (this->moduleAccessor,HVar6,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_60);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_60);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
     iVar3 = app::lua_bind::StatusModule__situation_kind_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue((L2CValue *)&local_50,iVar3);
     lib::L2CValue::L2CValue
@@ -114,11 +114,11 @@ LAB_71000439d8:
     app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
     lVar9 = -0x50;
   }
-  lib::L2CValue::_L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar9));
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)(&stack0xfffffffffffffff0 + lVar9));
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
 LAB_7100043b18:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
   return;
 }
 

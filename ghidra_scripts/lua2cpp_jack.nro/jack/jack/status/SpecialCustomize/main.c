@@ -16,9 +16,9 @@ L2CFighterJack::status::SpecialCustomize_main(L2CFighterJack *this,L2CValue *ret
   lib::L2CValue::L2CValue(aLStack48,iVar1);
   lib::L2CValue::L2CValue(aLStack80,false);
   lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xd0,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

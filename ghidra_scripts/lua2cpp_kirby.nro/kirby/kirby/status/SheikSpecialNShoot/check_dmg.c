@@ -19,23 +19,23 @@ L2CFighterKirby::status::SheikSpecialNShoot_check_dmg(L2CFighterKirby *this,L2CV
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack112,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,_FT_SHEIK_STATUS_SPECIAL_N_FLAG_INTERRUPT);
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,1);
-  lib::L2CValue::operator_(aLStack112,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::operator-(aLStack112,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   iVar1 = lib::L2CValue::as_integer(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
   if (-1 < iVar1) {
     iVar3 = -1;
     do {
       lib::L2CValue::L2CValue(aLStack96,_FIGHTER_SHEIK_GENERATE_ARTICLE_NEEDLE);
       iVar2 = lib::L2CValue::as_integer(aLStack96);
       app::lua_bind::ArticleModule__generate_article_impl(this->moduleAccessor,iVar2,false,-1);
-      lib::L2CValue::_L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack96);
       iVar3 = iVar3 + 1;
     } while (iVar3 < iVar1);
   }
@@ -44,11 +44,11 @@ L2CFighterKirby::status::SheikSpecialNShoot_check_dmg(L2CFighterKirby *this,L2CV
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   iVar3 = lib::L2CValue::as_integer(aLStack128);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar3);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue((L2CValue *)return_value,false);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
   return;
 }
 

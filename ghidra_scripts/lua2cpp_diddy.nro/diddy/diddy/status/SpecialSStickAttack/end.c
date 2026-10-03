@@ -15,8 +15,8 @@ L2CFighterDiddy::status::SpecialSStickAttack_end(L2CFighterDiddy *this,L2CValue 
   fVar2 = (float)lib::L2CValue::as_number(aLStack64);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar2,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   FUN_710000f1b0(this);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

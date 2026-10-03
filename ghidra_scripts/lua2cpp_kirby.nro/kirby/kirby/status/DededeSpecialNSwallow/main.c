@@ -18,7 +18,7 @@ L2CFighterKirby::status::DededeSpecialNSwallow_main(L2CFighterKirby *this,L2CVal
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_FLAG_CONTINUE_MOT);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack80,0xf899192aa);
   lib::L2CValue::L2CValue(aLStack96,0xa67f7d3cd);
   uVar3 = lib::L2CValue::as_integer(aLStack80);
@@ -29,28 +29,28 @@ L2CFighterKirby::status::DededeSpecialNSwallow_main(L2CFighterKirby *this,L2CVal
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   iVar2 = lib::L2CValue::as_integer(aLStack112);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack64,0x11e3895444);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_WORK_INT_MOTION_KIND);
   lVar5 = lib::L2CValue::as_integer(aLStack64);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar5,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,0x1595d4a05b);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_WORK_INT_MOTION_KIND_AIR);
   lVar5 = lib::L2CValue::as_integer(aLStack64);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar5,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   FUN_71001dd470(this);
   lib::L2CValue::L2CValue(aLStack64,DededeSpecialNSwallow_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xc0);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   return;
 }
 

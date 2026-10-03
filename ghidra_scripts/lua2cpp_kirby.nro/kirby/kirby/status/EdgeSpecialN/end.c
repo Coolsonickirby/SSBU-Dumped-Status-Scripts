@@ -15,10 +15,10 @@ L2CFighterKirby::status::EdgeSpecialN_end(L2CFighterKirby *this,L2CValue *return
   L2CValue aLStack80 [16];
   L2CValue aLStack64 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KIRBY_STATUS_KIND_EDGE_SPECIAL_N_SHOOT);
-  uVar2 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar2 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar2 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack64,0x128938c1af);
     lib::L2CValue::L2CValue(aLStack96,0xf899192aa);
@@ -30,10 +30,10 @@ L2CFighterKirby::status::EdgeSpecialN_end(L2CFighterKirby *this,L2CValue *return
     HVar4 = lib::L2CValue::as_hash(aLStack64);
     iVar1 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::EffectModule__remove_screen_impl(this->moduleAccessor,HVar4,iVar1);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack64);
     app::lua_bind::MotionAnimcmdModule__enable_skip_delay_update_impl(this->moduleAccessor);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);

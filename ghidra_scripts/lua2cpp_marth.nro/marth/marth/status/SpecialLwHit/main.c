@@ -11,11 +11,11 @@ L2CFighterMarth::status::SpecialLwHit_main(L2CFighterMarth *this,L2CValue *retur
   lib::L2CValue::L2CValue(aLStack48,_FIGHTER_MARTH_STATUS_SPECIAL_LW_FLAG_CONTINUE_MOT);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   FUN_7100015d70(this);
   lib::L2CValue::L2CValue(aLStack48,SpecialLwHit_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

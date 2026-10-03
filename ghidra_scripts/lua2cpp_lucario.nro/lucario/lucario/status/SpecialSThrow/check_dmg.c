@@ -18,10 +18,10 @@ L2CFighterLucario::status::SpecialSThrow_check_dmg(L2CFighterLucario *this,L2CVa
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::operator_(aLStack64);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::operator!(aLStack64);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) == 0) {
     lib::L2CValue::L2CValue((L2CValue *)return_value,false);
   }
@@ -29,8 +29,8 @@ L2CFighterLucario::status::SpecialSThrow_check_dmg(L2CFighterLucario *this,L2CVa
     bVar1 = app::lua_bind::CatchModule__check_damage_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue((L2CValue *)return_value,(bool)(bVar1 & 1));
   }
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

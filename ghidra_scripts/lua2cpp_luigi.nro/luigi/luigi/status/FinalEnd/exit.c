@@ -18,9 +18,9 @@ void __thiscall L2CFighterLuigi::status::FinalEnd_exit(L2CFighterLuigi *this,L2C
   iVar3 = lib::L2CValue::as_integer(aLStack80);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack80,_ITEM_KIND_ROCKETBELT);
     lib::L2CValue::L2CValue(aLStack96,0);
@@ -31,10 +31,10 @@ void __thiscall L2CFighterLuigi::status::FinalEnd_exit(L2CFighterLuigi *this,L2C
     bVar1 = app::lua_bind::ItemModule__attach_item_impl
                       (this->moduleAccessor,IVar4,iVar3,(bool)(bVar1 & 1));
     lib::L2CValue::L2CValue(aLStack64,(bool)(bVar1 & 1));
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

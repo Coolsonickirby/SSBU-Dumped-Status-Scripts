@@ -15,8 +15,8 @@ L2CFighterCaptain::status::Final_on_change_lr(L2CFighterCaptain *this,L2CValue *
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   HVar2 = lib::L2CValue::as_hash(aLStack80);
   app::lua_bind::LinkModule__send_event_nodes_impl(this->moduleAccessor,iVar1,HVar2,0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

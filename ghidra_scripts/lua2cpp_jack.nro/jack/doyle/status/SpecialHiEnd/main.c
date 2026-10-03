@@ -21,10 +21,10 @@ L2CWeaponJackDoyle::status::SpecialHiEnd_main(L2CWeaponJackDoyle *this,L2CValue 
   iVar2 = lib::L2CValue::as_integer(aLStack80);
   HVar3 = app::lua_bind::LinkModule__get_parent_motion_kind_impl(this->moduleAccessor,iVar2);
   lib::L2CValue::L2CValue(aLStack96,HVar3);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0xd3c00ad48);
-  uVar4 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,0x10596022e3);
     lib::L2CValue::L2CValue(aLStack112,0.0);
@@ -49,14 +49,14 @@ L2CWeaponJackDoyle::status::SpecialHiEnd_main(L2CWeaponJackDoyle *this,L2CValue 
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar3,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,SpecialHiEnd_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

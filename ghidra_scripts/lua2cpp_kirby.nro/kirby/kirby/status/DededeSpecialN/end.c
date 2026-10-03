@@ -11,7 +11,7 @@ L2CFighterKirby::status::DededeSpecialN_end(L2CFighterKirby *this,L2CValue *retu
   lib::L2CValue::L2CValue(aLStack48,_KINETIC_ENERGY_RESERVE_ID_NONE);
   iVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::GroundModule__set_no_cliff_stop_energy_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

@@ -18,7 +18,7 @@ L2CFighterEdge::status::SpecialHiRush_main(L2CFighterEdge *this,L2CValue *return
   
   lib::L2CValue::L2CValue(aLStack80,false);
   FUN_71000157d0(this,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,0xb03917908);
   lib::L2CValue::L2CValue(aLStack112,0.0);
   lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -29,17 +29,17 @@ L2CFighterEdge::status::SpecialHiRush_main(L2CFighterEdge *this,L2CValue *return
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar3,fVar4,fVar5,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_INSTANCE_WORK_ID_FLAG_DAMAGE_CLIFF_STOP);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__on_flag_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,SpecialHiRush_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

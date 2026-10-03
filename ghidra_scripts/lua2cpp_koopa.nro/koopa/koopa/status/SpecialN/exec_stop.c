@@ -38,30 +38,30 @@ L2CFighterKoopa::status::SpecialN_exec_stop(L2CFighterKoopa *this,L2CValue *retu
   iVar1 = lib::L2CValue::as_integer(aLStack208);
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,iVar1);
-  lib::L2CValue::operator_(aLStack112,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack208);
+  lib::L2CValue::operator=(aLStack112,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack208);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_FIGHTER_KOOPA_STATUS_BREATH_STEP_LOOP);
-  uVar2 = lib::L2CValue::operator__(aLStack112,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  uVar2 = lib::L2CValue::operator==(aLStack112,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   if ((uVar2 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack208,_FIGHTER_KOOPA_STATUS_BREATH_WORK_FLOAT_GENE_ANGLE);
     iVar1 = lib::L2CValue::as_integer(aLStack208);
     fVar6 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar1);
     lib::L2CValue::L2CValue((L2CValue *)&local_50,fVar6);
-    lib::L2CValue::operator_(aLStack192,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue(aLStack208);
+    lib::L2CValue::operator=(aLStack192,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue(aLStack208);
     lib::L2CValue::L2CValue(aLStack208,_FIGHTER_KOOPA_STATUS_BREATH_WORK_INT_HEAD_NODE);
     iVar1 = lib::L2CValue::as_integer(aLStack208);
     lVar3 = app::lua_bind::WorkModule__get_int64_impl(this->moduleAccessor,iVar1);
     lib::L2CValue::L2CValue((L2CValue *)&local_50,lVar3);
-    lib::L2CValue::operator_(aLStack128,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue(aLStack208);
+    lib::L2CValue::operator=(aLStack128,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue(aLStack208);
     lib::L2CValue::L2CValue((L2CValue *)&local_50,0);
-    uVar2 = lib::L2CValue::operator__(aLStack128,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    uVar2 = lib::L2CValue::operator==(aLStack128,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
     if ((uVar2 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack208,0xf899192aa);
       lib::L2CValue::L2CValue(aLStack224,0x97625f199);
@@ -70,25 +70,25 @@ L2CFighterKoopa::status::SpecialN_exec_stop(L2CFighterKoopa *this,L2CValue *retu
       fVar6 = (float)app::lua_bind::WorkModule__get_param_float_impl
                                (this->moduleAccessor,uVar2,uVar4);
       lib::L2CValue::L2CValue((L2CValue *)&local_50,fVar6);
-      lib::L2CValue::operator_(aLStack96,(L2CValue *)&local_50);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-      lib::L2CValue::_L2CValue(aLStack224);
-      lib::L2CValue::_L2CValue(aLStack208);
+      lib::L2CValue::operator=(aLStack96,(L2CValue *)&local_50);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+      lib::L2CValue::~L2CValue(aLStack224);
+      lib::L2CValue::~L2CValue(aLStack208);
       lib::L2CValue::L2CValue((L2CValue *)&local_50,0.0);
-      lib::L2CValue::operator_(aLStack160,(L2CValue *)&local_50);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+      lib::L2CValue::operator=(aLStack160,(L2CValue *)&local_50);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_50);
       lib::L2CValue::L2CValue((L2CValue *)&local_50,0.0);
-      lib::L2CValue::operator_(aLStack176,(L2CValue *)&local_50);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-      lib::L2CValue::operator_(aLStack192);
-      lib::L2CValue::operator_(aLStack240,aLStack96);
+      lib::L2CValue::operator=(aLStack176,(L2CValue *)&local_50);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+      lib::L2CValue::operator-(aLStack192);
+      lib::L2CValue::operator*(aLStack240,aLStack96);
       lib::L2CValue::L2CValue((L2CValue *)&local_50,45.0);
-      lib::L2CValue::operator_(aLStack224,(L2CValue *)&local_50);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-      lib::L2CValue::operator_(aLStack144,aLStack208);
-      lib::L2CValue::_L2CValue(aLStack208);
-      lib::L2CValue::_L2CValue(aLStack224);
-      lib::L2CValue::_L2CValue(aLStack240);
+      lib::L2CValue::operator-(aLStack224,(L2CValue *)&local_50);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+      lib::L2CValue::operator=(aLStack144,aLStack208);
+      lib::L2CValue::~L2CValue(aLStack208);
+      lib::L2CValue::~L2CValue(aLStack224);
+      lib::L2CValue::~L2CValue(aLStack240);
       HVar5 = lib::L2CValue::as_hash(aLStack128);
       uVar7 = lib::L2CValue::as_number(aLStack160);
       uVar8 = lib::L2CValue::as_number(aLStack176);
@@ -100,13 +100,13 @@ L2CFighterKoopa::status::SpecialN_exec_stop(L2CFighterKoopa *this,L2CValue *retu
     }
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

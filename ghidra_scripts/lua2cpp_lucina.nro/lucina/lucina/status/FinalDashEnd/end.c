@@ -11,8 +11,8 @@ L2CFighterLucina::status::FinalDashEnd_end(L2CFighterLucina *this,L2CValue *retu
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack64);
   app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   FUN_7100013bd0(this);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

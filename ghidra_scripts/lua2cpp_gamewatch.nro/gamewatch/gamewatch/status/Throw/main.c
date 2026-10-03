@@ -16,10 +16,10 @@ L2CFighterGamewatch::status::Throw_main(L2CFighterGamewatch *this,L2CValue *retu
   uVar2 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::ItemModule__set_attach_item_visibility_impl
             (this->moduleAccessor,(bool)(bVar1 & 1),uVar2);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
   lua2cpp::L2CFighterCommon::status_Throw(this);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

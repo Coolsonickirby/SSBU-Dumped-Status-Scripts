@@ -8,7 +8,7 @@ L2CFighterMurabito::status::SpecialLwWaterJump_main(L2CFighterMurabito *this,L2C
   lua2cpp::L2CFighterCommon::sub_ItemShootAir_Common(this);
   lib::L2CValue::L2CValue(aLStack48,SpecialLwWaterJump_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

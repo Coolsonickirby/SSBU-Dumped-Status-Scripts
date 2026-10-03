@@ -9,15 +9,15 @@ L2CFighterElight::status::SpecialN_end(L2CFighterElight *this,L2CValue *return_v
   ulong uVar2;
   L2CValue aLStack64 [16];
   
-  pLVar1 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  pLVar1 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_ELIGHT_STATUS_KIND_SPECIAL_N_HOLD);
-  uVar2 = lib::L2CValue::operator__(pLVar1,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar2 = lib::L2CValue::operator==(pLVar1,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar2 & 1) == 0) {
-    pLVar1 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+    pLVar1 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_ELIGHT_STATUS_KIND_SPECIAL_N_END);
-    lib::L2CValue::operator__(pLVar1,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::operator==(pLVar1,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

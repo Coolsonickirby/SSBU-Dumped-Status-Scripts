@@ -25,27 +25,27 @@ L2CWeaponMurabitoFlowerpot::status::Throwed_main
   
   lib::L2CValue::L2CValue(aLStack112,0x419cd3efe);
   FUN_7100034080(aLStack96,this,aLStack112);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_WEAPON_INSTANCE_WORK_ID_INT_LIFE);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_50);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,_WEAPON_INSTANCE_WORK_ID_INT_INIT_LIFE);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   iVar3 = lib::L2CValue::as_integer((L2CValue *)&local_50);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar2,iVar3);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue
             ((L2CValue *)&local_50,_WEAPON_MURABITO_FLOWERPOT_INSTANCE_WORK_ID_FLAG_ASASE);
   iVar2 = lib::L2CValue::as_integer((L2CValue *)&local_50);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue
             ((L2CValue *)&local_50,_WEAPON_MURABITO_FLOWERPOT_INSTANCE_WORK_ID_FLAG_WATER);
   iVar2 = lib::L2CValue::as_integer((L2CValue *)&local_50);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,0x78250b6fd);
   lib::L2CValue::L2CValue(aLStack128,0.0);
   lib::L2CValue::L2CValue(aLStack144,1.0);
@@ -56,10 +56,10 @@ L2CWeaponMurabitoFlowerpot::status::Throwed_main
   bVar1 = lib::L2CValue::as_bool(aLStack160);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   fVar5 = (float)app::lua_bind::PostureModule__pos_x_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack128,fVar5);
   fVar5 = (float)app::lua_bind::PostureModule__pos_y_impl(this->moduleAccessor);
@@ -69,32 +69,32 @@ L2CWeaponMurabitoFlowerpot::status::Throwed_main
   local_50 = uVar8 & 0xffffffff | (ulong)uVar7 << 0x20;
   uStack72 = 0;
   app::lua_bind::GroundModule__set_shape_safe_pos_impl(this->moduleAccessor,(Vector2f *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,true);
   bVar1 = lib::L2CValue::as_bool((L2CValue *)&local_50);
   app::lua_bind::GroundModule__update_shape_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   bVar1 = app::lua_bind::StopModule__is_stop_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack128,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue((L2CValue *)&local_50,false);
-  uVar8 = lib::L2CValue::operator__(aLStack128,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack128);
+  uVar8 = lib::L2CValue::operator==(aLStack128,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack128);
   if ((uVar8 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack144,false);
     FUN_7100034210(aLStack128,this,aLStack144);
-    lib::L2CValue::_L2CValue(aLStack128);
-    lib::L2CValue::_L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack144);
   }
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x15);
-  lib::L2CValue::L2CValue((L2CValue *)&local_50,&DAT_71000342d0);
-  lib::L2CValue::operator_(this_00,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x15);
+  lib::L2CValue::L2CValue((L2CValue *)&local_50,FUN_71000342d0);
+  lib::L2CValue::operator=(this_00,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   lib::L2CValue::L2CValue((L2CValue *)&local_50,Throwed_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

@@ -11,11 +11,11 @@ L2CFighterLink::status::ShieldGuard_exec(L2CFighterLink *this,L2CValue *return_v
   
   FUN_7100006e40();
   lib::L2CValue::L2CValue(aLStack48,0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_SHIELD_GUARD_WORK_INT_FRAME);
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   app::lua_bind::WorkModule__inc_int_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

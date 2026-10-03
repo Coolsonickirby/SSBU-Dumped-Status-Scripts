@@ -9,10 +9,10 @@ L2CFighterKrool::status::FinalScene01_end(L2CFighterKrool *this,L2CValue *return
   ulong uVar1;
   L2CValue aLStack64 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0xb);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0xb);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_KROOL_STATUS_KIND_FINAL_SCENE02);
-  uVar1 = lib::L2CValue::operator__(this_00,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar1 = lib::L2CValue::operator==(this_00,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar1 & 1) == 0) {
     FUN_7100019e50(this);
   }

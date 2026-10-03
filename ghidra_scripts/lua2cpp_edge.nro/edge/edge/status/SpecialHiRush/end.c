@@ -16,35 +16,35 @@ L2CFighterEdge::status::SpecialHiRush_end(L2CFighterEdge *this,L2CValue *return_
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_INSTANCE_WORK_ID_FLAG_DAMAGE_CLIFF_STOP);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0x13be297b87);
   lib::L2CValue::L2CValue(aLStack96,1);
   HVar2 = lib::L2CValue::as_hash(aLStack80);
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::EffectModule__detach_kind_impl(this->moduleAccessor,HVar2,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   this_00 = &this->globalTable;
-  pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+  pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_EDGE_STATUS_KIND_SPECIAL_HI_LANDING);
-  uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
-    pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+    pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_EDGE_STATUS_KIND_SPECIAL_HI_END);
-    uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar4 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack80,0x13be297b87);
       HVar2 = lib::L2CValue::as_hash(aLStack80);
       app::lua_bind::EffectModule__kill_kind_impl(this->moduleAccessor,HVar2,true,true);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
   }
-  pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+  pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_EDGE_STATUS_KIND_SPECIAL_HI_END);
-  uVar4 = lib::L2CValue::operator__(pLVar3,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar4 = lib::L2CValue::operator==(pLVar3,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar4 & 1) == 0) {
     FUN_7100014650(this);
   }

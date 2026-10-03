@@ -16,10 +16,10 @@ void __thiscall L2CFighterInkling::status::Throw_end(L2CFighterInkling *this,L2C
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,iVar1);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue(aLStack64,0);
-  uVar4 = lib::L2CValue::operator__(aLStack80,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  uVar4 = lib::L2CValue::operator==(aLStack80,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   if ((uVar4 & 1) == 0) {
     uVar2 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::ArticleModule__remove_exist_object_id_impl(this->moduleAccessor,uVar2);
@@ -29,12 +29,12 @@ void __thiscall L2CFighterInkling::status::Throw_end(L2CFighterInkling *this,L2C
   iVar1 = lib::L2CValue::as_integer(aLStack64);
   iVar3 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar3);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack64);
   lua2cpp::L2CFighterCommon::status_end_Throw(this);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

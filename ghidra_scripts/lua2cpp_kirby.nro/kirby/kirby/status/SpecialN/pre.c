@@ -43,9 +43,9 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
   ppBVar19 = &this->moduleAccessor;
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(*ppBVar19,iVar6);
   lib::L2CValue::L2CValue(aLStack120,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack136);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack136);
   if ((bVar2 & 1U) == 0) {
     lua2cpp::L2CFighterCommon::sub_status_pre_SpecialNCommon(this);
     lib::L2CValue::L2CValue(aLStack120,SITUATION_KIND_NONE);
@@ -69,15 +69,15 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
     app::lua_bind::StatusModule__init_settings_impl
               (*ppBVar19,SVar7,iVar6,uVar8,GVar9,(bool)(bVar1 & 1),iVar13,iVar10,iVar11,
                in_stack_fffffffffffffed4);
-    lib::L2CValue::_L2CValue(aLStack280);
-    lib::L2CValue::_L2CValue(aLStack264);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack184);
-    lib::L2CValue::_L2CValue(aLStack168);
-    lib::L2CValue::_L2CValue(aLStack152);
-    lib::L2CValue::_L2CValue(aLStack136);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack280);
+    lib::L2CValue::~L2CValue(aLStack264);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack184);
+    lib::L2CValue::~L2CValue(aLStack168);
+    lib::L2CValue::~L2CValue(aLStack152);
+    lib::L2CValue::~L2CValue(aLStack136);
+    lib::L2CValue::~L2CValue(aLStack120);
     lib::L2CValue::L2CValue(aLStack120,false);
     lib::L2CValue::L2CValue(aLStack136,_FIGHTER_TREADED_KIND_NO_REAC);
     lib::L2CValue::L2CValue(aLStack152,false);
@@ -99,15 +99,15 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
     app::lua_bind::FighterStatusModuleImpl__set_fighter_status_data_impl
               (*ppBVar19,(bool)(bVar1 & 1),iVar6,(bool)(bVar3 & 1),(bool)(bVar4 & 1),
                (bool)(bVar5 & 1),uVar14,uVar8,uVar12,in_stack_fffffffffffffed4);
-    lib::L2CValue::_L2CValue(aLStack280);
-    lib::L2CValue::_L2CValue(aLStack264);
-    lib::L2CValue::_L2CValue(aLStack248);
-    lib::L2CValue::_L2CValue(aLStack232);
-    lib::L2CValue::_L2CValue(aLStack184);
-    lib::L2CValue::_L2CValue(aLStack168);
-    lib::L2CValue::_L2CValue(aLStack152);
-    lib::L2CValue::_L2CValue(aLStack136);
-    lib::L2CValue::_L2CValue(aLStack120);
+    lib::L2CValue::~L2CValue(aLStack280);
+    lib::L2CValue::~L2CValue(aLStack264);
+    lib::L2CValue::~L2CValue(aLStack248);
+    lib::L2CValue::~L2CValue(aLStack232);
+    lib::L2CValue::~L2CValue(aLStack184);
+    lib::L2CValue::~L2CValue(aLStack168);
+    lib::L2CValue::~L2CValue(aLStack152);
+    lib::L2CValue::~L2CValue(aLStack136);
+    lib::L2CValue::~L2CValue(aLStack120);
     lib::L2CValue::L2CValue((L2CValue *)return_value,0);
     goto LAB_7100237110;
   }
@@ -115,16 +115,16 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
   iVar6 = lib::L2CValue::as_integer(aLStack136);
   iVar6 = app::lua_bind::WorkModule__get_int_impl(*ppBVar19,iVar6);
   lib::L2CValue::L2CValue(aLStack120,iVar6);
-  lib::L2CValue::operator_(aLStack200,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
-  lib::L2CValue::_L2CValue(aLStack136);
+  lib::L2CValue::operator=(aLStack200,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
+  lib::L2CValue::~L2CValue(aLStack136);
   lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_MIIFIGHTER);
-  uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-  lib::L2CValue::_L2CValue(aLStack120);
+  uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+  lib::L2CValue::~L2CValue(aLStack120);
   if ((uVar14 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_MIISWORDSMAN);
-    uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-    lib::L2CValue::_L2CValue(aLStack120);
+    uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+    lib::L2CValue::~L2CValue(aLStack120);
     if ((uVar14 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIRBY_STATUS_KIND_MIISWORDSMAN_SPECIAL_N);
       iVar6 = lib::L2CValue::as_integer(aLStack120);
@@ -132,451 +132,451 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
       goto LAB_71002370fc;
     }
     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_MIIGUNNER);
-    uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-    lib::L2CValue::_L2CValue(aLStack120);
+    uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+    lib::L2CValue::~L2CValue(aLStack120);
     if ((uVar14 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_MARIO);
-      uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-      lib::L2CValue::_L2CValue(aLStack120);
+      uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+      lib::L2CValue::~L2CValue(aLStack120);
       if ((uVar14 & 1) == 0) {
         lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_DONKEY);
-        uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-        lib::L2CValue::_L2CValue(aLStack120);
+        uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+        lib::L2CValue::~L2CValue(aLStack120);
         if ((uVar14 & 1) == 0) {
           lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_LINK);
-          uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-          lib::L2CValue::_L2CValue(aLStack120);
+          uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+          lib::L2CValue::~L2CValue(aLStack120);
           if ((uVar14 & 1) == 0) {
             lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_SAMUS);
-            uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-            lib::L2CValue::_L2CValue(aLStack120);
+            uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+            lib::L2CValue::~L2CValue(aLStack120);
             if ((uVar14 & 1) == 0) {
               lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_SAMUSD);
-              uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-              lib::L2CValue::_L2CValue(aLStack120);
+              uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+              lib::L2CValue::~L2CValue(aLStack120);
               if ((uVar14 & 1) == 0) {
                 lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_YOSHI);
-                uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                lib::L2CValue::_L2CValue(aLStack120);
+                uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                lib::L2CValue::~L2CValue(aLStack120);
                 if ((uVar14 & 1) == 0) {
                   lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_FOX);
-                  uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                  lib::L2CValue::_L2CValue(aLStack120);
+                  uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                  lib::L2CValue::~L2CValue(aLStack120);
                   if ((uVar14 & 1) == 0) {
                     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_PIKACHU);
-                    uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                    lib::L2CValue::_L2CValue(aLStack120);
+                    uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                    lib::L2CValue::~L2CValue(aLStack120);
                     if ((uVar14 & 1) == 0) {
                       lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_PICHU);
-                      uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                      lib::L2CValue::_L2CValue(aLStack120);
+                      uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                      lib::L2CValue::~L2CValue(aLStack120);
                       if ((uVar14 & 1) == 0) {
                         lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_LUIGI);
-                        uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                        lib::L2CValue::_L2CValue(aLStack120);
+                        uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                        lib::L2CValue::~L2CValue(aLStack120);
                         if ((uVar14 & 1) == 0) {
                           lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_CAPTAIN);
-                          uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                          lib::L2CValue::_L2CValue(aLStack120);
+                          uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                          lib::L2CValue::~L2CValue(aLStack120);
                           if ((uVar14 & 1) == 0) {
                             lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_NESS);
-                            uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                            lib::L2CValue::_L2CValue(aLStack120);
+                            uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                            lib::L2CValue::~L2CValue(aLStack120);
                             if ((uVar14 & 1) == 0) {
                               lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_PEACH);
-                              uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                              lib::L2CValue::_L2CValue(aLStack120);
+                              uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                              lib::L2CValue::~L2CValue(aLStack120);
                               if ((uVar14 & 1) == 0) {
                                 lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_DAISY);
-                                uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                                lib::L2CValue::_L2CValue(aLStack120);
+                                uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                                lib::L2CValue::~L2CValue(aLStack120);
                                 if ((uVar14 & 1) == 0) {
                                   lib::L2CValue::L2CValue(aLStack120,FIGHTER_KIND_KOOPA);
-                                  uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                                  lib::L2CValue::_L2CValue(aLStack120);
+                                  uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                                  lib::L2CValue::~L2CValue(aLStack120);
                                   if ((uVar14 & 1) == 0) {
                                     lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_ZELDA);
-                                    uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                                    lib::L2CValue::_L2CValue(aLStack120);
+                                    uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                                    lib::L2CValue::~L2CValue(aLStack120);
                                     if ((uVar14 & 1) == 0) {
                                       lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_SHEIK);
-                                      uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                                      lib::L2CValue::_L2CValue(aLStack120);
+                                      uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                                      lib::L2CValue::~L2CValue(aLStack120);
                                       if ((uVar14 & 1) == 0) {
                                         lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_MARTH);
-                                        uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                                        lib::L2CValue::_L2CValue(aLStack120);
+                                        uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                                        lib::L2CValue::~L2CValue(aLStack120);
                                         if ((uVar14 & 1) == 0) {
                                           lib::L2CValue::L2CValue
                                                     (aLStack120,_FIGHTER_KIND_GAMEWATCH);
-                                          uVar14 = lib::L2CValue::operator__(aLStack200,aLStack120);
-                                          lib::L2CValue::_L2CValue(aLStack120);
+                                          uVar14 = lib::L2CValue::operator==(aLStack200,aLStack120);
+                                          lib::L2CValue::~L2CValue(aLStack120);
                                           if ((uVar14 & 1) == 0) {
                                             lib::L2CValue::L2CValue(aLStack120,_FIGHTER_KIND_GANON);
-                                            uVar14 = lib::L2CValue::operator__
+                                            uVar14 = lib::L2CValue::operator==
                                                                (aLStack200,aLStack120);
-                                            lib::L2CValue::_L2CValue(aLStack120);
+                                            lib::L2CValue::~L2CValue(aLStack120);
                                             if ((uVar14 & 1) == 0) {
                                               lib::L2CValue::L2CValue
                                                         (aLStack120,_FIGHTER_KIND_FALCO);
-                                              uVar14 = lib::L2CValue::operator__
+                                              uVar14 = lib::L2CValue::operator==
                                                                  (aLStack200,aLStack120);
-                                              lib::L2CValue::_L2CValue(aLStack120);
+                                              lib::L2CValue::~L2CValue(aLStack120);
                                               if ((uVar14 & 1) == 0) {
                                                 lib::L2CValue::L2CValue
                                                           (aLStack120,_FIGHTER_KIND_WARIO);
-                                                uVar14 = lib::L2CValue::operator__
+                                                uVar14 = lib::L2CValue::operator==
                                                                    (aLStack200,aLStack120);
-                                                lib::L2CValue::_L2CValue(aLStack120);
+                                                lib::L2CValue::~L2CValue(aLStack120);
                                                 if ((uVar14 & 1) == 0) {
                                                   lib::L2CValue::L2CValue
                                                             (aLStack120,_FIGHTER_KIND_METAKNIGHT);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_PIT);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,_FIGHTER_KIND_SZEROSUIT)
                                                       ;
-                                                      uVar14 = lib::L2CValue::operator__
+                                                      uVar14 = lib::L2CValue::operator==
                                                                          (aLStack200,aLStack120);
-                                                      lib::L2CValue::_L2CValue(aLStack120);
+                                                      lib::L2CValue::~L2CValue(aLStack120);
                                                       if ((uVar14 & 1) == 0) {
                                                         lib::L2CValue::L2CValue
                                                                   (aLStack120,_FIGHTER_KIND_PIKMIN);
-                                                        uVar14 = lib::L2CValue::operator__
+                                                        uVar14 = lib::L2CValue::operator==
                                                                            (aLStack200,aLStack120);
-                                                        lib::L2CValue::_L2CValue(aLStack120);
+                                                        lib::L2CValue::~L2CValue(aLStack120);
                                                         if ((uVar14 & 1) == 0) {
                                                           lib::L2CValue::L2CValue
                                                                     (aLStack120,_FIGHTER_KIND_DIDDY)
                                                           ;
-                                                          uVar14 = lib::L2CValue::operator__
+                                                          uVar14 = lib::L2CValue::operator==
                                                                              (aLStack200,aLStack120)
                                                           ;
-                                                          lib::L2CValue::_L2CValue(aLStack120);
+                                                          lib::L2CValue::~L2CValue(aLStack120);
                                                           if ((uVar14 & 1) == 0) {
                                                             lib::L2CValue::L2CValue
                                                                       (aLStack120,
                                                                        _FIGHTER_KIND_DEDEDE);
-                                                            uVar14 = lib::L2CValue::operator__
+                                                            uVar14 = lib::L2CValue::operator==
                                                                                (aLStack200,
                                                                                 aLStack120);
-                                                            lib::L2CValue::_L2CValue(aLStack120);
+                                                            lib::L2CValue::~L2CValue(aLStack120);
                                                             if ((uVar14 & 1) == 0) {
                                                               lib::L2CValue::L2CValue
                                                                         (aLStack120,
                                                                          _FIGHTER_KIND_IKE);
-                                                              uVar14 = lib::L2CValue::operator__
+                                                              uVar14 = lib::L2CValue::operator==
                                                                                  (aLStack200,
                                                                                   aLStack120);
-                                                              lib::L2CValue::_L2CValue(aLStack120);
+                                                              lib::L2CValue::~L2CValue(aLStack120);
                                                               if ((uVar14 & 1) == 0) {
                                                                 lib::L2CValue::L2CValue
                                                                           (aLStack120,
                                                                            _FIGHTER_KIND_LUCARIO);
-                                                                uVar14 = lib::L2CValue::operator__
+                                                                uVar14 = lib::L2CValue::operator==
                                                                                    (aLStack200,
                                                                                     aLStack120);
-                                                                lib::L2CValue::_L2CValue(aLStack120)
+                                                                lib::L2CValue::~L2CValue(aLStack120)
                                                                 ;
                                                                 if ((uVar14 & 1) == 0) {
                                                                   lib::L2CValue::L2CValue
                                                                             (aLStack120,
                                                                              _FIGHTER_KIND_ROBOT);
-                                                                  uVar14 = lib::L2CValue::operator__
+                                                                  uVar14 = lib::L2CValue::operator==
                                                                                      (aLStack200,
                                                                                       aLStack120);
-                                                                  lib::L2CValue::_L2CValue
+                                                                  lib::L2CValue::~L2CValue
                                                                             (aLStack120);
                                                                   if ((uVar14 & 1) == 0) {
                                                                     lib::L2CValue::L2CValue
                                                                               (aLStack120,
                                                                                                                                                               
                                                   _FIGHTER_KIND_TOONLINK);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_YOUNGLINK);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,_FIGHTER_KIND_PZENIGAME)
                                                       ;
-                                                      uVar14 = lib::L2CValue::operator__
+                                                      uVar14 = lib::L2CValue::operator==
                                                                          (aLStack200,aLStack120);
-                                                      lib::L2CValue::_L2CValue(aLStack120);
+                                                      lib::L2CValue::~L2CValue(aLStack120);
                                                       if ((uVar14 & 1) == 0) {
                                                         lib::L2CValue::L2CValue
                                                                   (aLStack120,
                                                                    _FIGHTER_KIND_PLIZARDON);
-                                                        uVar14 = lib::L2CValue::operator__
+                                                        uVar14 = lib::L2CValue::operator==
                                                                            (aLStack200,aLStack120);
-                                                        lib::L2CValue::_L2CValue(aLStack120);
+                                                        lib::L2CValue::~L2CValue(aLStack120);
                                                         if ((uVar14 & 1) == 0) {
                                                           lib::L2CValue::L2CValue
                                                                     (aLStack120,
                                                                      _FIGHTER_KIND_PFUSHIGISOU);
-                                                          uVar14 = lib::L2CValue::operator__
+                                                          uVar14 = lib::L2CValue::operator==
                                                                              (aLStack200,aLStack120)
                                                           ;
-                                                          lib::L2CValue::_L2CValue(aLStack120);
+                                                          lib::L2CValue::~L2CValue(aLStack120);
                                                           if ((uVar14 & 1) == 0) {
                                                             lib::L2CValue::L2CValue
                                                                       (aLStack120,
                                                                        _FIGHTER_KIND_SONIC);
-                                                            uVar14 = lib::L2CValue::operator__
+                                                            uVar14 = lib::L2CValue::operator==
                                                                                (aLStack200,
                                                                                 aLStack120);
-                                                            lib::L2CValue::_L2CValue(aLStack120);
+                                                            lib::L2CValue::~L2CValue(aLStack120);
                                                             if ((uVar14 & 1) == 0) {
                                                               lib::L2CValue::L2CValue
                                                                         (aLStack120,
                                                                          _FIGHTER_KIND_PURIN);
-                                                              uVar14 = lib::L2CValue::operator__
+                                                              uVar14 = lib::L2CValue::operator==
                                                                                  (aLStack200,
                                                                                   aLStack120);
-                                                              lib::L2CValue::_L2CValue(aLStack120);
+                                                              lib::L2CValue::~L2CValue(aLStack120);
                                                               if ((uVar14 & 1) == 0) {
                                                                 lib::L2CValue::L2CValue
                                                                           (aLStack120,
                                                                            _FIGHTER_KIND_MARIOD);
-                                                                uVar14 = lib::L2CValue::operator__
+                                                                uVar14 = lib::L2CValue::operator==
                                                                                    (aLStack200,
                                                                                     aLStack120);
-                                                                lib::L2CValue::_L2CValue(aLStack120)
+                                                                lib::L2CValue::~L2CValue(aLStack120)
                                                                 ;
                                                                 if ((uVar14 & 1) == 0) {
                                                                   lib::L2CValue::L2CValue
                                                                             (aLStack120,
                                                                              _FIGHTER_KIND_LUCINA);
-                                                                  uVar14 = lib::L2CValue::operator__
+                                                                  uVar14 = lib::L2CValue::operator==
                                                                                      (aLStack200,
                                                                                       aLStack120);
-                                                                  lib::L2CValue::_L2CValue
+                                                                  lib::L2CValue::~L2CValue
                                                                             (aLStack120);
                                                                   if ((uVar14 & 1) == 0) {
                                                                     lib::L2CValue::L2CValue
                                                                               (aLStack120,
                                                                                _FIGHTER_KIND_PITB);
                                                                     uVar14 = lib::L2CValue::
-                                                                             operator__(aLStack200,
+                                                                             operator==(aLStack200,
                                                                                         aLStack120);
-                                                                    lib::L2CValue::_L2CValue
+                                                                    lib::L2CValue::~L2CValue
                                                                               (aLStack120);
                                                                     if ((uVar14 & 1) == 0) {
                                                                       lib::L2CValue::L2CValue
                                                                                 (aLStack120,
                                                                                                                                                                   
                                                   _FIGHTER_KIND_ROSETTA);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_WIIFIT);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,FIGHTER_KIND_LITTLEMAC);
-                                                      uVar14 = lib::L2CValue::operator__
+                                                      uVar14 = lib::L2CValue::operator==
                                                                          (aLStack200,aLStack120);
-                                                      lib::L2CValue::_L2CValue(aLStack120);
+                                                      lib::L2CValue::~L2CValue(aLStack120);
                                                       if ((uVar14 & 1) == 0) {
                                                         lib::L2CValue::L2CValue
                                                                   (aLStack120,_FIGHTER_KIND_MURABITO
                                                                   );
-                                                        uVar14 = lib::L2CValue::operator__
+                                                        uVar14 = lib::L2CValue::operator==
                                                                            (aLStack200,aLStack120);
-                                                        lib::L2CValue::_L2CValue(aLStack120);
+                                                        lib::L2CValue::~L2CValue(aLStack120);
                                                         if ((uVar14 & 1) == 0) {
                                                           lib::L2CValue::L2CValue
                                                                     (aLStack120,
                                                                      _FIGHTER_KIND_PALUTENA);
-                                                          uVar14 = lib::L2CValue::operator__
+                                                          uVar14 = lib::L2CValue::operator==
                                                                              (aLStack200,aLStack120)
                                                           ;
-                                                          lib::L2CValue::_L2CValue(aLStack120);
+                                                          lib::L2CValue::~L2CValue(aLStack120);
                                                           if ((uVar14 & 1) == 0) {
                                                             lib::L2CValue::L2CValue
                                                                       (aLStack120,
                                                                        _FIGHTER_KIND_REFLET);
-                                                            uVar14 = lib::L2CValue::operator__
+                                                            uVar14 = lib::L2CValue::operator==
                                                                                (aLStack200,
                                                                                 aLStack120);
-                                                            lib::L2CValue::_L2CValue(aLStack120);
+                                                            lib::L2CValue::~L2CValue(aLStack120);
                                                             if ((uVar14 & 1) == 0) {
                                                               lib::L2CValue::L2CValue
                                                                         (aLStack120,
                                                                          _FIGHTER_KIND_DUCKHUNT);
-                                                              uVar14 = lib::L2CValue::operator__
+                                                              uVar14 = lib::L2CValue::operator==
                                                                                  (aLStack200,
                                                                                   aLStack120);
-                                                              lib::L2CValue::_L2CValue(aLStack120);
+                                                              lib::L2CValue::~L2CValue(aLStack120);
                                                               if ((uVar14 & 1) == 0) {
                                                                 lib::L2CValue::L2CValue
                                                                           (aLStack120,
                                                                            FIGHTER_KIND_KOOPAJR);
-                                                                uVar14 = lib::L2CValue::operator__
+                                                                uVar14 = lib::L2CValue::operator==
                                                                                    (aLStack200,
                                                                                     aLStack120);
-                                                                lib::L2CValue::_L2CValue(aLStack120)
+                                                                lib::L2CValue::~L2CValue(aLStack120)
                                                                 ;
                                                                 if ((uVar14 & 1) == 0) {
                                                                   lib::L2CValue::L2CValue
                                                                             (aLStack120,
                                                                              _FIGHTER_KIND_SHULK);
-                                                                  uVar14 = lib::L2CValue::operator__
+                                                                  uVar14 = lib::L2CValue::operator==
                                                                                      (aLStack200,
                                                                                       aLStack120);
-                                                                  lib::L2CValue::_L2CValue
+                                                                  lib::L2CValue::~L2CValue
                                                                             (aLStack120);
                                                                   if ((uVar14 & 1) == 0) {
                                                                     lib::L2CValue::L2CValue
                                                                               (aLStack120,
                                                                                                                                                               
                                                   _FIGHTER_KIND_GEKKOUGA);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_PACMAN);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,FIGHTER_KIND_ROCKMAN);
-                                                      uVar14 = lib::L2CValue::operator__
+                                                      uVar14 = lib::L2CValue::operator==
                                                                          (aLStack200,aLStack120);
-                                                      lib::L2CValue::_L2CValue(aLStack120);
+                                                      lib::L2CValue::~L2CValue(aLStack120);
                                                       if ((uVar14 & 1) == 0) {
                                                         lib::L2CValue::L2CValue
                                                                   (aLStack120,_FIGHTER_KIND_MEWTWO);
-                                                        uVar14 = lib::L2CValue::operator__
+                                                        uVar14 = lib::L2CValue::operator==
                                                                            (aLStack200,aLStack120);
-                                                        lib::L2CValue::_L2CValue(aLStack120);
+                                                        lib::L2CValue::~L2CValue(aLStack120);
                                                         if ((uVar14 & 1) == 0) {
                                                           lib::L2CValue::L2CValue
                                                                     (aLStack120,_FIGHTER_KIND_RYU);
-                                                          uVar14 = lib::L2CValue::operator__
+                                                          uVar14 = lib::L2CValue::operator==
                                                                              (aLStack200,aLStack120)
                                                           ;
-                                                          lib::L2CValue::_L2CValue(aLStack120);
+                                                          lib::L2CValue::~L2CValue(aLStack120);
                                                           if ((uVar14 & 1) == 0) {
                                                             lib::L2CValue::L2CValue
                                                                       (aLStack120,
                                                                        _FIGHTER_KIND_LUCAS);
-                                                            uVar14 = lib::L2CValue::operator__
+                                                            uVar14 = lib::L2CValue::operator==
                                                                                (aLStack200,
                                                                                 aLStack120);
-                                                            lib::L2CValue::_L2CValue(aLStack120);
+                                                            lib::L2CValue::~L2CValue(aLStack120);
                                                             if ((uVar14 & 1) == 0) {
                                                               lib::L2CValue::L2CValue
                                                                         (aLStack120,
                                                                          _FIGHTER_KIND_ROY);
-                                                              uVar14 = lib::L2CValue::operator__
+                                                              uVar14 = lib::L2CValue::operator==
                                                                                  (aLStack200,
                                                                                   aLStack120);
-                                                              lib::L2CValue::_L2CValue(aLStack120);
+                                                              lib::L2CValue::~L2CValue(aLStack120);
                                                               if ((uVar14 & 1) == 0) {
                                                                 lib::L2CValue::L2CValue
                                                                           (aLStack120,
                                                                            _FIGHTER_KIND_CHROM);
-                                                                uVar14 = lib::L2CValue::operator__
+                                                                uVar14 = lib::L2CValue::operator==
                                                                                    (aLStack200,
                                                                                     aLStack120);
-                                                                lib::L2CValue::_L2CValue(aLStack120)
+                                                                lib::L2CValue::~L2CValue(aLStack120)
                                                                 ;
                                                                 if ((uVar14 & 1) == 0) {
                                                                   lib::L2CValue::L2CValue
                                                                             (aLStack120,
                                                                              _FIGHTER_KIND_CLOUD);
-                                                                  uVar14 = lib::L2CValue::operator__
+                                                                  uVar14 = lib::L2CValue::operator==
                                                                                      (aLStack200,
                                                                                       aLStack120);
-                                                                  lib::L2CValue::_L2CValue
+                                                                  lib::L2CValue::~L2CValue
                                                                             (aLStack120);
                                                                   if ((uVar14 & 1) == 0) {
                                                                     lib::L2CValue::L2CValue
                                                                               (aLStack120,
                                                                                                                                                               
                                                   _FIGHTER_KIND_BAYONETTA);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_KAMUI);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,_FIGHTER_KIND_SNAKE);
-                                                      uVar14 = lib::L2CValue::operator__
+                                                      uVar14 = lib::L2CValue::operator==
                                                                          (aLStack200,aLStack120);
-                                                      lib::L2CValue::_L2CValue(aLStack120);
+                                                      lib::L2CValue::~L2CValue(aLStack120);
                                                       if ((uVar14 & 1) == 0) {
                                                         lib::L2CValue::L2CValue
                                                                   (aLStack120,_FIGHTER_KIND_RIDLEY);
-                                                        uVar14 = lib::L2CValue::operator__
+                                                        uVar14 = lib::L2CValue::operator==
                                                                            (aLStack200,aLStack120);
-                                                        lib::L2CValue::_L2CValue(aLStack120);
+                                                        lib::L2CValue::~L2CValue(aLStack120);
                                                         if ((uVar14 & 1) == 0) {
                                                           lib::L2CValue::L2CValue
                                                                     (aLStack120,
                                                                      _FIGHTER_KIND_INKLING);
-                                                          uVar14 = lib::L2CValue::operator__
+                                                          uVar14 = lib::L2CValue::operator==
                                                                              (aLStack200,aLStack120)
                                                           ;
-                                                          lib::L2CValue::_L2CValue(aLStack120);
+                                                          lib::L2CValue::~L2CValue(aLStack120);
                                                           if ((uVar14 & 1) == 0) {
                                                             lib::L2CValue::L2CValue
                                                                       (aLStack120,_FIGHTER_KIND_POPO
                                                                       );
-                                                            uVar14 = lib::L2CValue::operator__
+                                                            uVar14 = lib::L2CValue::operator==
                                                                                (aLStack200,
                                                                                 aLStack120);
-                                                            lib::L2CValue::_L2CValue(aLStack120);
+                                                            lib::L2CValue::~L2CValue(aLStack120);
                                                             if ((uVar14 & 1) == 0) {
                                                               lib::L2CValue::L2CValue
                                                                         (aLStack120,
                                                                          _FIGHTER_KIND_NANA);
-                                                              uVar14 = lib::L2CValue::operator__
+                                                              uVar14 = lib::L2CValue::operator==
                                                                                  (aLStack200,
                                                                                   aLStack120);
-                                                              lib::L2CValue::_L2CValue(aLStack120);
+                                                              lib::L2CValue::~L2CValue(aLStack120);
                                                               if ((uVar14 & 1) == 0) {
                                                                 lib::L2CValue::L2CValue
                                                                           (aLStack120,
                                                                            _FIGHTER_KIND_WOLF);
-                                                                uVar14 = lib::L2CValue::operator__
+                                                                uVar14 = lib::L2CValue::operator==
                                                                                    (aLStack200,
                                                                                     aLStack120);
-                                                                lib::L2CValue::_L2CValue(aLStack120)
+                                                                lib::L2CValue::~L2CValue(aLStack120)
                                                                 ;
                                                                 if ((uVar14 & 1) == 0) {
                                                                   lib::L2CValue::L2CValue
                                                                             (aLStack120,
                                                                              _FIGHTER_KIND_KROOL);
-                                                                  uVar14 = lib::L2CValue::operator__
+                                                                  uVar14 = lib::L2CValue::operator==
                                                                                      (aLStack200,
                                                                                       aLStack120);
-                                                                  lib::L2CValue::_L2CValue
+                                                                  lib::L2CValue::~L2CValue
                                                                             (aLStack120);
                                                                   if ((uVar14 & 1) == 0) {
                                                                     lib::L2CValue::L2CValue
@@ -584,77 +584,77 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                                                _FIGHTER_KIND_GAOGAEN
                                                                               );
                                                                     uVar14 = lib::L2CValue::
-                                                                             operator__(aLStack200,
+                                                                             operator==(aLStack200,
                                                                                         aLStack120);
-                                                                    lib::L2CValue::_L2CValue
+                                                                    lib::L2CValue::~L2CValue
                                                                               (aLStack120);
                                                                     if ((uVar14 & 1) == 0) {
                                                                       lib::L2CValue::L2CValue
                                                                                 (aLStack120,
                                                                                                                                                                   
                                                   _FIGHTER_KIND_SHIZUE);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_SIMON);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,_FIGHTER_KIND_RICHTER);
-                                                      uVar14 = lib::L2CValue::operator__
+                                                      uVar14 = lib::L2CValue::operator==
                                                                          (aLStack200,aLStack120);
-                                                      lib::L2CValue::_L2CValue(aLStack120);
+                                                      lib::L2CValue::~L2CValue(aLStack120);
                                                       if ((uVar14 & 1) == 0) {
                                                         lib::L2CValue::L2CValue
                                                                   (aLStack120,FIGHTER_KIND_KEN);
-                                                        uVar14 = lib::L2CValue::operator__
+                                                        uVar14 = lib::L2CValue::operator==
                                                                            (aLStack200,aLStack120);
-                                                        lib::L2CValue::_L2CValue(aLStack120);
+                                                        lib::L2CValue::~L2CValue(aLStack120);
                                                         if ((uVar14 & 1) == 0) {
                                                           lib::L2CValue::L2CValue
                                                                     (aLStack120,_FIGHTER_KIND_PACKUN
                                                                     );
-                                                          uVar14 = lib::L2CValue::operator__
+                                                          uVar14 = lib::L2CValue::operator==
                                                                              (aLStack200,aLStack120)
                                                           ;
-                                                          lib::L2CValue::_L2CValue(aLStack120);
+                                                          lib::L2CValue::~L2CValue(aLStack120);
                                                           if ((uVar14 & 1) == 0) {
                                                             lib::L2CValue::L2CValue
                                                                       (aLStack120,_FIGHTER_KIND_JACK
                                                                       );
-                                                            uVar14 = lib::L2CValue::operator__
+                                                            uVar14 = lib::L2CValue::operator==
                                                                                (aLStack200,
                                                                                 aLStack120);
-                                                            lib::L2CValue::_L2CValue(aLStack120);
+                                                            lib::L2CValue::~L2CValue(aLStack120);
                                                             if ((uVar14 & 1) == 0) {
                                                               lib::L2CValue::L2CValue
                                                                         (aLStack120,
                                                                          _FIGHTER_KIND_BRAVE);
-                                                              uVar14 = lib::L2CValue::operator__
+                                                              uVar14 = lib::L2CValue::operator==
                                                                                  (aLStack200,
                                                                                   aLStack120);
-                                                              lib::L2CValue::_L2CValue(aLStack120);
+                                                              lib::L2CValue::~L2CValue(aLStack120);
                                                               if ((uVar14 & 1) == 0) {
                                                                 lib::L2CValue::L2CValue
                                                                           (aLStack120,
                                                                            _FIGHTER_KIND_BUDDY);
-                                                                uVar14 = lib::L2CValue::operator__
+                                                                uVar14 = lib::L2CValue::operator==
                                                                                    (aLStack200,
                                                                                     aLStack120);
-                                                                lib::L2CValue::_L2CValue(aLStack120)
+                                                                lib::L2CValue::~L2CValue(aLStack120)
                                                                 ;
                                                                 if ((uVar14 & 1) == 0) {
                                                                   lib::L2CValue::L2CValue
                                                                             (aLStack120,
                                                                              _FIGHTER_KIND_DOLLY);
-                                                                  uVar14 = lib::L2CValue::operator__
+                                                                  uVar14 = lib::L2CValue::operator==
                                                                                      (aLStack200,
                                                                                       aLStack120);
-                                                                  lib::L2CValue::_L2CValue
+                                                                  lib::L2CValue::~L2CValue
                                                                             (aLStack120);
                                                                   if ((uVar14 & 1) == 0) {
                                                                     lib::L2CValue::L2CValue
@@ -662,28 +662,28 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                                                _FIGHTER_KIND_MASTER)
                                                                     ;
                                                                     uVar14 = lib::L2CValue::
-                                                                             operator__(aLStack200,
+                                                                             operator==(aLStack200,
                                                                                         aLStack120);
-                                                                    lib::L2CValue::_L2CValue
+                                                                    lib::L2CValue::~L2CValue
                                                                               (aLStack120);
                                                                     if ((uVar14 & 1) == 0) {
                                                                       lib::L2CValue::L2CValue
                                                                                 (aLStack120,
                                                                                                                                                                   
                                                   _FIGHTER_KIND_TANTAN);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_PICKEL);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) != 0) {
                                                       this_00 = &this->globalTable;
                                                       pLVar17 = (L2CValue *)
-                                                                lib::L2CValue::operator__
+                                                                lib::L2CValue::operator[]
                                                                           ((L2CValue *)this_00,10);
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,
@@ -694,41 +694,41 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                   iVar13 = lib::L2CValue::as_integer(aLStack120);
                                                   app::lua_bind::WorkModule__set_int_impl
                                                             (*ppBVar19,iVar6,iVar13);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   lib::L2CValue::L2CValue(aLStack232,0);
                                                   pLVar17 = (L2CValue *)
-                                                            lib::L2CValue::operator__
+                                                            lib::L2CValue::operator[]
                                                                       ((L2CValue *)this_00,0x16);
                                                   lib::L2CValue::L2CValue
                                                             (aLStack120,_SITUATION_KIND_GROUND);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (pLVar17,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue(aLStack120,2);
-                                                    lib::L2CValue::operator_(aLStack232,aLStack120);
+                                                    lib::L2CValue::operator=(aLStack232,aLStack120);
                                                   }
                                                   else {
                                                     pLVar17 = (L2CValue *)
-                                                              lib::L2CValue::operator__
+                                                              lib::L2CValue::operator[]
                                                                         ((L2CValue *)this_00,10);
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,FIGHTER_STATUS_KIND_WALK);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (pLVar17,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue(aLStack120,1);
-                                                      lib::L2CValue::operator_
+                                                      lib::L2CValue::operator=
                                                                 (aLStack232,aLStack120);
                                                     }
                                                     else {
                                                       lib::L2CValue::L2CValue(aLStack120,0);
-                                                      lib::L2CValue::operator_
+                                                      lib::L2CValue::operator=
                                                                 (aLStack232,aLStack120);
                                                     }
                                                   }
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   lib::L2CValue::L2CValue(aLStack168,0x6e5ec7051);
                                                   lib::L2CValue::L2CValue(aLStack184,0x1d5e5c91ca);
                                                   uVar14 = lib::L2CValue::as_integer(aLStack168);
@@ -738,8 +738,8 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                                     (*ppBVar19,uVar14,uVar18);
                                                   lib::L2CValue::L2CValue(aLStack152,iVar6);
                                                   lib::L2CValue::L2CValue(aLStack120,1);
-                                                  lib::L2CValue::operator_(aLStack152,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::operator+(aLStack152,aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   lib::L2CValue::L2CValue
                                                             (aLStack120,
                                                                                                                           
@@ -749,20 +749,20 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                   iVar13 = lib::L2CValue::as_integer(aLStack120);
                                                   app::lua_bind::WorkModule__set_int_impl
                                                             (*ppBVar19,iVar6,iVar13);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack136);
-                                                  lib::L2CValue::_L2CValue(aLStack152);
-                                                  lib::L2CValue::_L2CValue(aLStack184);
-                                                  lib::L2CValue::_L2CValue(aLStack168);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack136);
+                                                  lib::L2CValue::~L2CValue(aLStack152);
+                                                  lib::L2CValue::~L2CValue(aLStack184);
+                                                  lib::L2CValue::~L2CValue(aLStack168);
                                                   lib::L2CValue::L2CValue(aLStack120,0);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack232,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue(aLStack120,1);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack232,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,
@@ -797,39 +797,39 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                   StatusModule__set_status_kind_interrupt_impl
                                                             (*ppBVar19,iVar6);
                                                   }
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   pLVar17 = aLStack232;
                                                   goto LAB_7100237100;
                                                   }
                                                   lib::L2CValue::L2CValue
                                                             (aLStack120,_FIGHTER_KIND_ELIGHT);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_EFLAME);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) == 0) {
                                                       lib::L2CValue::L2CValue
                                                                 (aLStack120,_FIGHTER_KIND_DEMON);
-                                                      uVar14 = lib::L2CValue::operator__
+                                                      uVar14 = lib::L2CValue::operator==
                                                                          (aLStack200,aLStack120);
-                                                      lib::L2CValue::_L2CValue(aLStack120);
+                                                      lib::L2CValue::~L2CValue(aLStack120);
                                                       if ((uVar14 & 1) != 0) {
                                                         pLVar17 = (L2CValue *)
-                                                                  lib::L2CValue::operator__
+                                                                  lib::L2CValue::operator[]
                                                                             ((L2CValue *)
                                                                              &this->globalTable,0x16
                                                                             );
                                                         lib::L2CValue::L2CValue
                                                                   (aLStack120,_SITUATION_KIND_GROUND
                                                                   );
-                                                        uVar14 = lib::L2CValue::operator__
+                                                        uVar14 = lib::L2CValue::operator==
                                                                            (pLVar17,aLStack120);
-                                                        lib::L2CValue::_L2CValue(aLStack120);
+                                                        lib::L2CValue::~L2CValue(aLStack120);
                                                         if ((uVar14 & 1) == 0) {
                                                           lib::L2CValue::L2CValue
                                                                     (aLStack120,
@@ -852,25 +852,25 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                   StatusModule__set_status_kind_interrupt_impl
                                                             (*ppBVar19,iVar6);
                                                   }
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   lib::L2CValue::L2CValue
                                                             ((L2CValue *)return_value,true);
                                                   goto LAB_7100237110;
                                                   }
                                                   lib::L2CValue::L2CValue
                                                             (aLStack120,_FIGHTER_KIND_EDGE);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack200,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,_FIGHTER_KIND_TRAIL);
-                                                    uVar14 = lib::L2CValue::operator__
+                                                    uVar14 = lib::L2CValue::operator==
                                                                        (aLStack200,aLStack120);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     if ((uVar14 & 1) != 0) {
                                                       pLVar17 = (L2CValue *)
-                                                                lib::L2CValue::operator__
+                                                                lib::L2CValue::operator[]
                                                                           ((L2CValue *)
                                                                            &this->globalTable,10);
                                                       lib::L2CValue::L2CValue
@@ -882,7 +882,7 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                   iVar13 = lib::L2CValue::as_integer(aLStack120);
                                                   app::lua_bind::WorkModule__set_int_impl
                                                             (*ppBVar19,iVar6,iVar13);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   lib::L2CValue::L2CValue
                                                             (aLStack120,
                                                                                                                           
@@ -892,30 +892,30 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                   iVar6 = app::lua_bind::WorkModule__get_int_impl
                                                                     (*ppBVar19,iVar6);
                                                   lib::L2CValue::L2CValue(aLStack136,iVar6);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   lib::L2CValue::L2CValue
                                                             (aLStack120,
                                                                                                                           
                                                   _FIGHTER_TRAIL_SPECIAL_N_MAGIC_KIND_FIRE);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack136,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,
                                                                                                                               
                                                   _FIGHTER_TRAIL_SPECIAL_N_MAGIC_KIND_BLIZZARD);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack136,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,
                                                                                                                               
                                                   _FIGHTER_TRAIL_SPECIAL_N_MAGIC_KIND_THUNDER);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack136,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue
                                                               (aLStack120,
@@ -958,10 +958,10 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                   StatusModule__set_status_kind_interrupt_impl
                                                             (*ppBVar19,iVar6);
                                                   }
-                                                  lib::L2CValue::_L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
                                                   lib::L2CValue::L2CValue
                                                             ((L2CValue *)return_value,true);
-                                                  lib::L2CValue::_L2CValue(aLStack136);
+                                                  lib::L2CValue::~L2CValue(aLStack136);
                                                   goto LAB_7100237110;
                                                   }
                                                   lib::L2CValue::L2CValue
@@ -1082,12 +1082,12 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                                     (*ppBVar19,iVar6);
                                                   lib::L2CValue::L2CValue
                                                             (aLStack136,(bool)(bVar1 & 1));
-                                                  lib::L2CValue::operator_(aLStack136);
-                                                  bVar2 = lib::L2CValue::operator_cast_to_bool
+                                                  lib::L2CValue::operator!(aLStack136);
+                                                  bVar2 = lib::L2CValue::operator.cast.to.bool
                                                                     (aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack136);
-                                                  lib::L2CValue::_L2CValue(aLStack152);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack136);
+                                                  lib::L2CValue::~L2CValue(aLStack152);
                                                   if ((bVar2 & 1U) == 0) {
                                                     lib::L2CValue::L2CValue(aLStack168,0);
                                                   }
@@ -1095,10 +1095,10 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                     lib::L2CValue::L2CValue(aLStack168,1);
                                                   }
                                                   lib::L2CValue::L2CValue(aLStack120,0);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack168,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack168);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack168);
                                                   if ((uVar14 & 1) == 0) {
                                                     lua2cpp::L2CFighterCommon::
                                                     sub_status_pre_SpecialNCommon(this);
@@ -1433,8 +1433,8 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                     iVar6 = lib::L2CValue::as_integer(aLStack136);
                                                     app::FighterSpecializer_Reflet::change_hud_kind
                                                               (pFVar16,iVar6);
-                                                    lib::L2CValue::_L2CValue(aLStack136);
-                                                    lib::L2CValue::_L2CValue(aLStack120);
+                                                    lib::L2CValue::~L2CValue(aLStack136);
+                                                    lib::L2CValue::~L2CValue(aLStack120);
                                                     lib::L2CValue::L2CValue
                                                               (aLStack152,
                                                                                                                               
@@ -1447,11 +1447,11 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                   lib::L2CValue::L2CValue
                                                             (aLStack120,
                                                              _FIGHTER_REFLET_MAGIC_KIND_TRON);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack136,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack136);
-                                                  lib::L2CValue::_L2CValue(aLStack152);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack136);
+                                                  lib::L2CValue::~L2CValue(aLStack152);
                                                   if ((uVar14 & 1) == 0) {
                                                     lib::L2CValue::L2CValue(aLStack168,0);
                                                   }
@@ -1459,10 +1459,10 @@ void __thiscall L2CFighterKirby::status::SpecialN_pre(L2CFighterKirby *this,L2CV
                                                     lib::L2CValue::L2CValue(aLStack168,1);
                                                   }
                                                   lib::L2CValue::L2CValue(aLStack120,0);
-                                                  uVar14 = lib::L2CValue::operator__
+                                                  uVar14 = lib::L2CValue::operator==
                                                                      (aLStack168,aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack120);
-                                                  lib::L2CValue::_L2CValue(aLStack168);
+                                                  lib::L2CValue::~L2CValue(aLStack120);
+                                                  lib::L2CValue::~L2CValue(aLStack168);
                                                   if ((uVar14 & 1) == 0) {
                                                     lua2cpp::L2CFighterCommon::
                                                     sub_status_pre_SpecialNCommon(this);
@@ -1942,10 +1942,10 @@ LAB_71002370fc:
     pLVar17 = aLStack120;
   }
 LAB_7100237100:
-  lib::L2CValue::_L2CValue(pLVar17);
+  lib::L2CValue::~L2CValue(pLVar17);
   lib::L2CValue::L2CValue((L2CValue *)return_value,1);
 LAB_7100237110:
-  lib::L2CValue::_L2CValue(aLStack200);
+  lib::L2CValue::~L2CValue(aLStack200);
   return;
 }
 

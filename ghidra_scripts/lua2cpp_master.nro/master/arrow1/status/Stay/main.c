@@ -7,7 +7,7 @@ L2CWeaponMasterArrow1::status::Stay_main(L2CWeaponMasterArrow1 *this,L2CValue *r
   
   lib::L2CValue::L2CValue(aLStack48,Stay_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

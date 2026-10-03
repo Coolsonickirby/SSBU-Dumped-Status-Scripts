@@ -10,9 +10,9 @@ L2CFighterDemon::status::SpecialLwFall_main_loop(L2CFighterDemon *this,L2CValue 
   
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_DEMON_STATUS_KIND_SPECIAL_LW_GROUND);
   FUN_7100021960(aLStack48,this,aLStack64);
-  lib::L2CValue::operator_cast_to_bool(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::operator.cast.to.bool(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

@@ -10,7 +10,7 @@ L2CFighterKoopag::status::SpecialSSquat_check_dmg(L2CFighterKoopag *this,L2CValu
   lib::L2CValue::L2CValue(aLStack48,in_x1);
   bVar1 = app::lua_bind::CatchModule__check_damage_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue((L2CValue *)return_value,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

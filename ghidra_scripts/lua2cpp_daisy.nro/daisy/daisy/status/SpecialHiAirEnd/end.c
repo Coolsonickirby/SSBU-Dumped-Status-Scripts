@@ -10,7 +10,7 @@ L2CFighterDaisy::status::SpecialHiAirEnd_end(L2CFighterDaisy *this,L2CValue *ret
   lib::L2CValue::L2CValue(aLStack48,FIGHTER_CLIFF_HANG_DATA_DEFAULT);
   uVar1 = lib::L2CValue::as_integer(aLStack48);
   app::lua_bind::GroundModule__select_cliff_hangdata_impl(this->moduleAccessor,uVar1);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

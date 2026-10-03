@@ -7,8 +7,8 @@ L2CFighterGanon::status::SpecialHi_main_loop(L2CFighterGanon *this,L2CValue *ret
   L2CValue aLStack64 [16];
   
   lua2cpp::L2CFighterCommon::sub_transition_group_check_air_cliff(this);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
   bVar1 = (bVar1 & 1U) == 0;
   if (bVar1) {
     lua2cpp::L2CFighterCommon::super_jump_punch_main(this);

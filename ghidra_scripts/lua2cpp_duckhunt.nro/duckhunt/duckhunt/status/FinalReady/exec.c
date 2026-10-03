@@ -11,8 +11,8 @@ L2CFighterDuckhunt::status::FinalReady_exec(L2CFighterDuckhunt *this,L2CValue *r
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack64);
   app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack48);
-  lib::L2CValue::_L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack64);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

@@ -32,17 +32,17 @@ L2CFighterLuigi::status::SpecialSWall_init(L2CFighterLuigi *this,L2CValue *retur
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack80);
   fVar7 = (float)app::lua_bind::PostureModule__lr_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack80,fVar7);
-  lib::L2CValue::operator_(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::operator=(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,-1.0);
-  uVar5 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar5 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar5 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack80,GROUND_TOUCH_FLAG_RIGHT);
     GVar3 = lib::L2CValue::as_integer(aLStack80);
@@ -53,8 +53,8 @@ L2CFighterLuigi::status::SpecialSWall_init(L2CFighterLuigi *this,L2CValue *retur
     GVar3 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::GroundModule__attach_impl(this->moduleAccessor,GVar3);
   }
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::operator_(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::operator-(aLStack96);
   lib::L2CValue::L2CValue(aLStack112,-1.0);
   lib::L2CValue::L2CValue(aLStack128,true);
   lib::L2CValue::L2CValue(aLStack144,false);
@@ -71,12 +71,12 @@ L2CFighterLuigi::status::SpecialSWall_init(L2CFighterLuigi *this,L2CValue *retur
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   bVar2 = lib::L2CValue::as_bool(aLStack144);
   app::sv_fighter_util::adjust_wall(plVar6,fVar7,fVar8,fVar9,(bool)(bVar1 & 1),(bool)(bVar2 & 1));
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

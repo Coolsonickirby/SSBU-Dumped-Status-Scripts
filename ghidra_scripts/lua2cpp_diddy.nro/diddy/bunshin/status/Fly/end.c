@@ -23,16 +23,16 @@ L2CWeaponDiddyBunshin::status::Fly_end(L2CWeaponDiddyBunshin *this,L2CValue *ret
   local_40 = uVar4 & 0xffffffff | lVar5 << 0x20;
   uStack56 = (ulong)uVar3;
   app::lua_bind::PostureModule__set_rot_impl(this->moduleAccessor,(Vector3f *)&local_40,0);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue((L2CValue *)&local_40,0xf8eef72e2);
   lib::L2CValue::L2CValue(aLStack80,1);
   HVar2 = lib::L2CValue::as_hash((L2CValue *)&local_40);
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   app::lua_bind::EffectModule__detach_kind_impl(this->moduleAccessor,HVar2,iVar1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_40);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_40);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

@@ -32,12 +32,12 @@ L2CFighterBayonetta::status::FinalStart_main_loop(L2CFighterBayonetta *this,L2CV
   uVar5 = lib::L2CValue::as_integer(aLStack144);
   iVar2 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar4,uVar5);
   lib::L2CValue::L2CValue(aLStack112,iVar2);
-  uVar4 = lib::L2CValue::operator__((L2CValue *)&local_50,aLStack112);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar4 = lib::L2CValue::operator==((L2CValue *)&local_50,aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar4 & 1) != 0) {
     lib::L2CValue::L2CValue
               (aLStack112,_FIGHTER_BAYONETTA_STATUS_WORK_ID_FINAL_FLAG_START_DISABLE_ZOOM_IN);
@@ -45,10 +45,10 @@ L2CFighterBayonetta::status::FinalStart_main_loop(L2CFighterBayonetta *this,L2CV
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar2);
     lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
     lib::L2CValue::L2CValue((L2CValue *)&local_50,false);
-    uVar4 = lib::L2CValue::operator__(aLStack96,(L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar4 = lib::L2CValue::operator==(aLStack96,(L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar4 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack112,0xdf05c072b);
       lib::L2CValue::L2CValue(aLStack128,0x18c728283b);
@@ -65,8 +65,8 @@ L2CFighterBayonetta::status::FinalStart_main_loop(L2CFighterBayonetta *this,L2CV
                                (this->moduleAccessor,uVar4,uVar5);
       lib::L2CValue::L2CValue(aLStack176,fVar6);
       lib::L2CValue::L2CValue((L2CValue *)&local_50,45.0);
-      lib::L2CValue::operator_((L2CValue *)&local_50,aLStack176);
-      lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+      lib::L2CValue::operator/((L2CValue *)&local_50,aLStack176);
+      lib::L2CValue::~L2CValue((L2CValue *)&local_50);
       iVar2 = lib::L2CValue::as_integer(aLStack96);
       iVar3 = lib::L2CValue::as_integer(aLStack144);
       fVar6 = (float)lib::L2CValue::as_number(aLStack160);
@@ -74,14 +74,14 @@ L2CFighterBayonetta::status::FinalStart_main_loop(L2CFighterBayonetta *this,L2CV
       local_50 = FIGHTER_KIND_RYU;
       app::lua_bind::CameraModule__zoom_in_impl
                 (this->moduleAccessor,iVar2,iVar3,fVar6,(Vector2f *)&local_50,false);
-      lib::L2CValue::_L2CValue(aLStack160);
-      lib::L2CValue::_L2CValue(aLStack176);
-      lib::L2CValue::_L2CValue(aLStack208);
-      lib::L2CValue::_L2CValue(aLStack192);
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack160);
+      lib::L2CValue::~L2CValue(aLStack176);
+      lib::L2CValue::~L2CValue(aLStack208);
+      lib::L2CValue::~L2CValue(aLStack192);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack112);
     }
   }
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_BAYONETTA_STATUS_WORK_ID_FINAL_INT_COUNT);
@@ -94,12 +94,12 @@ L2CFighterBayonetta::status::FinalStart_main_loop(L2CFighterBayonetta *this,L2CV
   uVar5 = lib::L2CValue::as_integer(aLStack144);
   iVar2 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar4,uVar5);
   lib::L2CValue::L2CValue(aLStack112,iVar2);
-  lib::L2CValue::operator__((L2CValue *)&local_50,aLStack112);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::operator==((L2CValue *)&local_50,aLStack112);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_BAYONETTA_STATUS_WORK_ID_FINAL_INT_COUNT);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   iVar2 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar2);
@@ -110,18 +110,18 @@ L2CFighterBayonetta::status::FinalStart_main_loop(L2CFighterBayonetta *this,L2CV
   uVar5 = lib::L2CValue::as_integer(aLStack144);
   iVar2 = app::lua_bind::WorkModule__get_param_int_impl(this->moduleAccessor,uVar4,uVar5);
   lib::L2CValue::L2CValue(aLStack112,iVar2);
-  uVar4 = lib::L2CValue::operator__(aLStack112,(L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue((L2CValue *)&local_50);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar4 = lib::L2CValue::operator<=(aLStack112,(L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue((L2CValue *)&local_50);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar4 & 1) != 0) {
     lib::L2CValue::L2CValue((L2CValue *)&local_50,_FIGHTER_BAYONETTA_STATUS_KIND_FINAL_SCENE01);
     lib::L2CValue::L2CValue(aLStack96,false);
     lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0xa0);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue((L2CValue *)&local_50);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue((L2CValue *)&local_50);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

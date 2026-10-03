@@ -16,7 +16,7 @@ L2CWeaponKirbyStone::status::Dummy_main_loop(L2CWeaponKirbyStone *this,L2CValue 
   L2CValue aLStack80 [16];
   L2CValue aLStack64 [16];
   
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,3);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,3);
   uVar1 = lib::L2CValue::as_integer(this_00);
   uVar1 = app::sv_battle_object::get_founder_id(uVar1);
   lib::L2CValue::L2CValue(aLStack80,uVar1);
@@ -32,19 +32,19 @@ L2CWeaponKirbyStone::status::Dummy_main_loop(L2CWeaponKirbyStone *this,L2CValue 
   iVar2 = app::lua_bind::StatusModule__status_kind_impl(pBVar4);
   lib::L2CValue::L2CValue(aLStack112,iVar2);
   lib::L2CValue::L2CValue(aLStack64,_FIGHTER_STATUS_KIND_SPECIAL_LW);
-  uVar5 = lib::L2CValue::operator__(aLStack112,aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack112);
+  uVar5 = lib::L2CValue::operator==(aLStack112,aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack112);
   if ((uVar5 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack64,_WEAPON_INSTANCE_WORK_ID_FLAG_NO_DEAD);
     iVar2 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar2);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
   }
   FUN_7100243af0(this);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

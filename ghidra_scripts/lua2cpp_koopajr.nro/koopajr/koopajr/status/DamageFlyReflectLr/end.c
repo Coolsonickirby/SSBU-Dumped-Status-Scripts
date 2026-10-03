@@ -7,7 +7,7 @@ L2CFighterKoopajr::status::DamageFlyReflectLr_end(L2CFighterKoopajr *this,L2CVal
   
   FUN_710000ed60();
   lua2cpp::L2CFighterCommon::status_end_DamageFlyReflectLR(this);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

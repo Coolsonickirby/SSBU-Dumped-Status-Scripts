@@ -33,7 +33,7 @@ L2CWeaponBayonettaWickedweavearm::status::AttackHi4_main
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__enable_shift_material_animation_impl
             (this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,0xa5598d745);
   lib::L2CValue::L2CValue(aLStack144,0.0);
   lib::L2CValue::L2CValue(aLStack160,1.0);
@@ -44,15 +44,15 @@ L2CWeaponBayonettaWickedweavearm::status::AttackHi4_main
   bVar1 = lib::L2CValue::as_bool(aLStack176);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar7,fVar9,fVar10,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,true);
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__enable_shift_material_animation_impl
             (this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,_WEAPON_BAYONETTA_WICKEDWEAVEARM_MOTION_PART_SET_KIND_MATERIAL)
   ;
   lib::L2CValue::L2CValue(aLStack144,0xa5598d745);
@@ -77,35 +77,35 @@ L2CWeaponBayonettaWickedweavearm::status::AttackHi4_main
   app::lua_bind::MotionModule__add_motion_partial_impl
             (this->moduleAccessor,iVar6,HVar7,fVar9,fVar10,(bool)(bVar1 & 1),(bool)(bVar2 & 1),
              fVar11,(bool)(bVar3 & 1),(bool)(bVar4 & 1),(bool)(bVar5 & 1));
-  lib::L2CValue::_L2CValue(aLStack272);
-  lib::L2CValue::_L2CValue(aLStack256);
-  lib::L2CValue::_L2CValue(aLStack240);
-  lib::L2CValue::_L2CValue(aLStack224);
-  lib::L2CValue::_L2CValue(aLStack208);
-  lib::L2CValue::_L2CValue(aLStack192);
-  lib::L2CValue::_L2CValue(aLStack176);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack272);
+  lib::L2CValue::~L2CValue(aLStack256);
+  lib::L2CValue::~L2CValue(aLStack240);
+  lib::L2CValue::~L2CValue(aLStack224);
+  lib::L2CValue::~L2CValue(aLStack208);
+  lib::L2CValue::~L2CValue(aLStack192);
+  lib::L2CValue::~L2CValue(aLStack176);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
   bVar1 = app::lua_bind::StopModule__is_stop_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack144,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack128,false);
-  uVar8 = lib::L2CValue::operator__(aLStack144,aLStack128);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack144);
+  uVar8 = lib::L2CValue::operator==(aLStack144,aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
   if ((uVar8 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack160,false);
     FUN_7100033ba0(aLStack144,this,aLStack160);
-    lib::L2CValue::_L2CValue(aLStack144);
-    lib::L2CValue::_L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack144);
+    lib::L2CValue::~L2CValue(aLStack160);
   }
-  this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x15);
-  lib::L2CValue::L2CValue(aLStack128,&DAT_7100033cf0);
-  lib::L2CValue::operator_(this_00,aLStack128);
-  lib::L2CValue::_L2CValue(aLStack128);
+  this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x15);
+  lib::L2CValue::L2CValue(aLStack128,FUN_7100033cf0);
+  lib::L2CValue::operator=(this_00,aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
   lib::L2CValue::L2CValue(aLStack128,AttackHi4_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0x80);
-  lib::L2CValue::_L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
   return;
 }
 

@@ -8,7 +8,7 @@ L2CWeaponLuigiObakyumu::status::FinalShootReady_main
   
   lib::L2CValue::L2CValue(aLStack48,FinalShootReady_main_loop);
   lua2cpp::L2CFighterBase::fastshift(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

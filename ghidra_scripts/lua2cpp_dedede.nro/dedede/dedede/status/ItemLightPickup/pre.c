@@ -16,10 +16,10 @@ L2CFighterDedede::status::ItemLightPickup_pre(L2CFighterDedede *this,L2CValue *r
   iVar1 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar1);
   lib::L2CValue::L2CValue(aLStack80,iVar1);
   lib::L2CValue::L2CValue(aLStack64,-1);
-  uVar2 = lib::L2CValue::operator_(aLStack64,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar2 = lib::L2CValue::operator<(aLStack64,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar2 & 1) == 0) {
     lua2cpp::L2CFighterCommon::status_pre_ItemLightPickup(this);
   }
@@ -27,7 +27,7 @@ L2CFighterDedede::status::ItemLightPickup_pre(L2CFighterDedede *this,L2CValue *r
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_DEDEDE_STATUS_KIND_SPECIAL_S_GET);
     iVar1 = lib::L2CValue::as_integer(aLStack64);
     app::lua_bind::StatusModule__set_status_kind_interrupt_impl(this->moduleAccessor,iVar1);
-    lib::L2CValue::_L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
     lib::L2CValue::L2CValue((L2CValue *)return_value,1);
   }
   return;

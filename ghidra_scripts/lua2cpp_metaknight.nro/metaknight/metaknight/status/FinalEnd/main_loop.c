@@ -21,35 +21,35 @@ L2CFighterMetaknight::status::FinalEnd_main_loop(L2CFighterMetaknight *this,L2CV
   bVar1 = app::lua_bind::CancelModule__is_enable_cancel_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack80,true);
-  uVar5 = lib::L2CValue::operator__(aLStack96,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar5 = lib::L2CValue::operator==(aLStack96,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar5 & 1) == 0) {
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
 LAB_71000121a0:
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_METAKNIGHT_STATUS_FINAL_FLAG_ENABLE_TRANS);
     iVar3 = lib::L2CValue::as_integer(aLStack96);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((bVar2 & 1U) != 0) {
       lib::L2CValue::L2CValue(aLStack80,_FIGHTER_METAKNIGHT_STATUS_FINAL_FLAG_ENABLE_TRANS);
       iVar3 = lib::L2CValue::as_integer(aLStack80);
       app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar3);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
       lib::L2CValue::L2CValue(aLStack80,FIGHTER_KINETIC_ENERGY_ID_MOTION);
       iVar3 = lib::L2CValue::as_integer(aLStack80);
       app::lua_bind::KineticModule__enable_energy_impl(this->moduleAccessor,iVar3);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
     lib::L2CValue::L2CValue(aLStack96,_FIGHTER_METAKNIGHT_STATUS_FINAL_FLAG_ATTACK_END_HIT);
     iVar3 = lib::L2CValue::as_integer(aLStack96);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
     if ((bVar2 & 1U) != 0) {
       lib::L2CValue::L2CValue(aLStack80,_FIGHTER_LINK_NO_FINAL);
       lib::L2CValue::L2CValue(aLStack96,0xcd0c7600f);
@@ -58,24 +58,24 @@ LAB_71000121a0:
       HVar6 = lib::L2CValue::as_hash(aLStack96);
       uVar4 = lib::L2CValue::as_integer(aLStack112);
       app::lua_bind::LinkModule__send_event_nodes_impl(this->moduleAccessor,iVar3,HVar6,uVar4);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack96);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack96);
+      lib::L2CValue::~L2CValue(aLStack80);
       FUN_7100012530(this);
       lib::L2CValue::L2CValue(aLStack80,_FIGHTER_METAKNIGHT_STATUS_FINAL_FLAG_ATTACK_END_HIT);
       iVar3 = lib::L2CValue::as_integer(aLStack80);
       app::lua_bind::WorkModule__off_flag_impl(this->moduleAccessor,iVar3);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
     bVar1 = app::lua_bind::MotionModule__is_end_impl(this->moduleAccessor);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((bVar2 & 1U) == 0) goto LAB_7100012428;
-    pLVar7 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+    pLVar7 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
     lib::L2CValue::L2CValue(aLStack80,_SITUATION_KIND_GROUND);
-    uVar5 = lib::L2CValue::operator__(pLVar7,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar5 = lib::L2CValue::operator==(pLVar7,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar5 & 1) == 0) {
       lib::L2CValue::L2CValue(aLStack80,_FIGHTER_STATUS_KIND_FINAL_JUMP_END);
       lib::L2CValue::L2CValue(aLStack96,false);
@@ -86,32 +86,32 @@ LAB_71000121a0:
       lib::L2CValue::L2CValue(aLStack96,false);
       lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0xa0);
     }
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     pLVar7 = aLStack80;
   }
   else {
     lib::L2CValue::L2CValue(aLStack128,false);
     lua2cpp::L2CFighterCommon::sub_wait_ground_check_common(this,(L2CValue)0x80);
     lib::L2CValue::L2CValue(aLStack80,false);
-    uVar5 = lib::L2CValue::operator__(aLStack112,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar5 = lib::L2CValue::operator==(aLStack112,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar5 & 1) != 0) {
       lua2cpp::L2CFighterCommon::sub_air_check_fall_common(this);
       lib::L2CValue::L2CValue(aLStack80,false);
-      uVar5 = lib::L2CValue::operator__(aLStack144,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
-      lib::L2CValue::_L2CValue(aLStack144);
-      lib::L2CValue::_L2CValue(aLStack112);
-      lib::L2CValue::_L2CValue(aLStack128);
-      lib::L2CValue::_L2CValue(aLStack96);
+      uVar5 = lib::L2CValue::operator==(aLStack144,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack144);
+      lib::L2CValue::~L2CValue(aLStack112);
+      lib::L2CValue::~L2CValue(aLStack128);
+      lib::L2CValue::~L2CValue(aLStack96);
       if ((uVar5 & 1) == 0) goto LAB_7100012428;
       goto LAB_71000121a0;
     }
-    lib::L2CValue::_L2CValue(aLStack112);
-    lib::L2CValue::_L2CValue(aLStack128);
+    lib::L2CValue::~L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack128);
     pLVar7 = aLStack96;
   }
-  lib::L2CValue::_L2CValue(pLVar7);
+  lib::L2CValue::~L2CValue(pLVar7);
 LAB_7100012428:
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;

@@ -27,55 +27,55 @@ L2CFighterKirby::status::DededeSpecialNLoop_main_loop(L2CFighterKirby *this,L2CV
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
   app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack176,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_FLAG_SEARCH_WEAPON_CHK);
   iVar3 = lib::L2CValue::as_integer(aLStack176);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack160,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack80,false);
-  uVar5 = lib::L2CValue::operator__(aLStack160,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack160);
-  lib::L2CValue::_L2CValue(aLStack176);
+  uVar5 = lib::L2CValue::operator==(aLStack160,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack160);
+  lib::L2CValue::~L2CValue(aLStack176);
   if ((uVar5 & 1) != 0) {
     lib::L2CValue::L2CValue(aLStack80,0x50000000);
     lib::L2CValue::L2CValue(aLStack160,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_WORK_INT_SEARCH_WEAPON_ID);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     iVar4 = lib::L2CValue::as_integer(aLStack160);
     app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar3,iVar4);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   lib::L2CValue::L2CValue(aLStack160,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_FLAG_DRINK_WEAPON);
   iVar3 = lib::L2CValue::as_integer(aLStack160);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack160);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack160);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack160,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_WORK_INT_SEARCH_WEAPON_ID);
     iVar3 = lib::L2CValue::as_integer(aLStack160);
     iVar3 = app::lua_bind::WorkModule__get_int_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,iVar3);
-    lib::L2CValue::operator_(aLStack128,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack160);
+    lib::L2CValue::operator=(aLStack128,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack160);
     lib::L2CValue::L2CValue(aLStack160,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_WORK_FLOAT_WEAPON_SCALE);
     iVar3 = lib::L2CValue::as_integer(aLStack160);
     fVar6 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,fVar6);
-    lib::L2CValue::operator_(aLStack96,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack160);
+    lib::L2CValue::operator=(aLStack96,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack160);
     lib::L2CValue::L2CValue(aLStack160,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_WORK_FLOAT_WEAPON_SPEED);
     iVar3 = lib::L2CValue::as_integer(aLStack160);
     fVar6 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,fVar6);
-    lib::L2CValue::operator_(aLStack112,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack160);
+    lib::L2CValue::operator=(aLStack112,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack160);
     lib::L2CValue::L2CValue(aLStack80,0x2d59a920b3);
     lib::L2CAgent::clear_lua_stack((L2CAgent *)this);
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack80);
@@ -84,43 +84,43 @@ L2CFighterKirby::status::DededeSpecialNLoop_main_loop(L2CFighterKirby *this,L2CV
     lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack112);
     app::sv_battle_object::notify_event_msc_cmd(this->luaStateAgent);
     lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-    lib::L2CValue::_L2CValue(aLStack160);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack160);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue(aLStack80,0.01);
-    lib::L2CValue::operator_(aLStack112,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::operator_(aLStack112,aLStack176);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::operator+(aLStack112,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::operator=(aLStack112,aLStack176);
+    lib::L2CValue::~L2CValue(aLStack176);
     lib::L2CValue::L2CValue(aLStack80,1.0);
-    uVar5 = lib::L2CValue::operator_(aLStack80,aLStack112);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar5 = lib::L2CValue::operator<(aLStack80,aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar5 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack80,1.0);
-      lib::L2CValue::operator_(aLStack112,aLStack80);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::operator=(aLStack112,aLStack80);
+      lib::L2CValue::~L2CValue(aLStack80);
     }
     lib::L2CValue::L2CValue(aLStack80,0.0);
-    lib::L2CValue::operator_(aLStack112,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::operator+(aLStack112,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_WORK_FLOAT_WEAPON_SPEED);
     fVar6 = (float)lib::L2CValue::as_number(aLStack176);
     iVar3 = lib::L2CValue::as_integer(aLStack80);
     app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar6,iVar3);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack176);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack176);
     lib::L2CValue::L2CValue(aLStack176,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_FLAG_BUTTON_RELEASE_CHK);
     iVar3 = lib::L2CValue::as_integer(aLStack176);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack176);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack176);
     if ((bVar2 & 1U) != 0) {
       lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KIRBY_STATUS_KIND_DEDEDE_SPECIAL_N_DRINK_ITEM);
       lib::L2CValue::L2CValue(aLStack176,false);
       lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0x50);
-      lib::L2CValue::_L2CValue(aLStack176);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack176);
+      lib::L2CValue::~L2CValue(aLStack80);
       lib::L2CValue::L2CValue((L2CValue *)return_value,1);
       goto LAB_71001e1584;
     }
@@ -129,23 +129,23 @@ L2CFighterKirby::status::DededeSpecialNLoop_main_loop(L2CFighterKirby *this,L2CV
   iVar3 = lib::L2CValue::as_integer(aLStack176);
   bVar1 = app::lua_bind::ControlModule__check_button_off_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack176);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack176);
   if ((bVar2 & 1U) != 0) {
     lib::L2CValue::L2CValue(aLStack176,_FIGHTER_DEDEDE_STATUS_SPECIAL_N_FLAG_BUTTON_RELEASE_CHK);
     iVar3 = lib::L2CValue::as_integer(aLStack176);
     bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
     lib::L2CValue::L2CValue(aLStack80,(bool)(bVar1 & 1));
-    bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack176);
+    bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack176);
     if ((bVar2 & 1U) != 0) {
       lib::L2CValue::L2CValue(aLStack80,_FIGHTER_KIRBY_STATUS_KIND_DEDEDE_SPECIAL_N_END);
       lib::L2CValue::L2CValue(aLStack176,false);
       lua2cpp::L2CFighterBase::change_status(this,(L2CValue)0xb0,(L2CValue)0x50);
-      lib::L2CValue::_L2CValue(aLStack176);
-      lib::L2CValue::_L2CValue(aLStack80);
+      lib::L2CValue::~L2CValue(aLStack176);
+      lib::L2CValue::~L2CValue(aLStack80);
       lib::L2CValue::L2CValue((L2CValue *)return_value,1);
       goto LAB_71001e1584;
     }
@@ -153,17 +153,17 @@ L2CFighterKirby::status::DededeSpecialNLoop_main_loop(L2CFighterKirby *this,L2CV
   bVar1 = app::lua_bind::StatusModule__is_changing_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack176,(bool)(bVar1 & 1));
   lib::L2CValue::L2CValue(aLStack80,false);
-  uVar5 = lib::L2CValue::operator__(aLStack176,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack176);
+  uVar5 = lib::L2CValue::operator==(aLStack176,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack176);
   if ((uVar5 & 1) != 0) {
     FUN_71001dd2c0(this);
   }
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
 LAB_71001e1584:
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

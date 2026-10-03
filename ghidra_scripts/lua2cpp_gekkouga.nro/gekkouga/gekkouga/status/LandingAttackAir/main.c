@@ -7,7 +7,7 @@ L2CFighterGekkouga::status::LandingAttackAir_main(L2CFighterGekkouga *this,L2CVa
   
   FUN_710001feb0();
   lua2cpp::L2CFighterCommon::status_LandingAttackAir(this);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

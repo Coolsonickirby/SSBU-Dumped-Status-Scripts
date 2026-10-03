@@ -27,28 +27,28 @@ L2CFighterKirby::status::SpecialNDrink_main(L2CFighterKirby *this,L2CValue *retu
   bVar1 = lib::L2CValue::as_bool(aLStack144);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar3,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   app::lua_bind::ControlModule__reset_trigger_impl(this->moduleAccessor);
   lib::L2CValue::L2CValue(aLStack96,0xfa8adb9bd);
   lib::L2CValue::L2CValue(aLStack112,_FIGHTER_KIRBY_STATUS_SPECIAL_N_WORK_INT_MOTION_KIND);
   lVar4 = lib::L2CValue::as_integer(aLStack96);
   iVar2 = lib::L2CValue::as_integer(aLStack112);
   app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar4,iVar2);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,0xfa8adb9bd);
   lib::L2CValue::L2CValue(aLStack112,_FIGHTER_KIRBY_STATUS_SPECIAL_N_WORK_INT_MOTION_KIND_AIR);
   lVar4 = lib::L2CValue::as_integer(aLStack96);
   iVar2 = lib::L2CValue::as_integer(aLStack112);
   app::lua_bind::WorkModule__set_int64_impl(this->moduleAccessor,lVar4,iVar2);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,SpecialNDrink_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

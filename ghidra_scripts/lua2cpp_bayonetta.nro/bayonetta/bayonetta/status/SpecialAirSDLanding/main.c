@@ -27,11 +27,11 @@ L2CFighterBayonetta::status::SpecialAirSDLanding_main
   iVar3 = lib::L2CValue::as_integer(aLStack144);
   fVar5 = (float)app::lua_bind::WorkModule__get_float_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack128,fVar5);
-  lib::L2CValue::operator_(aLStack96,aLStack128);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack112);
+  lib::L2CValue::operator/(aLStack96,aLStack128);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack112);
   lib::L2CValue::L2CValue(aLStack96,0x170788e51c);
   lib::L2CValue::L2CValue(aLStack112,0);
   lib::L2CValue::L2CValue(aLStack128,false);
@@ -41,14 +41,14 @@ L2CFighterBayonetta::status::SpecialAirSDLanding_main
   bVar1 = lib::L2CValue::as_bool(aLStack128);
   app::lua_bind::MotionModule__change_motion_impl
             (this->moduleAccessor,HVar4,fVar5,fVar6,(bool)(bVar1 & 1),0.0,false,false);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   FUN_710000d730(this);
   lib::L2CValue::L2CValue(aLStack96,SpecialAirSDLanding_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

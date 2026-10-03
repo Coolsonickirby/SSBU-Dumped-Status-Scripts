@@ -18,15 +18,15 @@ L2CFighterBuddy::status::SpecialNShootStart_main(L2CFighterBuddy *this,L2CValue 
   L2CValue aLStack112 [16];
   L2CValue aLStack96 [16];
   
-  pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,0x16);
+  pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,0x16);
   lib::L2CValue::L2CValue(aLStack96,_SITUATION_KIND_GROUND);
-  uVar4 = lib::L2CValue::operator__(pLVar3,aLStack96);
-  lib::L2CValue::_L2CValue(aLStack96);
+  uVar4 = lib::L2CValue::operator==(pLVar3,aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   if ((uVar4 & 1) == 0) {
     lib::L2CValue::L2CValue(aLStack96,GROUND_CORRECT_KIND_AIR);
     GVar2 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar2);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,0x19530b2052);
     lib::L2CValue::L2CValue(aLStack112,0.0);
     lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -42,7 +42,7 @@ L2CFighterBuddy::status::SpecialNShootStart_main(L2CFighterBuddy *this,L2CValue 
     lib::L2CValue::L2CValue(aLStack96,GROUND_CORRECT_KIND_GROUND_CLIFF_STOP);
     GVar2 = lib::L2CValue::as_integer(aLStack96);
     app::lua_bind::GroundModule__correct_impl(this->moduleAccessor,GVar2);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
     lib::L2CValue::L2CValue(aLStack96,0x155fcf4b87);
     lib::L2CValue::L2CValue(aLStack112,0.0);
     lib::L2CValue::L2CValue(aLStack128,1.0);
@@ -54,20 +54,20 @@ L2CFighterBuddy::status::SpecialNShootStart_main(L2CFighterBuddy *this,L2CValue 
     app::lua_bind::MotionModule__change_motion_impl
               (this->moduleAccessor,HVar5,fVar7,fVar8,(bool)(bVar1 & 1),0.0,false,false);
   }
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  pLVar3 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,4);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  pLVar3 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,4);
   pFVar6 = (Fighter *)lib::L2CValue::as_pointer(pLVar3);
   app::FighterSpecializer_Buddy::update_special_n_partner_motion(pFVar6,false);
   lib::L2CValue::L2CValue(aLStack96,false);
   bVar1 = lib::L2CValue::as_bool(aLStack96);
   app::lua_bind::ItemModule__set_change_status_event_impl(this->moduleAccessor,(bool)(bVar1 & 1));
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue(aLStack96,SpecialNShootStart_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xa0);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack96);
   return;
 }
 

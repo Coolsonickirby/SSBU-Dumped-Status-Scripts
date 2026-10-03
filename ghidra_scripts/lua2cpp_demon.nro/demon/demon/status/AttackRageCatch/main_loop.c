@@ -11,9 +11,9 @@ L2CFighterDemon::status::AttackRageCatch_main_loop(L2CFighterDemon *this,L2CValu
   
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_DEMON_STATUS_KIND_ATTACK_RAGE_FALL);
   FUN_7100023a00(aLStack64,this,aLStack80);
-  bVar1 = lib::L2CValue::operator_cast_to_bool(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack80);
+  bVar1 = lib::L2CValue::operator.cast.to.bool(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((bVar1 & 1U) == 0) {
     FUN_7100028850(this);
   }

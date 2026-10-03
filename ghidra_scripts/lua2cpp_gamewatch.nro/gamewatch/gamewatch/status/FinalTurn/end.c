@@ -19,21 +19,21 @@ L2CFighterGamewatch::status::FinalTurn_end(L2CFighterGamewatch *this,L2CValue *r
   iVar3 = lib::L2CValue::as_integer(aLStack112);
   bVar1 = app::lua_bind::WorkModule__is_flag_impl(this->moduleAccessor,iVar3);
   lib::L2CValue::L2CValue(aLStack96,(bool)(bVar1 & 1));
-  lib::L2CValue::operator_(aLStack96);
-  bVar2 = lib::L2CValue::operator_cast_to_bool(aLStack80);
+  lib::L2CValue::operator!(aLStack96);
+  bVar2 = lib::L2CValue::operator.cast.to.bool(aLStack80);
   if ((bVar2 & 1U) == 0) {
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
   }
   else {
-    this_00 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)&this->globalTable,9);
+    this_00 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)&this->globalTable,9);
     lib::L2CValue::L2CValue(aLStack64,_FIGHTER_GAMEWATCH_STATUS_KIND_FINAL_JUMP_SQUAT);
-    uVar4 = lib::L2CValue::operator__(this_00,aLStack64);
-    lib::L2CValue::_L2CValue(aLStack64);
-    lib::L2CValue::_L2CValue(aLStack80);
-    lib::L2CValue::_L2CValue(aLStack96);
-    lib::L2CValue::_L2CValue(aLStack112);
+    uVar4 = lib::L2CValue::operator==(this_00,aLStack64);
+    lib::L2CValue::~L2CValue(aLStack64);
+    lib::L2CValue::~L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack112);
     if ((uVar4 & 1) != 0) {
       app::lua_bind::PostureModule__reverse_lr_impl(this->moduleAccessor);
       app::lua_bind::PostureModule__update_rot_y_lr_impl(this->moduleAccessor);

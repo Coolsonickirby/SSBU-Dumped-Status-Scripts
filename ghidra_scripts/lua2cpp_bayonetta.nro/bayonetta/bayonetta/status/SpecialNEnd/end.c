@@ -21,11 +21,11 @@ L2CFighterBayonetta::status::SpecialNEnd_end(L2CFighterBayonetta *this,L2CValue 
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack128);
   app::sv_module_access::effect(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack64);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack64);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack96,MA_MSC_CMD_EFFECT_EFFECT_OFF_KIND);
   lib::L2CValue::L2CValue(aLStack112,0x1cabab7466);
   lib::L2CValue::L2CValue(aLStack128,true);
@@ -37,11 +37,11 @@ L2CFighterBayonetta::status::SpecialNEnd_end(L2CFighterBayonetta *this,L2CValue 
   lib::L2CAgent::push_lua_stack((L2CAgent *)this,aLStack144);
   app::sv_module_access::effect(this->luaStateAgent);
   lib::L2CAgent::pop_lua_stack((L2CAgent *)this,1);
-  lib::L2CValue::_L2CValue(aLStack80);
-  lib::L2CValue::_L2CValue(aLStack144);
-  lib::L2CValue::_L2CValue(aLStack128);
-  lib::L2CValue::_L2CValue(aLStack112);
-  lib::L2CValue::_L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack144);
+  lib::L2CValue::~L2CValue(aLStack128);
+  lib::L2CValue::~L2CValue(aLStack112);
+  lib::L2CValue::~L2CValue(aLStack96);
   lib::L2CValue::L2CValue((L2CValue *)return_value,0);
   return;
 }

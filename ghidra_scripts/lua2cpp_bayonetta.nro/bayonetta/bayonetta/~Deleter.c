@@ -1,9 +1,9 @@
 
-void __thiscall L2CFighterBayonetta::__L2CFighterBayonetta(L2CFighterBayonetta *this)
+void __thiscall L2CFighterBayonetta::~~L2CFighterBayonetta(L2CFighterBayonetta *this)
 
 {
-  _L2CFighterBayonetta();
-  operator_delete(this);
+  ~L2CFighterBayonetta();
+  operator.delete(this);
   return;
 }
 

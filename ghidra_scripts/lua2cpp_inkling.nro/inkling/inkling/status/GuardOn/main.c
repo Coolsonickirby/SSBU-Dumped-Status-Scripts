@@ -8,7 +8,7 @@ L2CFighterInkling::status::GuardOn_main(L2CFighterInkling *this,L2CValue *return
   lua2cpp::L2CFighterCommon::sub_status_guard_on_common(this);
   lib::L2CValue::L2CValue(aLStack48,GuardOn_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xd0);
-  lib::L2CValue::_L2CValue(aLStack48);
+  lib::L2CValue::~L2CValue(aLStack48);
   return;
 }
 

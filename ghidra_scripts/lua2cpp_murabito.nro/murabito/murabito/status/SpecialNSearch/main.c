@@ -16,18 +16,18 @@ L2CFighterMurabito::status::SpecialNSearch_main(L2CFighterMurabito *this,L2CValu
   iVar1 = lib::L2CValue::as_integer(aLStack80);
   iVar2 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_int_impl(this->moduleAccessor,iVar1,iVar2);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,0.3);
   lib::L2CValue::L2CValue(aLStack96,_FIGHTER_MURABITO_STATUS_SPECIAL_N_FLOAT_PULL_SPEED);
   fVar3 = (float)lib::L2CValue::as_number(aLStack80);
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar3,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   lib::L2CValue::L2CValue(aLStack80,SpecialNSearch_main_loop);
   lua2cpp::L2CFighterCommon::sub_shift_status_main(this,(L2CValue)0xb0);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   return;
 }
 

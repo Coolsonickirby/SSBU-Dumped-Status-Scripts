@@ -19,23 +19,23 @@ L2CFighterMiifighter::status::SpecialS3Fall_end(L2CFighterMiifighter *this,L2CVa
   fVar5 = (float)lib::L2CValue::as_number(aLStack80);
   iVar1 = lib::L2CValue::as_integer(aLStack96);
   app::lua_bind::WorkModule__set_float_impl(this->moduleAccessor,fVar5,iVar1);
-  lib::L2CValue::_L2CValue(aLStack96);
-  lib::L2CValue::_L2CValue(aLStack80);
+  lib::L2CValue::~L2CValue(aLStack96);
+  lib::L2CValue::~L2CValue(aLStack80);
   this_00 = &this->globalTable;
-  pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+  pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
   lib::L2CValue::L2CValue(aLStack80,_FIGHTER_STATUS_KIND_DEAD);
-  uVar3 = lib::L2CValue::operator__(pLVar2,aLStack80);
-  lib::L2CValue::_L2CValue(aLStack80);
+  uVar3 = lib::L2CValue::operator==(pLVar2,aLStack80);
+  lib::L2CValue::~L2CValue(aLStack80);
   if ((uVar3 & 1) == 0) {
-    pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+    pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_MIIFIGHTER_STATUS_KIND_SPECIAL_S3_LANDING);
-    uVar3 = lib::L2CValue::operator__(pLVar2,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar3 = lib::L2CValue::operator==(pLVar2,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar3 & 1) != 0) goto LAB_710002bd60;
-    pLVar2 = (L2CValue *)lib::L2CValue::operator__((L2CValue *)this_00,0xb);
+    pLVar2 = (L2CValue *)lib::L2CValue::operator[]((L2CValue *)this_00,0xb);
     lib::L2CValue::L2CValue(aLStack80,_FIGHTER_STATUS_KIND_SWIM_DIVE);
-    uVar3 = lib::L2CValue::operator__(pLVar2,aLStack80);
-    lib::L2CValue::_L2CValue(aLStack80);
+    uVar3 = lib::L2CValue::operator==(pLVar2,aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
     if ((uVar3 & 1) != 0) {
       lib::L2CValue::L2CValue(aLStack80,_KINETIC_ENERGY_RESERVE_ATTRIBUTE_MAIN);
       iVar1 = lib::L2CValue::as_integer(aLStack80);
@@ -49,9 +49,9 @@ L2CFighterMiifighter::status::SpecialS3Fall_end(L2CFighterMiifighter *this,L2CVa
     iVar1 = lib::L2CValue::as_integer(aLStack80);
     HVar4 = lib::L2CValue::as_hash(aLStack96);
     app::lua_bind::LinkModule__send_event_nodes_impl(this->moduleAccessor,iVar1,HVar4,0);
-    lib::L2CValue::_L2CValue(aLStack96);
+    lib::L2CValue::~L2CValue(aLStack96);
 LAB_710002bd08:
-    lib::L2CValue::_L2CValue(aLStack80);
+    lib::L2CValue::~L2CValue(aLStack80);
   }
   app::lua_bind::CatchModule__catch_cut_impl(this->moduleAccessor,false,false);
 LAB_710002bd60:
